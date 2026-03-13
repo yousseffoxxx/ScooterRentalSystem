@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScooterRental.Presentation"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScooterRental.WebAPI", "ScooterRental.WebAPI\ScooterRental.WebAPI.csproj", "{2360854B-0CF7-45CE-854C-CD184875347F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{9C092C61-DBC6-442F-A64B-9F7B55E01C52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -114,5 +118,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E55ABD2E-041F-4875-953E-DECAF2745B77} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{E21D8CB1-BDA7-4ACE-89CE-C2B8580ECF7A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{16116947-51D3-46B3-81C7-F4CFED4823E6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{92A8C987-8CB8-406C-9769-D6F00169A4E0} = {9C092C61-DBC6-442F-A64B-9F7B55E01C52}
+		{56525831-7CE3-4484-8E27-D06A0B4BBD84} = {9C092C61-DBC6-442F-A64B-9F7B55E01C52}
 	EndGlobalSection
 EndGlobal
