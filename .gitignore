@@ -1,0 +1,56 @@
+# ==========================================
+# Scooter Rental System - Master .gitignore
+# ==========================================
+
+# ------------------------------------------
+# 1. Visual Studio & .NET (Backend)
+# ------------------------------------------
+[Bb]in/
+[Oo]bj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+appsettings.Development.json
+appsettings.Production.json
+
+# ------------------------------------------
+# 2. Angular & Node.js (Dashboard)
+# ------------------------------------------
+node_modules/
+dist/
+out-tsc/
+.angular/
+npm-debug.log
+yarn-error.log
+
+# ------------------------------------------
+# 3. Flutter & Dart (Mobile App)
+# ------------------------------------------
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+*.jks
+*.key
+key.properties
+
+# ------------------------------------------
+# 4. Python & FastAPI (AI Module)
+# ------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+.pytest_cache/
+
+# ------------------------------------------
+# 5. OS & General Files
+# ------------------------------------------
+.DS_Store
+Thumbs.db
+*.log
