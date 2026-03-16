@@ -1,6 +1,4 @@
-﻿global using Microsoft.AspNetCore.Identity;
-
-namespace ScooterRental.Domain.Models
+﻿namespace ScooterRental.Domain.Models
 {
     public class User : IdentityUser<Guid>
     {

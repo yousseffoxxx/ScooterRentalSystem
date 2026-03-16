@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ScooterRental.Domain\ScooterRental.Domain.csproj" />
+    <ProjectReference Include="..\ScooterRental.Shared\ScooterRental.Shared.csproj" />
+  </ItemGroup>
+
 </Project>
