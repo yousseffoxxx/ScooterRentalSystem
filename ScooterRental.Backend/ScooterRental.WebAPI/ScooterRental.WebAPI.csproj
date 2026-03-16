@@ -10,4 +10,10 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ScooterRental.Persistence\ScooterRental.Persistence.csproj" />
+    <ProjectReference Include="..\ScooterRental.Presentation\ScooterRental.Presentation.csproj" />
+    <ProjectReference Include="..\ScooterRental.Service\ScooterRental.Service.csproj" />
+  </ItemGroup>
+
 </Project>
