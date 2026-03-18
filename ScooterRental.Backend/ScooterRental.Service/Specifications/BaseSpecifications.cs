@@ -15,9 +15,11 @@
         {
 
         }
+        protected BaseSpecifications(Expression<Func<TEntity, bool>> criteria)
+        {
+            Criteria = criteria;
+        }
 
-        protected void SetCriteria(Expression<Func<TEntity, bool>> criteria)
-            => Criteria = criteria;
         protected void AddInclude(Expression<Func<TEntity, object>> includeExpressions)
             => IncludeExpressions.Add(includeExpressions);
         protected void AddThenInclude(string thenIncludeExpressions)
