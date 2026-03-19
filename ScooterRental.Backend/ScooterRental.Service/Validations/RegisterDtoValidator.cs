@@ -4,7 +4,7 @@
     {
         public RegisterDtoValidator()
         {
-            RuleFor(x => x.Name)
+            RuleFor(x => x.FullName)
                 .NotEmpty().WithMessage("Full Name is required")
                 .MinimumLength(3).WithMessage("Name must be at least 3 characters.")
                 .MaximumLength(150).WithMessage("Name cannot exceed 150 characters.");

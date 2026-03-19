@@ -1,3 +1,5 @@
+using ScooterRental.Service.MappingProfiles;
+
 namespace ScooterRental.WebAPI
 {
     public class Program
