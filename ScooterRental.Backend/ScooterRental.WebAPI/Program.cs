@@ -18,6 +18,8 @@ namespace ScooterRental.WebAPI
                 options.User.RequireUniqueEmail = true;
             }).AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 
+            builder.Services.AddValidatorsFromAssemblyContaining<RegisterDtoValidator>();
+
             builder.Services.AddOpenApi();
 
             #endregion
