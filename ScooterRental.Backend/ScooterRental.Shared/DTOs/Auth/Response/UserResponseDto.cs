@@ -3,7 +3,7 @@
     public record UserResponseDto
     {
         public required Guid Id { get; init; }
-        public required string Name { get; init; }
+        public required string FullName { get; init; }
         public required string Email { get; init; }
         public required string PhoneNumber { get; init; }
         public required string? AvatarUrl { get; init; }
