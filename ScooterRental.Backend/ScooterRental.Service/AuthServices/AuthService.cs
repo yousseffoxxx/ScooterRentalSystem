@@ -1,6 +1,6 @@
 ﻿namespace ScooterRental.Service.AuthServices
 {
-    public class AuthService(UserManager<User> _userManager, ITokenService _tokenService, IConfiguration _configuration) : IAuthService
+    public class AuthService(UserManager<User> _userManager, ITokenService _tokenService, IConfiguration _configuration, IOtpService _otpService, IEmailService _emailService) : IAuthService
     {
         private readonly string _baseUrl = _configuration.GetSection("Urls")["BaseUrl"] ?? string.Empty;
 
@@ -14,6 +14,8 @@
                 throw CreateValidationException(result);
 
             await _userManager.AddToRoleAsync(user, "Customer");
+
+            await _otpService.SendOtpAsync(user);
 
             var token = await _tokenService.CreateTokenAsync(user);
 
@@ -29,10 +31,28 @@
             if (user is null)
                 throw new UnAuthorizedException("Invalid Email or Password");
 
-            var result = await _userManager.CheckPasswordAsync(user, loginDto.Password);
+            if (!user.EmailConfirmed)
+                throw new UnAuthorizedException("Please verify your email address before logging in.");
 
-            if (!result)
+            if (await _userManager.IsLockedOutAsync(user))
+                throw new UnAuthorizedException("Your account is temporarily locked due to multiple failed login attempts. Please try again later.");
+            
+            var isPasswordValid = await _userManager.CheckPasswordAsync(user, loginDto.Password);
+
+            if (!isPasswordValid)
+            {
+                // 4. Record the failed attempt in the database
+                await _userManager.AccessFailedAsync(user);
+
+                // Optional UX: If that specific wrong guess just triggered the lockout, tell them immediately!
+                if (await _userManager.IsLockedOutAsync(user))
+                    throw new UnAuthorizedException("Too many failed attempts. Your account is now locked.");
+
                 throw new UnAuthorizedException("Invalid Email or Password");
+            }
+
+            // 5. Success! Reset the failed attempt counter back to 0.
+            await _userManager.ResetAccessFailedCountAsync(user);
 
             var token = await _tokenService.CreateTokenAsync(user);
             var userDto = user.ToDto(_baseUrl);
@@ -42,17 +62,37 @@
 
         public async Task<bool> VerifyOtpAsync(VerifyOtpDto verifyOtpDto)
         {
-            var user = await _userManager.Users.FirstOrDefaultAsync(user => user.PhoneNumber == verifyOtpDto.PhoneNumber);
+            var user = await _userManager.FindByEmailAsync(verifyOtpDto.Email);
 
             if (user is null)
-                throw new NotFoundException("User", verifyOtpDto.PhoneNumber);
+                throw new NotFoundException("User", verifyOtpDto.Email);
 
-            user.PhoneNumberConfirmed = true;
+            var isValid = await _otpService.VerifyOtpAsync(user, verifyOtpDto.Code);
+
+            if (!isValid) 
+                throw new BadRequestException("Invalid or expired OTP code.");
+
+            user.EmailConfirmed = true;
 
             var result = await _userManager.UpdateAsync(user);
 
             if (!result.Succeeded)
                 throw CreateValidationException(result);
+
+            return true;
+        }
+
+        public async Task<bool> ResendOtpAsync(string email)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+
+            if (user is null)
+                throw new NotFoundException("User", email);
+
+            if (user.EmailConfirmed)
+                throw new BadRequestException("This email is already verified. You can log in.");
+
+            await _otpService.SendOtpAsync(user);
 
             return true;
         }
@@ -116,7 +156,13 @@
 
             var token = await _userManager.GeneratePasswordResetTokenAsync(user);
 
-            return token;
+            var encodedToken = Uri.EscapeDataString(token);
+
+            var resetLink = $"{_baseUrl}/reset-password?email={user.Email}&token={encodedToken}";
+
+            await _emailService.SendPasswordResetEmailAsync(user.Email, resetLink);
+            
+            return "Password reset email sent successfully.";
         }
 
         public async Task<bool> ResetPasswordAsync(ResetPasswordDto resetPasswordDto)

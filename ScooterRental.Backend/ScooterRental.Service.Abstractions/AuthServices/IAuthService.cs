@@ -5,6 +5,7 @@
         Task<AuthResultDto> RegisterAsync(RegisterDto registerDto);
         Task<AuthResultDto> LoginAsync(LoginDto loginDto);
         Task<bool> VerifyOtpAsync(VerifyOtpDto verifyOtpDto);
+        Task<bool> ResendOtpAsync(string email);
         Task<string> ForgotPasswordAsync(ForgotPasswordDto forgotPasswordDto);
         Task<bool> ResetPasswordAsync(ResetPasswordDto resetPasswordDto);
         Task<bool> ChangePasswordAsync(string userId, ChangePasswordDto changePasswordDto);

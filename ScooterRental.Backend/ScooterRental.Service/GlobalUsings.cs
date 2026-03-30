@@ -17,6 +17,14 @@ global using Microsoft.Extensions.Configuration;
 global using ScooterRental.Service.Mappings;
 global using Microsoft.EntityFrameworkCore;
 global using ScooterRental.Domain.Exceptions;
+global using Microsoft.Extensions.Logging;
+global using SendGrid;
+global using SendGrid.Helpers.Mail;
+global using ScooterRental.Service.Abstractions;
+global using ScooterRental.Service.AuthServices;
+
+
+
 
 
 

@@ -14,6 +14,11 @@ global using ScooterRental.Shared.ErrorModels;
 global using ScooterRental.WebAPI.CustomMiddleware;
 global using Serilog;
 global using ILogger = Microsoft.Extensions.Logging.ILogger;
+global using ScooterRental.Service.Abstractions;
+global using ScooterRental.Service;
+global using ScooterRental.Service.Abstractions.AuthServices;
+global using ScooterRental.Service.EmailServices;
+
 
 
 

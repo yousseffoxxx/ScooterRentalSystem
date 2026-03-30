@@ -61,15 +61,25 @@ namespace ScooterRental.WebAPI
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
 
-            builder.Services.AddIdentity<User, IdentityRole<Guid>>(options =>
+            builder.Services.AddIdentity<User, IdentityRole>(options =>
             {
+                options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireUppercase = true;
+                options.Password.RequiredLength = 8;
+                options.Password.RequireNonAlphanumeric = false;
+
                 options.User.RequireUniqueEmail = true;
+
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+                options.Lockout.MaxFailedAccessAttempts = 5;
+                options.Lockout.AllowedForNewUsers = true;
             })
-                .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultTokenProviders();
+            .AddEntityFrameworkStores<ApplicationDbContext>()
+            .AddDefaultTokenProviders();
+
 
             builder.Services.AddValidatorsFromAssemblyContaining<RegisterDtoValidator>();
-
 
             builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
 
@@ -78,8 +88,8 @@ namespace ScooterRental.WebAPI
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddJwtBearer(options => 
-            {
+            })
+                .AddJwtBearer(options => {
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateAudience = true,
@@ -95,6 +105,9 @@ namespace ScooterRental.WebAPI
                 };
             });
 
+            builder.Services.AddScoped<IEmailService, EmailService>();
+            builder.Services.AddScoped<IOtpService, OtpService>();
+            builder.Services.AddScoped<IServiceManager, ServiceManager>();
             builder.Services.AddAuthorization();
 
             builder.Services.AddControllers();
