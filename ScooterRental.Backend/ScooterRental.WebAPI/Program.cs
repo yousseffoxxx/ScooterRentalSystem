@@ -2,7 +2,7 @@ namespace ScooterRental.WebAPI
 {
     public class Program
     {
-        private static void Main(string[] args)
+        private static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -63,13 +63,23 @@ namespace ScooterRental.WebAPI
 
             builder.Services.AddIdentity<User, IdentityRole<Guid>>(options =>
             {
+                options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireUppercase = true;
+                options.Password.RequiredLength = 8;
+                options.Password.RequireNonAlphanumeric = false;
+
                 options.User.RequireUniqueEmail = true;
+
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+                options.Lockout.MaxFailedAccessAttempts = 5;
+                options.Lockout.AllowedForNewUsers = true;
             })
-                .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultTokenProviders();
+            .AddEntityFrameworkStores<ApplicationDbContext>()
+            .AddDefaultTokenProviders();
+
 
             builder.Services.AddValidatorsFromAssemblyContaining<RegisterDtoValidator>();
-
 
             builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
 
@@ -78,8 +88,8 @@ namespace ScooterRental.WebAPI
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddJwtBearer(options => 
-            {
+            })
+                .AddJwtBearer(options => {
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateAudience = true,
@@ -95,6 +105,10 @@ namespace ScooterRental.WebAPI
                 };
             });
 
+            builder.Services.AddScoped<ITokenService, TokenService>();
+            builder.Services.AddScoped<IEmailService, EmailService>();
+            builder.Services.AddScoped<IOtpService, OtpService>();
+            builder.Services.AddScoped<IServiceManager, ServiceManager>();
             builder.Services.AddAuthorization();
 
             builder.Services.AddControllers();
@@ -105,8 +119,26 @@ namespace ScooterRental.WebAPI
             
             var app = builder.Build();
 
+            using (var scope = app.Services.CreateScope())
+            {
+                // We get the RoleManager directly from the dependency injection container
+                var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole<Guid>>>();
+
+                // Define the roles your app needs
+                string[] roles = { "Customer", "Admin", "Support" };
+
+                foreach (var role in roles)
+                {
+                    // If the role doesn't exist in the database, create it!
+                    if (!await roleManager.RoleExistsAsync(role))
+                    {
+                        await roleManager.CreateAsync(new IdentityRole<Guid>(role));
+                    }
+                }
+            }
+
             #region Configure the HTTP request pipeline.
-            
+
             if (app.Environment.IsDevelopment())
             {
                 app.MapOpenApi();

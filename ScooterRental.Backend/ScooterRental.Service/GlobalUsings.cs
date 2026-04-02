@@ -1,7 +1,6 @@
 ﻿global using ScooterRental.Service.Abstractions.Specifications;
 global using System.Linq.Expressions;
 global using FluentValidation;
-global using ScooterRental.Shared.DTOs.Auth.Requests;
 global using ScooterRental.Domain.Models;
 global using ScooterRental.Shared.DTOs.Auth.Response;
 global using ScooterRental.Service.Abstractions.AuthServices;
@@ -17,6 +16,16 @@ global using Microsoft.Extensions.Configuration;
 global using ScooterRental.Service.Mappings;
 global using Microsoft.EntityFrameworkCore;
 global using ScooterRental.Domain.Exceptions;
+global using Microsoft.Extensions.Logging;
+global using SendGrid;
+global using SendGrid.Helpers.Mail;
+global using ScooterRental.Service.Abstractions;
+global using ScooterRental.Service.AuthServices;
+global using ScooterRental.Shared.DTOs.Auth.Request;
+
+
+
+
 
 
 

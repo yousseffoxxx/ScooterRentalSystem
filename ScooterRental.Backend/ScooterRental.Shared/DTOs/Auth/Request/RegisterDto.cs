@@ -1,4 +1,4 @@
-﻿namespace ScooterRental.Shared.DTOs.Auth.Requests
+﻿namespace ScooterRental.Shared.DTOs.Auth.Request
 {
     public record RegisterDto
     {
