@@ -8,6 +8,15 @@
         {
             var user = registerDto.ToEntity();
 
+            user.Wallet = new Wallet
+            {
+                Balance = 0,
+                HeldAmount = 0,
+                TotalSpent = 0,
+                TotalToppedUp = 0,
+                UpdatedAt = DateTimeOffset.UtcNow
+            };
+
             var result = await _userManager.CreateAsync(user, registerDto.Password);
 
             if (!result.Succeeded)
@@ -82,12 +91,12 @@
             return true;
         }
 
-        public async Task<bool> ResendOtpAsync(string email)
+        public async Task<bool> ResendOtpAsync(ResendOtpDto resendOtpDto)
         {
-            var user = await _userManager.FindByEmailAsync(email);
+            var user = await _userManager.FindByEmailAsync(resendOtpDto.Email);
 
             if (user is null)
-                throw new NotFoundException("User", email);
+                throw new NotFoundException("User", resendOtpDto.Email);
 
             if (user.EmailConfirmed)
                 throw new BadRequestException("This email is already verified. You can log in.");

@@ -18,6 +18,8 @@ global using ScooterRental.Service.Abstractions;
 global using ScooterRental.Service;
 global using ScooterRental.Service.Abstractions.AuthServices;
 global using ScooterRental.Service.EmailServices;
+global using ScooterRental.Service.AuthServices;
+
 
 
 

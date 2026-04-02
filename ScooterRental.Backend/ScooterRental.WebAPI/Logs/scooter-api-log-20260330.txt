@@ -1,0 +1,87 @@
+2026-03-30 18:07:13.699 +02:00 [INF] Now listening on: https://localhost:5000
+2026-03-30 18:07:13.727 +02:00 [INF] Now listening on: http://localhost:5001
+2026-03-30 18:07:13.776 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-30 18:07:13.777 +02:00 [INF] Hosting environment: Development
+2026-03-30 18:07:13.778 +02:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-03-30 18:07:17.999 +02:00 [INF] HTTP GET /scalar/v1 responded 200 in 1059.4117 ms
+2026-03-30 18:07:18.144 +02:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 116.6273 ms
+2026-03-30 18:07:18.167 +02:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 139.8612 ms
+2026-03-30 18:07:18.567 +02:00 [INF] HTTP GET /openapi/v1.json responded 200 in 128.6382 ms
+2026-03-30 18:07:19.345 +02:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 0.7304 ms
+2026-03-30 18:15:19.245 +02:00 [INF] Now listening on: https://localhost:5000
+2026-03-30 18:15:19.271 +02:00 [INF] Now listening on: http://localhost:5001
+2026-03-30 18:15:19.317 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-30 18:15:19.319 +02:00 [INF] Hosting environment: Development
+2026-03-30 18:15:19.321 +02:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-03-30 18:15:19.943 +02:00 [INF] HTTP GET /scalar/v1 responded 200 in 165.1030 ms
+2026-03-30 18:15:20.084 +02:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 110.0306 ms
+2026-03-30 18:15:20.097 +02:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 122.7281 ms
+2026-03-30 18:15:20.614 +02:00 [INF] HTTP GET /openapi/v1.json responded 200 in 147.7752 ms
+2026-03-30 18:18:23.375 +02:00 [ERR] An unexpected server error occurred while accessing /api/Auth/register
+System.InvalidOperationException: Role CUSTOMER does not exist.
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.AddToRoleAsync(TUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRoleAsync(TUser user, String role)
+   at ScooterRental.Service.AuthServices.AuthService.RegisterAsync(RegisterDto registerDto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\AuthServices\AuthService.cs:line 18
+   at ScooterRental.Presentation.Controllers.AuthController.Register(RegisterDto registerDto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\AuthController.cs:line 10
+   at lambda_method4(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-03-30 18:18:23.410 +02:00 [ERR] HTTP POST /api/Auth/register responded 500 in 180291.6489 ms
+2026-03-30 18:21:14.005 +02:00 [INF] Now listening on: https://localhost:5000
+2026-03-30 18:21:14.036 +02:00 [INF] Now listening on: http://localhost:5001
+2026-03-30 18:21:14.089 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-30 18:21:14.092 +02:00 [INF] Hosting environment: Development
+2026-03-30 18:21:14.093 +02:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-03-30 18:21:15.189 +02:00 [INF] HTTP GET /scalar/v1 responded 200 in 159.4575 ms
+2026-03-30 18:21:15.287 +02:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 65.9094 ms
+2026-03-30 18:21:15.302 +02:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 80.6165 ms
+2026-03-30 18:21:15.710 +02:00 [INF] HTTP GET /openapi/v1.json responded 200 in 127.0134 ms
+2026-03-30 18:21:38.169 +02:00 [WRN] AppException thrown: One or more validation errors occurred.
+2026-03-30 18:21:38.175 +02:00 [INF] HTTP POST /api/Auth/register responded 400 in 16120.0884 ms
+2026-03-30 18:22:58.415 +02:00 [INF] Now listening on: https://localhost:5000
+2026-03-30 18:22:58.450 +02:00 [INF] Now listening on: http://localhost:5001
+2026-03-30 18:22:58.513 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-30 18:22:58.514 +02:00 [INF] Hosting environment: Development
+2026-03-30 18:22:58.516 +02:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-03-30 18:22:59.485 +02:00 [INF] HTTP GET /scalar/v1 responded 200 in 152.5143 ms
+2026-03-30 18:22:59.561 +02:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 47.8830 ms
+2026-03-30 18:22:59.619 +02:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 105.3240 ms
+2026-03-30 18:23:00.040 +02:00 [INF] HTTP GET /openapi/v1.json responded 200 in 134.3955 ms
+2026-03-30 18:23:09.045 +02:00 [WRN] AppException thrown: One or more validation errors occurred.
+2026-03-30 18:23:09.050 +02:00 [INF] HTTP POST /api/Auth/register responded 400 in 6478.4920 ms
+2026-03-30 18:23:45.486 +02:00 [INF] Now listening on: https://localhost:5000
+2026-03-30 18:23:45.524 +02:00 [INF] Now listening on: http://localhost:5001
+2026-03-30 18:23:45.593 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-30 18:23:45.595 +02:00 [INF] Hosting environment: Development
+2026-03-30 18:23:45.596 +02:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-03-30 18:23:46.036 +02:00 [INF] HTTP GET /scalar/v1 responded 200 in 217.3743 ms
+2026-03-30 18:23:46.150 +02:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 85.8706 ms
+2026-03-30 18:23:46.173 +02:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 109.7207 ms
+2026-03-30 18:23:46.606 +02:00 [INF] HTTP GET /openapi/v1.json responded 200 in 131.7828 ms
+2026-03-30 18:23:52.144 +02:00 [INF] Email successfully sent to youssefahmed4657@gmail.com
+2026-03-30 18:23:52.254 +02:00 [INF] HTTP POST /api/Auth/register responded 200 in 1731.5833 ms
+2026-03-30 18:33:07.798 +02:00 [INF] Now listening on: https://localhost:5000
+2026-03-30 18:33:07.828 +02:00 [INF] Now listening on: http://localhost:5001
+2026-03-30 18:33:07.884 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-30 18:33:07.886 +02:00 [INF] Hosting environment: Development
+2026-03-30 18:33:07.887 +02:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-03-30 18:33:08.350 +02:00 [INF] HTTP GET /scalar/v1 responded 200 in 179.4433 ms
+2026-03-30 18:33:08.487 +02:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 93.1143 ms
+2026-03-30 18:33:08.502 +02:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 108.8800 ms
+2026-03-30 18:33:08.909 +02:00 [INF] HTTP GET /openapi/v1.json responded 200 in 127.0007 ms
+2026-03-30 18:33:19.693 +02:00 [INF] Email successfully sent to youssefahmed4657@gmail.com
+2026-03-30 18:33:19.759 +02:00 [INF] HTTP POST /api/Auth/register responded 200 in 1439.7488 ms
+2026-03-30 18:35:29.654 +02:00 [INF] HTTP POST /api/Auth/verify-email responded 200 in 69.3228 ms
+2026-03-30 18:35:54.752 +02:00 [INF] HTTP POST /api/Auth/login responded 200 in 142.8823 ms
+2026-03-30 18:36:21.688 +02:00 [INF] HTTP GET /api/Auth/profile responded 401 in 64.2167 ms
+2026-03-30 18:37:29.831 +02:00 [INF] HTTP GET /api/Auth/profile responded 200 in 51.9521 ms

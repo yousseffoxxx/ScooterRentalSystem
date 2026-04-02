@@ -2,7 +2,7 @@ namespace ScooterRental.WebAPI
 {
     public class Program
     {
-        private static void Main(string[] args)
+        private static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -61,7 +61,7 @@ namespace ScooterRental.WebAPI
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
 
-            builder.Services.AddIdentity<User, IdentityRole>(options =>
+            builder.Services.AddIdentity<User, IdentityRole<Guid>>(options =>
             {
                 options.Password.RequireDigit = true;
                 options.Password.RequireLowercase = true;
@@ -105,6 +105,7 @@ namespace ScooterRental.WebAPI
                 };
             });
 
+            builder.Services.AddScoped<ITokenService, TokenService>();
             builder.Services.AddScoped<IEmailService, EmailService>();
             builder.Services.AddScoped<IOtpService, OtpService>();
             builder.Services.AddScoped<IServiceManager, ServiceManager>();
@@ -118,8 +119,26 @@ namespace ScooterRental.WebAPI
             
             var app = builder.Build();
 
+            using (var scope = app.Services.CreateScope())
+            {
+                // We get the RoleManager directly from the dependency injection container
+                var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole<Guid>>>();
+
+                // Define the roles your app needs
+                string[] roles = { "Customer", "Admin", "Support" };
+
+                foreach (var role in roles)
+                {
+                    // If the role doesn't exist in the database, create it!
+                    if (!await roleManager.RoleExistsAsync(role))
+                    {
+                        await roleManager.CreateAsync(new IdentityRole<Guid>(role));
+                    }
+                }
+            }
+
             #region Configure the HTTP request pipeline.
-            
+
             if (app.Environment.IsDevelopment())
             {
                 app.MapOpenApi();

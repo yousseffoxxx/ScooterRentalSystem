@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.9" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ScooterRental.Service.Abstractions\ScooterRental.Service.Abstractions.csproj" />
     <ProjectReference Include="..\ScooterRental.Shared\ScooterRental.Shared.csproj" />
   </ItemGroup>

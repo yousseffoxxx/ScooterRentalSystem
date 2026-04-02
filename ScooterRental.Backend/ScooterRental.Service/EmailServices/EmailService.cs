@@ -1,6 +1,6 @@
 ﻿namespace ScooterRental.Service.EmailServices
 {
-    public class EmailService(IConfiguration _configuration, ILogger _logger) : IEmailService
+    public class EmailService(IConfiguration _configuration, ILogger<EmailService> _logger) : IEmailService
     {
         public async Task SendEmailAsync(string to, string subject, string body)
         {

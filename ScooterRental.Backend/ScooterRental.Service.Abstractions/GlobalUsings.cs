@@ -2,7 +2,7 @@
 global using ScooterRental.Service.Abstractions.Specifications;
 global using ScooterRental.Domain.Models;
 global using ScooterRental.Shared.DTOs.Auth.Response;
-global using ScooterRental.Shared.DTOs.Auth.Requests;
+global using ScooterRental.Shared.DTOs.Auth.Request;
 global using ScooterRental.Service.Abstractions.AuthServices;
 
 

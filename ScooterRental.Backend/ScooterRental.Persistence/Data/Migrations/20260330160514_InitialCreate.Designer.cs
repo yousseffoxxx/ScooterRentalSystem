@@ -12,7 +12,7 @@ using ScooterRental.Persistence.Data.Contexts;
 namespace ScooterRental.Persistence.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260318034145_InitialCreate")]
+    [Migration("20260330160514_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

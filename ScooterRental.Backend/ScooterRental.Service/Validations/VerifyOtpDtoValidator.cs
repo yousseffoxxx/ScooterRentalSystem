@@ -3,10 +3,9 @@
     public class VerifyOtpDtoValidator : AbstractValidator<VerifyOtpDto>
     {
         public VerifyOtpDtoValidator()
-        {
-            RuleFor(x => x.PhoneNumber)
-                .NotEmpty().WithMessage("Phone number is required")
-                .Matches(@"^01[0125][0-9]{8}$").WithMessage("Phone number must be a valid Egyptian mobile number (e.g., 01012345678).");
+        {            
+            RuleFor(x => x.Email).EmailAddress()
+                .NotEmpty().WithMessage("A valid email address is required.");
 
             RuleFor(x => x.Code)
                 .NotEmpty().WithMessage("OTP is required.")
