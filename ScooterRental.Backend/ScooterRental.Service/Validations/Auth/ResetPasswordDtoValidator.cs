@@ -1,11 +1,15 @@
-﻿namespace ScooterRental.Service.Validations
+﻿namespace ScooterRental.Service.Validations.Auth
 {
-    public class ChangePasswordDtoValidator : AbstractValidator<ChangePasswordDto>
+    public class ResetPasswordDtoValidator : AbstractValidator<ResetPasswordDto>
     {
-        public ChangePasswordDtoValidator()
+        public ResetPasswordDtoValidator()
         {
-            RuleFor(x => x.CurrentPassword)
-                .NotEmpty().WithMessage("Current Password is required.");
+            RuleFor(x => x.Email)
+                .NotEmpty().WithMessage("Email is required.")
+                .EmailAddress().WithMessage("A valid email address is required.");
+
+            RuleFor(x => x.Token)
+                .NotEmpty().WithMessage("Invalid or missing reset token.");
 
             RuleFor(x => x.NewPassword)
                 .NotEmpty().WithMessage("New password is required.")
@@ -14,7 +18,6 @@
                 .Matches("[a-z]").WithMessage("Password must contain at least one lowercase letter.")
                 .Matches("[0-9]").WithMessage("Password must contain at least one number.")
                 .Matches("[^a-zA-Z0-9]").WithMessage("Password must contain at least one special character.");
-
         }
     }
 }

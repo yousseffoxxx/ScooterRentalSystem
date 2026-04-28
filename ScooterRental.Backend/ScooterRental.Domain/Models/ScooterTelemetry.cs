@@ -1,12 +1,13 @@
 ﻿namespace ScooterRental.Domain.Models
 {
-    public record ScooterTelemetry
+    public class ScooterTelemetry
     {
-        public Guid Id { get; init; }
-        public string SerialNumber { get; init; } = string.Empty;
-        public double Latitude { get; init; }
-        public double Longitude { get; init; }
-        public int BatteryLevel { get; init; }
-        public DateTimeOffset Timestamp { get; init; }
-    }
+        public Guid Id { get; set; }
+        public string SerialNumber { get; set; } = string.Empty;
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
+        public int BatteryLevel { get; set; }
+        public DateTimeOffset Timestamp { get; set; }
+        public bool IsOutOfBounds { get; set; }
+}
 }

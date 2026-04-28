@@ -9,6 +9,13 @@ global using ScooterRental.Service.Abstractions.RepositoryContracts;
 global using ScooterRental.Persistence.Data.Contexts;
 global using StackExchange.Redis;
 global using System.Text.Json;
+global using ScooterRental.Shared.Events;
+global using ScooterRental.Service.Abstractions;
+
+
+
+
+
 
 
 

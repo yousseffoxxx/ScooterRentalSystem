@@ -6,7 +6,7 @@
 
         public async Task<ScooterTelemetry?> SaveOrUpdateTelemetryAsync(ScooterTelemetry telemetry, TimeSpan? timeToLive = null)
         {
-            string key = $"scooter:telemetry:{telemetry.Id}";
+            string key = $"scooter:telemetry:{telemetry.SerialNumber}";
 
             var value = JsonSerializer.Serialize(telemetry);
 
@@ -15,7 +15,7 @@
             if (!result)
                 return null;
 
-            return await GetTelemetryAsync(telemetry.Id);
+            return telemetry;
         }
 
         public async Task<IEnumerable<ScooterTelemetry>> GetAllActiveTelemetriesAsync()
@@ -45,9 +45,9 @@
             return activeScooters;
         }
         
-        public async Task<ScooterTelemetry?> GetTelemetryAsync(Guid id)
+        public async Task<ScooterTelemetry?> GetLatestTelemetryAsync(string SerialNumber)
         {
-            string key = $"scooter:telemetry:{id}";
+            string key = $"scooter:telemetry:{SerialNumber}";
 
             var telemetry = await _database.StringGetAsync(key);
 
@@ -57,9 +57,9 @@
             return JsonSerializer.Deserialize<ScooterTelemetry>(telemetry);
         }
 
-        public async Task<bool> RemoveTelemetryAsync(Guid id)
+        public async Task<bool> RemoveTelemetryAsync(string SerialNumber)
         {
-            string key = $"scooter:telemetry:{id}";
+            string key = $"scooter:telemetry:{SerialNumber}";
 
             return await _database.KeyDeleteAsync(key);
         }

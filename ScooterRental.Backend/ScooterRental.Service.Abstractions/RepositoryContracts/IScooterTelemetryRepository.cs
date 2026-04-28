@@ -2,9 +2,9 @@
 {
     public interface IScooterTelemetryRepository
     {
-        Task<ScooterTelemetry?> GetTelemetryAsync(Guid id);
+        Task<ScooterTelemetry?> GetLatestTelemetryAsync(string SerialNumber);
         Task<IEnumerable<ScooterTelemetry>> GetAllActiveTelemetriesAsync();
         Task<ScooterTelemetry?> SaveOrUpdateTelemetryAsync(ScooterTelemetry telemetry, TimeSpan? timeToLive = null);
-        Task<bool> RemoveTelemetryAsync(Guid id);
+        Task<bool> RemoveTelemetryAsync(string SerialNumber);
     }
 }

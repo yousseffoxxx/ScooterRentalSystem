@@ -23,7 +23,7 @@ namespace ScooterRental.Persistence.Data.Configurations
                 .HasColumnType("geography");
 
             builder.Property(z => z.SpeedLimitKmH)
-                .HasColumnType("decimal(5,2)");
+                .HasColumnType("float");
 
             builder.Property(z => z.IsActive)
                 .IsRequired()

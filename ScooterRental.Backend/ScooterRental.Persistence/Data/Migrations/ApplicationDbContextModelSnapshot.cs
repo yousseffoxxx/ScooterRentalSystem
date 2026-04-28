@@ -384,8 +384,8 @@ namespace ScooterRental.Persistence.Data.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<decimal?>("SpeedLimitKmH")
-                        .HasColumnType("decimal(5,2)");
+                    b.Property<double?>("SpeedLimitKmH")
+                        .HasColumnType("float");
 
                     b.Property<string>("Type")
                         .IsRequired()
