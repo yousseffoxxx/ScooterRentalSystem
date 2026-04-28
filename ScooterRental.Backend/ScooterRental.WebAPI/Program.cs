@@ -58,7 +58,8 @@ namespace ScooterRental.WebAPI
 
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
             {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
+                    options => options.UseNetTopologySuite());
             });
 
             builder.Services.AddIdentity<User, IdentityRole<Guid>>(options =>
@@ -105,10 +106,19 @@ namespace ScooterRental.WebAPI
                 };
             });
 
+            builder.Services.AddSingleton<IConnectionMultiplexer>((_) =>
+            {
+                return ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("RedisConnectionString"));
+            });
+
             builder.Services.AddScoped<ITokenService, TokenService>();
             builder.Services.AddScoped<IEmailService, EmailService>();
             builder.Services.AddScoped<IOtpService, OtpService>();
             builder.Services.AddScoped<IServiceManager, ServiceManager>();
+            builder.Services.AddScoped<IScooterTelemetryRepository, ScooterTelemetryRepository>();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<IRedisZoneEventPublisher, RedisZoneEventPublisher>();
+            builder.Services.AddSingleton<IZoneCacheService, ZoneCacheService>();
             builder.Services.AddAuthorization();
 
             builder.Services.AddControllers();

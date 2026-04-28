@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using NetTopologySuite.Geometries;
 using ScooterRental.Persistence.Data.Contexts;
 
 #nullable disable
@@ -153,6 +154,74 @@ namespace ScooterRental.Persistence.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("ScooterRental.Domain.Models.Scooter", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("CurrentBatteryLevel")
+                        .HasColumnType("int");
+
+                    b.Property<DateTimeOffset>("LastPingAt")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<Point>("Location")
+                        .HasColumnType("geography");
+
+                    b.Property<Guid>("ModelId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("SerialNumber")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ModelId");
+
+                    b.HasIndex("SerialNumber")
+                        .IsUnique();
+
+                    b.ToTable("Scooters", (string)null);
+                });
+
+            modelBuilder.Entity("ScooterRental.Domain.Models.ScooterModel", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("BatteryCapacityMah")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Brand")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<decimal>("MaxSpeedKmH")
+                        .HasColumnType("decimal(5,2)");
+
+                    b.Property<string>("ModelName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<decimal>("WeightLimitKg")
+                        .HasColumnType("decimal(5,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ScooterModels", (string)null);
+                });
+
             modelBuilder.Entity("ScooterRental.Domain.Models.User", b =>
                 {
                     b.Property<Guid>("Id")
@@ -292,6 +361,42 @@ namespace ScooterRental.Persistence.Data.Migrations
                     b.ToTable("Wallets", (string)null);
                 });
 
+            modelBuilder.Entity("ScooterRental.Domain.Models.Zone", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Polygon>("Boundary")
+                        .IsRequired()
+                        .HasColumnType("geography");
+
+                    b.Property<DateTimeOffset>("CreatedAt")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<bool>("IsActive")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<double?>("SpeedLimitKmH")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Zones", (string)null);
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole<System.Guid>", null)
@@ -343,6 +448,17 @@ namespace ScooterRental.Persistence.Data.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("ScooterRental.Domain.Models.Scooter", b =>
+                {
+                    b.HasOne("ScooterRental.Domain.Models.ScooterModel", "Model")
+                        .WithMany("Scooters")
+                        .HasForeignKey("ModelId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Model");
+                });
+
             modelBuilder.Entity("ScooterRental.Domain.Models.Wallet", b =>
                 {
                     b.HasOne("ScooterRental.Domain.Models.User", "User")
@@ -352,6 +468,11 @@ namespace ScooterRental.Persistence.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ScooterRental.Domain.Models.ScooterModel", b =>
+                {
+                    b.Navigation("Scooters");
                 });
 
             modelBuilder.Entity("ScooterRental.Domain.Models.User", b =>

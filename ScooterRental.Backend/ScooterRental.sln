@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{02EA681E-C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{9C092C61-DBC6-442F-A64B-9F7B55E01C52}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScooterRental.MqttWorker", "ScooterRental.MqttWorker\ScooterRental.MqttWorker.csproj", "{65F99AE4-2BFE-452F-9B22-840994BA0ABF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -115,6 +117,18 @@ Global
 		{2360854B-0CF7-45CE-854C-CD184875347F}.Release|x64.Build.0 = Release|Any CPU
 		{2360854B-0CF7-45CE-854C-CD184875347F}.Release|x86.ActiveCfg = Release|Any CPU
 		{2360854B-0CF7-45CE-854C-CD184875347F}.Release|x86.Build.0 = Release|Any CPU
+		{65F99AE4-2BFE-452F-9B22-840994BA0ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65F99AE4-2BFE-452F-9B22-840994BA0ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65F99AE4-2BFE-452F-9B22-840994BA0ABF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{65F99AE4-2BFE-452F-9B22-840994BA0ABF}.Debug|x64.Build.0 = Debug|Any CPU
+		{65F99AE4-2BFE-452F-9B22-840994BA0ABF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{65F99AE4-2BFE-452F-9B22-840994BA0ABF}.Debug|x86.Build.0 = Debug|Any CPU
+		{65F99AE4-2BFE-452F-9B22-840994BA0ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65F99AE4-2BFE-452F-9B22-840994BA0ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65F99AE4-2BFE-452F-9B22-840994BA0ABF}.Release|x64.ActiveCfg = Release|Any CPU
+		{65F99AE4-2BFE-452F-9B22-840994BA0ABF}.Release|x64.Build.0 = Release|Any CPU
+		{65F99AE4-2BFE-452F-9B22-840994BA0ABF}.Release|x86.ActiveCfg = Release|Any CPU
+		{65F99AE4-2BFE-452F-9B22-840994BA0ABF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,5 +139,9 @@ Global
 		{16116947-51D3-46B3-81C7-F4CFED4823E6} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{92A8C987-8CB8-406C-9769-D6F00169A4E0} = {9C092C61-DBC6-442F-A64B-9F7B55E01C52}
 		{56525831-7CE3-4484-8E27-D06A0B4BBD84} = {9C092C61-DBC6-442F-A64B-9F7B55E01C52}
+		{65F99AE4-2BFE-452F-9B22-840994BA0ABF} = {9C092C61-DBC6-442F-A64B-9F7B55E01C52}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C202505-C0B7-4DB5-8DCB-AD5484E7EDC7}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,208 @@
+2026-04-26 03:01:52.928 +03:00 [INF] Now listening on: https://localhost:5000
+2026-04-26 03:01:52.955 +03:00 [INF] Now listening on: http://localhost:5001
+2026-04-26 03:01:53.003 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-26 03:01:53.005 +03:00 [INF] Hosting environment: Development
+2026-04-26 03:01:53.006 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-04-26 03:01:55.177 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1059.0280 ms
+2026-04-26 03:01:55.214 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 6.8539 ms
+2026-04-26 03:01:55.233 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 26.3144 ms
+2026-04-26 03:01:55.699 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 160.8526 ms
+2026-04-26 03:02:19.379 +03:00 [INF] HTTP GET /api/Zone responded 401 in 4.7147 ms
+2026-04-26 10:18:12.367 +03:00 [INF] Now listening on: https://localhost:5000
+2026-04-26 10:18:12.394 +03:00 [INF] Now listening on: http://localhost:5001
+2026-04-26 10:18:12.442 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-26 10:18:12.444 +03:00 [INF] Hosting environment: Development
+2026-04-26 10:18:12.445 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-04-26 10:18:13.995 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 172.0220 ms
+2026-04-26 10:18:14.065 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 10.8905 ms
+2026-04-26 10:18:14.090 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 35.7451 ms
+2026-04-26 10:18:14.602 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 172.1107 ms
+2026-04-26 10:26:20.603 +03:00 [ERR] An unexpected server error occurred while accessing /api/Auth/login
+System.ArgumentException: The value cannot be an empty string (Parameter 'errorMessage')
+   at FluentValidation.Internal.ExtensionsInternal.ThrowIfNullOrEmpty(String argument, String paramName) in /_/src/FluentValidation/Internal/ExtensionsInternal.cs:line 35
+   at FluentValidation.DefaultValidatorOptions.WithMessage[T,TProperty](IRuleBuilderOptions`2 rule, String errorMessage) in /_/src/FluentValidation/DefaultValidatorOptions.cs:line 120
+   at ScooterRental.Service.Validations.Zone.ZoneForUpdateDtoValidator..ctor() in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\Validations\Zone\ZoneForUpdateDtoValidator.cs:line 7
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method63(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-04-26 10:26:20.636 +03:00 [ERR] HTTP POST /api/Auth/login responded 500 in 86.3339 ms
+2026-04-26 10:26:33.519 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 0.8552 ms
+2026-04-26 10:26:33.545 +03:00 [INF] HTTP GET /scalar/scalar.js responded 304 in 0.6005 ms
+2026-04-26 10:26:33.545 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 304 in 0.2074 ms
+2026-04-26 10:26:33.956 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 21.7210 ms
+2026-04-26 10:26:34.736 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 0.3439 ms
+2026-04-26 10:26:42.950 +03:00 [INF] Now listening on: https://localhost:5000
+2026-04-26 10:26:42.975 +03:00 [INF] Now listening on: http://localhost:5001
+2026-04-26 10:26:43.018 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-26 10:26:43.020 +03:00 [INF] Hosting environment: Development
+2026-04-26 10:26:43.022 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-04-26 10:26:43.486 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 89.4492 ms
+2026-04-26 10:26:43.521 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 5.5518 ms
+2026-04-26 10:26:43.531 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 16.2578 ms
+2026-04-26 10:26:43.805 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 135.0847 ms
+2026-04-26 10:26:44.177 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 0.6645 ms
+2026-04-26 10:26:51.625 +03:00 [ERR] An unexpected server error occurred while accessing /api/Auth/login
+System.ArgumentException: The value cannot be an empty string (Parameter 'errorMessage')
+   at FluentValidation.Internal.ExtensionsInternal.ThrowIfNullOrEmpty(String argument, String paramName) in /_/src/FluentValidation/Internal/ExtensionsInternal.cs:line 35
+   at FluentValidation.DefaultValidatorOptions.WithMessage[T,TProperty](IRuleBuilderOptions`2 rule, String errorMessage) in /_/src/FluentValidation/DefaultValidatorOptions.cs:line 120
+   at ScooterRental.Service.Validations.Zone.ZoneForUpdateDtoValidator..ctor() in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\Validations\Zone\ZoneForUpdateDtoValidator.cs:line 7
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method63(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-04-26 10:26:51.640 +03:00 [ERR] HTTP POST /api/Auth/login responded 500 in 55.9963 ms
+2026-04-26 10:27:29.169 +03:00 [ERR] An unexpected server error occurred while accessing /api/Auth/register
+System.ArgumentException: The value cannot be an empty string (Parameter 'errorMessage')
+   at FluentValidation.Internal.ExtensionsInternal.ThrowIfNullOrEmpty(String argument, String paramName) in /_/src/FluentValidation/Internal/ExtensionsInternal.cs:line 35
+   at FluentValidation.DefaultValidatorOptions.WithMessage[T,TProperty](IRuleBuilderOptions`2 rule, String errorMessage) in /_/src/FluentValidation/DefaultValidatorOptions.cs:line 120
+   at ScooterRental.Service.Validations.Zone.ZoneForUpdateDtoValidator..ctor() in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\Validations\Zone\ZoneForUpdateDtoValidator.cs:line 7
+   at InvokeStub_ZoneForUpdateDtoValidator..ctor(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method79(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-04-26 10:27:29.174 +03:00 [ERR] HTTP POST /api/Auth/register responded 500 in 13.6374 ms
+2026-04-26 10:30:34.580 +03:00 [INF] Now listening on: https://localhost:5000
+2026-04-26 10:30:34.604 +03:00 [INF] Now listening on: http://localhost:5001
+2026-04-26 10:30:34.646 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-26 10:30:34.648 +03:00 [INF] Hosting environment: Development
+2026-04-26 10:30:34.649 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-04-26 10:30:35.015 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 83.4524 ms
+2026-04-26 10:30:35.050 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 5.3370 ms
+2026-04-26 10:30:35.058 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 13.2027 ms
+2026-04-26 10:30:35.461 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 101.6318 ms
+2026-04-26 10:30:36.188 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 0.4856 ms
+2026-04-26 10:30:42.028 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 595.1235 ms
+2026-04-26 10:31:26.786 +03:00 [INF] HTTP GET /zones responded 404 in 8.0116 ms
+2026-04-26 10:31:50.788 +03:00 [INF] HTTP GET /zone responded 404 in 0.3126 ms
+2026-04-26 10:32:26.631 +03:00 [INF] HTTP GET /api/Zone responded 401 in 5.0160 ms
+2026-04-26 10:32:35.186 +03:00 [INF] HTTP GET /api/Zone responded 401 in 1.2268 ms
+2026-04-26 10:33:43.493 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-04-26 10:33:43.495 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-04-26 10:33:43.534 +03:00 [INF] HTTP GET /api/Zone responded 200 in 88.6443 ms
+2026-04-26 10:38:29.270 +03:00 [INF] HTTP POST /zones responded 404 in 0.3859 ms
+2026-04-26 10:38:43.645 +03:00 [INF] HTTP POST //api/Zone responded 404 in 0.3409 ms
+2026-04-26 10:38:47.848 +03:00 [INF] HTTP POST /api/Zone responded 401 in 0.9064 ms
+2026-04-26 10:38:56.350 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.CreateZoneAsync(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 57
+   at ScooterRental.Presentation.Controllers.ZoneController.CreateZone(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 9
+   at lambda_method321(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-04-26 10:38:56.381 +03:00 [ERR] HTTP POST /api/Zone responded 500 in 87.6258 ms
+2026-04-26 10:42:21.301 +03:00 [INF] HTTP POST /api/Zone responded 200 in 462.4841 ms
+2026-04-26 10:42:44.594 +03:00 [INF] HTTP POST /api/Zone responded 200 in 6.4630 ms
+2026-04-26 10:43:32.994 +03:00 [INF] HTTP GET /api/Zone responded 200 in 26.9411 ms
+2026-04-26 10:50:56.964 +03:00 [INF] Now listening on: https://localhost:5000
+2026-04-26 10:50:56.987 +03:00 [INF] Now listening on: http://localhost:5001
+2026-04-26 10:50:57.033 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-26 10:50:57.035 +03:00 [INF] Hosting environment: Development
+2026-04-26 10:50:57.037 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-04-26 10:50:58.465 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1005.6510 ms
+2026-04-26 10:50:58.507 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 6.8893 ms
+2026-04-26 10:50:58.517 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 16.4843 ms
+2026-04-26 10:50:58.940 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 119.0476 ms
+2026-04-26 10:50:59.709 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 0.8667 ms
+2026-04-26 11:04:40.923 +03:00 [INF] HTTP GET /api/Zone responded 401 in 41.2132 ms
+2026-04-26 11:04:54.481 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-04-26 11:04:54.482 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-04-26 11:04:54.556 +03:00 [INF] HTTP GET /api/Zone responded 200 in 360.3171 ms
+2026-04-26 13:53:53.761 +03:00 [INF] Now listening on: https://localhost:5000
+2026-04-26 13:53:53.806 +03:00 [INF] Now listening on: http://localhost:5001
+2026-04-26 13:53:53.877 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-26 13:53:53.879 +03:00 [INF] Hosting environment: Development
+2026-04-26 13:53:53.881 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-04-26 13:53:56.525 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 635.4863 ms
+2026-04-26 13:53:56.966 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 30.7533 ms
+2026-04-26 13:53:57.032 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 97.0032 ms
+2026-04-26 13:53:59.311 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 758.9211 ms
+2026-04-26 13:57:09.465 +03:00 [INF] Now listening on: https://localhost:5000
+2026-04-26 13:57:09.600 +03:00 [INF] Now listening on: http://localhost:5001
+2026-04-26 13:57:09.855 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-26 13:57:09.859 +03:00 [INF] Hosting environment: Development
+2026-04-26 13:57:09.863 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-04-26 13:57:10.353 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 423.7077 ms
+2026-04-26 13:57:10.465 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 23.0802 ms
+2026-04-26 13:57:10.502 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 60.4754 ms
+2026-04-26 13:57:12.272 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 554.4394 ms
+2026-04-26 13:57:19.475 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 2.8188 ms

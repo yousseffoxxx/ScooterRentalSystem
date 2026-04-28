@@ -1,4 +1,4 @@
-﻿namespace ScooterRental.Service.Validations
+﻿namespace ScooterRental.Service.Validations.Auth
 {
     public class LoginDtoValidator : AbstractValidator<LoginDto>
     {

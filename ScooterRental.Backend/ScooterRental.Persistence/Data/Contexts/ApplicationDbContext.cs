@@ -15,6 +15,8 @@
 
 
         public DbSet<Wallet> Wallets { get; set; }
-
+        public DbSet<Scooter> Scooters { get; set; }
+        public DbSet<ScooterModel> ScooterModels { get; set; }
+        public DbSet<Zone> Zones { get; set; }
     }
 }
