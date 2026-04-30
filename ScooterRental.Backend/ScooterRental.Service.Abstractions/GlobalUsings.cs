@@ -1,6 +1,7 @@
 ﻿global using System.Linq.Expressions;
 global using ScooterRental.Service.Abstractions.Specifications;
-global using ScooterRental.Domain.Models;
+global using ScooterRental.Domain.Models.Auth;
+global using ScooterRental.Domain.Models.Scooters;
 global using ScooterRental.Shared.DTOs.Auth.Response;
 global using ScooterRental.Shared.DTOs.Auth.Request;
 global using ScooterRental.Service.Abstractions.AuthServices;

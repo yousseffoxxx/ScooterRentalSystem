@@ -1,4 +1,6 @@
-﻿namespace ScooterRental.Service
+﻿using ScooterRental.Domain.Models.Auth;
+
+namespace ScooterRental.Service
 {
     public class ServiceManager(UserManager<User> _userManager, ITokenService _tokenService, IConfiguration _configuration,
         IOtpService _otpService, IEmailService _emailService,IUnitOfWork _unitOfWork,IValidator<ZoneForCreationDto> _createValidator,

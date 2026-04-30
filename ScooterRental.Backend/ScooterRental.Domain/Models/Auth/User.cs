@@ -1,4 +1,4 @@
-﻿namespace ScooterRental.Domain.Models
+﻿namespace ScooterRental.Domain.Models.Auth
 {
     public class User : IdentityUser<Guid>
     {
@@ -16,5 +16,6 @@
         public DateTimeOffset UpdatedAt { get; set; } = DateTimeOffset.UtcNow;
         
         public Wallet Wallet { get; set; } = null!;
+        public ICollection<Ride> Rides { get; set; } = new List<Ride>();
     }
 }

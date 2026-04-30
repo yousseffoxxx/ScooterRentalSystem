@@ -5,7 +5,7 @@ global using Microsoft.EntityFrameworkCore;
 global using Microsoft.IdentityModel.Tokens;
 global using Scalar.AspNetCore;
 global using ScooterRental.Domain.Exceptions;
-global using ScooterRental.Domain.Models;
+global using ScooterRental.Domain.Models.Auth;
 global using ScooterRental.MqttService.Abstractions;
 global using ScooterRental.Persistence.Data.Contexts;
 global using ScooterRental.Persistence.Repositories;

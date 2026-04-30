@@ -1,4 +1,6 @@
-﻿namespace ScooterRental.Service.AuthServices
+﻿using ScooterRental.Domain.Models.Auth;
+
+namespace ScooterRental.Service.AuthServices
 {
     public class AuthService(UserManager<User> _userManager, ITokenService _tokenService, IConfiguration _configuration, IOtpService _otpService, IEmailService _emailService) : IAuthService
     {

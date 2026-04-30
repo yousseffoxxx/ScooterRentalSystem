@@ -1,4 +1,6 @@
-﻿namespace ScooterRental.Service.Mappings
+﻿using ScooterRental.Domain.Models.Auth;
+
+namespace ScooterRental.Service.Mappings
 {
     public static class AuthMappingExtensions
     {

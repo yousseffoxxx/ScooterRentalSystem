@@ -1,5 +1,4 @@
-﻿
-namespace ScooterRental.Persistence.Data.Configurations
+﻿namespace ScooterRental.Persistence.Data.Configurations
 {
     public class ZoneConfigurations : IEntityTypeConfiguration<Zone>
     {

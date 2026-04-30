@@ -1,3 +1,5 @@
+using ScooterRental.Domain.Models.Auth;
+
 namespace ScooterRental.WebAPI
 {
     public class Program
