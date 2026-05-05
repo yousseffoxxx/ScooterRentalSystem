@@ -1,0 +1,9 @@
+[
+  {
+    "Name": "Standard Egyptian Tariff",
+    "UnlockFee": 5.00,
+    "PerMinuteRate": 2.50,
+    "IsActive": true,
+    "CreatedAt": "2024-01-01T00:00:00Z"
+  }
+]

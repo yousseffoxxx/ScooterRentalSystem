@@ -1,0 +1,64 @@
+2026-05-03 16:42:39.838 +03:00 [FTL] A fatal error occurred during database seeding. Halting startup.
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\bin\Debug\net9.0\Data\DataSeed\scooterModels.json'.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)
+   at System.IO.File.OpenRead(String path)
+   at ScooterRental.Persistence.DataSeeder.DataSeedAsync() in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Persistence\DataSeeder.cs:line 27
+2026-05-03 16:46:21.187 +03:00 [FTL] A fatal error occurred during database seeding. Halting startup.
+System.Text.Json.JsonException: The JSON value could not be converted to System.Guid. Path: $[1].Id | LineNumber: 10 | BytePositionInLine: 48.
+ ---> System.FormatException: The JSON value is not in a supported Guid format.
+   at System.Text.Json.ThrowHelper.ThrowFormatException(DataType dataType)
+   at System.Text.Json.Utf8JsonReader.GetGuid()
+   at System.Text.Json.Serialization.Converters.GuidConverter.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize[TReadBufferState,TStream](TReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync[TReadBufferState,TStream](TStream utf8Json, TReadBufferState bufferState, CancellationToken cancellationToken)
+   at ScooterRental.Persistence.DataSeeder.DataSeedAsync() in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Persistence\DataSeeder.cs:line 29
+2026-05-03 16:50:18.023 +03:00 [FTL] A fatal error occurred during database seeding. Halting startup.
+System.Text.Json.JsonException: The JSON value could not be converted to ScooterRental.Domain.Enums.ScooterStatus. Path: $[0].Status | LineNumber: 4 | BytePositionInLine: 25.
+   at System.Text.Json.ThrowHelper.ThrowJsonException(String message)
+   at System.Text.Json.Serialization.Converters.EnumConverter`1.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize[TReadBufferState,TStream](TReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack, T& value)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync[TReadBufferState,TStream](TStream utf8Json, TReadBufferState bufferState, CancellationToken cancellationToken)
+   at ScooterRental.Persistence.DataSeeder.DataSeedAsync() in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Persistence\DataSeeder.cs:line 39
+2026-05-03 16:53:17.691 +03:00 [INF] Now listening on: https://localhost:5000
+2026-05-03 16:53:17.717 +03:00 [INF] Now listening on: http://localhost:5001
+2026-05-03 16:53:17.750 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-03 16:53:17.753 +03:00 [INF] Hosting environment: Development
+2026-05-03 16:53:17.753 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-03 16:53:19.617 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 980.9831 ms
+2026-05-03 16:53:19.661 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 8.4225 ms
+2026-05-03 16:53:19.677 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 24.4006 ms
+2026-05-03 16:53:20.140 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 122.7226 ms
+2026-05-03 16:53:20.994 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 0.8153 ms
+2026-05-03 18:51:42.769 +03:00 [INF] Now listening on: https://localhost:5000
+2026-05-03 18:51:42.793 +03:00 [INF] Now listening on: http://localhost:5001
+2026-05-03 18:51:42.837 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-03 18:51:42.839 +03:00 [INF] Hosting environment: Development
+2026-05-03 18:51:42.840 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-03 18:51:44.143 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 980.1463 ms
+2026-05-03 18:51:44.182 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 6.7084 ms
+2026-05-03 18:51:44.192 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 16.1794 ms
+2026-05-03 18:51:44.654 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 159.6861 ms
+2026-05-03 18:56:56.888 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 657.4094 ms
+2026-05-03 18:58:43.281 +03:00 [INF] HTTP GET //api/Scooter responded 404 in 29.1141 ms
+2026-05-03 18:58:49.662 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-05-03 18:58:49.664 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-05-03 18:58:49.722 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 128.0076 ms
+2026-05-03 18:59:15.139 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 35.1506 ms

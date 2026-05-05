@@ -1,41 +1,174 @@
-var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+namespace ScooterRental.WebAPI
 {
-    app.MapOpenApi();
-}
+    public class Program
+    {
+        private static async Task Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
 
-app.UseHttpsRedirection();
+            #region Add services to the container
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+            builder.Host.UseSerilog((context, loggerConfiguration) =>
+            {
+                loggerConfiguration
+                    .ReadFrom.Configuration(context.Configuration) // Reads log levels from appsettings
+                    .Enrich.FromLogContext() // Adds extra details to every log
+                    .WriteTo.Console() // Prints to the Visual Studio terminal
+                    .WriteTo.File("Logs/scooter-api-log-.txt", rollingInterval: RollingInterval.Day); // Creates a new text file every day!
+            });
 
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+            // Tells .NET 9 OpenAPI to add the JWT Authorization requirement to your endpoints
+            builder.Services.AddOpenApi(options =>
+            {
+                options.AddDocumentTransformer((document, context, cancellationToken) =>
+                {
+                    document.Components ??= new Microsoft.OpenApi.Models.OpenApiComponents();
+                    document.Components.SecuritySchemes = new Dictionary<string, Microsoft.OpenApi.Models.OpenApiSecurityScheme>
+                    {
+                        ["Bearer"] = new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+                        {
+                            Type = Microsoft.OpenApi.Models.SecuritySchemeType.Http,
+                            Scheme = "bearer",
+                            In = Microsoft.OpenApi.Models.ParameterLocation.Header,
+                            BearerFormat = "JWT"
+                        }
+                    };
 
-app.Run();
+                    // This loops through all your controllers and adds the Padlock icon to them!
+                    foreach (var path in document.Paths.Values)
+                    {
+                        foreach (var operation in path.Operations.Values)
+                        {
+                            operation.Security.Add(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
+                            {
+                                [new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+                                {
+                                    Reference = new Microsoft.OpenApi.Models.OpenApiReference
+                                    {
+                                        Type = Microsoft.OpenApi.Models.ReferenceType.SecurityScheme,
+                                        Id = "Bearer"
+                                    }
+                                }] = Array.Empty<string>()
+                            });
+                        }
+                    }
+                    return Task.CompletedTask;
+                });
+            });
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+            builder.Services.AddDbContext<ApplicationDbContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
+                    options => options.UseNetTopologySuite());
+            });
+
+            builder.Services.AddIdentity<User, IdentityRole<Guid>>(options =>
+            {
+                options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireUppercase = true;
+                options.Password.RequiredLength = 8;
+                options.Password.RequireNonAlphanumeric = false;
+
+                options.User.RequireUniqueEmail = true;
+
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+                options.Lockout.MaxFailedAccessAttempts = 5;
+                options.Lockout.AllowedForNewUsers = true;
+            })
+            .AddEntityFrameworkStores<ApplicationDbContext>()
+            .AddDefaultTokenProviders();
+
+            builder.Services.AddValidatorsFromAssemblyContaining<RegisterDtoValidator>();
+
+            builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
+
+            var jwtOptions = builder.Configuration.GetSection("Jwt").Get<JwtSettings>();
+            builder.Services.AddAuthentication(options => 
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+                .AddJwtBearer(options => {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateAudience = true,
+                    ValidateIssuer = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+
+                    ValidAudience = jwtOptions.Audience,
+                    ValidIssuer = jwtOptions.Issuer,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtOptions.Key)),
+
+                    ClockSkew = TimeSpan.Zero
+                };
+            });
+
+            builder.Services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.SuppressModelStateInvalidFilter = true;
+            });
+
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("CORSPolicy", policyBuilder =>
+                {
+                    policyBuilder.AllowAnyHeader();
+                    policyBuilder.AllowAnyMethod();
+                    policyBuilder.WithOrigins(builder.Configuration.GetRequiredSection("Urls")["FrontBaseUrl"]);
+                });
+            });
+
+            builder.Services.AddSingleton<IConnectionMultiplexer>((_) =>
+            {
+                return ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("RedisConnectionString"));
+            });
+            builder.Services.AddScoped<ITokenService, TokenService>();
+            builder.Services.AddScoped<IEmailService, EmailService>();
+            builder.Services.AddScoped<IOtpService, OtpService>();
+            builder.Services.AddScoped<IServiceManager, ServiceManager>();
+            builder.Services.AddScoped<IScooterTelemetryRepository, ScooterTelemetryRepository>();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<IRedisZoneEventPublisher, RedisZoneEventPublisher>();
+            builder.Services.AddScoped<IMqttCommandService, MqttCommandService>();
+            builder.Services.AddScoped<IDataSeeder, DataSeeder>();
+            builder.Services.AddSingleton<IZoneCacheService, ZoneCacheService>();
+            builder.Services.AddAuthorization();
+            builder.Services.AddControllers();
+            builder.Services.AddEndpointsApiExplorer();
+            #endregion
+
+            var app = builder.Build();
+
+            #region DataSeeding
+            using var scope = app.Services.CreateScope();
+            {
+                var objectOfDataSeeding = scope.ServiceProvider.GetRequiredService<IDataSeeder>();
+
+                await objectOfDataSeeding.DataSeedAsync();
+            }
+            #endregion
+
+            #region Configure the HTTP request pipeline.
+
+            if (app.Environment.IsDevelopment())
+            {
+                app.MapOpenApi();
+                app.MapScalarApiReference();
+            }
+
+            app.UseHttpsRedirection();
+            app.UseSerilogRequestLogging();
+            app.UseMiddleware<ExceptionHandlingMiddleware>();
+            app.UseCors("CORSPolicy");
+            app.UseAuthentication();
+            app.UseAuthorization();
+            app.MapControllers();
+
+            #endregion
+
+            app.Run();
+        }
+    }
 }

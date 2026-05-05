@@ -1,0 +1,22 @@
+[
+  {
+    "SerialNumber": "SCT-001",
+    "CurrentBatteryLevel": 100,
+    "Status": "Available",
+    "ModelId": "a1b2c3d4-1234-5678-90ab-cdef12345678",
+    "Location": {
+      "type": "Point",
+      "coordinates": [ 29.571500, 30.858500 ]
+    }
+  },
+  {
+    "SerialNumber": "SCT-002",
+    "CurrentBatteryLevel": 85,
+    "Status": "Available",
+    "ModelId": "e5f6d7c8-1234-5678-90ab-cdef12345678",
+    "Location": {
+      "type": "Point",
+      "coordinates": [ 29.572000, 30.857500 ]
+    }
+  }
+]

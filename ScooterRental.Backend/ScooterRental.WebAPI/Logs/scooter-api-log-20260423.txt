@@ -1,0 +1,60 @@
+2026-04-23 21:08:57.635 +02:00 [INF] Now listening on: https://localhost:5000
+2026-04-23 21:08:57.670 +02:00 [INF] Now listening on: http://localhost:5001
+2026-04-23 21:08:57.727 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-23 21:08:57.729 +02:00 [INF] Hosting environment: Development
+2026-04-23 21:08:57.730 +02:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-04-23 21:08:59.653 +02:00 [INF] HTTP GET /scalar/v1 responded 200 in 1066.7978 ms
+2026-04-23 21:08:59.732 +02:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 55.6144 ms
+2026-04-23 21:08:59.752 +02:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 76.0613 ms
+2026-04-23 21:09:00.203 +02:00 [INF] HTTP GET /openapi/v1.json responded 200 in 140.3003 ms
+2026-04-23 21:09:03.304 +02:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 0.5622 ms
+2026-04-23 21:30:40.356 +02:00 [INF] Now listening on: https://localhost:5000
+2026-04-23 21:30:40.380 +02:00 [INF] Now listening on: http://localhost:5001
+2026-04-23 21:30:40.423 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-23 21:30:40.424 +02:00 [INF] Hosting environment: Development
+2026-04-23 21:30:40.425 +02:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-04-23 21:30:40.988 +02:00 [INF] HTTP GET /scalar/v1 responded 200 in 91.8637 ms
+2026-04-23 21:30:41.018 +02:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 6.5598 ms
+2026-04-23 21:30:41.026 +02:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 15.4990 ms
+2026-04-23 21:30:41.436 +02:00 [INF] HTTP GET /openapi/v1.json responded 200 in 117.8808 ms
+2026-04-23 21:37:11.605 +02:00 [INF] Now listening on: https://localhost:5000
+2026-04-23 21:37:11.628 +02:00 [INF] Now listening on: http://localhost:5001
+2026-04-23 21:37:11.672 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-23 21:37:11.673 +02:00 [INF] Hosting environment: Development
+2026-04-23 21:37:11.673 +02:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-04-23 21:37:12.080 +02:00 [INF] HTTP GET /scalar/v1 responded 200 in 91.3480 ms
+2026-04-23 21:37:12.116 +02:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 6.0560 ms
+2026-04-23 21:37:12.125 +02:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 14.9217 ms
+2026-04-23 21:37:12.566 +02:00 [INF] HTTP GET /openapi/v1.json responded 200 in 153.7937 ms
+2026-04-23 21:45:34.075 +02:00 [INF] Now listening on: https://localhost:5000
+2026-04-23 21:45:34.101 +02:00 [INF] Now listening on: http://localhost:5001
+2026-04-23 21:45:34.152 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-23 21:45:34.153 +02:00 [INF] Hosting environment: Development
+2026-04-23 21:45:34.153 +02:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-04-23 21:45:34.689 +02:00 [INF] HTTP GET /scalar/v1 responded 200 in 93.2201 ms
+2026-04-23 21:45:34.727 +02:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 6.9038 ms
+2026-04-23 21:45:34.738 +02:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 17.5701 ms
+2026-04-23 21:45:35.143 +02:00 [INF] HTTP GET /openapi/v1.json responded 200 in 117.6735 ms
+2026-04-23 21:46:48.368 +02:00 [INF] Email successfully sent to admin@scooters.com
+2026-04-23 21:46:48.447 +02:00 [INF] HTTP POST /api/Auth/register responded 200 in 2065.8655 ms
+2026-04-23 21:51:06.634 +02:00 [WRN] AppException thrown: Invalid Email or Password
+2026-04-23 21:51:06.639 +02:00 [INF] HTTP POST /api/Auth/login responded 401 in 139.3740 ms
+2026-04-23 21:53:12.431 +02:00 [INF] Email successfully sent to youssef5fox5@gmail.com
+2026-04-23 21:53:12.437 +02:00 [INF] HTTP POST /api/Auth/register responded 200 in 1168.6030 ms
+2026-04-23 21:54:57.606 +02:00 [WRN] AppException thrown: Please verify your email address before logging in.
+2026-04-23 21:54:57.607 +02:00 [INF] HTTP POST /api/Auth/login responded 401 in 7.5507 ms
+2026-04-23 21:55:43.978 +02:00 [INF] HTTP POST /api/Auth/verify-email responded 200 in 45.9356 ms
+2026-04-23 21:55:50.489 +02:00 [INF] HTTP POST /api/Auth/login responded 200 in 70.4443 ms
+2026-04-23 21:57:03.663 +02:00 [INF] HTTP POST /api/Scooter responded 403 in 5.9645 ms
+2026-04-23 21:57:17.660 +02:00 [INF] HTTP POST /api/Auth/login responded 200 in 73.3562 ms
+2026-04-23 21:57:42.761 +02:00 [INF] HTTP POST /api/Scooter responded 403 in 1.7797 ms
+2026-04-23 21:58:32.726 +02:00 [INF] HTTP POST /api/Scooter responded 401 in 2.4697 ms
+2026-04-23 22:08:38.383 +02:00 [INF] HTTP POST /api/Auth/login responded 200 in 76.6173 ms
+2026-04-23 22:09:03.664 +02:00 [INF] HTTP POST /api/Scooter responded 200 in 40.1761 ms
+2026-04-23 22:10:01.415 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-04-23 22:10:01.417 +02:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-04-23 22:10:01.461 +02:00 [INF] HTTP GET /api/Scooter responded 200 in 64.4308 ms
+2026-04-23 22:10:21.274 +02:00 [INF] HTTP GET /api/Scooter/c5626b19-7a3d-4828-9e9d-c5fcf4bc5e3e responded 200 in 24.3254 ms
+2026-04-23 22:10:33.334 +02:00 [INF] HTTP GET /api/Scooter/TEST-DEV-001/status responded 200 in 11.0291 ms
+2026-04-23 22:10:42.599 +02:00 [INF] HTTP PUT /api/Scooter/c5626b19-7a3d-4828-9e9d-c5fcf4bc5e3e responded 200 in 15.9218 ms
+2026-04-23 22:10:50.606 +02:00 [INF] HTTP DELETE /api/Scooter/c5626b19-7a3d-4828-9e9d-c5fcf4bc5e3e responded 200 in 20.4840 ms
