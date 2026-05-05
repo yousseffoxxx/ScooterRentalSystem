@@ -1,0 +1,29 @@
+2026-05-02 22:49:28.923 +03:00 [INF] Now listening on: https://localhost:5000
+2026-05-02 22:49:28.960 +03:00 [INF] Now listening on: http://localhost:5001
+2026-05-02 22:49:29.026 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-02 22:49:29.028 +03:00 [INF] Hosting environment: Development
+2026-05-02 22:49:29.028 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-02 22:49:30.539 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1089.8196 ms
+2026-05-02 22:49:30.622 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 52.0559 ms
+2026-05-02 22:49:30.650 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 79.5882 ms
+2026-05-02 22:49:31.133 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 191.3436 ms
+2026-05-02 22:53:47.149 +03:00 [INF] Now listening on: https://localhost:5000
+2026-05-02 22:53:47.173 +03:00 [INF] Now listening on: http://localhost:5001
+2026-05-02 22:53:47.226 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-02 22:53:47.228 +03:00 [INF] Hosting environment: Development
+2026-05-02 22:53:47.229 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-02 22:53:47.791 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 96.7783 ms
+2026-05-02 22:53:47.828 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 5.8226 ms
+2026-05-02 22:53:47.835 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 13.3484 ms
+2026-05-02 22:53:48.281 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 140.5140 ms
+2026-05-02 23:50:51.947 +03:00 [INF] Now listening on: https://localhost:5000
+2026-05-02 23:50:51.972 +03:00 [INF] Now listening on: http://localhost:5001
+2026-05-02 23:50:52.021 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-02 23:50:52.023 +03:00 [INF] Hosting environment: Development
+2026-05-02 23:50:52.024 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-02 23:50:52.577 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 103.1482 ms
+2026-05-02 23:50:52.619 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 8.4323 ms
+2026-05-02 23:50:52.628 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 16.9007 ms
+2026-05-02 23:50:53.252 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 118.4736 ms
+2026-05-02 23:52:39.158 +03:00 [INF] HTTP POST //api/Auth/login responded 404 in 7.1233 ms
+2026-05-02 23:52:49.115 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 583.5088 ms

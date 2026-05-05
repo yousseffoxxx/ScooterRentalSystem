@@ -1,4 +1,6 @@
-﻿namespace ScooterRental.Persistence.Data.Configurations
+﻿using ScooterRental.Domain.Models.Payment;
+
+namespace ScooterRental.Persistence.Data.Configurations
 {
     internal class WalletConfigurations : IEntityTypeConfiguration<Wallet>
     {

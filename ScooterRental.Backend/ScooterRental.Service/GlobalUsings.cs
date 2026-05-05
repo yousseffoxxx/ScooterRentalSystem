@@ -10,7 +10,9 @@ global using MQTTnet;
 global using NetTopologySuite.Geometries;
 global using ScooterRental.Domain.Enums;
 global using ScooterRental.Domain.Exceptions;
-global using ScooterRental.Domain.Models;
+global using ScooterRental.Domain.Models.Scooters;
+global using ScooterRental.Domain.Models.Auth;
+global using ScooterRental.Domain.Models.Payment;
 global using ScooterRental.MqttService.Abstractions;
 global using ScooterRental.Service.Abstractions;
 global using ScooterRental.Service.Abstractions.AuthServices;
@@ -39,9 +41,11 @@ global using System.Security.Claims;
 global using System.Security.Cryptography;
 global using System.Text;
 global using System.Text.Json;
-
-
-
+global using ScooterRental.Shared.DTOs.Ride.Request;
+global using ScooterRental.Domain.Models.Rides;
+global using ScooterRental.Shared.DTOs.Ride.Response;
+global using ScooterRental.Service.Abstractions.RideServices;
+global using ScooterRental.Service.RideServices;
 
 
 

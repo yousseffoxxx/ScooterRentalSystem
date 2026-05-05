@@ -1,4 +1,6 @@
-﻿namespace ScooterRental.Service.Abstractions.AuthServices
+﻿using ScooterRental.Domain.Models.Auth;
+
+namespace ScooterRental.Service.Abstractions.AuthServices
 {
     public interface IOtpService
     {

@@ -154,75 +154,7 @@ namespace ScooterRental.Persistence.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("ScooterRental.Domain.Models.Scooter", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("CurrentBatteryLevel")
-                        .HasColumnType("int");
-
-                    b.Property<DateTimeOffset>("LastPingAt")
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<Point>("Location")
-                        .HasColumnType("geography");
-
-                    b.Property<Guid>("ModelId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("SerialNumber")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ModelId");
-
-                    b.HasIndex("SerialNumber")
-                        .IsUnique();
-
-                    b.ToTable("Scooters", (string)null);
-                });
-
-            modelBuilder.Entity("ScooterRental.Domain.Models.ScooterModel", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("BatteryCapacityMah")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Brand")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<decimal>("MaxSpeedKmH")
-                        .HasColumnType("decimal(5,2)");
-
-                    b.Property<string>("ModelName")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<decimal>("WeightLimitKg")
-                        .HasColumnType("decimal(5,2)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("ScooterModels", (string)null);
-                });
-
-            modelBuilder.Entity("ScooterRental.Domain.Models.User", b =>
+            modelBuilder.Entity("ScooterRental.Domain.Models.Auth.User", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -321,7 +253,7 @@ namespace ScooterRental.Persistence.Data.Migrations
                     b.ToTable("Users", (string)null);
                 });
 
-            modelBuilder.Entity("ScooterRental.Domain.Models.Wallet", b =>
+            modelBuilder.Entity("ScooterRental.Domain.Models.Payment.Wallet", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -361,7 +293,158 @@ namespace ScooterRental.Persistence.Data.Migrations
                     b.ToTable("Wallets", (string)null);
                 });
 
-            modelBuilder.Entity("ScooterRental.Domain.Models.Zone", b =>
+            modelBuilder.Entity("ScooterRental.Domain.Models.Rides.Ride", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("AppliedPerMinuteRate")
+                        .HasColumnType("decimal(12,2)");
+
+                    b.Property<decimal>("AppliedUnlockFee")
+                        .HasColumnType("decimal(12,2)");
+
+                    b.Property<decimal?>("DurationMinutes")
+                        .HasColumnType("decimal(8,2)");
+
+                    b.Property<Point>("EndLocation")
+                        .HasColumnType("geography");
+
+                    b.Property<string>("EndPhotoUrl")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<DateTimeOffset?>("EndTime")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<Guid>("ScooterId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Point>("StartLocation")
+                        .IsRequired()
+                        .HasColumnType("geography");
+
+                    b.Property<DateTimeOffset>("StartTime")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<decimal?>("TotalCost")
+                        .HasColumnType("decimal(12,2)");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ScooterId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Rides", (string)null);
+                });
+
+            modelBuilder.Entity("ScooterRental.Domain.Models.Rides.Tariff", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTimeOffset>("CreatedAt")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<decimal>("PerMinuteRate")
+                        .HasColumnType("decimal(12,2)");
+
+                    b.Property<decimal>("UnlockFee")
+                        .HasColumnType("decimal(12,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Tariffs", (string)null);
+                });
+
+            modelBuilder.Entity("ScooterRental.Domain.Models.Scooters.Scooter", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("CurrentBatteryLevel")
+                        .HasColumnType("int");
+
+                    b.Property<DateTimeOffset>("LastPingAt")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<Point>("Location")
+                        .HasColumnType("geography");
+
+                    b.Property<Guid>("ModelId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("SerialNumber")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ModelId");
+
+                    b.HasIndex("SerialNumber")
+                        .IsUnique();
+
+                    b.ToTable("Scooters", (string)null);
+                });
+
+            modelBuilder.Entity("ScooterRental.Domain.Models.Scooters.ScooterModel", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("BatteryCapacityMah")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Brand")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<decimal>("MaxSpeedKmH")
+                        .HasColumnType("decimal(5,2)");
+
+                    b.Property<string>("ModelName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<decimal>("WeightLimitKg")
+                        .HasColumnType("decimal(5,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ScooterModels", (string)null);
+                });
+
+            modelBuilder.Entity("ScooterRental.Domain.Models.Scooters.Zone", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -408,7 +491,7 @@ namespace ScooterRental.Persistence.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<System.Guid>", b =>
                 {
-                    b.HasOne("ScooterRental.Domain.Models.User", null)
+                    b.HasOne("ScooterRental.Domain.Models.Auth.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -417,7 +500,7 @@ namespace ScooterRental.Persistence.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<System.Guid>", b =>
                 {
-                    b.HasOne("ScooterRental.Domain.Models.User", null)
+                    b.HasOne("ScooterRental.Domain.Models.Auth.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -432,7 +515,7 @@ namespace ScooterRental.Persistence.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ScooterRental.Domain.Models.User", null)
+                    b.HasOne("ScooterRental.Domain.Models.Auth.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -441,16 +524,46 @@ namespace ScooterRental.Persistence.Data.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<System.Guid>", b =>
                 {
-                    b.HasOne("ScooterRental.Domain.Models.User", null)
+                    b.HasOne("ScooterRental.Domain.Models.Auth.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("ScooterRental.Domain.Models.Scooter", b =>
+            modelBuilder.Entity("ScooterRental.Domain.Models.Payment.Wallet", b =>
                 {
-                    b.HasOne("ScooterRental.Domain.Models.ScooterModel", "Model")
+                    b.HasOne("ScooterRental.Domain.Models.Auth.User", "User")
+                        .WithOne("Wallet")
+                        .HasForeignKey("ScooterRental.Domain.Models.Payment.Wallet", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ScooterRental.Domain.Models.Rides.Ride", b =>
+                {
+                    b.HasOne("ScooterRental.Domain.Models.Scooters.Scooter", "Scooter")
+                        .WithMany("Rides")
+                        .HasForeignKey("ScooterId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("ScooterRental.Domain.Models.Auth.User", "User")
+                        .WithMany("Rides")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Scooter");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ScooterRental.Domain.Models.Scooters.Scooter", b =>
+                {
+                    b.HasOne("ScooterRental.Domain.Models.Scooters.ScooterModel", "Model")
                         .WithMany("Scooters")
                         .HasForeignKey("ModelId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -459,26 +572,22 @@ namespace ScooterRental.Persistence.Data.Migrations
                     b.Navigation("Model");
                 });
 
-            modelBuilder.Entity("ScooterRental.Domain.Models.Wallet", b =>
+            modelBuilder.Entity("ScooterRental.Domain.Models.Auth.User", b =>
                 {
-                    b.HasOne("ScooterRental.Domain.Models.User", "User")
-                        .WithOne("Wallet")
-                        .HasForeignKey("ScooterRental.Domain.Models.Wallet", "UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("Rides");
 
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("ScooterRental.Domain.Models.ScooterModel", b =>
-                {
-                    b.Navigation("Scooters");
-                });
-
-            modelBuilder.Entity("ScooterRental.Domain.Models.User", b =>
-                {
                     b.Navigation("Wallet")
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("ScooterRental.Domain.Models.Scooters.Scooter", b =>
+                {
+                    b.Navigation("Rides");
+                });
+
+            modelBuilder.Entity("ScooterRental.Domain.Models.Scooters.ScooterModel", b =>
+                {
+                    b.Navigation("Scooters");
                 });
 #pragma warning restore 612, 618
         }

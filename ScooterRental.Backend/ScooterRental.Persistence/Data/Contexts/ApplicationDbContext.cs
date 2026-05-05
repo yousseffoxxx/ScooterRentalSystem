@@ -12,11 +12,11 @@
             builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
 
-
-
         public DbSet<Wallet> Wallets { get; set; }
         public DbSet<Scooter> Scooters { get; set; }
         public DbSet<ScooterModel> ScooterModels { get; set; }
         public DbSet<Zone> Zones { get; set; }
+        public DbSet<Ride> Rides { get; set; }
+        public DbSet<Tariff> Tariffs { get; set; }
     }
 }

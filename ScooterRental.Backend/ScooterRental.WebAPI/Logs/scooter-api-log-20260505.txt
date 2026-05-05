@@ -1,0 +1,15 @@
+2026-05-05 16:57:54.239 +03:00 [INF] Now listening on: https://localhost:5000
+2026-05-05 16:57:54.271 +03:00 [INF] Now listening on: http://localhost:5001
+2026-05-05 16:57:54.330 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-05 16:57:54.331 +03:00 [INF] Hosting environment: Development
+2026-05-05 16:57:54.332 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-05 16:57:56.119 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1089.0139 ms
+2026-05-05 16:57:56.162 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 13.1093 ms
+2026-05-05 16:57:56.210 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 61.3631 ms
+2026-05-05 16:57:56.654 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 170.5640 ms
+2026-05-05 16:58:23.749 +03:00 [INF] HTTP GET //api/Zone responded 404 in 72.7193 ms
+2026-05-05 16:58:30.320 +03:00 [INF] HTTP GET /api/Zone responded 401 in 6.6932 ms
+2026-05-05 16:58:38.779 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 620.2425 ms
+2026-05-05 16:59:04.886 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-05-05 16:59:04.887 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-05-05 16:59:04.935 +03:00 [INF] HTTP GET /api/Zone responded 200 in 120.9582 ms

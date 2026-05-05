@@ -1,4 +1,4 @@
-﻿namespace ScooterRental.Domain.Models
+﻿namespace ScooterRental.Domain.Models.Scooters
 {
     public class Zone
     {

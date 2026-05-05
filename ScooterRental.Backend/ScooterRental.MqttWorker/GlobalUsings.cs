@@ -9,6 +9,9 @@ global using ScooterRental.Service;
 global using ScooterRental.Service.Abstractions.RepositoryContracts;
 global using Microsoft.EntityFrameworkCore;
 global using ScooterRental.Persistence.Data.Contexts;
+global using NetTopologySuite.Geometries;
+global using ScooterRental.Domain.Models.Scooters;
+
 
 
 

@@ -79,7 +79,6 @@ namespace ScooterRental.WebAPI
             .AddEntityFrameworkStores<ApplicationDbContext>()
             .AddDefaultTokenProviders();
 
-
             builder.Services.AddValidatorsFromAssemblyContaining<RegisterDtoValidator>();
 
             builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
@@ -106,11 +105,25 @@ namespace ScooterRental.WebAPI
                 };
             });
 
+            builder.Services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.SuppressModelStateInvalidFilter = true;
+            });
+
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("CORSPolicy", policyBuilder =>
+                {
+                    policyBuilder.AllowAnyHeader();
+                    policyBuilder.AllowAnyMethod();
+                    policyBuilder.WithOrigins(builder.Configuration.GetRequiredSection("Urls")["FrontBaseUrl"]);
+                });
+            });
+
             builder.Services.AddSingleton<IConnectionMultiplexer>((_) =>
             {
                 return ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("RedisConnectionString"));
             });
-
             builder.Services.AddScoped<ITokenService, TokenService>();
             builder.Services.AddScoped<IEmailService, EmailService>();
             builder.Services.AddScoped<IOtpService, OtpService>();
@@ -118,34 +131,24 @@ namespace ScooterRental.WebAPI
             builder.Services.AddScoped<IScooterTelemetryRepository, ScooterTelemetryRepository>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddScoped<IRedisZoneEventPublisher, RedisZoneEventPublisher>();
+            builder.Services.AddScoped<IMqttCommandService, MqttCommandService>();
+            builder.Services.AddScoped<IDataSeeder, DataSeeder>();
             builder.Services.AddSingleton<IZoneCacheService, ZoneCacheService>();
             builder.Services.AddAuthorization();
-
             builder.Services.AddControllers();
-
             builder.Services.AddEndpointsApiExplorer();
-
             #endregion
-            
+
             var app = builder.Build();
 
-            using (var scope = app.Services.CreateScope())
+            #region DataSeeding
+            using var scope = app.Services.CreateScope();
             {
-                // We get the RoleManager directly from the dependency injection container
-                var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole<Guid>>>();
+                var objectOfDataSeeding = scope.ServiceProvider.GetRequiredService<IDataSeeder>();
 
-                // Define the roles your app needs
-                string[] roles = { "Customer", "Admin", "Support" };
-
-                foreach (var role in roles)
-                {
-                    // If the role doesn't exist in the database, create it!
-                    if (!await roleManager.RoleExistsAsync(role))
-                    {
-                        await roleManager.CreateAsync(new IdentityRole<Guid>(role));
-                    }
-                }
+                await objectOfDataSeeding.DataSeedAsync();
             }
+            #endregion
 
             #region Configure the HTTP request pipeline.
 
@@ -158,6 +161,7 @@ namespace ScooterRental.WebAPI
             app.UseHttpsRedirection();
             app.UseSerilogRequestLogging();
             app.UseMiddleware<ExceptionHandlingMiddleware>();
+            app.UseCors("CORSPolicy");
             app.UseAuthentication();
             app.UseAuthorization();
             app.MapControllers();

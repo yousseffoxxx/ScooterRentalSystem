@@ -1,4 +1,4 @@
-﻿namespace ScooterRental.Domain.Models
+﻿namespace ScooterRental.Domain.Models.Scooters
 {
     public class ScooterTelemetry
     {
@@ -9,5 +9,5 @@
         public int BatteryLevel { get; set; }
         public DateTimeOffset Timestamp { get; set; }
         public bool IsOutOfBounds { get; set; }
-}
+    }
 }
