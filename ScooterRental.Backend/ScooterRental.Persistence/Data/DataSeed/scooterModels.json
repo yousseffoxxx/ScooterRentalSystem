@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "a1b2c3d4-1234-5678-90ab-cdef12345678",
+    "Brand": "Segway",
+    "ModelName": "Ninebot Max G30",
+    "MaxSpeedKmH": 25,
+    "WeightLimitKg": 100,
+    "BatteryCapacityMah": 15300
+  },
+  {
+    "Id": "e5f6d7c8-1234-5678-90ab-cdef12345678",
+    "Brand": "Xiaomi",
+    "ModelName": "Mi Electric Scooter Pro 2",
+    "MaxSpeedKmH": 25,
+    "WeightLimitKg": 100,
+    "BatteryCapacityMah": 12400
+  }
+]

@@ -38,7 +38,6 @@
                     await _mqttCommandService.SendCommandAsync(telemetry.SerialNumber, ScooterCommandType.StopScooter, 0);
                 
                 telemetry.IsOutOfBounds = true;
-
             }
             else
             {

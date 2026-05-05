@@ -10,7 +10,11 @@ namespace ScooterRental.MqttWorker
             var mqttClient = mqttFactory.CreateMqttClient();
 
             var mqttClientOptions = new MqttClientOptionsBuilder()
-                .WithTcpServer(_options.Value.BrokerAddress, _options.Value.Port).WithClientId(_options.Value.ClientId).Build();
+                .WithTcpServer(_options.Value.BrokerAddress, _options.Value.Port)
+                .WithClientId(_options.Value.ClientId)
+                .WithCredentials(_options.Value.Username, _options.Value.Password) // <-- Added!
+                .WithTlsOptions(o => o.UseTls())
+                .Build();
 
             _logger.LogInformation("Connecting to MQTT Broker...");
 

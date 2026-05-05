@@ -26,6 +26,7 @@ namespace ScooterRental.MqttWorker
 
             builder.Services.AddHostedService<MqttTelemetryWorker>();
             builder.Services.AddHostedService<RedisZoneSubscriberWorker>();
+            builder.Services.AddHostedService<TelemetrySyncWorker>();
 
             builder.Services.AddScoped<IMqttCommandService, MqttCommandService>();
             builder.Services.AddScoped<IScooterTelemetryRepository, ScooterTelemetryRepository>();

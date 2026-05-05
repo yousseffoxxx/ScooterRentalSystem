@@ -41,9 +41,11 @@ global using System.Security.Claims;
 global using System.Security.Cryptography;
 global using System.Text;
 global using System.Text.Json;
-
-
-
+global using ScooterRental.Shared.DTOs.Ride.Request;
+global using ScooterRental.Domain.Models.Rides;
+global using ScooterRental.Shared.DTOs.Ride.Response;
+global using ScooterRental.Service.Abstractions.RideServices;
+global using ScooterRental.Service.RideServices;
 
 
 

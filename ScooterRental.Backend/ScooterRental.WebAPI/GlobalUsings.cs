@@ -23,6 +23,12 @@ global using Serilog;
 global using StackExchange.Redis;
 global using System.Text;
 global using ILogger = Microsoft.Extensions.Logging.ILogger;
+global using Microsoft.AspNetCore.Mvc.Filters;
+global using Microsoft.AspNetCore.Mvc;
+global using ScooterRental.Persistence;
+
+
+
 
 
 

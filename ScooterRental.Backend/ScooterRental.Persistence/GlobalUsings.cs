@@ -14,6 +14,13 @@ global using System.Text.Json;
 global using ScooterRental.Shared.Events;
 global using ScooterRental.Service.Abstractions;
 global using ScooterRental.Domain.Models.Rides;
+global using NetTopologySuite.Geometries;
+global using ScooterRental.Domain.Enums;
+global using Microsoft.Extensions.Logging;
+global using NetTopologySuite.IO.Converters;
+global using System.Text.Json.Serialization;
+
+
 
 
 
