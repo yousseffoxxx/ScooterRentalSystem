@@ -1,14 +1,15 @@
-﻿using ScooterRental.Domain.Models.Auth;
-
-namespace ScooterRental.Service.AuthServices
+﻿namespace ScooterRental.Service.AuthServices
 {
-    public class AuthService(UserManager<User> _userManager, ITokenService _tokenService, IConfiguration _configuration, IOtpService _otpService, IEmailService _emailService) : IAuthService
+    public class AuthService(UserManager<User> _userManager, ITokenService _tokenService,
+        IConfiguration _configuration, IOtpService _otpService, IEmailService _emailService,ILocalStorageService _localStorageService) : IAuthService
     {
         private readonly string _baseUrl = _configuration.GetSection("Urls")["BaseUrl"] ?? string.Empty;
-
+        
         public async Task<AuthResultDto> RegisterAsync(RegisterDto registerDto)
         {
-            var user = registerDto.ToEntity();
+            var savedPhotoUrl = await _localStorageService.SaveFileAsync(registerDto.IdPhoto, "uploads/ids");
+
+            var user = registerDto.ToEntity(savedPhotoUrl);
 
             user.Wallet = new Wallet
             {
@@ -128,10 +129,17 @@ namespace ScooterRental.Service.AuthServices
 
             var user = await _userManager.Users.Include(u => u.Wallet).FirstOrDefaultAsync(u => u.Id == parsedId);
 
+
             if (user is null)
                 throw new NotFoundException("User", userId);
 
-            updateProfileDto.UpdateEntity(user);
+            string? savedPhotoUrl = null;
+
+            if (updateProfileDto.AvatarPhoto != null && updateProfileDto.AvatarPhoto.Length > 0)          
+                savedPhotoUrl = await _localStorageService.SaveFileAsync(updateProfileDto.AvatarPhoto, "uploads/avatars");
+            
+
+            updateProfileDto.UpdateEntity(user,savedPhotoUrl);
 
             var result = await _userManager.UpdateAsync(user);
 

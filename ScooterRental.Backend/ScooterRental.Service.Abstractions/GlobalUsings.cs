@@ -15,6 +15,8 @@ global using ScooterRental.Service.Abstractions.ZoneServices;
 global using ScooterRental.Shared.DTOs.Ride.Request;
 global using ScooterRental.Shared.DTOs.Ride.Response;
 global using ScooterRental.Service.Abstractions.RideServices;
+global using Microsoft.AspNetCore.Http;
+
 
 
 

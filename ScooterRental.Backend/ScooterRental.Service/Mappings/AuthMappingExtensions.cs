@@ -1,11 +1,9 @@
-﻿using ScooterRental.Domain.Models.Auth;
-
-namespace ScooterRental.Service.Mappings
+﻿namespace ScooterRental.Service.Mappings
 {
     public static class AuthMappingExtensions
     {
         // 1. RegisterDto -> User
-        public static User ToEntity(this RegisterDto dto)
+        public static User ToEntity(this RegisterDto dto, string idPhotoUrl)
         {
             return new User
             {
@@ -13,11 +11,11 @@ namespace ScooterRental.Service.Mappings
                 Email = dto.Email,
                 UserName = dto.Email,
                 PhoneNumber = dto.PhoneNumber,
-                IdPhotoUrl = dto.IdPhotoUrl
+                IdPhotoUrl = idPhotoUrl
             };
         }
         // 2. UpdateProfileDto -> User
-        public static void UpdateEntity(this UpdateProfileDto dto, User user)
+        public static void UpdateEntity(this UpdateProfileDto dto, User user, string? avatarPhotoUrl)
         {
             if (!string.IsNullOrWhiteSpace(dto.FullName))
                 user.FullName = dto.FullName;
@@ -25,8 +23,8 @@ namespace ScooterRental.Service.Mappings
             if (!string.IsNullOrWhiteSpace(dto.PhoneNumber))
                 user.PhoneNumber = dto.PhoneNumber;
 
-            if (!string.IsNullOrWhiteSpace(dto.AvatarUrl))
-                user.AvatarUrl = dto.AvatarUrl;
+            if (!string.IsNullOrWhiteSpace(avatarPhotoUrl))
+                user.AvatarUrl = avatarPhotoUrl;
         }
         // 3. User -> UserResponseDto
         public static UserResponseDto ToDto(this User user, string baseUrl)

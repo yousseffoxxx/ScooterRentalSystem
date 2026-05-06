@@ -5,7 +5,7 @@
     {
 
         [HttpPost("register")]
-        public async Task<ActionResult<AuthResultDto>> Register([FromBody] RegisterDto registerDto)
+        public async Task<ActionResult<AuthResultDto>> Register([FromForm] RegisterDto registerDto)
         {
             var result = await _serviceManager.AuthService.RegisterAsync(registerDto);
 
@@ -65,7 +65,7 @@
 
         [Authorize]
         [HttpPut("profile")]
-        public async Task<ActionResult<UserResponseDto>> UpdateProfile([FromBody] UpdateProfileDto updateProfileDto)
+        public async Task<ActionResult<UserResponseDto>> UpdateProfile([FromForm] UpdateProfileDto updateProfileDto)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 

@@ -24,4 +24,8 @@
     <ProjectReference Include="..\ScooterRental.Service\ScooterRental.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
 </Project>

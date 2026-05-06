@@ -126,6 +126,7 @@ namespace ScooterRental.WebAPI
             });
             builder.Services.AddScoped<ITokenService, TokenService>();
             builder.Services.AddScoped<IEmailService, EmailService>();
+            builder.Services.AddScoped<ILocalStorageService, LocalStorageService>();
             builder.Services.AddScoped<IOtpService, OtpService>();
             builder.Services.AddScoped<IServiceManager, ServiceManager>();
             builder.Services.AddScoped<IScooterTelemetryRepository, ScooterTelemetryRepository>();
@@ -162,6 +163,8 @@ namespace ScooterRental.WebAPI
             app.UseSerilogRequestLogging();
             app.UseMiddleware<ExceptionHandlingMiddleware>();
             app.UseCors("CORSPolicy");
+            app.UseStaticFiles();
+            app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
             app.MapControllers();
