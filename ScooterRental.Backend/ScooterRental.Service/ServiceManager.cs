@@ -1,12 +1,12 @@
 ﻿namespace ScooterRental.Service
 {
     public class ServiceManager(UserManager<User> _userManager, ITokenService _tokenService, IConfiguration _configuration,
-        IOtpService _otpService, IEmailService _emailService,IUnitOfWork _unitOfWork,IValidator<ZoneForCreationDto> _createValidator,
+        IOtpService _otpService, IEmailService _emailService,ILocalStorageService _localStorageService,IUnitOfWork _unitOfWork,IValidator<ZoneForCreationDto> _createValidator,
         IValidator<ZoneForUpdateDto> _updateValidator,IRedisZoneEventPublisher _redisZoneEventPublisher,IMqttCommandService _mqttCommandService,
         IScooterTelemetryRepository _scooterTelemetryRepository,IZoneCacheService _zoneCacheService) 
         : IServiceManager
     {
-        private readonly Lazy<IAuthService> _lazyAuthService = new Lazy<IAuthService>(() => new AuthService(_userManager, _tokenService, _configuration, _otpService, _emailService));
+        private readonly Lazy<IAuthService> _lazyAuthService = new Lazy<IAuthService>(() => new AuthService(_userManager, _tokenService, _configuration, _otpService, _emailService,_localStorageService));
         public IAuthService AuthService => _lazyAuthService.Value;
 
         private readonly Lazy<IScooterService> _lazyScooterService = new Lazy<IScooterService>(() => new ScooterService(_unitOfWork));

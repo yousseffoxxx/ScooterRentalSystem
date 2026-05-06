@@ -26,6 +26,9 @@ global using ILogger = Microsoft.Extensions.Logging.ILogger;
 global using Microsoft.AspNetCore.Mvc.Filters;
 global using Microsoft.AspNetCore.Mvc;
 global using ScooterRental.Persistence;
+global using ScooterRental.Service.Abstractions.StorageServices;
+global using ScooterRental.Service.StorageServices;
+
 
 
 

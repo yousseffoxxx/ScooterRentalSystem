@@ -6,6 +6,6 @@
         public required string Email { get; init; }
         public required string PhoneNumber { get; init; }
         public required string Password { get; init; }
-        public required string IdPhotoUrl { get; init; }
+        public required IFormFile IdPhoto { get; init; }
     }
 }

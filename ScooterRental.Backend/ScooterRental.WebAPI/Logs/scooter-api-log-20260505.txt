@@ -13,3 +13,12 @@
 2026-05-05 16:59:04.886 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
 2026-05-05 16:59:04.887 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
 2026-05-05 16:59:04.935 +03:00 [INF] HTTP GET /api/Zone responded 200 in 120.9582 ms
+2026-05-05 20:23:10.514 +03:00 [INF] Now listening on: https://localhost:5000
+2026-05-05 20:23:10.540 +03:00 [INF] Now listening on: http://localhost:5001
+2026-05-05 20:23:10.597 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-05 20:23:10.598 +03:00 [INF] Hosting environment: Development
+2026-05-05 20:23:10.599 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-05 20:23:10.924 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 118.3502 ms
+2026-05-05 20:23:10.967 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 11.5109 ms
+2026-05-05 20:23:10.985 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 29.5192 ms
+2026-05-05 20:23:11.489 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 168.1291 ms
