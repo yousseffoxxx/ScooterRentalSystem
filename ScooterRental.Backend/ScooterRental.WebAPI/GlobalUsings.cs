@@ -28,6 +28,9 @@ global using Microsoft.AspNetCore.Mvc;
 global using ScooterRental.Persistence;
 global using ScooterRental.Service.Abstractions.StorageServices;
 global using ScooterRental.Service.StorageServices;
+global using ScooterRental.Service.Abstractions.PaymentServices;
+global using ScooterRental.Service.PaymentServices;
+
 
 
 

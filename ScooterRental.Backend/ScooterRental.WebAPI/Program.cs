@@ -17,7 +17,6 @@ namespace ScooterRental.WebAPI
                     .WriteTo.File("Logs/scooter-api-log-.txt", rollingInterval: RollingInterval.Day); // Creates a new text file every day!
             });
 
-            // Tells .NET 9 OpenAPI to add the JWT Authorization requirement to your endpoints
             builder.Services.AddOpenApi(options =>
             {
                 options.AddDocumentTransformer((document, context, cancellationToken) =>
@@ -83,7 +82,9 @@ namespace ScooterRental.WebAPI
 
             builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
 
-            var jwtOptions = builder.Configuration.GetSection("Jwt").Get<JwtSettings>();
+            builder.Services.Configure<PaymobOptions>(builder.Configuration.GetSection("PaymobSettings"));
+
+            var jwtOptions = builder.Configuration.GetSection("Jwt").Get<JwtSettings>();         
             builder.Services.AddAuthentication(options => 
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -114,9 +115,9 @@ namespace ScooterRental.WebAPI
             {
                 options.AddPolicy("CORSPolicy", policyBuilder =>
                 {
+                    policyBuilder.AllowAnyOrigin();
                     policyBuilder.AllowAnyHeader();
                     policyBuilder.AllowAnyMethod();
-                    policyBuilder.WithOrigins(builder.Configuration.GetRequiredSection("Urls")["FrontBaseUrl"]);
                 });
             });
 
@@ -124,6 +125,8 @@ namespace ScooterRental.WebAPI
             {
                 return ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("RedisConnectionString"));
             });
+
+            builder.Services.AddHttpClient();
             builder.Services.AddScoped<ITokenService, TokenService>();
             builder.Services.AddScoped<IEmailService, EmailService>();
             builder.Services.AddScoped<ILocalStorageService, LocalStorageService>();
@@ -134,6 +137,7 @@ namespace ScooterRental.WebAPI
             builder.Services.AddScoped<IRedisZoneEventPublisher, RedisZoneEventPublisher>();
             builder.Services.AddScoped<IMqttCommandService, MqttCommandService>();
             builder.Services.AddScoped<IDataSeeder, DataSeeder>();
+            builder.Services.AddScoped<IPaymobService, PaymobService>();
             builder.Services.AddSingleton<IZoneCacheService, ZoneCacheService>();
             builder.Services.AddAuthorization();
             builder.Services.AddControllers();
@@ -159,7 +163,7 @@ namespace ScooterRental.WebAPI
                 app.MapScalarApiReference();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseSerilogRequestLogging();
             app.UseMiddleware<ExceptionHandlingMiddleware>();
             app.UseCors("CORSPolicy");

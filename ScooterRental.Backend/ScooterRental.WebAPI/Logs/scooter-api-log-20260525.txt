@@ -1,0 +1,155 @@
+2026-05-25 20:56:57.197 +03:00 [INF] Now listening on: http://localhost:5001
+2026-05-25 20:56:57.281 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-25 20:56:57.282 +03:00 [INF] Hosting environment: Development
+2026-05-25 20:56:57.283 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-25 20:56:58.709 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1136.6184 ms
+2026-05-25 20:56:58.741 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 11.7235 ms
+2026-05-25 20:56:58.770 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 42.0910 ms
+2026-05-25 20:56:59.170 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 145.1809 ms
+2026-05-25 20:58:12.773 +03:00 [INF] Now listening on: https://localhost:5000
+2026-05-25 20:58:12.797 +03:00 [INF] Now listening on: http://localhost:5001
+2026-05-25 20:58:12.841 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-25 20:58:12.842 +03:00 [INF] Hosting environment: Development
+2026-05-25 20:58:12.843 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-25 20:58:13.283 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 106.5927 ms
+2026-05-25 20:58:13.317 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 8.8330 ms
+2026-05-25 20:58:13.325 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 16.9647 ms
+2026-05-25 20:58:13.762 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 141.0418 ms
+2026-05-25 20:58:17.098 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 605.7617 ms
+2026-05-25 20:58:45.688 +03:00 [ERR] An unexpected server error occurred while accessing /api/Wallet/top-up
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at ScooterRental.Service.PaymentServices.PaymobService.InitiateWalletPaymentAsync(Decimal amount, String phoneNumber, String internalOrderId) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\PaymentServices\PaymobService.cs:line 96
+   at ScooterRental.Presentation.Controllers.WalletController.TopUp(TopUpRequestDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\WalletController.cs:line 13
+   at lambda_method286(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-05-25 20:58:45.719 +03:00 [ERR] HTTP POST /api/Wallet/top-up responded 500 in 1314.4307 ms
+2026-05-25 21:04:44.933 +03:00 [INF] Now listening on: https://localhost:5000
+2026-05-25 21:04:44.957 +03:00 [INF] Now listening on: http://localhost:5001
+2026-05-25 21:04:44.999 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-25 21:04:45.000 +03:00 [INF] Hosting environment: Development
+2026-05-25 21:04:45.000 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-25 21:04:45.260 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 92.2173 ms
+2026-05-25 21:04:45.293 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 8.0701 ms
+2026-05-25 21:04:45.302 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 16.7342 ms
+2026-05-25 21:04:45.744 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 151.8452 ms
+2026-05-25 21:04:46.532 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 9.7468 ms
+2026-05-25 21:04:49.899 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 392.9726 ms
+2026-05-25 21:05:27.337 +03:00 [ERR] An unexpected server error occurred while accessing /api/Wallet/top-up
+System.Exception: STEP 3 (Payment Key) FAILED: {"message": "unrelated payment integration"}
+   at ScooterRental.Service.PaymentServices.PaymobService.InitiateWalletPaymentAsync(Decimal amount, String phoneNumber, String internalOrderId) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\PaymentServices\PaymobService.cs:line 98
+   at ScooterRental.Presentation.Controllers.WalletController.TopUp(TopUpRequestDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\WalletController.cs:line 13
+   at lambda_method286(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-05-25 21:05:27.356 +03:00 [ERR] HTTP POST /api/Wallet/top-up responded 500 in 6135.5775 ms
+2026-05-25 21:12:04.438 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1.1086 ms
+2026-05-25 21:12:04.464 +03:00 [INF] HTTP GET /scalar/scalar.js responded 304 in 0.8385 ms
+2026-05-25 21:12:04.465 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 304 in 0.5924 ms
+2026-05-25 21:12:04.913 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 16.2289 ms
+2026-05-25 21:12:05.652 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 304 in 0.4642 ms
+2026-05-25 21:12:12.243 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1.0773 ms
+2026-05-25 21:12:12.267 +03:00 [INF] HTTP GET /scalar/scalar.js responded 304 in 0.3421 ms
+2026-05-25 21:12:12.271 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 304 in 0.4101 ms
+2026-05-25 21:12:12.396 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 12.6754 ms
+2026-05-25 21:12:12.881 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 304 in 0.5856 ms
+2026-05-25 21:12:20.382 +03:00 [INF] Now listening on: https://localhost:5000
+2026-05-25 21:12:20.406 +03:00 [INF] Now listening on: http://localhost:5001
+2026-05-25 21:12:20.448 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-25 21:12:20.449 +03:00 [INF] Hosting environment: Development
+2026-05-25 21:12:20.449 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-25 21:12:20.827 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 102.1996 ms
+2026-05-25 21:12:20.863 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 10.9042 ms
+2026-05-25 21:12:20.871 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 19.6577 ms
+2026-05-25 21:12:21.148 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 2.1997 ms
+2026-05-25 21:12:21.163 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 143.3232 ms
+2026-05-25 21:12:42.989 +03:00 [ERR] An unexpected server error occurred while accessing /api/Wallet/top-up
+System.Exception: STEP 3 (Payment Key) FAILED: {"message": "unrelated payment integration"}
+   at ScooterRental.Service.PaymentServices.PaymobService.InitiateWalletPaymentAsync(Decimal amount, String phoneNumber, String internalOrderId) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\PaymentServices\PaymobService.cs:line 98
+   at ScooterRental.Presentation.Controllers.WalletController.TopUp(TopUpRequestDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\WalletController.cs:line 13
+   at lambda_method43(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-05-25 21:12:42.998 +03:00 [ERR] HTTP POST /api/Wallet/top-up responded 500 in 1276.5076 ms
+2026-05-25 21:18:30.058 +03:00 [INF] Now listening on: https://localhost:5000
+2026-05-25 21:18:30.083 +03:00 [INF] Now listening on: http://localhost:5001
+2026-05-25 21:18:30.129 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-25 21:18:30.130 +03:00 [INF] Hosting environment: Development
+2026-05-25 21:18:30.131 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-25 21:18:30.575 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 104.8534 ms
+2026-05-25 21:18:30.619 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 10.7903 ms
+2026-05-25 21:18:30.631 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 23.2706 ms
+2026-05-25 21:18:31.061 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 139.8665 ms
+2026-05-25 21:18:31.765 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 8.7450 ms
+2026-05-25 21:18:58.030 +03:00 [ERR] An unexpected server error occurred while accessing /api/Wallet/top-up
+System.Exception: STEP 3 (Payment Key) FAILED: {"message": "unrelated payment integration"}
+   at ScooterRental.Service.PaymentServices.PaymobService.InitiateWalletPaymentAsync(Decimal amount, String phoneNumber, String internalOrderId) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\PaymentServices\PaymobService.cs:line 104
+   at ScooterRental.Presentation.Controllers.WalletController.TopUp(TopUpRequestDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\WalletController.cs:line 13
+   at lambda_method43(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-05-25 21:18:58.058 +03:00 [ERR] HTTP POST /api/Wallet/top-up responded 500 in 1341.3729 ms
+2026-05-25 21:20:19.945 +03:00 [INF] Now listening on: https://localhost:5000
+2026-05-25 21:20:19.969 +03:00 [INF] Now listening on: http://localhost:5001
+2026-05-25 21:20:20.008 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-25 21:20:20.010 +03:00 [INF] Hosting environment: Development
+2026-05-25 21:20:20.010 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-25 21:20:20.368 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 97.5163 ms
+2026-05-25 21:20:20.415 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 10.5788 ms
+2026-05-25 21:20:20.427 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 22.7140 ms
+2026-05-25 21:20:20.887 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 148.4005 ms
+2026-05-25 21:20:21.535 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 9.5185 ms
+2026-05-25 21:20:41.424 +03:00 [INF] HTTP POST /api/Wallet/top-up responded 200 in 2141.5067 ms
+2026-05-25 21:25:32.438 +03:00 [INF] Now listening on: https://localhost:5000
+2026-05-25 21:25:32.462 +03:00 [INF] Now listening on: http://localhost:5001
+2026-05-25 21:25:32.503 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-25 21:25:32.504 +03:00 [INF] Hosting environment: Development
+2026-05-25 21:25:32.505 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-25 21:25:32.792 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 97.5232 ms
+2026-05-25 21:25:32.828 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 8.2637 ms
+2026-05-25 21:25:32.837 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 17.1174 ms
+2026-05-25 21:25:33.333 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 186.6080 ms
+2026-05-25 21:25:34.131 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 9.8012 ms
+2026-05-25 21:25:51.241 +03:00 [INF] HTTP POST /api/Wallet/top-up responded 200 in 2656.3075 ms
+2026-05-25 21:29:02.511 +03:00 [INF] HTTP POST /api/Wallet/top-up responded 200 in 1817.4374 ms

@@ -6,5 +6,6 @@
         IScooterService ScooterService { get; }
         IZoneService ZoneService { get; }
         IRideService RideService { get; }
+        IPaymobService PaymobService { get; }
     }
 }

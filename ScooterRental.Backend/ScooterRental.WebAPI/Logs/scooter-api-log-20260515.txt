@@ -1,0 +1,17 @@
+2026-05-15 18:12:09.515 +03:00 [INF] Now listening on: https://localhost:5000
+2026-05-15 18:12:09.544 +03:00 [INF] Now listening on: http://localhost:5001
+2026-05-15 18:12:09.591 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-15 18:12:09.592 +03:00 [INF] Hosting environment: Development
+2026-05-15 18:12:09.593 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-15 18:12:11.290 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1030.8116 ms
+2026-05-15 18:12:11.328 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 12.5870 ms
+2026-05-15 18:12:11.350 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 34.8467 ms
+2026-05-15 18:12:11.785 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 147.4539 ms
+2026-05-15 18:12:12.580 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 0.8574 ms
+2026-05-15 18:12:53.923 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 597.1850 ms
+2026-05-15 18:13:09.336 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 125.5272 ms
+2026-05-15 18:13:13.341 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 67.1926 ms
+2026-05-15 18:13:14.403 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 59.5966 ms
+2026-05-15 18:13:15.341 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 58.9467 ms
+2026-05-15 18:13:16.251 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 60.4661 ms
+2026-05-15 18:13:17.117 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 60.2174 ms
