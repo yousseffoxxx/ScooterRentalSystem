@@ -1,10 +1,11 @@
 ﻿global using System.IdentityModel.Tokens.Jwt;
+global using System.Security.Cryptography;
 global using System.Linq.Expressions;
 global using System.Security.Claims;
-global using System.Security.Cryptography;
-global using System.Text;
+global using System.Net.Http.Json;
 global using System.Text.Json;
 global using FluentValidation;
+global using System.Text;
 global using MQTTnet;
 global using NetTopologySuite.Geometries;
 global using SendGrid;
@@ -17,6 +18,7 @@ global using Microsoft.Extensions.DependencyInjection;
 global using Microsoft.Extensions.Logging;
 global using Microsoft.Extensions.Options;
 global using Microsoft.IdentityModel.Tokens;
+global using Microsoft.AspNetCore.Hosting;
 global using ScooterRental.MqttService.Abstractions;
 global using ScooterRental.Shared;
 global using ScooterRental.Shared.Events;
@@ -28,6 +30,7 @@ global using ScooterRental.Shared.DTOs.Zone.Request;
 global using ScooterRental.Shared.DTOs.Zone.Response;
 global using ScooterRental.Shared.DTOs.Ride.Request;
 global using ScooterRental.Shared.DTOs.Ride.Response;
+global using ScooterRental.Shared.DTOs.Payment;
 global using ScooterRental.Domain.Enums;
 global using ScooterRental.Domain.Exceptions;
 global using ScooterRental.Domain.Models.Scooters;
@@ -41,14 +44,19 @@ global using ScooterRental.Service.Abstractions.ScooterServices;
 global using ScooterRental.Service.Abstractions.Specifications;
 global using ScooterRental.Service.Abstractions.ZoneServices;
 global using ScooterRental.Service.Abstractions.StorageServices;
+global using ScooterRental.Service.Abstractions.RideServices;
+global using ScooterRental.Service.Abstractions.PaymentServices;
 global using ScooterRental.Service.AuthServices;
 global using ScooterRental.Service.Mappings;
 global using ScooterRental.Service.ScooterServices;
 global using ScooterRental.Service.Specifications;
 global using ScooterRental.Service.ZoneServices;
-global using ScooterRental.Service.Abstractions.RideServices;
 global using ScooterRental.Service.RideServices;
-global using Microsoft.AspNetCore.Hosting;
+global using ScooterRental.Service.PaymentServices;
+
+
+
+
 
 
 
