@@ -77,5 +77,23 @@
 
             return true;
         }
+
+        public async Task<LiveMapDto> GetLiveMapDataAsync()
+        {
+            var zones = await _unitOfWork.GetRepository<Zone>().GetAllWithSpecAsync(new AllZonesSpecification(true));
+            
+            var zonesMapDtos = zones.ToMapDtoList();
+
+            var tariff = await _unitOfWork.GetRepository<Tariff>().GetEntityWithSpecAsync(new GetActiveTariffSpec());
+            
+            if (tariff is null)
+                throw new NotFoundException("Tariff", 0);
+
+            var scooters = await _unitOfWork.GetRepository<Scooter>().GetAllWithSpecAsync(new AllScootersSpecification());
+
+            var scootersMapDtos = scooters.ToMapDtoList(tariff.UnlockFee,tariff.PerMinuteRate);
+
+            return new LiveMapDto(scootersMapDtos, zonesMapDtos);
+        }
     }
 }

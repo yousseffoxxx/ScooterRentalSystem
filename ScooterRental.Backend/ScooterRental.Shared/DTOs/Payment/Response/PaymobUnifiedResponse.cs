@@ -1,4 +1,4 @@
-﻿namespace ScooterRental.Shared.DTOs.Payment
+﻿namespace ScooterRental.Shared.DTOs.Payment.Response
 {
     public record PaymobUnifiedResponse
     {

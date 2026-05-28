@@ -12,7 +12,7 @@ namespace ScooterRental.MqttWorker
             var mqttClientOptions = new MqttClientOptionsBuilder()
                 .WithTcpServer(_options.Value.BrokerAddress, _options.Value.Port)
                 .WithClientId(_options.Value.ClientId)
-                .WithCredentials(_options.Value.Username, _options.Value.Password) // <-- Added!
+                .WithCredentials(_options.Value.Username, _options.Value.Password)
                 .WithTlsOptions(o => o.UseTls())
                 .Build();
 

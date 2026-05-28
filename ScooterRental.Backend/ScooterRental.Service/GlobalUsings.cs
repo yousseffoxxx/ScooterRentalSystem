@@ -30,7 +30,7 @@ global using ScooterRental.Shared.DTOs.Zone.Request;
 global using ScooterRental.Shared.DTOs.Zone.Response;
 global using ScooterRental.Shared.DTOs.Ride.Request;
 global using ScooterRental.Shared.DTOs.Ride.Response;
-global using ScooterRental.Shared.DTOs.Payment;
+global using ScooterRental.Shared.DTOs.Payment.Response;
 global using ScooterRental.Domain.Enums;
 global using ScooterRental.Domain.Exceptions;
 global using ScooterRental.Domain.Models.Scooters;
@@ -53,6 +53,10 @@ global using ScooterRental.Service.Specifications;
 global using ScooterRental.Service.ZoneServices;
 global using ScooterRental.Service.RideServices;
 global using ScooterRental.Service.PaymentServices;
+global using ScooterRental.Service.Abstractions.NotificationServices;
+global using FirebaseAdmin.Messaging;
+global using ScooterRental.Shared.DTOs.Payment.Request;
+
 
 
 

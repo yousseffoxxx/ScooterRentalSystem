@@ -11,6 +11,14 @@
             return Ok(scooterStatus);
         }
 
+        [HttpGet("live-map")]
+        public async Task<ActionResult<LiveMapDto>> GetMapData()
+        {
+            var result = await _serviceManager.ScooterService.GetLiveMapDataAsync();
+
+            return Ok(result);
+        }
+
         [HttpGet]
         [Authorize(Roles = "Admin")]
         public async Task<ActionResult<PaginatedResult<ScooterDto>>> GetAllScooters([FromQuery] ScooterQueryParams queryParams)

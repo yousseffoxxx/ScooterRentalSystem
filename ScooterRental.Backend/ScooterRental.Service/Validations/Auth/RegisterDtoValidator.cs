@@ -24,7 +24,13 @@
                 .Matches(@"[0-9]").WithMessage("Password must contain at least one number.")
                 .Matches("[^a-zA-Z0-9]").WithMessage("Password must contain at least one special character.");
 
-            RuleFor(x => x.IdPhoto)
+            RuleFor(x => x.IdFrontPhoto)
+                .NotEmpty().WithMessage("ID Photo is required.")
+                .Must(file => file.Length > 0).WithMessage("The uploaded file is empty.")
+                .Must(file => file.Length <= 5 * 1024 * 1024).WithMessage("The file size must not exceed 5 MB.")
+                .Must(BeAValidImage).WithMessage("Only JPG and PNG images are allowed.");
+            
+            RuleFor(x => x.IdBackPhoto)
                 .NotEmpty().WithMessage("ID Photo is required.")
                 .Must(file => file.Length > 0).WithMessage("The uploaded file is empty.")
                 .Must(file => file.Length <= 5 * 1024 * 1024).WithMessage("The file size must not exceed 5 MB.")

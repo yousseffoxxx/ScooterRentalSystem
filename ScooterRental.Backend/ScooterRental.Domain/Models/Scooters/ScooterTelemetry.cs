@@ -9,5 +9,6 @@
         public int BatteryLevel { get; set; }
         public DateTimeOffset Timestamp { get; set; }
         public bool IsOutOfBounds { get; set; }
+        public bool IsInNoParkingZone { get; set; }
     }
 }

@@ -1,15 +1,16 @@
 ﻿namespace ScooterRental.Service.AuthServices
 {
     public class AuthService(UserManager<User> _userManager, ITokenService _tokenService,
-        IConfiguration _configuration, IOtpService _otpService, IEmailService _emailService,ILocalStorageService _localStorageService) : IAuthService
+        IConfiguration _configuration, IOtpService _otpService, IEmailService _emailService, ILocalStorageService _localStorageService) : IAuthService
     {
         private readonly string _baseUrl = _configuration.GetSection("Urls")["BaseUrl"] ?? string.Empty;
-        
+
         public async Task<AuthResultDto> RegisterAsync(RegisterDto registerDto)
         {
-            var savedPhotoUrl = await _localStorageService.SaveFileAsync(registerDto.IdPhoto, "uploads/ids");
+            var savedFrontPhotoUrl = await _localStorageService.SaveFileAsync(registerDto.IdFrontPhoto, "uploads/ids");
+            var savedBackPhotoUrl = await _localStorageService.SaveFileAsync(registerDto.IdBackPhoto, "uploads/ids");
 
-            var user = registerDto.ToEntity(savedPhotoUrl);
+            var user = registerDto.ToEntity(savedFrontPhotoUrl, savedBackPhotoUrl);
 
             user.Wallet = new Wallet
             {
@@ -48,7 +49,7 @@
 
             if (await _userManager.IsLockedOutAsync(user))
                 throw new UnAuthorizedException("Your account is temporarily locked due to multiple failed login attempts. Please try again later.");
-            
+
             var isPasswordValid = await _userManager.CheckPasswordAsync(user, loginDto.Password);
 
             if (!isPasswordValid)
@@ -81,7 +82,7 @@
 
             var isValid = await _otpService.VerifyOtpAsync(user, verifyOtpDto.Code);
 
-            if (!isValid) 
+            if (!isValid)
                 throw new BadRequestException("Invalid or expired OTP code.");
 
             user.EmailConfirmed = true;
@@ -112,7 +113,7 @@
         public async Task<UserResponseDto> GetProfileAsync(string userId)
         {
             var parsedId = Guid.Parse(userId);
-            
+
             var user = await _userManager.Users.Include(u => u.Wallet).FirstOrDefaultAsync(u => u.Id == parsedId);
 
             if (user is null)
@@ -135,11 +136,11 @@
 
             string? savedPhotoUrl = null;
 
-            if (updateProfileDto.AvatarPhoto != null && updateProfileDto.AvatarPhoto.Length > 0)          
+            if (updateProfileDto.AvatarPhoto != null && updateProfileDto.AvatarPhoto.Length > 0)
                 savedPhotoUrl = await _localStorageService.SaveFileAsync(updateProfileDto.AvatarPhoto, "uploads/avatars");
-            
 
-            updateProfileDto.UpdateEntity(user,savedPhotoUrl);
+
+            updateProfileDto.UpdateEntity(user, savedPhotoUrl);
 
             var result = await _userManager.UpdateAsync(user);
 
@@ -180,7 +181,7 @@
             var resetLink = $"{_baseUrl}/reset-password?email={user.Email}&token={encodedToken}";
 
             await _emailService.SendPasswordResetEmailAsync(user.Email, resetLink);
-            
+
             return "Password reset email sent successfully.";
         }
 
@@ -191,12 +192,42 @@
             if (user is null)
                 throw new NotFoundException("User", resetPasswordDto.Email);
 
-            var result = await _userManager.ResetPasswordAsync(user, resetPasswordDto.Token, resetPasswordDto.NewPassword);
+            var decodedToken = Uri.UnescapeDataString(resetPasswordDto.Token);
+
+            var result = await _userManager.ResetPasswordAsync(user, decodedToken, resetPasswordDto.NewPassword);
 
             if (!result.Succeeded)
                 throw CreateValidationException(result);
 
             return true;
+        }
+
+        public async Task<bool> RemoveDeadFcmTokenAsync(string fcmToken)
+        {
+            var user = await _userManager.Users.FirstOrDefaultAsync(u => u.FcmToken == fcmToken);
+
+            if (user is null)
+                return false;
+
+            user.FcmToken = null;
+
+            var result = await _userManager.UpdateAsync(user);
+
+            return result.Succeeded;
+        }
+
+        public async Task<bool> UpdateFcmTokenAsync(string userId, UpdateFcmTokenDto tokenDto)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+
+            if (user is null)
+                throw new NotFoundException("User", userId);
+
+            user.FcmToken = tokenDto.Token;
+
+            var result = await _userManager.UpdateAsync(user);
+
+            return result.Succeeded;
         }
 
         private static AppValidationException CreateValidationException(IdentityResult result)

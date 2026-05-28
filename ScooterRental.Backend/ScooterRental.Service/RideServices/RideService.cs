@@ -1,7 +1,8 @@
 ﻿namespace ScooterRental.Service.RideServices
 {
     public class RideService(IUnitOfWork _unitOfWork, IMqttCommandService _mqttCommandService,
-        IScooterTelemetryRepository _scooterTelemetryRepository, IZoneCacheService _zoneCacheService) : IRideService
+        IScooterTelemetryRepository _scooterTelemetryRepository, IZoneCacheService _zoneCacheService, UserManager<User> _userManager,
+        INotificationService _notificationService) : IRideService
     {
         public async Task<ActiveRideResponseDto> StartRideAsync(StartRideRequestDto request, Guid userId)
         {
@@ -49,6 +50,14 @@
             if (tariff is null)
                 throw new BadRequestException("there is no Pricing tariffs available");
 
+            var user = await _userManager.Users.Include(u => u.Wallet).FirstOrDefaultAsync(u => u.Id == userId);
+            
+            if (user is null || user.Wallet is null)
+                throw new UnAuthorizedException("User or Wallet Not Found");
+
+            if (user.Wallet.Balance < tariff.UnlockFee) 
+                throw new BadRequestException("Insufficient wallet balance to unlock the scooter.");
+            
             // 6. start new ride
             var ride = new Ride()
             {
@@ -68,6 +77,11 @@
 
             await _unitOfWork.SaveChangesAsync();
 
+            if (!string.IsNullOrEmpty(user.FcmToken))
+                await _notificationService.SendNotificationAsync(user.FcmToken, 
+                    "Ride Started", 
+                    "Your scooter is unlocked. Ride safely!");
+           
             // 7. Send Command to Start the scooter
             await _mqttCommandService.SendCommandAsync(scooter.SerialNumber, ScooterCommandType.StartScooter);
 
@@ -117,16 +131,24 @@
 
             activeRide.Status = RideStatus.Completed;
 
-            decimal durationMinutes = Math.Round((decimal)(activeRide.EndTime.Value - activeRide.StartTime).TotalMinutes, 2);
+            decimal durationMinutes = Math.Ceiling((decimal)(activeRide.EndTime.Value - activeRide.StartTime).TotalMinutes);
+
+            if (durationMinutes < 1) 
+                durationMinutes = 1;
 
             decimal totalCost = Math.Round(activeRide.AppliedUnlockFee + (durationMinutes * activeRide.AppliedPerMinuteRate), 2);
 
+            var user = await _userManager.Users.Include(u => u.Wallet).FirstOrDefaultAsync(u => u.Id == userId);
+            
+            if (user is null || user.Wallet is null)
+                throw new UnAuthorizedException("User or Wallet Not Found");
+
+            user.Wallet.Balance -= totalCost;
+            user.Wallet.TotalSpent += totalCost;
+
             activeRide.DurationMinutes = durationMinutes;
-
             activeRide.TotalCost = totalCost;
-
             activeRide.Scooter.Status = ScooterStatus.Available;
-
             activeRide.Scooter.Location = new Point(new Coordinate(request.UserLongitude, request.UserLatitude)) { SRID = 4326 };
 
             rideRepo.Update(activeRide);
@@ -135,6 +157,11 @@
 
             await _mqttCommandService.SendCommandAsync(activeRide.Scooter.SerialNumber, ScooterCommandType.StopScooter);
 
+            if (!string.IsNullOrEmpty(user.FcmToken))
+                await _notificationService.SendNotificationAsync(user.FcmToken, 
+                "Ride Completed", 
+                $"Your ride cost {totalCost} EGP. Remaining balance: {user.Wallet.Balance} EGP.");
+            
             var rideDto = activeRide.ToDto();
 
             return rideDto;

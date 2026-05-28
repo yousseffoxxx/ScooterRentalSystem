@@ -84,5 +84,16 @@
 
             return Ok(new MessageResponseDto("Password changed successfully."));
         }
+
+        [Authorize]
+        [HttpPut("fcm-token")]
+        public async Task<ActionResult> UpdateFcmToken([FromBody]UpdateFcmTokenDto tokenDto)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            await _serviceManager.AuthService.UpdateFcmTokenAsync(userId,tokenDto);
+
+            return Ok(new MessageResponseDto("FCM Token updated successfully."));
+        }
     }
 }

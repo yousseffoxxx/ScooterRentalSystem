@@ -1,6 +1,4 @@
-﻿using ScooterRental.Shared.DTOs.Auth.Request;
-
-namespace ScooterRental.Service.Abstractions.AuthServices
+﻿namespace ScooterRental.Service.Abstractions.AuthServices
 {
     public interface IAuthService
     {
@@ -13,6 +11,7 @@ namespace ScooterRental.Service.Abstractions.AuthServices
         Task<bool> ChangePasswordAsync(string userId, ChangePasswordDto changePasswordDto);
         Task<UserResponseDto> GetProfileAsync(string userId);
         Task<UserResponseDto> UpdateProfileAsync(string userId, UpdateProfileDto updateProfileDto);
-
+        Task<bool> RemoveDeadFcmTokenAsync(string fcmToken);
+        Task<bool> UpdateFcmTokenAsync(string userId, UpdateFcmTokenDto tokenDto);
     }
 }

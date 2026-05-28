@@ -1,9 +1,8 @@
 ﻿namespace ScooterRental.Service.PaymentServices
 {
-    public class PaymobService(IHttpClientFactory _httpClientFactory, IOptions<PaymobOptions> _options) : IPaymobService
+    public class PaymobService(IHttpClientFactory _httpClientFactory, IOptions<PaymobOptions> _options, UserManager<User> _userManager,INotificationService _notificationService) : IPaymobService
     {
-
-        public async Task<TopUpResponseDto> InitiateWalletPaymentAsync(decimal amount, string phoneNumber)
+        public async Task<TopUpResponseDto> InitiateWalletPaymentAsync(decimal amount, string phoneNumber, string userId)
         {
             var httpClient = _httpClientFactory.CreateClient();
 
@@ -28,7 +27,7 @@
             // 2. Order Registration
             // ---------------------------------------------------------
 
-            var internalOrderId = Guid.NewGuid().ToString();
+            var internalOrderId = userId;
 
             var orderPayload = new
             {
@@ -114,6 +113,86 @@
             var walletData = await walletHttpResponse.Content.ReadFromJsonAsync<PaymobUnifiedResponse>();
 
             return new TopUpResponseDto(walletData?.FinalUrl ?? "");
+        }
+
+        public async Task<bool> ProcessPaymobWebhook(string hmacFromRequest, string jsonBody)
+        {
+            using var document = JsonDocument.Parse(jsonBody);
+
+            var root = document.RootElement;
+
+            var obj = root.GetProperty("obj");
+
+            string concatenatedString =
+                obj.GetProperty("amount_cents").GetInt32().ToString() +
+                obj.GetProperty("created_at").GetString() +
+                obj.GetProperty("currency").GetString() +
+                obj.GetProperty("error_occured").GetBoolean().ToString().ToLower() +
+                obj.GetProperty("has_parent_transaction").GetBoolean().ToString().ToLower() +
+                obj.GetProperty("id").GetInt32().ToString() +
+                obj.GetProperty("integration_id").GetInt32().ToString() +
+                obj.GetProperty("is_3d_secure").GetBoolean().ToString().ToLower() +
+                obj.GetProperty("is_auth").GetBoolean().ToString().ToLower() +
+                obj.GetProperty("is_capture").GetBoolean().ToString().ToLower() +
+                obj.GetProperty("is_refunded").GetBoolean().ToString().ToLower() +
+                obj.GetProperty("is_standalone_payment").GetBoolean().ToString().ToLower() +
+                obj.GetProperty("is_voided").GetBoolean().ToString().ToLower() +
+                obj.GetProperty("order").GetProperty("id").GetInt32().ToString() +
+                obj.GetProperty("owner").GetInt32().ToString() +
+                obj.GetProperty("pending").GetBoolean().ToString().ToLower() +
+                obj.GetProperty("source_data").GetProperty("pan").GetString() +
+                obj.GetProperty("source_data").GetProperty("sub_type").GetString() +
+                obj.GetProperty("source_data").GetProperty("type").GetString() +
+                obj.GetProperty("success").GetBoolean().ToString().ToLower();
+
+            var computedHmac = CalculateHmacSha512(concatenatedString, _options.Value.HMAC);
+
+            if (!string.Equals(computedHmac, hmacFromRequest, StringComparison.OrdinalIgnoreCase))
+                throw new UnAuthorizedException("Invalid HMAC signature.");
+
+            bool isSuccess = obj.GetProperty("success").GetBoolean();
+            
+            if (!isSuccess)
+                return true;
+
+            string merchantOrderId = obj.GetProperty("order").GetProperty("merchant_order_id").GetString()!;
+            
+            int amountCents = obj.GetProperty("amount_cents").GetInt32();
+
+            if (!Guid.TryParse(merchantOrderId, out var parsedUserId))
+                return true;
+
+            var user = await _userManager.Users.Include(u => u.Wallet).FirstOrDefaultAsync(u => u.Id == parsedUserId);
+
+            if (user is null || user.Wallet is null)
+                throw new UnAuthorizedException("User or Wallet Not Found");
+
+            decimal amountEgp = amountCents / 100m;
+
+            user.Wallet.Balance += amountEgp;
+            user.Wallet.TotalToppedUp += amountEgp;
+            user.Wallet.UpdatedAt = DateTimeOffset.UtcNow;
+
+            await _userManager.UpdateAsync(user);
+
+            if (!string.IsNullOrEmpty(user.FcmToken))
+                await _notificationService.SendNotificationAsync(user.FcmToken,
+                    "Payment Successful",
+                    $"{amountEgp} EGP has been added to your wallet.",
+                    new Dictionary<string, string> { { "action", "refresh_wallet" } });
+            
+            return true;
+        }
+
+        private string CalculateHmacSha512(string text, string key)
+        {
+            var encoding = new UTF8Encoding();
+            var textBytes = encoding.GetBytes(text);
+            var keyBytes = encoding.GetBytes(key);
+
+            using var hash = new HMACSHA512(keyBytes);
+            var hashBytes = hash.ComputeHash(textBytes);
+            return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
         }
 
         private async Task EnsureSuccessOrThrowAsync(HttpResponseMessage response, string stepName)

@@ -12,11 +12,13 @@
             RuleFor(r => r.PhoneNumber)
                 .Matches(@"^01[0125][0-9]{8}$").WithMessage("Phone number must be a valid Egyptian mobile number (e.g., 01012345678).");
 
-            RuleFor(x => x.AvatarPhoto)
-                .NotEmpty().WithMessage("ID Photo is required.")
-                .Must(file => file.Length > 0).WithMessage("The uploaded file is empty.")
-                .Must(file => file.Length <= 5 * 1024 * 1024).WithMessage("The file size must not exceed 5 MB.")
-                .Must(BeAValidImage).WithMessage("Only JPG and PNG images are allowed.");
+            When(x => x.AvatarPhoto != null, () =>
+            {
+                RuleFor(x => x.AvatarPhoto)
+                    .Must(file => file.Length > 0).WithMessage("The uploaded file is empty.")
+                    .Must(file => file.Length <= 5 * 1024 * 1024).WithMessage("The file size must not exceed 5 MB.")
+                    .Must(BeAValidImage).WithMessage("Only JPG and PNG images are allowed.");
+            });
         }
 
         private bool BeAValidImage(IFormFile file)

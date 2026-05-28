@@ -8,5 +8,10 @@
 
             ApplyPagination(pageIndex, pageSize);
         }
+
+        public AllScootersSpecification() : base(s => s.Status == ScooterStatus.Available)
+        {
+            AddInclude(s => s.Model);
+        }
     }
 }

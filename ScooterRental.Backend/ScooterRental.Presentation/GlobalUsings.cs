@@ -11,7 +11,9 @@ global using ScooterRental.Shared.DTOs.Zone.Request;
 global using ScooterRental.Shared.DTOs.Zone.Response;
 global using ScooterRental.Shared.DTOs.Ride.Request;
 global using ScooterRental.Shared.DTOs.Ride.Response;
-global using ScooterRental.Shared.DTOs.Payment;
+global using ScooterRental.Shared.DTOs.Payment.Request;
+global using ScooterRental.Shared.DTOs.Payment.Response;
+
 
 
 

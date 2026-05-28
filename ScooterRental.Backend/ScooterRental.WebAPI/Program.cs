@@ -132,12 +132,14 @@ namespace ScooterRental.WebAPI
             builder.Services.AddScoped<ILocalStorageService, LocalStorageService>();
             builder.Services.AddScoped<IOtpService, OtpService>();
             builder.Services.AddScoped<IServiceManager, ServiceManager>();
-            builder.Services.AddScoped<IScooterTelemetryRepository, ScooterTelemetryRepository>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<IScooterTelemetryRepository, ScooterTelemetryRepository>();
             builder.Services.AddScoped<IRedisZoneEventPublisher, RedisZoneEventPublisher>();
             builder.Services.AddScoped<IMqttCommandService, MqttCommandService>();
             builder.Services.AddScoped<IDataSeeder, DataSeeder>();
             builder.Services.AddScoped<IPaymobService, PaymobService>();
+            builder.Services.AddScoped<INotificationService, NotificationService>();
+            builder.Services.AddScoped<IAuthService, AuthService>();
             builder.Services.AddSingleton<IZoneCacheService, ZoneCacheService>();
             builder.Services.AddAuthorization();
             builder.Services.AddControllers();
@@ -161,6 +163,18 @@ namespace ScooterRental.WebAPI
             {
                 app.MapOpenApi();
                 app.MapScalarApiReference();
+            }
+
+            var firebasePath = app.Configuration.GetRequiredSection("Firebase")["CredentialPath"];
+
+            if (FirebaseApp.DefaultInstance == null)
+            {
+                var credential = CredentialFactory.FromFile<ServiceAccountCredential>(firebasePath).ToGoogleCredential();
+
+                FirebaseApp.Create(new AppOptions
+                {
+                    Credential = credential
+                });
             }
 
             //app.UseHttpsRedirection();

@@ -88,7 +88,8 @@
                         PhoneNumberConfirmed = true,
                         AccountStatus = AccountStatus.Active,
                         CreatedAt = DateTimeOffset.UtcNow,
-                        IdPhotoUrl = "https://dummyimage.com/600x400/000/fff&text=Fake+ID",
+                        IdFrontPhotoUrl = "https://dummyimage.com/600x400/000/fff&text=Fake+ID",
+                        IdBackPhotoUrl = "https://dummyimage.com/600x400/000/fff&text=Fake+ID",
                         IdVerificationStatus = IdVerificationStatus.Verified
                     };
 
