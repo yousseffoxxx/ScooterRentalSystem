@@ -1,11 +1,10 @@
-﻿using ScooterRental.Shared.DTOs.Scooter.Response;
-
-namespace ScooterRental.Service.Abstractions.ScooterServices
+﻿namespace ScooterRental.Service.Abstractions.ScooterServices
 {
     public interface IScooterService
     {
         // Mobile / Shared
         Task<ScooterStatusDto> GetScooterStatusAsync(string serialNumber);
+        Task<LiveMapDto> GetLiveMapDataAsync();
 
         // Admin
         Task<PaginatedResult<ScooterDto>> GetAllScootersAsync(ScooterQueryParams queryParams);

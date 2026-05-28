@@ -132,5 +132,26 @@
             return zoneDtos;
         }
 
+        // 7. List of Zone -> List of MapZoneDto
+        public static IReadOnlyList<MapZoneDto> ToMapDtoList(this IReadOnlyList<Zone> zones)
+        {
+            if (zones == null || zones.Count == 0)
+                return new List<MapZoneDto>(0);
+
+            var zoneMapDtos = new List<MapZoneDto>(zones.Count);
+
+            foreach (var zone in zones)
+            {
+                zoneMapDtos.Add(new MapZoneDto(
+
+                    zone.Id,
+                    zone.Name,
+                    zone.Type.ToString(),
+                    ExtractCoordinates(zone.Boundary)
+                ));
+            }
+            return zoneMapDtos;
+        }
+
     }
 }

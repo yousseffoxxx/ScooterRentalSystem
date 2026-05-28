@@ -3,7 +3,7 @@
     public static class AuthMappingExtensions
     {
         // 1. RegisterDto -> User
-        public static User ToEntity(this RegisterDto dto, string idPhotoUrl)
+        public static User ToEntity(this RegisterDto dto, string idFrontPhotoUrl, string idBackPhotoUrl)
         {
             return new User
             {
@@ -11,7 +11,8 @@
                 Email = dto.Email,
                 UserName = dto.Email,
                 PhoneNumber = dto.PhoneNumber,
-                IdPhotoUrl = idPhotoUrl
+                IdFrontPhotoUrl = idFrontPhotoUrl,
+                IdBackPhotoUrl = idBackPhotoUrl
             };
         }
         // 2. UpdateProfileDto -> User

@@ -17,7 +17,11 @@ global using ScooterRental.Shared.DTOs.Ride.Response;
 global using ScooterRental.Service.Abstractions.RideServices;
 global using Microsoft.AspNetCore.Http;
 global using ScooterRental.Service.Abstractions.PaymentServices;
-global using ScooterRental.Shared.DTOs.Payment;
+global using ScooterRental.Shared.DTOs.Payment.Response;
+global using ScooterRental.Shared.DTOs.Scooter.Response;
+global using ScooterRental.Shared.DTOs.Payment.Request;
+
+
 
 
 

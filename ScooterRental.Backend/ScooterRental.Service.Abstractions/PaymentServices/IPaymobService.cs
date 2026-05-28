@@ -2,6 +2,8 @@
 {
     public interface IPaymobService
     {
-        Task<TopUpResponseDto> InitiateWalletPaymentAsync(decimal amount, string phoneNumber);
+        Task<TopUpResponseDto> InitiateWalletPaymentAsync(decimal amount, string phoneNumber, string userId);
+
+        Task<bool> ProcessPaymobWebhook(string hmacFromRequest, string jsonBody);
     }
 }

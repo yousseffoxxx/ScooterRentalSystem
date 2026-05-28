@@ -6,9 +6,13 @@
         
         public string? NationalIdHash { get; set; }
         
-        public string? IdPhotoUrl { get; set; }
+        public string? IdFrontPhotoUrl { get; set; }
+        public string? IdBackPhotoUrl { get; set; }
+
         public string? AvatarUrl { get; set; }
-        
+
+        public string? FcmToken { get; set; }
+
         public IdVerificationStatus IdVerificationStatus { get; set; } = IdVerificationStatus.Pending;
         public AccountStatus AccountStatus { get; set; } = AccountStatus.Active;
                 

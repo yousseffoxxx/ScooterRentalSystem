@@ -1,0 +1,13 @@
+2026-05-29 00:03:01.024 +03:00 [INF] Now listening on: https://localhost:5001
+2026-05-29 00:03:01.048 +03:00 [INF] Now listening on: http://localhost:5000
+2026-05-29 00:03:01.090 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 00:03:01.092 +03:00 [INF] Hosting environment: Development
+2026-05-29 00:03:01.093 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-29 00:03:01.403 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 134.4706 ms
+2026-05-29 00:03:01.446 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 11.0849 ms
+2026-05-29 00:03:01.457 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 22.5877 ms
+2026-05-29 00:03:02.029 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 191.9646 ms
+2026-05-29 00:03:17.153 +03:00 [INF] Email successfully sent to youssef5fox5@gmail.com
+2026-05-29 00:03:17.159 +03:00 [INF] HTTP POST /api/Auth/forgot-password responded 200 in 2137.6290 ms
+2026-05-29 00:03:35.857 +03:00 [INF] HTTP GET /reset-password responded 404 in 2.7709 ms
+2026-05-29 00:04:17.212 +03:00 [INF] HTTP POST /api/Auth/reset-password responded 200 in 206.7788 ms

@@ -186,12 +186,20 @@ namespace ScooterRental.Persistence.Data.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<string>("FcmToken")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
                     b.Property<string>("FullName")
                         .IsRequired()
                         .HasMaxLength(150)
                         .HasColumnType("nvarchar(150)");
 
-                    b.Property<string>("IdPhotoUrl")
+                    b.Property<string>("IdBackPhotoUrl")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("IdFrontPhotoUrl")
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 

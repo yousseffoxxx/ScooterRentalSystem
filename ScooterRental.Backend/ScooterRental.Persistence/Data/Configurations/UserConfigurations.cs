@@ -13,11 +13,18 @@
             builder.Property(u => u.NationalIdHash)
                 .HasMaxLength(255);
 
-            builder.Property(u => u.IdPhotoUrl)
+            builder.Property(u => u.IdFrontPhotoUrl)
+                .HasMaxLength(500);
+
+            builder.Property(u => u.IdBackPhotoUrl)
                 .HasMaxLength(500);
 
             builder.Property(u => u.AvatarUrl)
                 .HasMaxLength(500);
+
+            builder.Property(u => u.FcmToken)
+                .HasMaxLength(500)
+                .IsRequired(false);
 
             builder.Property(u => u.IdVerificationStatus)
                 .HasConversion<string>()

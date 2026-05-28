@@ -1,0 +1,304 @@
+2026-05-28 15:49:45.095 +03:00 [INF] Now listening on: https://localhost:5001
+2026-05-28 15:49:45.125 +03:00 [INF] Now listening on: http://localhost:5000
+2026-05-28 15:49:45.180 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-28 15:49:45.181 +03:00 [INF] Hosting environment: Development
+2026-05-28 15:49:45.182 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-28 15:49:46.845 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1075.1598 ms
+2026-05-28 15:49:46.889 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 11.0484 ms
+2026-05-28 15:49:46.930 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 51.9403 ms
+2026-05-28 15:49:47.388 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 159.0533 ms
+2026-05-28 15:58:30.879 +03:00 [INF] Now listening on: https://localhost:5001
+2026-05-28 15:58:30.904 +03:00 [INF] Now listening on: http://localhost:5000
+2026-05-28 15:58:30.952 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-28 15:58:30.953 +03:00 [INF] Hosting environment: Development
+2026-05-28 15:58:30.954 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-28 15:58:31.216 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 110.7436 ms
+2026-05-28 15:58:31.264 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 14.7123 ms
+2026-05-28 15:58:31.276 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 26.2640 ms
+2026-05-28 15:58:31.736 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 155.5623 ms
+2026-05-28 15:58:32.618 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 9.2845 ms
+2026-05-28 15:58:43.429 +03:00 [INF] HTTP GET / responded 404 in 6.6804 ms
+2026-05-28 15:58:44.128 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.8316 ms
+2026-05-28 15:58:56.202 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1.2227 ms
+2026-05-28 15:58:56.692 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 0.6523 ms
+2026-05-28 15:58:57.728 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 1178.4876 ms
+2026-05-28 15:58:59.128 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 23.4391 ms
+2026-05-28 16:04:44.938 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 623.5023 ms
+2026-05-28 16:05:02.808 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1.2633 ms
+2026-05-28 16:05:03.502 +03:00 [INF] HTTP GET /scalar/v responded 200 in 0.6942 ms
+2026-05-28 16:05:04.492 +03:00 [INF] HTTP GET / responded 404 in 0.2536 ms
+2026-05-28 16:06:35.056 +03:00 [WRN] AppException thrown: Invalid Email or Password
+2026-05-28 16:06:35.057 +03:00 [INF] HTTP POST /api/Auth/login responded 401 in 62.1214 ms
+2026-05-28 16:06:53.510 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 71.7243 ms
+2026-05-28 16:07:00.498 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 59.5452 ms
+2026-05-28 16:07:03.082 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 58.6148 ms
+2026-05-28 16:07:05.632 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 60.3411 ms
+2026-05-28 16:08:07.642 +03:00 [INF] HTTP GET / responded 404 in 0.3571 ms
+2026-05-28 16:08:10.407 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.4785 ms
+2026-05-28 16:10:55.880 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.9770 ms
+2026-05-28 16:10:56.283 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 72.5541 ms
+2026-05-28 16:11:06.066 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.1613 ms
+2026-05-28 16:11:06.428 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 55.6591 ms
+2026-05-28 16:11:17.909 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.0883 ms
+2026-05-28 16:11:18.282 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 63.0247 ms
+2026-05-28 16:11:29.857 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.1023 ms
+2026-05-28 16:11:30.234 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 57.3190 ms
+2026-05-28 16:12:56.140 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.0860 ms
+2026-05-28 16:12:56.625 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 70.4767 ms
+2026-05-28 16:14:49.514 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.2499 ms
+2026-05-28 16:14:49.895 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 69.7057 ms
+2026-05-28 16:14:50.725 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.1045 ms
+2026-05-28 16:15:34.911 +03:00 [INF] HTTP OPTIONS /api/Auth/profile responded 204 in 0.1331 ms
+2026-05-28 16:16:47.010 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.2737 ms
+2026-05-28 16:16:47.404 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 69.1891 ms
+2026-05-28 16:16:48.077 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0724 ms
+2026-05-28 16:25:23.270 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.1379 ms
+2026-05-28 16:25:44.822 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.0862 ms
+2026-05-28 16:25:45.211 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 74.1717 ms
+2026-05-28 16:25:45.998 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.1404 ms
+2026-05-28 16:26:10.013 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.1006 ms
+2026-05-28 16:28:01.146 +03:00 [INF] HTTP OPTIONS /api/Auth/profile responded 204 in 0.0877 ms
+2026-05-28 16:53:46.923 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.4515 ms
+2026-05-28 16:53:47.312 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 81.2110 ms
+2026-05-28 16:53:48.372 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0750 ms
+2026-05-28 16:54:08.721 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0802 ms
+2026-05-28 16:58:51.178 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0733 ms
+2026-05-28 17:00:16.669 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.0746 ms
+2026-05-28 17:00:17.180 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 82.3854 ms
+2026-05-28 17:00:18.428 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0502 ms
+2026-05-28 17:08:48.996 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.0755 ms
+2026-05-28 17:08:49.401 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 77.6434 ms
+2026-05-28 17:08:50.452 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0615 ms
+2026-05-28 17:15:47.765 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.1119 ms
+2026-05-28 17:15:48.153 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 80.5177 ms
+2026-05-28 17:15:49.815 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0473 ms
+2026-05-28 17:43:33.355 +03:00 [INF] HTTP OPTIONS /api/Scooter/live-map responded 204 in 0.0978 ms
+2026-05-28 17:44:12.223 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.0598 ms
+2026-05-28 17:44:12.609 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 80.3930 ms
+2026-05-28 17:46:26.790 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.0569 ms
+2026-05-28 17:46:27.247 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 72.3396 ms
+2026-05-28 17:49:43.041 +03:00 [INF] HTTP OPTIONS /api/Auth/register responded 204 in 0.0820 ms
+2026-05-28 17:49:46.284 +03:00 [WRN] AppException thrown: One or more validation errors occurred.
+2026-05-28 17:49:46.286 +03:00 [INF] HTTP POST /api/Auth/register responded 400 in 2937.6468 ms
+2026-05-28 17:50:40.693 +03:00 [INF] HTTP OPTIONS /api/Auth/register responded 204 in 0.0430 ms
+2026-05-28 17:50:45.531 +03:00 [INF] Email successfully sent to mohameedsaieed120@gmail.com
+2026-05-28 17:50:45.536 +03:00 [INF] HTTP POST /api/Auth/register responded 200 in 4540.7005 ms
+2026-05-28 17:50:46.662 +03:00 [INF] HTTP OPTIONS /api/Scooter/live-map responded 204 in 0.1671 ms
+2026-05-28 17:50:56.403 +03:00 [INF] HTTP OPTIONS /api/Auth/profile responded 204 in 0.0643 ms
+2026-05-28 17:51:16.651 +03:00 [INF] HTTP OPTIONS /api/Auth/profile responded 204 in 0.0563 ms
+2026-05-28 17:51:44.615 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.0402 ms
+2026-05-28 17:51:44.971 +03:00 [WRN] AppException thrown: Invalid Email or Password
+2026-05-28 17:51:44.972 +03:00 [INF] HTTP POST /api/Auth/login responded 401 in 11.4945 ms
+2026-05-28 17:51:50.704 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.0378 ms
+2026-05-28 17:51:51.014 +03:00 [WRN] AppException thrown: Please verify your email address before logging in.
+2026-05-28 17:51:51.015 +03:00 [INF] HTTP POST /api/Auth/login responded 401 in 8.6041 ms
+2026-05-28 17:53:38.465 +03:00 [INF] HTTP OPTIONS /api/Auth/forgot-password responded 204 in 0.0767 ms
+2026-05-28 17:53:40.781 +03:00 [INF] Email successfully sent to mohameedsaieed120@gmail.com
+2026-05-28 17:53:40.783 +03:00 [INF] HTTP POST /api/Auth/forgot-password responded 200 in 1997.4777 ms
+2026-05-28 17:54:03.304 +03:00 [INF] HTTP OPTIONS /api/Auth/forgot-password responded 204 in 0.0489 ms
+2026-05-28 17:54:05.975 +03:00 [INF] Email successfully sent to youssef5fox5@gmail.com
+2026-05-28 17:54:05.976 +03:00 [INF] HTTP POST /api/Auth/forgot-password responded 200 in 1928.2304 ms
+2026-05-28 17:54:31.396 +03:00 [INF] HTTP GET //reset-password responded 404 in 0.3139 ms
+2026-05-28 17:54:31.786 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.6752 ms
+2026-05-28 17:54:49.795 +03:00 [INF] HTTP GET /reset-password responded 404 in 0.1768 ms
+2026-05-28 17:54:57.111 +03:00 [INF] HTTP GET //reset-password responded 404 in 0.2510 ms
+2026-05-28 17:55:02.707 +03:00 [INF] HTTP GET /reset-password responded 404 in 0.1670 ms
+2026-05-28 17:56:54.309 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.0561 ms
+2026-05-28 17:56:54.735 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 73.8438 ms
+2026-05-28 18:45:10.594 +03:00 [INF] HTTP GET / responded 404 in 0.2487 ms
+2026-05-28 18:46:33.730 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.0553 ms
+2026-05-28 18:46:34.112 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 75.5808 ms
+2026-05-28 18:46:35.251 +03:00 [INF] HTTP OPTIONS /api/Scooter/live-map responded 204 in 0.0662 ms
+2026-05-28 18:47:11.010 +03:00 [INF] HTTP OPTIONS /api/Auth/profile responded 204 in 0.0342 ms
+2026-05-28 18:47:22.564 +03:00 [INF] HTTP OPTIONS /api/Auth/profile responded 204 in 0.0332 ms
+2026-05-28 18:47:45.090 +03:00 [INF] HTTP OPTIONS /api/Auth/profile responded 204 in 0.0444 ms
+2026-05-28 18:53:17.427 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 73.0174 ms
+2026-05-28 19:13:54.948 +03:00 [INF] HTTP GET //reset-password responded 404 in 0.2311 ms
+2026-05-28 19:14:07.929 +03:00 [INF] HTTP GET /reset-password responded 404 in 0.3042 ms
+2026-05-28 19:14:08.309 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.3108 ms
+2026-05-28 19:36:52.813 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 401 in 6.3192 ms
+2026-05-28 19:38:02.550 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 75.9194 ms
+2026-05-28 19:38:05.030 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 50.2922 ms
+2026-05-28 19:38:05.194 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 71.9613 ms
+2026-05-28 19:38:31.863 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 3.5713 ms
+2026-05-28 19:39:30.041 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 22.1876 ms
+2026-05-28 19:43:46.821 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 12.7118 ms
+2026-05-28 19:44:07.901 +03:00 [INF] HTTP PUT /api/Auth/profile responded 200 in 169.8795 ms
+2026-05-28 19:44:17.442 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 11.0579 ms
+2026-05-28 19:46:53.244 +03:00 [INF] Email successfully sent to mohamedsaieed47@gmail.com
+2026-05-28 19:46:53.249 +03:00 [INF] HTTP POST /api/Auth/register responded 200 in 1203.1037 ms
+2026-05-28 19:48:11.001 +03:00 [INF] HTTP POST /api/Auth/verify-email responded 200 in 26.0622 ms
+2026-05-28 19:48:11.350 +03:00 [INF] HTTP GET /api/Auth/profile responded 401 in 0.5331 ms
+2026-05-28 19:48:17.129 +03:00 [WRN] AppException thrown: This email is already verified. You can log in.
+2026-05-28 19:48:17.130 +03:00 [INF] HTTP POST /api/Auth/resend-otp responded 400 in 6.4465 ms
+2026-05-28 19:48:22.368 +03:00 [WRN] AppException thrown: This email is already verified. You can log in.
+2026-05-28 19:48:22.369 +03:00 [INF] HTTP POST /api/Auth/resend-otp responded 400 in 2.8867 ms
+2026-05-28 19:48:56.310 +03:00 [WRN] AppException thrown: This email is already verified. You can log in.
+2026-05-28 19:48:56.311 +03:00 [INF] HTTP POST /api/Auth/resend-otp responded 400 in 11.5165 ms
+2026-05-28 19:49:14.091 +03:00 [WRN] AppException thrown: This email is already verified. You can log in.
+2026-05-28 19:49:14.092 +03:00 [INF] HTTP POST /api/Auth/resend-otp responded 400 in 3.1698 ms
+2026-05-28 19:49:19.585 +03:00 [WRN] AppException thrown: This email is already verified. You can log in.
+2026-05-28 19:49:19.586 +03:00 [INF] HTTP POST /api/Auth/resend-otp responded 400 in 2.9335 ms
+2026-05-28 19:50:51.248 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 401 in 0.1685 ms
+2026-05-28 19:51:25.300 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 68.3448 ms
+2026-05-28 19:51:26.940 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 12.1909 ms
+2026-05-28 19:51:27.090 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 12.5751 ms
+2026-05-28 19:51:29.307 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 3.1211 ms
+2026-05-28 19:51:32.070 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 2.9610 ms
+2026-05-28 19:55:58.458 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 20.0969 ms
+2026-05-28 19:57:42.377 +03:00 [INF] Email successfully sent to mohameedsaieed47@gmail.com
+2026-05-28 19:57:42.380 +03:00 [INF] HTTP POST /api/Auth/register responded 200 in 723.6542 ms
+2026-05-28 19:58:15.169 +03:00 [WRN] AppException thrown: Invalid or expired OTP code.
+2026-05-28 19:58:15.170 +03:00 [INF] HTTP POST /api/Auth/verify-email responded 400 in 3.3158 ms
+2026-05-28 19:58:37.154 +03:00 [INF] Email successfully sent to mohameedsaieed47@gmail.com
+2026-05-28 19:58:37.155 +03:00 [INF] HTTP POST /api/Auth/resend-otp responded 200 in 247.5151 ms
+2026-05-28 19:58:59.504 +03:00 [INF] HTTP POST /api/Auth/verify-email responded 200 in 17.4893 ms
+2026-05-28 19:58:59.893 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 5.1576 ms
+2026-05-28 19:59:01.493 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 12.7092 ms
+2026-05-28 19:59:56.098 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 20.5091 ms
+2026-05-28 20:00:29.196 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 62.1458 ms
+2026-05-28 20:00:31.500 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 10.5700 ms
+2026-05-28 20:00:31.501 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 12.3298 ms
+2026-05-28 20:03:47.677 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.0642 ms
+2026-05-28 20:03:50.583 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 67.9039 ms
+2026-05-28 20:03:52.302 +03:00 [INF] HTTP OPTIONS /api/Scooter/live-map responded 204 in 0.0630 ms
+2026-05-28 20:03:53.098 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 11.3376 ms
+2026-05-28 20:07:18.075 +03:00 [INF] HTTP OPTIONS /api/Auth/profile responded 204 in 0.0479 ms
+2026-05-28 20:07:18.395 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 12.1097 ms
+2026-05-28 20:07:46.463 +03:00 [INF] HTTP OPTIONS /api/Auth/profile responded 204 in 0.0326 ms
+2026-05-28 20:07:47.088 +03:00 [INF] HTTP PUT /api/Auth/profile responded 200 in 312.6822 ms
+2026-05-28 20:11:23.210 +03:00 [INF] HTTP OPTIONS /api/Auth/profile responded 204 in 0.0387 ms
+2026-05-28 20:11:23.534 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 11.9750 ms
+2026-05-28 20:11:40.597 +03:00 [INF] HTTP OPTIONS /api/Scooter/live-map responded 204 in 0.0365 ms
+2026-05-28 20:11:41.036 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 11.7540 ms
+2026-05-28 20:12:17.146 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.0404 ms
+2026-05-28 20:12:17.533 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 81.7284 ms
+2026-05-28 20:12:18.500 +03:00 [INF] HTTP OPTIONS /api/Scooter/live-map responded 204 in 0.0317 ms
+2026-05-28 20:12:18.943 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 11.2795 ms
+2026-05-28 20:47:00.893 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.0650 ms
+2026-05-28 20:47:01.290 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 74.9359 ms
+2026-05-28 20:47:02.115 +03:00 [INF] HTTP OPTIONS /api/Scooter/live-map responded 204 in 0.0541 ms
+2026-05-28 20:47:02.534 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 11.9900 ms
+2026-05-28 20:47:09.850 +03:00 [INF] HTTP OPTIONS /api/Scooter/live-map responded 204 in 0.0450 ms
+2026-05-28 20:47:10.161 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 2.9788 ms
+2026-05-28 21:03:28.165 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.0583 ms
+2026-05-28 21:03:28.546 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 75.6107 ms
+2026-05-28 21:03:29.300 +03:00 [INF] HTTP OPTIONS /api/Scooter/live-map responded 204 in 0.0350 ms
+2026-05-28 21:03:29.680 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 11.8488 ms
+2026-05-28 21:51:44.397 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 77.0429 ms
+2026-05-28 21:51:49.982 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 12.5254 ms
+2026-05-28 21:51:49.986 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 17.6659 ms
+2026-05-28 21:56:05.790 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 21.7644 ms
+2026-05-28 21:56:33.491 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 62.9445 ms
+2026-05-28 21:56:37.683 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 5.2323 ms
+2026-05-28 21:56:37.690 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 12.2395 ms
+2026-05-28 22:00:23.904 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 18.8009 ms
+2026-05-28 22:01:00.286 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 60.9741 ms
+2026-05-28 22:01:02.623 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.9081 ms
+2026-05-28 22:01:02.632 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 12.1980 ms
+2026-05-28 22:02:38.655 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 12.3946 ms
+2026-05-28 22:16:16.493 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 18.8083 ms
+2026-05-28 22:17:13.373 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 12.3532 ms
+2026-05-28 22:20:11.536 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 12.8696 ms
+2026-05-28 22:20:16.513 +03:00 [INF] HTTP PUT /api/Auth/profile responded 200 in 12.0161 ms
+2026-05-28 22:20:22.134 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 1.8378 ms
+2026-05-28 22:22:10.273 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 0.6940 ms
+2026-05-28 22:22:10.303 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 0.4005 ms
+2026-05-28 22:22:10.318 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 16.0344 ms
+2026-05-28 22:22:10.619 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 21.4806 ms
+2026-05-28 22:22:12.289 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 0.5396 ms
+2026-05-28 22:42:16.341 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 19.1195 ms
+2026-05-28 22:43:35.081 +03:00 [ERR] An unexpected server error occurred while accessing /api/Auth/profile
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ScooterRental.Service.AuthServices.AuthService.UpdateProfileAsync(String userId, UpdateProfileDto updateProfileDto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\AuthServices\AuthService.cs:line 139
+   at ScooterRental.Presentation.Controllers.AuthController.UpdateProfile(UpdateProfileDto updateProfileDto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\AuthController.cs:line 72
+   at lambda_method729(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-05-28 22:43:35.117 +03:00 [ERR] HTTP PUT /api/Auth/profile responded 500 in 54.6854 ms
+2026-05-28 22:44:40.944 +03:00 [INF] HTTP PUT /api/Auth/profile responded 200 in 24.3930 ms
+2026-05-28 22:45:09.624 +03:00 [INF] HTTP PUT /api/Auth/profile responded 200 in 6.3543 ms
+2026-05-28 22:47:07.574 +03:00 [INF] HTTP PUT /api/Auth/profile responded 200 in 21.2843 ms
+2026-05-28 22:47:25.928 +03:00 [INF] HTTP PUT /api/Auth/profile responded 200 in 6.0852 ms
+2026-05-28 22:48:10.751 +03:00 [INF] HTTP GET / responded 404 in 0.2136 ms
+2026-05-28 23:08:51.952 +03:00 [INF] Now listening on: https://localhost:5001
+2026-05-28 23:08:51.975 +03:00 [INF] Now listening on: http://localhost:5000
+2026-05-28 23:08:52.018 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-28 23:08:52.019 +03:00 [INF] Hosting environment: Development
+2026-05-28 23:08:52.020 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-28 23:08:52.588 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 363.2921 ms
+2026-05-28 23:08:52.630 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 10.4748 ms
+2026-05-28 23:08:52.639 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 19.9845 ms
+2026-05-28 23:08:53.078 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 155.8650 ms
+2026-05-28 23:09:14.754 +03:00 [INF] Now listening on: https://localhost:5001
+2026-05-28 23:09:14.778 +03:00 [INF] Now listening on: http://localhost:5000
+2026-05-28 23:09:14.820 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-28 23:09:14.821 +03:00 [INF] Hosting environment: Development
+2026-05-28 23:09:14.822 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-28 23:09:15.285 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 118.0716 ms
+2026-05-28 23:09:15.317 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 9.1002 ms
+2026-05-28 23:09:15.326 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 17.9681 ms
+2026-05-28 23:09:15.778 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 162.2750 ms
+2026-05-28 23:10:04.739 +03:00 [INF] Email successfully sent to youssef5fox5@gmail.com
+2026-05-28 23:10:04.745 +03:00 [INF] HTTP POST /api/Auth/forgot-password responded 200 in 1404.3031 ms
+2026-05-28 23:10:28.162 +03:00 [INF] HTTP GET //reset-password responded 404 in 2.6823 ms
+2026-05-28 23:10:28.533 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.9465 ms
+2026-05-28 23:10:39.633 +03:00 [INF] Email successfully sent to youssef5fox5@gmail.com
+2026-05-28 23:10:39.635 +03:00 [INF] HTTP POST /api/Auth/forgot-password responded 200 in 345.7407 ms
+2026-05-28 23:10:44.887 +03:00 [INF] HTTP GET //reset-password responded 404 in 0.2396 ms
+2026-05-28 23:11:41.671 +03:00 [INF] HTTP GET /api/Auth/reset-password responded 405 in 0.4549 ms
+2026-05-28 23:11:43.673 +03:00 [INF] HTTP GET /api/Auth/reset-password responded 405 in 0.1947 ms
+2026-05-28 23:14:40.698 +03:00 [INF] Now listening on: https://localhost:5001
+2026-05-28 23:14:40.721 +03:00 [INF] Now listening on: http://localhost:5000
+2026-05-28 23:14:40.761 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-28 23:14:40.763 +03:00 [INF] Hosting environment: Development
+2026-05-28 23:14:40.764 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-28 23:14:41.229 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 117.3347 ms
+2026-05-28 23:14:41.270 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 10.2108 ms
+2026-05-28 23:14:41.280 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 19.9965 ms
+2026-05-28 23:14:41.716 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 145.5461 ms
+2026-05-28 23:15:22.538 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 427.0532 ms
+2026-05-28 23:15:26.163 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 148.0741 ms
+2026-05-28 23:15:26.367 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 125.8862 ms
+2026-05-28 23:15:44.808 +03:00 [INF] HTTP GET / responded 404 in 3.0515 ms
+2026-05-28 23:17:24.632 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 25.7948 ms
+2026-05-28 23:44:45.220 +03:00 [INF] Now listening on: https://localhost:5001
+2026-05-28 23:44:45.246 +03:00 [INF] Now listening on: http://localhost:5000
+2026-05-28 23:44:45.311 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-28 23:44:45.313 +03:00 [INF] Hosting environment: Development
+2026-05-28 23:44:45.314 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-28 23:44:46.591 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1139.5810 ms
+2026-05-28 23:44:46.633 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 10.0580 ms
+2026-05-28 23:44:46.642 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 19.1465 ms
+2026-05-28 23:44:47.071 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 135.5339 ms
+2026-05-28 23:45:49.318 +03:00 [INF] Email successfully sent to youssef5fox5@gmail.com
+2026-05-28 23:45:49.324 +03:00 [INF] HTTP POST /api/Auth/forgot-password responded 200 in 1464.5279 ms
+2026-05-28 23:46:13.587 +03:00 [INF] HTTP GET //reset-password responded 404 in 2.7037 ms
+2026-05-28 23:50:01.280 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1.0586 ms
+2026-05-28 23:50:01.307 +03:00 [INF] HTTP GET /scalar/scalar.js responded 304 in 0.9559 ms
+2026-05-28 23:50:01.308 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 304 in 0.4263 ms
+2026-05-28 23:50:01.754 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 17.0485 ms
+2026-05-28 23:50:02.570 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 0.7447 ms
+2026-05-28 23:50:28.412 +03:00 [INF] Email successfully sent to youssef5fox5@gmail.com
+2026-05-28 23:50:28.414 +03:00 [INF] HTTP POST /api/Auth/forgot-password responded 200 in 807.3087 ms
+2026-05-28 23:50:37.668 +03:00 [INF] HTTP GET /reset-password responded 404 in 0.2553 ms
+2026-05-28 23:52:15.457 +03:00 [WRN] AppException thrown: One or more validation errors occurred.
+2026-05-28 23:52:15.459 +03:00 [INF] HTTP POST /api/Auth/reset-password responded 400 in 28.8977 ms
+2026-05-28 23:53:32.708 +03:00 [WRN] AppException thrown: One or more validation errors occurred.
+2026-05-28 23:53:32.709 +03:00 [INF] HTTP POST /api/Auth/reset-password responded 400 in 12.7263 ms
+2026-05-28 23:54:09.094 +03:00 [INF] Email successfully sent to youssef5fox5@gmail.com
+2026-05-28 23:54:09.096 +03:00 [INF] HTTP POST /api/Auth/forgot-password responded 200 in 1300.0685 ms
+2026-05-28 23:55:45.167 +03:00 [INF] HTTP GET /reset-password responded 404 in 0.2120 ms
+2026-05-28 23:57:06.158 +03:00 [WRN] AppException thrown: One or more validation errors occurred.
+2026-05-28 23:57:06.159 +03:00 [INF] HTTP POST /api/Auth/reset-password responded 400 in 10.2270 ms
+2026-05-28 23:59:57.622 +03:00 [INF] HTTP POST /api/Auth/reset-password responded 200 in 226.7507 ms

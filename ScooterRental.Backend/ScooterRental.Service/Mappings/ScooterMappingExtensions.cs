@@ -1,4 +1,6 @@
-﻿namespace ScooterRental.Service.Mappings
+﻿using ScooterRental.Domain.Models.Scooters;
+
+namespace ScooterRental.Service.Mappings
 {
     public static class ScooterMappingExtensions
     {
@@ -25,7 +27,7 @@
                 ModelId = dto.ModelId
             };
         }
-        
+
         // 3. ScooterForUpdateDto -> Scooter
         public static void UpdateEntity(this ScooterForUpdateDto dto, Scooter scooter)
         {
@@ -44,7 +46,7 @@
             foreach (var scooter in scooters)
             {
                 scooterDtos.Add(new ScooterDto(
-                
+
                     scooter.Id,
                     scooter.SerialNumber,
                     scooter.CurrentBatteryLevel,
@@ -63,6 +65,29 @@
                     scooter.CurrentBatteryLevel,
                     scooter.Status.ToString()
                 );
+        }
+
+        // 6. List of Scooter -> List of MapScooterDto
+        public static IReadOnlyList<MapScooterDto> ToMapDtoList(this IReadOnlyList<Scooter> scooters, decimal unlockFee, decimal feePerMinute)
+        {
+            if (scooters == null || scooters.Count == 0)
+                return new List<MapScooterDto>(0);
+
+            var scooterMapDtos = new List<MapScooterDto>(scooters.Count);
+            foreach (var scooter in scooters)
+            {
+                scooterMapDtos.Add(new MapScooterDto(
+
+                    scooter.Id,
+                    scooter.SerialNumber,
+                    scooter.CurrentBatteryLevel,
+                    scooter.Location?.Y ?? 0,
+                    scooter.Location?.X ?? 0,
+                    unlockFee,
+                    feePerMinute
+                ));
+            }
+            return scooterMapDtos;
         }
     }
 }

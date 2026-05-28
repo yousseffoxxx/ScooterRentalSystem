@@ -1,6 +1,4 @@
-﻿using ScooterRental.Domain.Models.Auth;
-
-namespace ScooterRental.Domain.Models.Payment
+﻿namespace ScooterRental.Domain.Models.Payment
 {
     public class Wallet
     {
