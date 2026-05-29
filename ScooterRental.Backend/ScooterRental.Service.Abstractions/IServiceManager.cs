@@ -7,5 +7,6 @@
         IZoneService ZoneService { get; }
         IRideService RideService { get; }
         IPaymobService PaymobService { get; }
+        ITariffService TariffService { get; }
     }
 }

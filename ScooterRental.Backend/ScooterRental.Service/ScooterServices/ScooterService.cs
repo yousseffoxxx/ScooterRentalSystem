@@ -1,6 +1,6 @@
 ﻿namespace ScooterRental.Service.ScooterServices
 {
-    public class ScooterService(IUnitOfWork _unitOfWork) : IScooterService
+    public class ScooterService(IUnitOfWork _unitOfWork, IMqttCommandService _mqttCommandService) : IScooterService
     {
         public async Task<PaginatedResult<ScooterDto>> GetAllScootersAsync(QueryParams queryParams)
         {
@@ -94,6 +94,80 @@
             var scootersMapDtos = scooters.ToMapDtoList(tariff.UnlockFee,tariff.PerMinuteRate);
 
             return new LiveMapDto(scootersMapDtos, zonesMapDtos);
+        }
+
+        public async Task<bool> ForceUnlockScooterAsync(Guid scooterId)
+        {
+            var scooter = await _unitOfWork.GetRepository<Scooter>().GetByIdAsync(scooterId);
+            
+            if (scooter is null)
+                throw new NotFoundException("Scooter", scooterId);
+
+            await _mqttCommandService.SendCommandAsync(scooter.SerialNumber, ScooterCommandType.UnlockScooter);
+
+            return true;
+        }
+
+        public async Task<bool> ForceLockScooterAsync(Guid scooterId)
+        {
+            var scooter = await _unitOfWork.GetRepository<Scooter>().GetByIdAsync(scooterId);
+            
+            if (scooter is null)
+                throw new NotFoundException("Scooter", scooterId);
+
+            await _mqttCommandService.SendCommandAsync(scooter.SerialNumber, ScooterCommandType.LockScooter, 0);
+
+            return true;
+        }
+
+        public async Task<bool> PlayScooterAlarmAsync(Guid scooterId)
+        {
+            var scooter = await _unitOfWork.GetRepository<Scooter>().GetByIdAsync(scooterId);
+            
+            if (scooter is null)
+                throw new NotFoundException("Scooter", scooterId);
+
+            await _mqttCommandService.SendCommandAsync(scooter.SerialNumber, ScooterCommandType.PlayAlarm);
+
+            return true;
+        }
+
+        public async Task<bool> PutScooterInMaintenanceAsync(Guid scooterId)
+        {
+            var scooter = await _unitOfWork.GetRepository<Scooter>().GetByIdAsync(scooterId);
+
+            if (scooter is null)
+                throw new NotFoundException("Scooter", scooterId);
+
+            if (scooter.Status == ScooterStatus.InUse)
+                throw new BadRequestException("Cannot put a scooter into maintenance while it is in an active ride.");
+
+            scooter.Status = ScooterStatus.Maintenance;
+
+            _unitOfWork.GetRepository<Scooter>().Update(scooter);
+            
+            await _unitOfWork.SaveChangesAsync();
+
+            return true;
+        }
+
+        public async Task<bool> RetireScooterAsync(Guid scooterId)
+        {
+            var scooter = await _unitOfWork.GetRepository<Scooter>().GetByIdAsync(scooterId);
+
+            if (scooter is null)
+                throw new NotFoundException("Scooter", scooterId);
+
+            if (scooter.Status == ScooterStatus.InUse)
+                throw new BadRequestException("Cannot retire a scooter while it is in an active ride.");
+
+            scooter.Status = ScooterStatus.Offline;
+
+            _unitOfWork.GetRepository<Scooter>().Update(scooter);
+            
+            await _unitOfWork.SaveChangesAsync();
+
+            return true;
         }
     }
 }

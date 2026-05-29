@@ -10,7 +10,7 @@
         private readonly Lazy<IAuthService> _lazyAuthService = new Lazy<IAuthService>(() => new AuthService(_userManager, _tokenService, _configuration, _otpService, _emailService,_localStorageService,_unitOfWork));
         public IAuthService AuthService => _lazyAuthService.Value;
 
-        private readonly Lazy<IScooterService> _lazyScooterService = new Lazy<IScooterService>(() => new ScooterService(_unitOfWork));
+        private readonly Lazy<IScooterService> _lazyScooterService = new Lazy<IScooterService>(() => new ScooterService(_unitOfWork,_mqttCommandService));
         public IScooterService ScooterService => _lazyScooterService.Value;
 
         private readonly Lazy<IZoneService> _lazyZoneService = new Lazy<IZoneService>(() => new ZoneService(_unitOfWork,_createValidator,_updateValidator, _redisZoneEventPublisher));
@@ -21,5 +21,8 @@
 
         private readonly Lazy<IPaymobService> _lazyPaymobService = new Lazy<IPaymobService>(() => new PaymobService(_httpClientFactory, _options, _userManager, _notificationService));
         public IPaymobService PaymobService => _lazyPaymobService.Value;
+
+        private readonly Lazy<ITariffService> _lazyTariffService = new Lazy<ITariffService>(() => new TariffService(_unitOfWork));
+        public ITariffService TariffService => _lazyTariffService.Value;
     }
 }

@@ -21,6 +21,11 @@ global using ScooterRental.Shared.DTOs.Zone.Response;
 global using ScooterRental.Shared.Events;
 global using System.Linq.Expressions;
 global using ScooterRental.Shared.DTOs.AdminManagement.Users.Response;
+global using ScooterRental.Shared.DTOs.Tariff.Request;
+global using ScooterRental.Shared.DTOs.Tariff.Response;
+global using ScooterRental.Service.Abstractions.TariffServices;
+
+
 
 
 

@@ -70,7 +70,7 @@
             };
         }
 
-        // 6. List of USer -> List of UserResponseDto
+        // 6. List of User -> List of UserResponseDto
         public static IReadOnlyList<UserResponseDto> ToDtoList(this IReadOnlyList<User> users, string baseUrl)
         {
             if (users == null || users.Count == 0)

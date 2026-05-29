@@ -57,6 +57,12 @@ global using System.Security.Cryptography;
 global using System.Text;
 global using System.Text.Json;
 global using ScooterRental.Shared.DTOs.AdminManagement.Users.Response;
+global using ScooterRental.Service.Abstractions.TariffServices;
+global using ScooterRental.Shared.DTOs.Tariff.Request;
+global using ScooterRental.Shared.DTOs.Tariff.Response;
+global using ScooterRental.Service.TariffServices;
+
+
 
 
 

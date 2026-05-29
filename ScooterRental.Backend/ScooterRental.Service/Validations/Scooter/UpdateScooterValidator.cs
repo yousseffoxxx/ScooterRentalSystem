@@ -1,6 +1,4 @@
-﻿using ScooterRental.Shared.DTOs.Scooter.Request;
-
-namespace ScooterRental.Service.Validations.Scooter
+﻿namespace ScooterRental.Service.Validations.Scooter
 {
     public class UpdateScooterValidator : AbstractValidator<ScooterForUpdateDto>
     {
