@@ -11,3 +11,33 @@
 2026-05-29 00:03:17.159 +03:00 [INF] HTTP POST /api/Auth/forgot-password responded 200 in 2137.6290 ms
 2026-05-29 00:03:35.857 +03:00 [INF] HTTP GET /reset-password responded 404 in 2.7709 ms
 2026-05-29 00:04:17.212 +03:00 [INF] HTTP POST /api/Auth/reset-password responded 200 in 206.7788 ms
+2026-05-29 00:14:11.948 +03:00 [INF] Now listening on: https://localhost:5001
+2026-05-29 00:14:11.970 +03:00 [INF] Now listening on: http://localhost:5000
+2026-05-29 00:14:12.012 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 00:14:12.014 +03:00 [INF] Hosting environment: Development
+2026-05-29 00:14:12.015 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-29 00:14:12.906 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 134.0775 ms
+2026-05-29 00:14:13.008 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 8.0314 ms
+2026-05-29 00:14:13.016 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 15.7290 ms
+2026-05-29 00:14:13.426 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 131.7412 ms
+2026-05-29 18:13:22.459 +03:00 [INF] Now listening on: https://localhost:5001
+2026-05-29 18:13:22.486 +03:00 [INF] Now listening on: http://localhost:5000
+2026-05-29 18:13:22.535 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 18:13:22.537 +03:00 [INF] Hosting environment: Development
+2026-05-29 18:13:22.538 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-29 18:13:23.866 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 971.6959 ms
+2026-05-29 18:13:23.906 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 10.1460 ms
+2026-05-29 18:13:23.923 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 27.6532 ms
+2026-05-29 18:13:24.342 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 154.3407 ms
+2026-05-29 18:14:46.917 +03:00 [WRN] AppException thrown: One or more validation errors occurred.
+2026-05-29 18:14:46.921 +03:00 [INF] HTTP POST /api/Auth/create-admin responded 400 in 514.7016 ms
+2026-05-29 18:14:59.635 +03:00 [INF] HTTP POST /api/Auth/create-admin responded 200 in 365.1350 ms
+2026-05-29 20:05:20.131 +03:00 [INF] Now listening on: https://localhost:5001
+2026-05-29 20:05:20.156 +03:00 [INF] Now listening on: http://localhost:5000
+2026-05-29 20:05:20.211 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-29 20:05:20.212 +03:00 [INF] Hosting environment: Development
+2026-05-29 20:05:20.213 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-29 20:05:20.570 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 106.6193 ms
+2026-05-29 20:05:20.611 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 9.3027 ms
+2026-05-29 20:05:20.623 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 21.7767 ms
+2026-05-29 20:05:21.075 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 150.4987 ms

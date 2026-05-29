@@ -2,7 +2,7 @@
 {
     public class ScooterService(IUnitOfWork _unitOfWork) : IScooterService
     {
-        public async Task<PaginatedResult<ScooterDto>> GetAllScootersAsync(ScooterQueryParams queryParams)
+        public async Task<PaginatedResult<ScooterDto>> GetAllScootersAsync(QueryParams queryParams)
         {
             var specifications = new AllScootersSpecification(queryParams.PageIndex, queryParams.PageSize);
 

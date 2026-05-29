@@ -21,7 +21,7 @@
 
         [HttpGet]
         [Authorize(Roles = "Admin")]
-        public async Task<ActionResult<PaginatedResult<ScooterDto>>> GetAllScooters([FromQuery] ScooterQueryParams queryParams)
+        public async Task<ActionResult<PaginatedResult<ScooterDto>>> GetAllScooters([FromQuery] QueryParams queryParams)
         {
            var scooters = await _serviceManager.ScooterService.GetAllScootersAsync(queryParams);
 

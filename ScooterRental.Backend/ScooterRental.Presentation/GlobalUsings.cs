@@ -13,6 +13,10 @@ global using ScooterRental.Shared.DTOs.Ride.Request;
 global using ScooterRental.Shared.DTOs.Ride.Response;
 global using ScooterRental.Shared.DTOs.Payment.Request;
 global using ScooterRental.Shared.DTOs.Payment.Response;
+global using ScooterRental.Shared.DTOs.AdminManagement.Users.Request;
+global using ScooterRental.Shared.DTOs.AdminManagement.Users.Response;
+
+
 
 
 

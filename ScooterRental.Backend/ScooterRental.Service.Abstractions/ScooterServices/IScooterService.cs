@@ -7,7 +7,7 @@
         Task<LiveMapDto> GetLiveMapDataAsync();
 
         // Admin
-        Task<PaginatedResult<ScooterDto>> GetAllScootersAsync(ScooterQueryParams queryParams);
+        Task<PaginatedResult<ScooterDto>> GetAllScootersAsync(QueryParams queryParams);
         Task<ScooterDto> GetScooterByIdAsync(Guid id);
         Task<ScooterDto> CreateScooterAsync(ScooterForCreationDto scooterDto);
         Task<ScooterDto> UpdateScooterAsync(Guid id, ScooterForUpdateDto scooterDto);

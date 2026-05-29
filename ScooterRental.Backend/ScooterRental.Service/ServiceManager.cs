@@ -7,7 +7,7 @@
         IOptions<PaymobOptions> _options, INotificationService _notificationService) 
         : IServiceManager
     {
-        private readonly Lazy<IAuthService> _lazyAuthService = new Lazy<IAuthService>(() => new AuthService(_userManager, _tokenService, _configuration, _otpService, _emailService,_localStorageService));
+        private readonly Lazy<IAuthService> _lazyAuthService = new Lazy<IAuthService>(() => new AuthService(_userManager, _tokenService, _configuration, _otpService, _emailService,_localStorageService,_unitOfWork));
         public IAuthService AuthService => _lazyAuthService.Value;
 
         private readonly Lazy<IScooterService> _lazyScooterService = new Lazy<IScooterService>(() => new ScooterService(_unitOfWork));

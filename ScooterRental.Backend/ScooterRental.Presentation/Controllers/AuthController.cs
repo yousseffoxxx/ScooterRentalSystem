@@ -95,5 +95,13 @@
 
             return Ok(new MessageResponseDto("FCM Token updated successfully."));
         }
+
+        [HttpPost("create-admin")]
+        public async Task<ActionResult<AdminResultDto>> CreateAdmin([FromHeader(Name = "X-Admin-Secret")] string secretKey, [FromBody] CreateAdminDto createAdminDto)
+        {
+            var result = await _serviceManager.AuthService.CreateAdminAsync(createAdminDto, secretKey);
+
+            return Ok(result);
+        }
     }
 }
