@@ -1,0 +1,9 @@
+2026-05-30 16:44:12.866 +03:00 [INF] Now listening on: https://localhost:5001
+2026-05-30 16:44:12.894 +03:00 [INF] Now listening on: http://localhost:5000
+2026-05-30 16:44:12.941 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-30 16:44:12.943 +03:00 [INF] Hosting environment: Development
+2026-05-30 16:44:12.943 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-05-30 16:44:14.453 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1116.6879 ms
+2026-05-30 16:44:14.495 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 10.5611 ms
+2026-05-30 16:44:14.518 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 33.2720 ms
+2026-05-30 16:44:14.981 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 170.1747 ms

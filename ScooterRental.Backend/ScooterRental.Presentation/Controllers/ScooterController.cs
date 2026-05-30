@@ -21,7 +21,7 @@
 
         [HttpGet]
         [Authorize(Roles = "Admin")]
-        public async Task<ActionResult<PaginatedResult<ScooterDto>>> GetAllScooters([FromQuery] ScooterQueryParams queryParams)
+        public async Task<ActionResult<PaginatedResult<ScooterDto>>> GetAllScooters([FromQuery] QueryParams queryParams)
         {
            var scooters = await _serviceManager.ScooterService.GetAllScootersAsync(queryParams);
 
@@ -62,6 +62,48 @@
             var result = await _serviceManager.ScooterService.DeleteScooterAsync(id);
 
             return Ok(result);
+        }
+
+        [HttpPost("{id:guid}/unlock")]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult<MessageResponseDto>> ForceUnlockScooter(Guid id)
+        {
+            await _serviceManager.ScooterService.ForceUnlockScooterAsync(id);
+            return Ok(new MessageResponseDto("Scooter wheels unlocked successfully."));
+        }
+
+        [HttpPost("{id:guid}/lock")]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult<MessageResponseDto>> ForceLockScooter(Guid id)
+        {
+            await _serviceManager.ScooterService.ForceLockScooterAsync(id);
+            return Ok(new MessageResponseDto("Scooter wheels locked successfully."));
+        }
+
+        [HttpPost("{id:guid}/ping")]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult<MessageResponseDto>> PingScooter(Guid id)
+        {
+            await _serviceManager.ScooterService.PlayScooterAlarmAsync(id);
+            return Ok(new MessageResponseDto("Alarm command sent to scooter."));
+        }
+
+        [HttpPost("{id:guid}/maintenance")]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult<MessageResponseDto>> PutScooterInMaintenance(Guid id)
+        {
+            await _serviceManager.ScooterService.PutScooterInMaintenanceAsync(id);
+            
+            return Ok(new MessageResponseDto("Scooter moved to Maintenance status."));
+        }
+
+        [HttpPost("{id:guid}/retire")]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult<MessageResponseDto>> RetireScooter(Guid id)
+        {
+            await _serviceManager.ScooterService.RetireScooterAsync(id);
+            
+            return Ok(new MessageResponseDto("Scooter has been retired (Offline)."));
         }
     }
 }

@@ -46,5 +46,56 @@
                 PhoneVerified = user.PhoneNumberConfirmed
             };
         }
+
+        // 4. CreateAdminDto -> User
+        public static User ToEntity(this CreateAdminDto dto)
+        {
+            return new User
+            {
+                FullName = dto.Name,
+                Email = dto.Email,
+                UserName = dto.Email,
+            };
+        }
+
+        // 5. User -> AdminResponseDto
+        public static AdminResponseDto ToDto(this User user)
+        {
+            return new AdminResponseDto
+            {
+                Id = user.Id,
+                FullName = user.FullName,
+                Email = user.Email ?? string.Empty,
+                AccountStatus = user.AccountStatus.ToString(),
+            };
+        }
+
+        // 6. List of User -> List of UserResponseDto
+        public static IReadOnlyList<UserResponseDto> ToDtoList(this IReadOnlyList<User> users, string baseUrl)
+        {
+            if (users == null || users.Count == 0)
+                return new List<UserResponseDto>(0);
+
+            var usersDtos = new List<UserResponseDto>(users.Count);
+            foreach (var user in users)
+            {
+                string? formattedAvatarUrl = string.IsNullOrWhiteSpace(user.AvatarUrl)
+                    ? null : $"{baseUrl.TrimEnd('/')}/{user.AvatarUrl.TrimStart('/')}";
+                
+                usersDtos.Add(new UserResponseDto
+                {
+                    Id = user.Id,
+                    FullName = user.FullName,
+                    Email = user.Email ?? "",
+                    PhoneNumber = user.PhoneNumber ?? "",
+                    AvatarUrl = formattedAvatarUrl,
+                    IdVerificationStatus = user.IdVerificationStatus.ToString(),
+                    AccountStatus = user.AccountStatus.ToString(),
+                    WalletBalance = user.Wallet.Balance,
+                    PhoneVerified = user.PhoneNumberConfirmed
+                });
+            }
+            return usersDtos;
+        }
     }
 }

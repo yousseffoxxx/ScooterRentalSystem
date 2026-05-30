@@ -1,7 +1,8 @@
 ﻿namespace ScooterRental.Service.AuthServices
 {
     public class AuthService(UserManager<User> _userManager, ITokenService _tokenService,
-        IConfiguration _configuration, IOtpService _otpService, IEmailService _emailService, ILocalStorageService _localStorageService) : IAuthService
+        IConfiguration _configuration, IOtpService _otpService, IEmailService _emailService, ILocalStorageService _localStorageService,
+        IUnitOfWork _unitOfWork) : IAuthService
     {
         private readonly string _baseUrl = _configuration.GetSection("Urls")["BaseUrl"] ?? string.Empty;
 
@@ -228,6 +229,85 @@
             var result = await _userManager.UpdateAsync(user);
 
             return result.Succeeded;
+        }
+
+        public async Task<AdminResultDto> CreateAdminAsync(CreateAdminDto createAdminDto, string secretKey)
+        {
+            var configuredSecret = _configuration.GetSection("AdminSettings")["CreationKey"];
+
+            if (string.IsNullOrEmpty(configuredSecret) || secretKey != configuredSecret)
+                throw new UnAuthorizedException("Invalid admin creation secret.");
+
+            var user = createAdminDto.ToEntity();
+
+            var result = await _userManager.CreateAsync(user, createAdminDto.Password);
+
+            if (!result.Succeeded)
+                throw CreateValidationException(result);
+
+            await _userManager.AddToRoleAsync(user, "Admin");
+
+            var emailToken = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+
+            await _userManager.ConfirmEmailAsync(user, emailToken);
+
+            var token = await _tokenService.CreateTokenAsync(user);
+
+            var adminDto = user.ToDto();
+
+            return new AdminResultDto(adminDto, token);
+        }
+
+        public async Task<PaginatedResult<UserResponseDto>> GetAllUsersAsync(QueryParams queryParams)
+        {
+            var users = await _unitOfWork.GetRepository<User>()
+                .GetAllWithSpecAsync(new AllUsersSpecifications(queryParams.PageIndex, queryParams.PageSize));
+
+            var usersTotalCount = await _userManager.Users.CountAsync();
+
+            var userDtos = users.ToDtoList(_baseUrl);
+
+            return new PaginatedResult<UserResponseDto>(queryParams.PageIndex, users.Count, usersTotalCount, userDtos);
+        }
+
+        public async Task<UserResponseDto> GetUserByIdAsync(Guid id)
+        {
+            var user = await _unitOfWork.GetRepository<User>().GetEntityWithSpecAsync(new UserByIdSpecification(id));
+
+            if(user is null)
+                throw new NotFoundException("User", id);
+
+            var userDto = user.ToDto(_baseUrl);
+
+            return userDto;
+        }
+
+        public async Task<bool> SuspendUserAsync(Guid id)
+        {
+            var user = await _userManager.Users.FirstOrDefaultAsync(u => u.Id == id);
+
+            if (user is null)
+                throw new NotFoundException("User", id);
+
+            await _userManager.SetLockoutEndDateAsync(user, DateTimeOffset.MaxValue);
+
+            await _userManager.UpdateAsync(user);
+
+            return true;
+        }
+
+        public async Task<bool> ActivateUserAsync(Guid id)
+        {
+            var user = await _userManager.Users.FirstOrDefaultAsync(u => u.Id == id);
+
+            if (user is null)
+                throw new NotFoundException("User", id);
+
+            await _userManager.SetLockoutEndDateAsync(user, null);
+
+            await _userManager.UpdateAsync(user);
+
+            return true;
         }
 
         private static AppValidationException CreateValidationException(IdentityResult result)

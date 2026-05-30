@@ -13,5 +13,10 @@
         Task<UserResponseDto> UpdateProfileAsync(string userId, UpdateProfileDto updateProfileDto);
         Task<bool> RemoveDeadFcmTokenAsync(string fcmToken);
         Task<bool> UpdateFcmTokenAsync(string userId, UpdateFcmTokenDto tokenDto);
+        Task<AdminResultDto> CreateAdminAsync(CreateAdminDto createAdminDto, string secretKey);
+        Task<PaginatedResult<UserResponseDto>> GetAllUsersAsync(QueryParams queryParams);
+        Task<UserResponseDto> GetUserByIdAsync(Guid id);
+        Task<bool> SuspendUserAsync(Guid id);
+        Task<bool> ActivateUserAsync(Guid id);
     }
 }

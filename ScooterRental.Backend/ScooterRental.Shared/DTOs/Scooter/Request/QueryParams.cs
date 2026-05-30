@@ -1,6 +1,6 @@
 ﻿namespace ScooterRental.Shared.DTOs.Scooter.Request
 {
-    public record ScooterQueryParams
+    public record QueryParams
     {
         private const int defaultPageSize = 5;
         private const int maxPageSize = 10;

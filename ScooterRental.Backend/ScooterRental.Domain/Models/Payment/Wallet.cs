@@ -11,5 +11,7 @@
 
         public User User { get; set; } = null!;
         public Guid UserId { get; set; }
+
+        public ICollection<WalletTransaction> Transactions { get; set; } = new List<WalletTransaction>();
     }
 }
