@@ -24,6 +24,9 @@ global using ScooterRental.Shared.DTOs.AdminManagement.Users.Response;
 global using ScooterRental.Shared.DTOs.Tariff.Request;
 global using ScooterRental.Shared.DTOs.Tariff.Response;
 global using ScooterRental.Service.Abstractions.TariffServices;
+global using ScooterRental.Shared.DTOs.AdminManagement.Payment.Request;
+global using ScooterRental.Shared.DTOs.AdminManagement.Payment.Response;
+
 
 
 

@@ -1,6 +1,7 @@
 ﻿namespace ScooterRental.Service.PaymentServices
 {
-    public class PaymobService(IHttpClientFactory _httpClientFactory, IOptions<PaymobOptions> _options, UserManager<User> _userManager,INotificationService _notificationService) : IPaymobService
+    public class PaymobService(IHttpClientFactory _httpClientFactory, IOptions<PaymobOptions> _options, UserManager<User> _userManager,
+        INotificationService _notificationService,IUnitOfWork _unitOfWork) : IPaymobService
     {
         public async Task<TopUpResponseDto> InitiateWalletPaymentAsync(decimal amount, string phoneNumber, string userId)
         {
@@ -169,11 +170,24 @@
 
             decimal amountEgp = amountCents / 100m;
 
+            string paymobTransactionId = obj.GetProperty("id").GetInt32().ToString();
+
             user.Wallet.Balance += amountEgp;
             user.Wallet.TotalToppedUp += amountEgp;
             user.Wallet.UpdatedAt = DateTimeOffset.UtcNow;
 
-            await _userManager.UpdateAsync(user);
+            var walletTransaction = new WalletTransaction
+            {
+                WalletId = user.Wallet.Id,
+                Amount = amountEgp,
+                Type = TransactionType.TopUp,
+                ReferenceId = paymobTransactionId,
+                Description = "Paymob Wallet Top-Up"
+            };
+
+            _unitOfWork.GetRepository<WalletTransaction>().Add(walletTransaction);
+
+            await _unitOfWork.SaveChangesAsync();
 
             if (!string.IsNullOrEmpty(user.FcmToken))
                 await _notificationService.SendNotificationAsync(user.FcmToken,
@@ -182,6 +196,61 @@
                     new Dictionary<string, string> { { "action", "refresh_wallet" } });
             
             return true;
+        }
+
+        public async Task<bool> AdjustWalletBalanceAsync(AdminWalletAdjustmentDto dto)
+        {
+            var userId = Guid.Parse(dto.UserId.ToString());
+
+            var user = await _userManager.Users.Include(u => u.Wallet).FirstOrDefaultAsync(u => u.Id == userId);
+
+            if (user is null || user.Wallet is null)
+                throw new UnAuthorizedException("User or Wallet Not Found");
+
+            user.Wallet.Balance += dto.Amount;
+            user.Wallet.UpdatedAt = DateTimeOffset.UtcNow;
+
+            var walletTransaction = new WalletTransaction
+            {
+                WalletId = user.Wallet.Id,
+                Amount = dto.Amount,
+                Type = TransactionType.Refund,
+                Description = dto.Reason,
+                ReferenceId = "SYS-ADJ"
+            };
+
+            _unitOfWork.GetRepository<WalletTransaction>().Add(walletTransaction);
+
+            await _unitOfWork.SaveChangesAsync();
+
+            if (!string.IsNullOrEmpty(user.FcmToken))
+            {
+                await _notificationService.SendNotificationAsync(
+                    user.FcmToken,
+                    "Wallet Credited",
+                    $"{dto.Amount} EGP has been added to your wallet. Reason: {dto.Reason}",
+                    new Dictionary<string, string> { { "action", "refresh_wallet" } }
+                );
+            }
+
+            return true;
+        }
+
+        public async Task<PaginatedResult<WalletTransactionDto>> GetUserTransactionsAsync(Guid userId, QueryParams queryParams)
+        {
+            var specification = new TransactionsByUserIdSpecification(userId, queryParams.PageIndex, queryParams.PageSize);
+            
+            var countSpecification = new TransactionsByUserIdSpecification(userId);
+
+            var transactionsRepo = _unitOfWork.GetRepository<WalletTransaction>();
+
+            var transactions = await transactionsRepo.GetAllWithSpecAsync(specification);
+
+            var totalCount = await transactionsRepo.CountAsync(countSpecification);
+
+            var dtos = transactions.ToDtoList();
+
+            return new PaginatedResult<WalletTransactionDto>(queryParams.PageIndex, queryParams.PageSize, totalCount, dtos);
         }
 
         private string CalculateHmacSha512(string text, string key)

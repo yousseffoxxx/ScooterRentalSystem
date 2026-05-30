@@ -18,5 +18,6 @@
         public DbSet<Zone> Zones { get; set; }
         public DbSet<Ride> Rides { get; set; }
         public DbSet<Tariff> Tariffs { get; set; }
+        public DbSet<WalletTransaction> WalletTransactions { get; set; }
     }
 }

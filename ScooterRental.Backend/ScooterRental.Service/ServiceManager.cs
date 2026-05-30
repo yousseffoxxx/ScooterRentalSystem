@@ -19,7 +19,7 @@
         private readonly Lazy<IRideService> _lazyRideService = new Lazy<IRideService>(() => new RideService(_unitOfWork,_mqttCommandService,_scooterTelemetryRepository,_zoneCacheService,_userManager,_notificationService));
         public IRideService RideService => _lazyRideService.Value;
 
-        private readonly Lazy<IPaymobService> _lazyPaymobService = new Lazy<IPaymobService>(() => new PaymobService(_httpClientFactory, _options, _userManager, _notificationService));
+        private readonly Lazy<IPaymobService> _lazyPaymobService = new Lazy<IPaymobService>(() => new PaymobService(_httpClientFactory, _options, _userManager, _notificationService,_unitOfWork));
         public IPaymobService PaymobService => _lazyPaymobService.Value;
 
         private readonly Lazy<ITariffService> _lazyTariffService = new Lazy<ITariffService>(() => new TariffService(_unitOfWork));
