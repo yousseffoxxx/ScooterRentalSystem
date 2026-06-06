@@ -28,7 +28,7 @@
             // 2. Order Registration
             // ---------------------------------------------------------
 
-            var internalOrderId = userId;
+            var internalOrderId = $"topup_{userId}_{Guid.NewGuid().ToString("N").Substring(0, 8)}";
 
             var orderPayload = new
             {
@@ -160,8 +160,13 @@
             
             int amountCents = obj.GetProperty("amount_cents").GetInt32();
 
-            if (!Guid.TryParse(merchantOrderId, out var parsedUserId))
+            var parts = merchantOrderId.Split('_');
+
+            if (parts.Length < 2 || !Guid.TryParse(parts[1], out var parsedUserId))
+            {
+                Console.WriteLine($"[WEBHOOK WARNING] Could not extract UserId from merchant_order_id: {merchantOrderId}");
                 return true;
+            }
 
             var user = await _userManager.Users.Include(u => u.Wallet).FirstOrDefaultAsync(u => u.Id == parsedUserId);
 

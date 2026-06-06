@@ -1,0 +1,74 @@
+2026-06-02 20:08:11.281 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-02 20:08:11.313 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-02 20:08:11.389 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-02 20:08:11.390 +03:00 [INF] Hosting environment: Development
+2026-06-02 20:08:11.390 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-02 20:08:13.779 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1033.5750 ms
+2026-06-02 20:08:13.816 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 12.0591 ms
+2026-06-02 20:08:13.838 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 33.3598 ms
+2026-06-02 20:08:14.278 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 168.3173 ms
+2026-06-02 20:23:22.347 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-02 20:23:22.372 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-02 20:23:22.419 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-02 20:23:22.420 +03:00 [INF] Hosting environment: Development
+2026-06-02 20:23:22.421 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-02 20:23:22.719 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 101.5148 ms
+2026-06-02 20:23:22.760 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 10.0382 ms
+2026-06-02 20:23:22.769 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 19.6119 ms
+2026-06-02 20:23:23.235 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 152.9415 ms
+2026-06-02 20:23:24.061 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 9.3408 ms
+2026-06-02 20:24:02.445 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 627.8963 ms
+2026-06-02 20:25:02.335 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 120.5448 ms
+2026-06-02 20:27:17.873 +03:00 [WRN] AppException thrown: You are too far from the scooter
+2026-06-02 20:27:17.877 +03:00 [INF] HTTP POST /api/Ride/start responded 400 in 68.5500 ms
+2026-06-02 20:31:11.638 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 63.9534 ms
+2026-06-02 20:32:15.190 +03:00 [WRN] AppException thrown: You are too far from the scooter
+2026-06-02 20:32:15.191 +03:00 [INF] HTTP POST /api/Ride/start responded 400 in 18.9856 ms
+2026-06-02 20:32:35.369 +03:00 [WRN] AppException thrown: You are too far from the scooter
+2026-06-02 20:32:35.369 +03:00 [INF] HTTP POST /api/Ride/start responded 400 in 18.7242 ms
+2026-06-02 20:40:43.860 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-02 20:40:43.885 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-02 20:40:43.947 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-02 20:40:43.948 +03:00 [INF] Hosting environment: Development
+2026-06-02 20:40:43.949 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-02 20:40:44.216 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 97.6356 ms
+2026-06-02 20:40:44.259 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 8.9772 ms
+2026-06-02 20:40:44.269 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 18.8023 ms
+2026-06-02 20:40:44.765 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 142.2445 ms
+2026-06-02 20:40:45.964 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 9.5093 ms
+2026-06-02 20:41:26.065 +03:00 [WRN] AppException thrown: Scooter with identifier 'SCT-001' was not found.
+2026-06-02 20:41:26.069 +03:00 [INF] HTTP POST /api/Ride/start responded 404 in 271.4681 ms
+2026-06-02 20:42:22.219 +03:00 [ERR] Firebase messaging error occurred while sending to fdiPX8UKR5O_HEUFFz_tzr:APA91bErj77tBS_atvd2EhExTJoWJJf9z9PtOp1Ti0ydaoan12wiNUwSXkGXUnjpE9ADXwN9bHGZBjcUTzTs8Gqey_QRQhnAPP6snH3ORbiQx4mSbFuk86Y
+FirebaseAdmin.Messaging.FirebaseMessagingException: SenderId mismatch
+   at FirebaseAdmin.Util.ErrorHandlingHttpClient`1.SendAndReadAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at FirebaseAdmin.Util.ErrorHandlingHttpClient`1.SendAndDeserializeAsync[TResult](HttpRequestMessage request, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessagingClient.SendAsync(Message message, Boolean dryRun, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message, Boolean dryRun, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message, Boolean dryRun)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message)
+   at ScooterRental.Service.NotificationServices.NotificationService.SendNotificationAsync(String token, String title, String body, IDictionary`2 hiddenDataPayload) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\NotificationServices\NotificationService.cs:line 20
+2026-06-02 20:42:22.322 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-02 20:42:22.709 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-02 20:42:22.721 +03:00 [INF] HTTP POST /api/Ride/start responded 200 in 1778.7831 ms
+2026-06-02 20:58:54.659 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-02 20:58:54.682 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-02 20:58:54.742 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-02 20:58:54.743 +03:00 [INF] Hosting environment: Development
+2026-06-02 20:58:54.744 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-02 20:58:55.071 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 101.2672 ms
+2026-06-02 20:58:55.117 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 9.7117 ms
+2026-06-02 20:58:55.129 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 21.7667 ms
+2026-06-02 20:58:55.653 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 169.8950 ms
+2026-06-02 20:58:56.484 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 9.1996 ms
+2026-06-02 20:59:31.416 +03:00 [WRN] AppException thrown: You already have an active ride
+2026-06-02 20:59:31.419 +03:00 [INF] HTTP POST /api/Ride/start responded 400 in 321.5378 ms
+2026-06-02 21:01:13.498 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-02 21:01:13.499 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 71.2662 ms
+2026-06-02 21:02:25.423 +03:00 [WRN] AppException thrown: Can't Use this scooter
+2026-06-02 21:02:25.424 +03:00 [INF] HTTP POST /api/Ride/start responded 400 in 35.3921 ms
+2026-06-02 21:02:28.637 +03:00 [WRN] AppException thrown: Can't Use this scooter
+2026-06-02 21:02:28.638 +03:00 [INF] HTTP POST /api/Ride/start responded 400 in 5.4425 ms
+2026-06-02 21:03:46.238 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-02 21:03:46.924 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-02 21:03:46.934 +03:00 [INF] HTTP POST /api/Ride/start responded 200 in 918.5479 ms
+2026-06-02 21:04:32.001 +03:00 [INF] HTTP GET /api/Ride/active responded 200 in 17.6595 ms

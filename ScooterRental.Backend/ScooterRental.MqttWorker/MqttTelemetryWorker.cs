@@ -14,7 +14,9 @@ namespace ScooterRental.MqttWorker
                 .WithClientId(_options.Value.ClientId)
                 .WithCredentials(_options.Value.Username, _options.Value.Password)
                 .WithTlsOptions(o => o.UseTls())
+                .WithCleanSession()
                 .Build();
+
 
             _logger.LogInformation("Connecting to MQTT Broker...");
 
@@ -29,6 +31,26 @@ namespace ScooterRental.MqttWorker
 
             await mqttClient.SubscribeAsync(subscribeOptions, stoppingToken);
 
+            mqttClient.DisconnectedAsync += async e =>
+            {
+                _logger.LogWarning("Disconnected from MQTT Broker! Attempting to reconnect...");
+
+                await Task.Delay(TimeSpan.FromSeconds(5));
+
+                try
+                {
+                    await mqttClient.ConnectAsync(mqttClientOptions, stoppingToken);
+
+                    await mqttClient.SubscribeAsync(subscribeOptions, stoppingToken);
+
+                    _logger.LogInformation("Successfully reconnected and resubscribed!");
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Failed to reconnect to MQTT Broker.");
+                }
+            };
+
             await Task.Delay(Timeout.Infinite, stoppingToken);
         }
 
@@ -40,7 +62,7 @@ namespace ScooterRental.MqttWorker
 
                 _logger.LogInformation("Received MQTT payload: {Payload}", payload);
 
-                using var scope = _serviceScopeFactory.CreateAsyncScope();
+                await using var scope = _serviceScopeFactory.CreateAsyncScope();
 
                 var service = scope.ServiceProvider.GetRequiredService<IScooterTelemetryService>();
 

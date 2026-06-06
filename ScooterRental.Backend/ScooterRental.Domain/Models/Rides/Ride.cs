@@ -13,6 +13,8 @@
         public decimal? TotalCost { get; set; }
         public decimal? DurationMinutes { get; set; }
         public string? EndPhotoUrl { get; set; }
+        public ReviewStatus ParkingPhotoStatus { get; set; } = ReviewStatus.Pending;
+        public string? ParkingRejectionReason { get; set; }
 
         public User User { get; set; } = null!;
         public Scooter Scooter { get; set; } = null!;

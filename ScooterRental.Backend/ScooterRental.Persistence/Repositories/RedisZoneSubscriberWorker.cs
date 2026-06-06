@@ -1,4 +1,4 @@
-﻿namespace ScooterRental.MqttWorker
+﻿namespace ScooterRental.Persistence.Repositories
 {
     public class RedisZoneSubscriberWorker(IConnectionMultiplexer _connection, IZoneCacheService _zoneCacheService, 
         ILogger<RedisZoneSubscriberWorker> _logger) : BackgroundService

@@ -1,0 +1,112 @@
+2026-06-03 00:05:14.112 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-03 00:05:14.137 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-03 00:05:14.192 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 00:05:14.193 +03:00 [INF] Hosting environment: Development
+2026-06-03 00:05:14.194 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-03 00:05:14.447 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 114.6433 ms
+2026-06-03 00:05:14.488 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 10.9965 ms
+2026-06-03 00:05:14.503 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 25.9484 ms
+2026-06-03 00:05:15.053 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 207.1868 ms
+2026-06-03 00:06:12.723 +03:00 [INF] HTTP POST /api/Ride/start responded 401 in 31.5732 ms
+2026-06-03 00:06:33.104 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 412.8318 ms
+2026-06-03 00:07:41.172 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-03 00:07:42.490 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-03 00:07:42.498 +03:00 [INF] HTTP POST /api/Ride/start responded 200 in 1628.7220 ms
+2026-06-03 12:12:09.247 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-03 12:12:09.278 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-03 12:12:09.335 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 12:12:09.336 +03:00 [INF] Hosting environment: Development
+2026-06-03 12:12:09.337 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-03 12:12:10.796 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1105.9838 ms
+2026-06-03 12:12:10.838 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 10.8494 ms
+2026-06-03 12:12:10.859 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 30.9902 ms
+2026-06-03 12:12:11.331 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 182.9379 ms
+2026-06-03 12:18:08.931 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 622.5778 ms
+2026-06-03 12:21:12.567 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-03 12:21:13.727 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-03 12:21:13.735 +03:00 [INF] HTTP POST /api/Ride/start responded 200 in 1616.0695 ms
+2026-06-03 12:25:16.689 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-03 12:25:17.559 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-03 12:25:17.561 +03:00 [INF] HTTP POST /api/Ride/start responded 200 in 918.2970 ms
+2026-06-03 12:30:16.815 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-03 12:30:16.819 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 28.2656 ms
+2026-06-03 12:39:26.044 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-03 12:39:26.070 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-03 12:39:26.119 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 12:39:26.120 +03:00 [INF] Hosting environment: Development
+2026-06-03 12:39:26.121 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-03 12:39:26.302 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 101.9990 ms
+2026-06-03 12:39:26.346 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 12.1686 ms
+2026-06-03 12:39:26.357 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 22.9266 ms
+2026-06-03 12:39:26.866 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 154.0642 ms
+2026-06-03 12:39:27.715 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 10.1095 ms
+2026-06-03 12:39:53.802 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 419.6435 ms
+2026-06-03 12:40:04.998 +03:00 [INF] HTTP POST /api/Ride/start responded 401 in 8.4038 ms
+2026-06-03 12:40:39.381 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-03 12:40:40.076 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-03 12:40:40.083 +03:00 [INF] HTTP POST /api/Ride/start responded 200 in 1035.2258 ms
+2026-06-03 12:52:44.320 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-03 12:52:44.345 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-03 12:52:44.394 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 12:52:44.396 +03:00 [INF] Hosting environment: Development
+2026-06-03 12:52:44.397 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-03 12:52:44.994 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 104.2581 ms
+2026-06-03 12:52:45.039 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 11.3294 ms
+2026-06-03 12:52:45.048 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 20.3066 ms
+2026-06-03 12:52:45.528 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 145.8550 ms
+2026-06-03 12:52:46.434 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 9.6257 ms
+2026-06-03 12:53:33.076 +03:00 [WRN] AppException thrown: You are too far from the scooter Distance calculated: 2001549.807134491 meters
+2026-06-03 12:53:33.080 +03:00 [INF] HTTP POST /api/Ride/start responded 400 in 325.8008 ms
+2026-06-03 12:54:01.204 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-03 12:54:03.322 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-03 12:54:03.333 +03:00 [INF] HTTP POST /api/Ride/start responded 200 in 2414.1933 ms
+2026-06-03 12:55:15.480 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-03 12:55:15.480 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 34.9852 ms
+2026-06-03 13:05:27.218 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-03 13:05:27.242 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-03 13:05:27.280 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 13:05:27.281 +03:00 [INF] Hosting environment: Development
+2026-06-03 13:05:27.282 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-03 13:05:27.804 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 107.4268 ms
+2026-06-03 13:05:27.851 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 11.9597 ms
+2026-06-03 13:05:27.863 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 23.9586 ms
+2026-06-03 13:05:28.330 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 156.1946 ms
+2026-06-03 13:05:29.113 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 9.0118 ms
+2026-06-03 13:06:14.298 +03:00 [INF] HTTP POST /api/Zone responded 200 in 198.4928 ms
+2026-06-03 13:07:50.785 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-03 13:07:51.166 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-03 13:07:51.174 +03:00 [INF] HTTP POST /api/Ride/start responded 200 in 775.1420 ms
+2026-06-03 13:08:23.020 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-03 13:08:23.023 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 40.6355 ms
+2026-06-03 13:17:19.539 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-03 13:17:19.565 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-03 13:17:19.616 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 13:17:19.617 +03:00 [INF] Hosting environment: Development
+2026-06-03 13:17:19.618 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-03 13:17:19.728 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 96.7758 ms
+2026-06-03 13:17:19.770 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 8.9225 ms
+2026-06-03 13:17:19.779 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 18.5016 ms
+2026-06-03 13:17:20.256 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 154.6906 ms
+2026-06-03 13:17:21.021 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 9.4718 ms
+2026-06-03 13:17:49.330 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-03 13:17:49.712 +03:00 [INF] Sent "StopScooter" command to scooter SCT-001
+2026-06-03 13:17:49.727 +03:00 [INF] HTTP POST /api/Ride/active/end responded 200 in 866.0760 ms
+2026-06-03 13:23:26.817 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-03 13:23:26.840 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-03 13:23:26.886 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 13:23:26.888 +03:00 [INF] Hosting environment: Development
+2026-06-03 13:23:26.888 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-03 13:23:27.147 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 103.9060 ms
+2026-06-03 13:23:27.185 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 9.7614 ms
+2026-06-03 13:23:27.195 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 19.2337 ms
+2026-06-03 13:23:27.697 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 196.3836 ms
+2026-06-03 13:44:48.146 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-03 13:44:48.171 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-03 13:44:48.228 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-03 13:44:48.229 +03:00 [INF] Hosting environment: Development
+2026-06-03 13:44:48.230 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-03 13:44:48.469 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 107.3754 ms
+2026-06-03 13:44:48.509 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 8.8747 ms
+2026-06-03 13:44:48.520 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 19.3090 ms
+2026-06-03 13:44:48.959 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 158.3191 ms
+2026-06-03 13:44:51.212 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 366.9829 ms

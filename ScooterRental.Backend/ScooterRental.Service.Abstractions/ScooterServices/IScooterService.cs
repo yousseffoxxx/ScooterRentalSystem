@@ -17,5 +17,7 @@
         Task<bool> PlayScooterAlarmAsync(Guid scooterId);
         Task<bool> PutScooterInMaintenanceAsync(Guid scooterId);
         Task<bool> RetireScooterAsync(Guid scooterId);
+        Task<bool> ForceStartScooterAsync(Guid scooterId);
+        Task<bool> ForceStopScooterAsync(Guid scooterId);
     }
 }

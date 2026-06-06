@@ -1,0 +1,286 @@
+2026-06-01 13:41:57.819 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-01 13:41:57.848 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-01 13:41:57.897 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-01 13:41:57.898 +03:00 [INF] Hosting environment: Development
+2026-06-01 13:41:57.899 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-01 13:41:59.697 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 997.7463 ms
+2026-06-01 13:41:59.736 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 10.3896 ms
+2026-06-01 13:41:59.755 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 28.8190 ms
+2026-06-01 13:42:00.221 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 184.8446 ms
+2026-06-01 13:42:22.170 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'ScooterRental.Persistence.Data.Contexts.ApplicationDbContext'.
+System.InvalidOperationException: Cannot convert string value 'Verified' from the database to any value in the mapped 'ReviewStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method82(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: Cannot convert string value 'Verified' from the database to any value in the mapped 'ReviewStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method82(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-06-01 13:42:22.175 +03:00 [ERR] An unexpected server error occurred while accessing /api/Auth/login
+System.InvalidOperationException: Cannot convert string value 'Verified' from the database to any value in the mapped 'ReviewStatus' enum.
+   at Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal.StringEnumConverter`3.ConvertToEnum(String value)
+   at lambda_method82(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at ScooterRental.Service.AuthServices.AuthService.LoginAsync(LoginDto loginDto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\AuthServices\AuthService.cs:line 43
+   at ScooterRental.Presentation.Controllers.AuthController.Login(LoginDto loginDto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\AuthController.cs:line 18
+   at lambda_method45(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-01 13:42:22.205 +03:00 [ERR] HTTP POST /api/Auth/login responded 500 in 418.2408 ms
+2026-06-01 13:44:08.926 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-01 13:44:08.950 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-01 13:44:08.996 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-01 13:44:08.997 +03:00 [INF] Hosting environment: Development
+2026-06-01 13:44:08.997 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-01 13:44:09.424 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 98.1758 ms
+2026-06-01 13:44:09.479 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 12.3650 ms
+2026-06-01 13:44:09.488 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 21.8493 ms
+2026-06-01 13:44:09.838 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 144.7548 ms
+2026-06-01 13:44:10.595 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 0.6417 ms
+2026-06-01 13:44:23.153 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 450.4485 ms
+2026-06-01 13:44:58.199 +03:00 [INF] HTTP POST /api/Zone responded 401 in 5.7694 ms
+2026-06-01 13:48:26.457 +03:00 [INF] HTTP POST /api/Zone responded 401 in 1.5630 ms
+2026-06-01 13:49:44.435 +03:00 [INF] HTTP POST /api/Zone responded 200 in 531.6316 ms
+2026-06-01 14:03:15.245 +03:00 [WRN] AppException thrown: Scooter with identifier '00000000-0000-0000-0000-000000000000' was not found.
+2026-06-01 14:03:15.248 +03:00 [INF] HTTP POST /api/Scooter/00000000-0000-0000-0000-000000000000/unlock responded 404 in 46.2313 ms
+2026-06-01 14:04:12.666 +03:00 [ERR] Critical failure while sending "LockScooter" command to scooter SCT-001
+System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at MQTTnet.MqttClientOptionsBuilder.WithTcpServer(String host, Nullable`1 port, AddressFamily addressFamily)
+   at ScooterRental.Service.MqttCommandService.SendCommandAsync(String serialNumber, ScooterCommandType command, Nullable`1 targetSpeed) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\MqttServices\MqttCommandService.cs:line 14
+2026-06-01 14:04:12.672 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/lock responded 200 in 133.4228 ms
+2026-06-01 14:04:44.293 +03:00 [ERR] Critical failure while sending "UnlockScooter" command to scooter SCT-001
+System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at MQTTnet.MqttClientOptionsBuilder.WithTcpServer(String host, Nullable`1 port, AddressFamily addressFamily)
+   at ScooterRental.Service.MqttCommandService.SendCommandAsync(String serialNumber, ScooterCommandType command, Nullable`1 targetSpeed) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\MqttServices\MqttCommandService.cs:line 14
+2026-06-01 14:04:44.295 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 10.5104 ms
+2026-06-01 14:06:03.313 +03:00 [ERR] Critical failure while sending "UnlockScooter" command to scooter SCT-001
+System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at MQTTnet.MqttClientOptionsBuilder.WithTcpServer(String host, Nullable`1 port, AddressFamily addressFamily)
+   at ScooterRental.Service.MqttCommandService.SendCommandAsync(String serialNumber, ScooterCommandType command, Nullable`1 targetSpeed) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\MqttServices\MqttCommandService.cs:line 14
+2026-06-01 14:06:03.315 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 14.7517 ms
+2026-06-01 14:06:05.209 +03:00 [ERR] Critical failure while sending "UnlockScooter" command to scooter SCT-001
+System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at MQTTnet.MqttClientOptionsBuilder.WithTcpServer(String host, Nullable`1 port, AddressFamily addressFamily)
+   at ScooterRental.Service.MqttCommandService.SendCommandAsync(String serialNumber, ScooterCommandType command, Nullable`1 targetSpeed) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\MqttServices\MqttCommandService.cs:line 14
+2026-06-01 14:06:05.211 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 4.7842 ms
+2026-06-01 14:06:08.645 +03:00 [ERR] Critical failure while sending "UnlockScooter" command to scooter SCT-001
+System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at MQTTnet.MqttClientOptionsBuilder.WithTcpServer(String host, Nullable`1 port, AddressFamily addressFamily)
+   at ScooterRental.Service.MqttCommandService.SendCommandAsync(String serialNumber, ScooterCommandType command, Nullable`1 targetSpeed) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\MqttServices\MqttCommandService.cs:line 14
+2026-06-01 14:06:08.647 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 5.0769 ms
+2026-06-01 14:07:41.121 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-01 14:07:41.146 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-01 14:07:41.193 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-01 14:07:41.194 +03:00 [INF] Hosting environment: Development
+2026-06-01 14:07:41.195 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-01 14:07:42.015 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 100.2269 ms
+2026-06-01 14:07:42.064 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 14.9552 ms
+2026-06-01 14:07:42.078 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 29.0697 ms
+2026-06-01 14:07:42.532 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 151.5003 ms
+2026-06-01 14:07:43.541 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 9.4161 ms
+2026-06-01 14:08:02.547 +03:00 [ERR] Critical failure while sending "StartScooter" command to scooter SCT-001
+System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at MQTTnet.MqttClientOptionsBuilder.WithTcpServer(String host, Nullable`1 port, AddressFamily addressFamily)
+   at ScooterRental.Service.MqttCommandService.SendCommandAsync(String serialNumber, ScooterCommandType command, Nullable`1 targetSpeed) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\MqttServices\MqttCommandService.cs:line 14
+2026-06-01 14:08:02.564 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 276.6334 ms
+2026-06-01 14:09:15.866 +03:00 [ERR] Critical failure while sending "StartScooter" command to scooter SCT-001
+System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at MQTTnet.MqttClientOptionsBuilder.WithTcpServer(String host, Nullable`1 port, AddressFamily addressFamily)
+   at ScooterRental.Service.MqttCommandService.SendCommandAsync(String serialNumber, ScooterCommandType command, Nullable`1 targetSpeed) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\MqttServices\MqttCommandService.cs:line 14
+2026-06-01 14:09:15.869 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 59.6672 ms
+2026-06-01 14:09:17.640 +03:00 [ERR] Critical failure while sending "StartScooter" command to scooter SCT-001
+System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at MQTTnet.MqttClientOptionsBuilder.WithTcpServer(String host, Nullable`1 port, AddressFamily addressFamily)
+   at ScooterRental.Service.MqttCommandService.SendCommandAsync(String serialNumber, ScooterCommandType command, Nullable`1 targetSpeed) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\MqttServices\MqttCommandService.cs:line 14
+2026-06-01 14:09:17.642 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 14.7101 ms
+2026-06-01 14:09:19.471 +03:00 [ERR] Critical failure while sending "StartScooter" command to scooter SCT-001
+System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at MQTTnet.MqttClientOptionsBuilder.WithTcpServer(String host, Nullable`1 port, AddressFamily addressFamily)
+   at ScooterRental.Service.MqttCommandService.SendCommandAsync(String serialNumber, ScooterCommandType command, Nullable`1 targetSpeed) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\MqttServices\MqttCommandService.cs:line 14
+2026-06-01 14:09:19.473 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 5.4435 ms
+2026-06-01 14:09:19.682 +03:00 [ERR] Critical failure while sending "StartScooter" command to scooter SCT-001
+System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at MQTTnet.MqttClientOptionsBuilder.WithTcpServer(String host, Nullable`1 port, AddressFamily addressFamily)
+   at ScooterRental.Service.MqttCommandService.SendCommandAsync(String serialNumber, ScooterCommandType command, Nullable`1 targetSpeed) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\MqttServices\MqttCommandService.cs:line 14
+2026-06-01 14:09:19.684 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 4.9882 ms
+2026-06-01 14:09:19.860 +03:00 [ERR] Critical failure while sending "StartScooter" command to scooter SCT-001
+System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at MQTTnet.MqttClientOptionsBuilder.WithTcpServer(String host, Nullable`1 port, AddressFamily addressFamily)
+   at ScooterRental.Service.MqttCommandService.SendCommandAsync(String serialNumber, ScooterCommandType command, Nullable`1 targetSpeed) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\MqttServices\MqttCommandService.cs:line 14
+2026-06-01 14:09:19.861 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 4.4867 ms
+2026-06-01 14:09:20.029 +03:00 [ERR] Critical failure while sending "StartScooter" command to scooter SCT-001
+System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at MQTTnet.MqttClientOptionsBuilder.WithTcpServer(String host, Nullable`1 port, AddressFamily addressFamily)
+   at ScooterRental.Service.MqttCommandService.SendCommandAsync(String serialNumber, ScooterCommandType command, Nullable`1 targetSpeed) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\MqttServices\MqttCommandService.cs:line 14
+2026-06-01 14:09:20.032 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 4.8753 ms
+2026-06-01 14:09:20.177 +03:00 [ERR] Critical failure while sending "StartScooter" command to scooter SCT-001
+System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at MQTTnet.MqttClientOptionsBuilder.WithTcpServer(String host, Nullable`1 port, AddressFamily addressFamily)
+   at ScooterRental.Service.MqttCommandService.SendCommandAsync(String serialNumber, ScooterCommandType command, Nullable`1 targetSpeed) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\MqttServices\MqttCommandService.cs:line 14
+2026-06-01 14:09:20.179 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 5.0931 ms
+2026-06-01 14:09:20.349 +03:00 [ERR] Critical failure while sending "StartScooter" command to scooter SCT-001
+System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at MQTTnet.MqttClientOptionsBuilder.WithTcpServer(String host, Nullable`1 port, AddressFamily addressFamily)
+   at ScooterRental.Service.MqttCommandService.SendCommandAsync(String serialNumber, ScooterCommandType command, Nullable`1 targetSpeed) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\MqttServices\MqttCommandService.cs:line 14
+2026-06-01 14:09:20.351 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 4.4964 ms
+2026-06-01 14:09:20.506 +03:00 [ERR] Critical failure while sending "StartScooter" command to scooter SCT-001
+System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at MQTTnet.MqttClientOptionsBuilder.WithTcpServer(String host, Nullable`1 port, AddressFamily addressFamily)
+   at ScooterRental.Service.MqttCommandService.SendCommandAsync(String serialNumber, ScooterCommandType command, Nullable`1 targetSpeed) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\MqttServices\MqttCommandService.cs:line 14
+2026-06-01 14:09:20.508 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 4.9354 ms
+2026-06-01 14:09:20.658 +03:00 [ERR] Critical failure while sending "StartScooter" command to scooter SCT-001
+System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at MQTTnet.MqttClientOptionsBuilder.WithTcpServer(String host, Nullable`1 port, AddressFamily addressFamily)
+   at ScooterRental.Service.MqttCommandService.SendCommandAsync(String serialNumber, ScooterCommandType command, Nullable`1 targetSpeed) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\MqttServices\MqttCommandService.cs:line 14
+2026-06-01 14:09:20.660 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 4.9365 ms
+2026-06-01 14:09:20.826 +03:00 [ERR] Critical failure while sending "StartScooter" command to scooter SCT-001
+System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at MQTTnet.MqttClientOptionsBuilder.WithTcpServer(String host, Nullable`1 port, AddressFamily addressFamily)
+   at ScooterRental.Service.MqttCommandService.SendCommandAsync(String serialNumber, ScooterCommandType command, Nullable`1 targetSpeed) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\MqttServices\MqttCommandService.cs:line 14
+2026-06-01 14:09:20.828 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 5.0497 ms
+2026-06-01 14:09:20.980 +03:00 [ERR] Critical failure while sending "StartScooter" command to scooter SCT-001
+System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at MQTTnet.MqttClientOptionsBuilder.WithTcpServer(String host, Nullable`1 port, AddressFamily addressFamily)
+   at ScooterRental.Service.MqttCommandService.SendCommandAsync(String serialNumber, ScooterCommandType command, Nullable`1 targetSpeed) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\MqttServices\MqttCommandService.cs:line 14
+2026-06-01 14:09:20.981 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 4.2180 ms
+2026-06-01 14:09:21.152 +03:00 [ERR] Critical failure while sending "StartScooter" command to scooter SCT-001
+System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at MQTTnet.MqttClientOptionsBuilder.WithTcpServer(String host, Nullable`1 port, AddressFamily addressFamily)
+   at ScooterRental.Service.MqttCommandService.SendCommandAsync(String serialNumber, ScooterCommandType command, Nullable`1 targetSpeed) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\MqttServices\MqttCommandService.cs:line 14
+2026-06-01 14:09:21.154 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 4.6639 ms
+2026-06-01 14:09:21.315 +03:00 [ERR] Critical failure while sending "StartScooter" command to scooter SCT-001
+System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at MQTTnet.MqttClientOptionsBuilder.WithTcpServer(String host, Nullable`1 port, AddressFamily addressFamily)
+   at ScooterRental.Service.MqttCommandService.SendCommandAsync(String serialNumber, ScooterCommandType command, Nullable`1 targetSpeed) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\MqttServices\MqttCommandService.cs:line 14
+2026-06-01 14:09:21.317 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 4.4465 ms
+2026-06-01 14:09:43.505 +03:00 [ERR] Critical failure while sending "StartScooter" command to scooter SCT-001
+System.ArgumentException: The value cannot be an empty string. (Parameter 'host')
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.ArgumentException.ThrowIfNullOrEmpty(String argument, String paramName)
+   at System.Net.DnsEndPoint..ctor(String host, Int32 port, AddressFamily addressFamily)
+   at MQTTnet.MqttClientOptionsBuilder.WithTcpServer(String host, Nullable`1 port, AddressFamily addressFamily)
+   at ScooterRental.Service.MqttCommandService.SendCommandAsync(String serialNumber, ScooterCommandType command, Nullable`1 targetSpeed) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\MqttServices\MqttCommandService.cs:line 14
+2026-06-01 14:09:43.507 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 4.7618 ms
+2026-06-01 14:14:13.922 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-01 14:14:13.947 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-01 14:14:13.991 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-01 14:14:13.992 +03:00 [INF] Hosting environment: Development
+2026-06-01 14:14:13.993 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-01 14:14:14.429 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 107.0483 ms
+2026-06-01 14:14:14.472 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 8.8217 ms
+2026-06-01 14:14:14.483 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 19.6698 ms
+2026-06-01 14:14:14.990 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 167.1899 ms
+2026-06-01 14:14:15.809 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 9.3564 ms
+2026-06-01 14:14:24.941 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-01 14:14:24.965 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-01 14:14:25.008 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-01 14:14:25.009 +03:00 [INF] Hosting environment: Development
+2026-06-01 14:14:25.010 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-01 14:14:25.388 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 97.4493 ms
+2026-06-01 14:14:25.429 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 10.1810 ms
+2026-06-01 14:14:25.439 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 20.1900 ms
+2026-06-01 14:14:25.692 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 147.3517 ms
+2026-06-01 14:14:25.699 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 1.4734 ms
+2026-06-01 14:16:15.995 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-01 14:16:16.666 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-01 14:16:16.677 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 942.4740 ms
+2026-06-01 14:19:24.114 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-01 14:19:24.577 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-01 14:19:24.580 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 539.1458 ms
+2026-06-01 14:19:41.016 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-01 14:19:41.537 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-01 14:19:41.538 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 535.7886 ms
+2026-06-01 14:19:42.666 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-01 14:19:43.216 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-01 14:19:43.218 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 554.4267 ms
+2026-06-01 14:23:56.355 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-01 14:23:57.217 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-01 14:23:57.219 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 883.3713 ms
+2026-06-01 14:25:46.482 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-01 14:25:46.505 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-01 14:25:46.561 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-01 14:25:46.562 +03:00 [INF] Hosting environment: Development
+2026-06-01 14:25:46.563 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-01 14:25:46.773 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 105.3937 ms
+2026-06-01 14:25:46.822 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 10.9548 ms
+2026-06-01 14:25:46.832 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 20.6837 ms
+2026-06-01 14:25:47.320 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 152.4873 ms
+2026-06-01 14:25:48.203 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 8.6121 ms
+2026-06-01 14:26:03.946 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-01 14:26:04.599 +03:00 [INF] Sent "StopScooter" command to scooter SCT-001
+2026-06-01 14:26:04.608 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/lock responded 200 in 916.9113 ms
+2026-06-01 14:32:16.945 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-01 14:32:17.538 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-01 14:32:17.540 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 664.3137 ms

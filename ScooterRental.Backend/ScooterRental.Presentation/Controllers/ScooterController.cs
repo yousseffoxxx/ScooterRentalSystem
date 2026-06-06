@@ -80,6 +80,22 @@
             return Ok(new MessageResponseDto("Scooter wheels locked successfully."));
         }
 
+        [HttpPost("{id:guid}/start")]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult<MessageResponseDto>> ForceStartScooter(Guid id)
+        {
+            await _serviceManager.ScooterService.ForceStartScooterAsync(id);
+            return Ok(new MessageResponseDto("Scooter Started successfully."));
+        }
+
+        [HttpPost("{id:guid}/stop")]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult<MessageResponseDto>> ForceStopScooter(Guid id)
+        {
+            await _serviceManager.ScooterService.ForceStopScooterAsync(id);
+            return Ok(new MessageResponseDto("Scooter Stopped successfully."));
+        }
+
         [HttpPost("{id:guid}/ping")]
         [Authorize(Roles = "Admin")]
         public async Task<ActionResult<MessageResponseDto>> PingScooter(Guid id)

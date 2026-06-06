@@ -1,6 +1,8 @@
-﻿namespace ScooterRental.Service.StorageServices
+﻿using Microsoft.Extensions.Hosting;
+
+namespace ScooterRental.Service.StorageServices
 {
-    public class LocalStorageService(IWebHostEnvironment _environment) : ILocalStorageService
+    public class LocalStorageService(IHostEnvironment _environment) : ILocalStorageService
     {
         public async Task<string> SaveFileAsync(IFormFile file, string folderName)
         {
@@ -9,7 +11,8 @@
 
             var fileName = $"{Guid.NewGuid()}{Path.GetExtension(file.FileName)}";
 
-            var folderPath = Path.Combine(_environment.WebRootPath, folderName);
+            var wwwrootPath = Path.Combine(_environment.ContentRootPath, "wwwroot");
+            var folderPath = Path.Combine(wwwrootPath, folderName);
 
             if(!Directory.Exists(folderPath))
                 Directory.CreateDirectory(folderPath);

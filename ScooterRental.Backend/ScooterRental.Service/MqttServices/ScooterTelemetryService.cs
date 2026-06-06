@@ -2,7 +2,7 @@
 {
     public class ScooterTelemetryService(IScooterTelemetryRepository _repository, IZoneCacheService _zoneCacheService,
         IMqttCommandService _mqttCommandService, ILogger<ScooterTelemetryService> _logger, INotificationService _notificationService,
-        IUnitOfWork _unitOfWork) 
+        IUnitOfWork _unitOfWork,IActiveRideCacheRepository _activeRideCacheRepository) 
         : IScooterTelemetryService
     {
         public async Task ProcessIncomingTelemetryAsync(string jsonPayload)
@@ -20,6 +20,21 @@
                 return;
             }
 
+            if (telemetry.Alarm)
+            {
+                _logger.LogWarning("ALARM TRIGGERED for Scooter {Serial}", telemetry.SerialNumber);
+
+                var alert = new ScooterAlert
+                {
+                    SerialNumber = telemetry.SerialNumber,
+                    AlertType = "Theft Alarm Triggered"
+                };
+                _unitOfWork.GetRepository<ScooterAlert>().Add(alert);
+
+                await _unitOfWork.SaveChangesAsync();
+
+                // TODO Future enhancement: Send a WebSocket push directly to the Admin Dashboard!
+            }
             await HandleGeofencing(telemetry);
 
             await _repository.SaveOrUpdateTelemetryAsync(telemetry);
@@ -31,9 +46,9 @@
 
             var previousState = await _repository.GetLatestTelemetryAsync(telemetry.SerialNumber);
 
-            var ride = await _unitOfWork.GetRepository<Ride>().GetEntityWithSpecAsync(new GetActiveRideForUserSpecification(telemetry.SerialNumber));
-
-            if (ride is null) 
+            var activeRide = await _activeRideCacheRepository.GetActiveRideAsync(telemetry.SerialNumber);
+            
+            if (activeRide is null)
                 return;
 
             // scooter have left the operational zone
@@ -41,7 +56,8 @@
             {
                 _logger.LogWarning("VIOLATION: Scooter {SerialNumber} entered OUT OF BOUNDS area:", telemetry.SerialNumber);
 
-                await _notificationService.SendNotificationAsync(ride.User.FcmToken, "Scooter OUT OF Bounds",
+                if (!string.IsNullOrEmpty(activeRide.FcmToken))
+                    await _notificationService.SendNotificationAsync(activeRide.FcmToken, "Scooter OUT OF Bounds",
                     "Warning! You have left the operational zone. The scooter will safely power down.");
 
                 if (previousState == null || previousState.IsOutOfBounds == false)
@@ -56,7 +72,8 @@
                 {
                     await _mqttCommandService.SendCommandAsync(telemetry.SerialNumber, ScooterCommandType.StartScooter);
 
-                    await _notificationService.SendNotificationAsync(ride.User.FcmToken, "Back in zone", "You returned to the operational area.");
+                    if (!string.IsNullOrEmpty(activeRide.FcmToken))
+                        await _notificationService.SendNotificationAsync(activeRide.FcmToken, "Back in zone", "You returned to the operational area.");
                     
                     telemetry.IsOutOfBounds = false;
                     
@@ -69,7 +86,8 @@
                     // Did we JUST enter it?
                     if (previousState == null || previousState.IsInNoParkingZone == false)
                     {
-                        await _notificationService.SendNotificationAsync(ride.User.FcmToken, "NO PARKING ZONE", "Warning! No Parking Zone. You cannot end your ride in this area.");
+                        if (!string.IsNullOrEmpty(activeRide.FcmToken))
+                            await _notificationService.SendNotificationAsync(activeRide.FcmToken, "NO PARKING ZONE", "Warning! No Parking Zone. You cannot end your ride in this area.");
                         
                         telemetry.IsInNoParkingZone = true;
                     }
@@ -80,7 +98,8 @@
                     // Did we JUST leave the Red Zone?
                     if (previousState != null && previousState.IsInNoParkingZone == true)
                     {
-                        await _notificationService.SendNotificationAsync(ride.User.FcmToken, "Left No Parking", "You have left the No Parking zone.");
+                        if (!string.IsNullOrEmpty(activeRide.FcmToken))
+                            await _notificationService.SendNotificationAsync(activeRide.FcmToken, "Left No Parking", "You have left the No Parking zone.");
                         
                         telemetry.IsInNoParkingZone = false;
                         

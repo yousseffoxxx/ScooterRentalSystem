@@ -14,7 +14,8 @@ namespace ScooterRental.WebAPI
                     .ReadFrom.Configuration(context.Configuration) // Reads log levels from appsettings
                     .Enrich.FromLogContext() // Adds extra details to every log
                     .WriteTo.Console() // Prints to the Visual Studio terminal
-                    .WriteTo.File("Logs/scooter-api-log-.txt", rollingInterval: RollingInterval.Day); // Creates a new text file every day!
+                    .WriteTo.File("Logs/scooter-api-log-.txt", rollingInterval: RollingInterval.Day) // Creates a new text file every day!
+                    .WriteTo.Seq("http://localhost:5341");
             });
 
             builder.Services.AddOpenApi(options =>
@@ -84,6 +85,8 @@ namespace ScooterRental.WebAPI
 
             builder.Services.Configure<PaymobOptions>(builder.Configuration.GetSection("PaymobSettings"));
 
+            builder.Services.Configure<MqttOptions>(builder.Configuration.GetSection("MqttSettings"));
+
             var jwtOptions = builder.Configuration.GetSection("Jwt").Get<JwtSettings>();         
             builder.Services.AddAuthentication(options => 
             {
@@ -126,7 +129,12 @@ namespace ScooterRental.WebAPI
                 return ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("RedisConnectionString"));
             });
 
+            builder.Services.AddHostedService<RedisZoneSubscriberWorker>();
+
+            builder.Services.AddSingleton<IZoneCacheService, ZoneCacheService>();
+
             builder.Services.AddHttpClient();
+            builder.Services.AddScoped<IActiveRideCacheRepository, ActiveRideCacheRepository>();
             builder.Services.AddScoped<ITokenService, TokenService>();
             builder.Services.AddScoped<IEmailService, EmailService>();
             builder.Services.AddScoped<ILocalStorageService, LocalStorageService>();
@@ -140,7 +148,6 @@ namespace ScooterRental.WebAPI
             builder.Services.AddScoped<IPaymobService, PaymobService>();
             builder.Services.AddScoped<INotificationService, NotificationService>();
             builder.Services.AddScoped<IAuthService, AuthService>();
-            builder.Services.AddSingleton<IZoneCacheService, ZoneCacheService>();
             builder.Services.AddAuthorization();
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
@@ -148,10 +155,14 @@ namespace ScooterRental.WebAPI
 
             var app = builder.Build();
 
-            #region DataSeeding
+            #region DataSeeding / Load Zones
             using var scope = app.Services.CreateScope();
             {
                 var objectOfDataSeeding = scope.ServiceProvider.GetRequiredService<IDataSeeder>();
+
+                var zoneCache = scope.ServiceProvider.GetRequiredService<IZoneCacheService>();
+
+                await zoneCache.ReloadCacheAsync();
 
                 await objectOfDataSeeding.DataSeedAsync();
             }

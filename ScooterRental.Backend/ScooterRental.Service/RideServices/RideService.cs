@@ -2,7 +2,7 @@
 {
     public class RideService(IUnitOfWork _unitOfWork, IMqttCommandService _mqttCommandService,
         IScooterTelemetryRepository _scooterTelemetryRepository, IZoneCacheService _zoneCacheService, UserManager<User> _userManager,
-        INotificationService _notificationService) : IRideService
+        INotificationService _notificationService,IActiveRideCacheRepository _activeRideCacheRepository) : IRideService
     {
         public async Task<ActiveRideResponseDto> StartRideAsync(StartRideRequestDto request, Guid userId)
         {
@@ -39,7 +39,7 @@
             var distanceBetweenUserAndScooter = CalculateDistanceInMeters(request.UserLatitude, request.UserLongitude, scooter.Latitude, scooter.Longitude);
 
             if (distanceBetweenUserAndScooter >= 50)
-                throw new BadRequestException("You are too far from the scooter");
+                throw new BadRequestException($"You are too far from the scooter Distance calculated: {distanceBetweenUserAndScooter} meters");
 
             // 5. check the active pricing tariff
 
@@ -76,6 +76,10 @@
             rideRepo.Add(ride);
 
             await _unitOfWork.SaveChangesAsync();
+
+            var cacheModel = new ActiveRideCacheModel(ride.Id, user.Id, scooter.SerialNumber, user.FcmToken);
+
+            await _activeRideCacheRepository.SetActiveRideAsync(cacheModel);
 
             if (!string.IsNullOrEmpty(user.FcmToken))
                 await _notificationService.SendNotificationAsync(user.FcmToken, 
@@ -154,6 +158,8 @@
             rideRepo.Update(activeRide);
 
             await _unitOfWork.SaveChangesAsync();
+
+            await _activeRideCacheRepository.RemoveActiveRideAsync(activeRide.Scooter.SerialNumber);
 
             await _mqttCommandService.SendCommandAsync(activeRide.Scooter.SerialNumber, ScooterCommandType.StopScooter);
 

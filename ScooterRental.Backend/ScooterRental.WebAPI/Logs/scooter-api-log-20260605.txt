@@ -1,0 +1,438 @@
+2026-06-05 17:23:30.311 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-05 17:23:30.341 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-05 17:23:30.396 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-05 17:23:30.397 +03:00 [INF] Hosting environment: Development
+2026-06-05 17:23:30.398 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-05 17:23:32.455 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 993.0953 ms
+2026-06-05 17:23:32.490 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 11.4473 ms
+2026-06-05 17:23:32.510 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 31.5132 ms
+2026-06-05 17:23:33.016 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 180.5363 ms
+2026-06-05 17:33:33.454 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 568.1194 ms
+2026-06-05 17:34:49.567 +03:00 [ERR] Firebase messaging error occurred while sending to cbtNZbd2Rqi6MTZdZkPRJM:APA91bGRH3xiRbXASzPGL7vhGM8KnCJwZdQpstdwSgALbCZzyjZibN8iN0oMU7D8zuSSQ19spu3RBM-4mAGPgXj2BmQkc5R2PAJ1yIVLO9TInuLn0kgBvlM
+FirebaseAdmin.Messaging.FirebaseMessagingException: SenderId mismatch
+   at FirebaseAdmin.Util.ErrorHandlingHttpClient`1.SendAndReadAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at FirebaseAdmin.Util.ErrorHandlingHttpClient`1.SendAndDeserializeAsync[TResult](HttpRequestMessage request, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessagingClient.SendAsync(Message message, Boolean dryRun, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message, Boolean dryRun, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message, Boolean dryRun)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message)
+   at ScooterRental.Service.NotificationServices.NotificationService.SendNotificationAsync(String token, String title, String body, IDictionary`2 hiddenDataPayload) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\NotificationServices\NotificationService.cs:line 20
+2026-06-05 17:34:49.666 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-05 17:34:50.220 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-05 17:34:50.228 +03:00 [INF] HTTP POST /api/Ride/start responded 200 in 4032.8654 ms
+2026-06-05 17:41:22.927 +03:00 [WRN] AppException thrown: You already have an active ride
+2026-06-05 17:41:22.931 +03:00 [INF] HTTP POST /api/Ride/start responded 400 in 39.6558 ms
+2026-06-05 17:41:55.349 +03:00 [ERR] Firebase messaging error occurred while sending to cbtNZbd2Rqi6MTZdZkPRJM:APA91bGRH3xiRbXASzPGL7vhGM8KnCJwZdQpstdwSgALbCZzyjZibN8iN0oMU7D8zuSSQ19spu3RBM-4mAGPgXj2BmQkc5R2PAJ1yIVLO9TInuLn0kgBvlM
+FirebaseAdmin.Messaging.FirebaseMessagingException: SenderId mismatch
+   at FirebaseAdmin.Util.ErrorHandlingHttpClient`1.SendAndReadAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at FirebaseAdmin.Util.ErrorHandlingHttpClient`1.SendAndDeserializeAsync[TResult](HttpRequestMessage request, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessagingClient.SendAsync(Message message, Boolean dryRun, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message, Boolean dryRun, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message, Boolean dryRun)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message)
+   at ScooterRental.Service.NotificationServices.NotificationService.SendNotificationAsync(String token, String title, String body, IDictionary`2 hiddenDataPayload) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\NotificationServices\NotificationService.cs:line 20
+2026-06-05 17:41:55.351 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-05 17:41:56.048 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-05 17:41:56.049 +03:00 [INF] HTTP POST /api/Ride/start responded 200 in 1271.3006 ms
+2026-06-05 17:47:23.467 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 1.1392 ms
+2026-06-05 17:47:24.046 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 82.3418 ms
+2026-06-05 17:47:25.646 +03:00 [INF] HTTP OPTIONS /api/Scooter/live-map responded 204 in 0.1385 ms
+2026-06-05 17:47:27.749 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 33.2233 ms
+2026-06-05 17:55:33.634 +03:00 [INF] HTTP POST /api/Zone responded 200 in 90.6659 ms
+2026-06-05 17:55:38.916 +03:00 [INF] HTTP GET /api/Auth/profile responded 401 in 2.6099 ms
+2026-06-05 17:57:09.672 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 74.1808 ms
+2026-06-05 17:57:11.494 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 61.5289 ms
+2026-06-05 17:57:12.180 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 12.7516 ms
+2026-06-05 17:57:13.179 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 6.2765 ms
+2026-06-05 17:59:58.346 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 11.4070 ms
+2026-06-05 18:00:03.112 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 6.4037 ms
+2026-06-05 18:00:41.116 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 17.9873 ms
+2026-06-05 18:01:05.519 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 19.2141 ms
+2026-06-05 18:01:05.770 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 3.2645 ms
+2026-06-05 18:01:05.777 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 9.7895 ms
+2026-06-05 18:01:06.405 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 15.3303 ms
+2026-06-05 18:01:06.411 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 6.8557 ms
+2026-06-05 18:01:06.997 +03:00 [INF] HTTP GET /api/Ride/active responded 200 in 9.3960 ms
+2026-06-05 18:01:07.418 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 5.7143 ms
+2026-06-05 18:01:07.707 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.7279 ms
+2026-06-05 18:02:13.983 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 8.4187 ms
+2026-06-05 18:02:13.983 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.3929 ms
+2026-06-05 18:02:14.261 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 3.0966 ms
+2026-06-05 18:02:14.860 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 20.6860 ms
+2026-06-05 18:02:15.312 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.6460 ms
+2026-06-05 18:02:15.526 +03:00 [WRN] AppException thrown: Active Ride with identifier '8e8add6c-950c-4d72-fe5d-08dea91b5418' was not found.
+2026-06-05 18:02:15.527 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 5.8434 ms
+2026-06-05 18:02:15.809 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.6124 ms
+2026-06-05 18:02:17.786 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 16.0926 ms
+2026-06-05 18:02:28.250 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 20.2423 ms
+2026-06-05 18:03:45.972 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 8.0049 ms
+2026-06-05 18:03:46.568 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.2102 ms
+2026-06-05 18:03:47.200 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.7014 ms
+2026-06-05 18:03:47.555 +03:00 [WRN] AppException thrown: Active Ride with identifier '8e8add6c-950c-4d72-fe5d-08dea91b5418' was not found.
+2026-06-05 18:03:47.556 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 6.6415 ms
+2026-06-05 18:03:47.561 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 13.3704 ms
+2026-06-05 18:03:47.808 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.6327 ms
+2026-06-05 18:03:50.380 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.0287 ms
+2026-06-05 18:03:51.021 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 9.3502 ms
+2026-06-05 18:03:51.038 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.1444 ms
+2026-06-05 18:09:51.800 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 73.3264 ms
+2026-06-05 18:09:53.868 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 15.2282 ms
+2026-06-05 18:09:54.268 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 9.3272 ms
+2026-06-05 18:09:55.736 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.9295 ms
+2026-06-05 18:10:29.755 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 9.4815 ms
+2026-06-05 18:10:30.357 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 7.6430 ms
+2026-06-05 18:10:35.304 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 6.6791 ms
+2026-06-05 18:10:37.210 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-06-05 18:10:37.211 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-06-05 18:10:37.235 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 43.0228 ms
+2026-06-05 18:10:38.720 +03:00 [ERR] Firebase messaging error occurred while sending to fttj_mupQ6urvGyeMkNVGk:APA91bGJQ_AXSxj8KyqaCjLC4Mj-bqG4Fk4K-_ICu6Thpjrm23yQydisOSoiJ9xV0-Dn7UCXEeBvuBTkS9J3zNj5rzNQtivk-1iYJVkIrZffMcr5TetBTbw
+FirebaseAdmin.Messaging.FirebaseMessagingException: SenderId mismatch
+   at FirebaseAdmin.Util.ErrorHandlingHttpClient`1.SendAndReadAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at FirebaseAdmin.Util.ErrorHandlingHttpClient`1.SendAndDeserializeAsync[TResult](HttpRequestMessage request, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessagingClient.SendAsync(Message message, Boolean dryRun, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message, Boolean dryRun, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message, Boolean dryRun)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message)
+   at ScooterRental.Service.NotificationServices.NotificationService.SendNotificationAsync(String token, String title, String body, IDictionary`2 hiddenDataPayload) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\NotificationServices\NotificationService.cs:line 20
+2026-06-05 18:10:38.722 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-05 18:10:39.276 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-05 18:10:39.278 +03:00 [INF] HTTP POST /api/Ride/start responded 200 in 787.4387 ms
+2026-06-05 18:11:00.978 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:00.979 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 11.6345 ms
+2026-06-05 18:11:09.292 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:09.293 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 16.1134 ms
+2026-06-05 18:11:10.002 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:10.003 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 3.1048 ms
+2026-06-05 18:11:12.251 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:12.252 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.9059 ms
+2026-06-05 18:11:13.491 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:13.492 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:13.492 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 275.4819 ms
+2026-06-05 18:11:13.493 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 3.4935 ms
+2026-06-05 18:11:14.098 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:14.099 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 3.2095 ms
+2026-06-05 18:11:14.391 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:14.392 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 3.2969 ms
+2026-06-05 18:11:14.398 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:14.398 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 9.7987 ms
+2026-06-05 18:11:14.478 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:14.479 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 3.2676 ms
+2026-06-05 18:11:17.090 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:17.091 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 3.6564 ms
+2026-06-05 18:11:55.146 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:55.146 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 3.4564 ms
+2026-06-05 18:11:55.428 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:55.428 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:55.429 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 3.0630 ms
+2026-06-05 18:11:55.430 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 3.6025 ms
+2026-06-05 18:11:55.697 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:55.698 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 220.7705 ms
+2026-06-05 18:11:55.699 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:55.700 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 3.4469 ms
+2026-06-05 18:11:55.980 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:55.980 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:55.980 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 3.3599 ms
+2026-06-05 18:11:55.981 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.7903 ms
+2026-06-05 18:11:56.566 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:56.566 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.8782 ms
+2026-06-05 18:11:56.590 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:56.591 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.7103 ms
+2026-06-05 18:11:56.852 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:56.853 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.8107 ms
+2026-06-05 18:11:57.349 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:57.350 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.8422 ms
+2026-06-05 18:11:57.406 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:57.406 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 4.3575 ms
+2026-06-05 18:11:57.509 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:57.510 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 5.1392 ms
+2026-06-05 18:11:57.688 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:57.689 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 32.1065 ms
+2026-06-05 18:11:57.862 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:57.862 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 12.1284 ms
+2026-06-05 18:11:57.995 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:57.995 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 4.3539 ms
+2026-06-05 18:11:58.039 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:58.040 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.8419 ms
+2026-06-05 18:11:58.075 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:58.075 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.7967 ms
+2026-06-05 18:11:58.087 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:58.088 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.3759 ms
+2026-06-05 18:11:58.131 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:58.131 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.7823 ms
+2026-06-05 18:11:58.274 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:58.274 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:58.275 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 3.5441 ms
+2026-06-05 18:11:58.275 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.3845 ms
+2026-06-05 18:11:58.290 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:58.290 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.6599 ms
+2026-06-05 18:11:58.640 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:11:58.641 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 10.5277 ms
+2026-06-05 18:12:33.266 +03:00 [INF] HTTP GET /uploads/avatars/1e53b525-5135-465b-9367-bb37c1a4aec1.jpg responded 200 in 14.9110 ms
+2026-06-05 18:12:34.634 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 12.6286 ms
+2026-06-05 18:12:53.858 +03:00 [INF] HTTP PUT /api/Auth/profile responded 200 in 579.0617 ms
+2026-06-05 18:12:55.576 +03:00 [INF] HTTP GET /uploads/avatars/1f06271b-a717-40f7-a67b-678f7a21c258.jpg responded 200 in 3.7813 ms
+2026-06-05 18:17:15.895 +03:00 [INF] HTTP POST /api/Zone responded 200 in 10.3655 ms
+2026-06-05 18:21:02.154 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 13.2659 ms
+2026-06-05 18:21:02.284 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 1.5199 ms
+2026-06-05 18:21:02.291 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 8.0226 ms
+2026-06-05 18:21:02.922 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 15.1053 ms
+2026-06-05 18:21:02.927 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.6184 ms
+2026-06-05 18:21:03.304 +03:00 [INF] HTTP GET /api/Ride/active responded 200 in 6.6542 ms
+2026-06-05 18:21:03.925 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.0870 ms
+2026-06-05 18:21:03.930 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 8.9354 ms
+2026-06-05 18:21:47.306 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 1.9241 ms
+2026-06-05 18:21:47.444 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 1.5897 ms
+2026-06-05 18:21:48.024 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 6.9843 ms
+2026-06-05 18:21:48.160 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.6604 ms
+2026-06-05 18:21:48.394 +03:00 [INF] HTTP GET /api/Ride/active responded 200 in 1.6522 ms
+2026-06-05 18:21:48.897 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.6443 ms
+2026-06-05 18:21:49.041 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.1508 ms
+2026-06-05 18:21:49.263 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 6.1857 ms
+2026-06-05 18:21:56.545 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:21:56.546 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 3.7451 ms
+2026-06-05 18:21:56.991 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:21:56.992 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.7015 ms
+2026-06-05 18:21:57.344 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:21:57.344 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.3280 ms
+2026-06-05 18:21:59.243 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:21:59.243 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.4501 ms
+2026-06-05 18:22:15.065 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:22:15.066 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 14.4826 ms
+2026-06-05 18:22:15.614 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:22:15.615 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 6.4949 ms
+2026-06-05 18:22:16.330 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:22:16.330 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:22:16.331 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.9541 ms
+2026-06-05 18:22:16.331 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 3.5460 ms
+2026-06-05 18:22:16.897 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:22:16.898 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 3.9603 ms
+2026-06-05 18:22:16.967 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:22:16.968 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.2927 ms
+2026-06-05 18:22:17.107 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:22:17.108 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.7349 ms
+2026-06-05 18:22:17.178 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:22:17.179 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.5249 ms
+2026-06-05 18:22:17.685 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:22:17.686 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.3111 ms
+2026-06-05 18:22:31.164 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 6.4731 ms
+2026-06-05 18:22:31.176 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 1.6499 ms
+2026-06-05 18:22:31.294 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 1.6211 ms
+2026-06-05 18:22:31.874 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 9.1959 ms
+2026-06-05 18:22:31.886 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.5210 ms
+2026-06-05 18:22:32.264 +03:00 [INF] HTTP GET /api/Ride/active responded 200 in 1.7578 ms
+2026-06-05 18:22:32.776 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.8589 ms
+2026-06-05 18:22:32.913 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.1605 ms
+2026-06-05 18:22:58.292 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 1.8677 ms
+2026-06-05 18:22:58.306 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 1.5763 ms
+2026-06-05 18:22:59.265 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 15.4946 ms
+2026-06-05 18:22:59.268 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 11.6940 ms
+2026-06-05 18:22:59.620 +03:00 [INF] HTTP GET /api/Ride/active responded 200 in 1.6662 ms
+2026-06-05 18:23:00.328 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.2380 ms
+2026-06-05 18:23:00.481 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.9137 ms
+2026-06-05 18:23:00.941 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 5.7272 ms
+2026-06-05 18:23:05.382 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:23:05.382 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.5976 ms
+2026-06-05 18:23:05.394 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 18:23:05.395 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 2.6748 ms
+2026-06-05 19:05:17.045 +03:00 [INF] HTTP GET /api/Auth/profile responded 401 in 1.1740 ms
+2026-06-05 19:05:31.324 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 73.3682 ms
+2026-06-05 19:05:33.546 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 25.1747 ms
+2026-06-05 19:05:34.242 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 10.4252 ms
+2026-06-05 19:05:35.036 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 5.8347 ms
+2026-06-05 19:05:50.930 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 2.7535 ms
+2026-06-05 19:05:54.341 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 2.5721 ms
+2026-06-05 19:06:18.283 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-05 19:06:18.307 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-05 19:06:18.352 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-05 19:06:18.354 +03:00 [INF] Hosting environment: Development
+2026-06-05 19:06:18.354 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-05 19:06:19.043 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 110.5662 ms
+2026-06-05 19:06:19.081 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 11.2641 ms
+2026-06-05 19:06:19.092 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 22.0367 ms
+2026-06-05 19:06:19.546 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 166.5586 ms
+2026-06-05 19:06:45.506 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 264.3623 ms
+2026-06-05 19:06:45.506 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 264.3621 ms
+2026-06-05 19:06:46.383 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 132.8863 ms
+2026-06-05 19:06:46.409 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 7.3872 ms
+2026-06-05 19:06:46.724 +03:00 [INF] HTTP GET /api/Ride/active responded 200 in 51.1063 ms
+2026-06-05 19:06:47.832 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 7.0988 ms
+2026-06-05 19:06:47.836 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 11.5181 ms
+2026-06-05 19:06:48.134 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-06-05 19:06:48.136 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-06-05 19:06:48.166 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 46.4796 ms
+2026-06-05 19:06:53.135 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-05 19:06:53.179 +03:00 [WRN] AppException thrown: Active Ride with identifier '8e8add6c-950c-4d72-fe5d-08dea91b5418' was not found.
+2026-06-05 19:06:53.182 +03:00 [INF] HTTP POST /api/Ride/active/end responded 404 in 6.7265 ms
+2026-06-05 19:06:53.557 +03:00 [INF] Sent "StopScooter" command to scooter SCT-001
+2026-06-05 19:06:54.064 +03:00 [ERR] Firebase messaging error occurred while sending to fttj_mupQ6urvGyeMkNVGk:APA91bGJQ_AXSxj8KyqaCjLC4Mj-bqG4Fk4K-_ICu6Thpjrm23yQydisOSoiJ9xV0-Dn7UCXEeBvuBTkS9J3zNj5rzNQtivk-1iYJVkIrZffMcr5TetBTbw
+FirebaseAdmin.Messaging.FirebaseMessagingException: SenderId mismatch
+   at FirebaseAdmin.Util.ErrorHandlingHttpClient`1.SendAndReadAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at FirebaseAdmin.Util.ErrorHandlingHttpClient`1.SendAndDeserializeAsync[TResult](HttpRequestMessage request, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessagingClient.SendAsync(Message message, Boolean dryRun, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message, Boolean dryRun, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message, Boolean dryRun)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message)
+   at ScooterRental.Service.NotificationServices.NotificationService.SendNotificationAsync(String token, String title, String body, IDictionary`2 hiddenDataPayload) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\NotificationServices\NotificationService.cs:line 20
+2026-06-05 19:06:54.071 +03:00 [INF] HTTP POST /api/Ride/active/end responded 200 in 1030.7619 ms
+2026-06-05 19:06:55.547 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.9607 ms
+2026-06-05 19:06:56.003 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.4043 ms
+2026-06-05 19:06:56.809 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 3.6578 ms
+2026-06-05 19:08:02.763 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 95.8611 ms
+2026-06-05 19:08:04.532 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 13.0568 ms
+2026-06-05 19:08:05.755 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 32.3881 ms
+2026-06-05 19:08:06.807 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 5.0775 ms
+2026-06-05 19:08:35.758 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 11.0383 ms
+2026-06-05 19:08:36.627 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 34.1504 ms
+2026-06-05 19:08:49.820 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 7.4121 ms
+2026-06-05 19:08:52.021 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.2446 ms
+2026-06-05 19:11:59.992 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 78.5873 ms
+2026-06-05 19:13:05.345 +03:00 [INF] HTTP GET /uploads/avatars/1f06271b-a717-40f7-a67b-678f7a21c258.jpg responded 200 in 4.5887 ms
+2026-06-05 19:13:13.565 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 13.5063 ms
+2026-06-05 19:13:16.133 +03:00 [ERR] An unexpected server error occurred while accessing /api/Wallet/top-up
+System.Net.Http.HttpRequestException: Paymob Order Registration (Step 2) Failed. Status: UnprocessableEntity. Details: {"message":"duplicate"}
+   at ScooterRental.Service.PaymentServices.PaymobService.EnsureSuccessOrThrowAsync(HttpResponseMessage response, String stepName) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\PaymentServices\PaymobService.cs:line 273
+   at ScooterRental.Service.PaymentServices.PaymobService.InitiateWalletPaymentAsync(Decimal amount, String phoneNumber, String userId) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\PaymentServices\PaymobService.cs:line 47
+   at ScooterRental.Presentation.Controllers.WalletController.TopUp(TopUpRequestDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\WalletController.cs:line 11
+   at lambda_method1234(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-05 19:13:16.159 +03:00 [ERR] HTTP POST /api/Wallet/top-up responded 500 in 889.5797 ms
+2026-06-05 19:13:31.001 +03:00 [ERR] An unexpected server error occurred while accessing /api/Wallet/top-up
+System.Net.Http.HttpRequestException: Paymob Order Registration (Step 2) Failed. Status: UnprocessableEntity. Details: {"message":"duplicate"}
+   at ScooterRental.Service.PaymentServices.PaymobService.EnsureSuccessOrThrowAsync(HttpResponseMessage response, String stepName) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\PaymentServices\PaymobService.cs:line 273
+   at ScooterRental.Service.PaymentServices.PaymobService.InitiateWalletPaymentAsync(Decimal amount, String phoneNumber, String userId) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\PaymentServices\PaymobService.cs:line 47
+   at ScooterRental.Presentation.Controllers.WalletController.TopUp(TopUpRequestDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\WalletController.cs:line 11
+   at lambda_method1234(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-05 19:13:31.004 +03:00 [ERR] HTTP POST /api/Wallet/top-up responded 500 in 405.9513 ms
+2026-06-05 19:13:35.488 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.5509 ms
+2026-06-05 19:13:35.636 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.3241 ms
+2026-06-05 19:13:36.240 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 19.4601 ms
+2026-06-05 19:13:36.253 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.3055 ms
+2026-06-05 19:13:37.320 +03:00 [WRN] AppException thrown: Active Ride with identifier '8e8add6c-950c-4d72-fe5d-08dea91b5418' was not found.
+2026-06-05 19:13:37.321 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 4.3397 ms
+2026-06-05 19:13:37.365 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.9587 ms
+2026-06-05 19:13:37.370 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 9.7833 ms
+2026-06-05 19:13:39.829 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 9.1173 ms
+2026-06-05 19:14:19.191 +03:00 [INF] HTTP GET /uploads/avatars/1f06271b-a717-40f7-a67b-678f7a21c258.jpg responded 200 in 1.0946 ms
+2026-06-05 19:14:29.799 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 6.9496 ms
+2026-06-05 19:14:29.799 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 6.9040 ms
+2026-06-05 19:14:30.529 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 15.6738 ms
+2026-06-05 19:14:30.542 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.3637 ms
+2026-06-05 19:14:31.500 +03:00 [WRN] AppException thrown: Active Ride with identifier '8e8add6c-950c-4d72-fe5d-08dea91b5418' was not found.
+2026-06-05 19:14:31.501 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 4.2246 ms
+2026-06-05 19:14:31.971 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.2830 ms
+2026-06-05 19:14:31.971 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.2000 ms
+2026-06-05 19:14:34.701 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 8.7469 ms
+2026-06-05 19:15:03.372 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 8.9267 ms
+2026-06-05 19:15:03.950 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 4.9984 ms
+2026-06-05 19:15:10.232 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 4.8831 ms
+2026-06-05 19:15:11.326 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 5.3675 ms
+2026-06-05 19:15:12.848 +03:00 [WRN] AppException thrown: Scooter with identifier 'SCT-001' was not found.
+2026-06-05 19:15:12.848 +03:00 [INF] HTTP POST /api/Ride/start responded 404 in 145.8433 ms
+2026-06-05 19:15:43.333 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 1.8293 ms
+2026-06-05 19:15:44.720 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 2.9840 ms
+2026-06-05 19:15:45.832 +03:00 [WRN] AppException thrown: Scooter with identifier 'SCT-001' was not found.
+2026-06-05 19:15:45.833 +03:00 [INF] HTTP POST /api/Ride/start responded 404 in 3.9263 ms
+2026-06-05 19:15:54.275 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.1220 ms
+2026-06-05 19:15:57.526 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 3.0054 ms
+2026-06-05 19:15:58.569 +03:00 [WRN] AppException thrown: Scooter with identifier 'SCT-001' was not found.
+2026-06-05 19:15:58.570 +03:00 [INF] HTTP POST /api/Ride/start responded 404 in 3.0840 ms
+2026-06-05 19:16:53.219 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 5.6507 ms
+2026-06-05 19:16:54.647 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 6.1668 ms
+2026-06-05 19:16:56.406 +03:00 [WRN] AppException thrown: Scooter with identifier 'SCT-001' was not found.
+2026-06-05 19:16:56.406 +03:00 [INF] HTTP POST /api/Ride/start responded 404 in 3.8183 ms
+2026-06-05 19:20:05.489 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 8.4298 ms
+2026-06-05 19:20:06.414 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 6.5944 ms
+2026-06-05 19:20:19.686 +03:00 [ERR] Firebase messaging error occurred while sending to fttj_mupQ6urvGyeMkNVGk:APA91bGJQ_AXSxj8KyqaCjLC4Mj-bqG4Fk4K-_ICu6Thpjrm23yQydisOSoiJ9xV0-Dn7UCXEeBvuBTkS9J3zNj5rzNQtivk-1iYJVkIrZffMcr5TetBTbw
+FirebaseAdmin.Messaging.FirebaseMessagingException: SenderId mismatch
+   at FirebaseAdmin.Util.ErrorHandlingHttpClient`1.SendAndReadAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at FirebaseAdmin.Util.ErrorHandlingHttpClient`1.SendAndDeserializeAsync[TResult](HttpRequestMessage request, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessagingClient.SendAsync(Message message, Boolean dryRun, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message, Boolean dryRun, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message, Boolean dryRun)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message)
+   at ScooterRental.Service.NotificationServices.NotificationService.SendNotificationAsync(String token, String title, String body, IDictionary`2 hiddenDataPayload) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\NotificationServices\NotificationService.cs:line 20
+2026-06-05 19:20:19.688 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-05 19:20:19.998 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-05 19:20:19.999 +03:00 [INF] HTTP POST /api/Ride/start responded 200 in 12666.2569 ms
+2026-06-05 19:20:32.518 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-05 19:20:32.646 +03:00 [WRN] AppException thrown: Active Ride with identifier '8e8add6c-950c-4d72-fe5d-08dea91b5418' was not found.
+2026-06-05 19:20:32.647 +03:00 [INF] HTTP POST /api/Ride/active/end responded 404 in 6.3049 ms
+2026-06-05 19:20:32.956 +03:00 [INF] Sent "StopScooter" command to scooter SCT-001
+2026-06-05 19:20:33.087 +03:00 [ERR] Firebase messaging error occurred while sending to fttj_mupQ6urvGyeMkNVGk:APA91bGJQ_AXSxj8KyqaCjLC4Mj-bqG4Fk4K-_ICu6Thpjrm23yQydisOSoiJ9xV0-Dn7UCXEeBvuBTkS9J3zNj5rzNQtivk-1iYJVkIrZffMcr5TetBTbw
+FirebaseAdmin.Messaging.FirebaseMessagingException: SenderId mismatch
+   at FirebaseAdmin.Util.ErrorHandlingHttpClient`1.SendAndReadAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at FirebaseAdmin.Util.ErrorHandlingHttpClient`1.SendAndDeserializeAsync[TResult](HttpRequestMessage request, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessagingClient.SendAsync(Message message, Boolean dryRun, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message, Boolean dryRun, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message, Boolean dryRun)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message)
+   at ScooterRental.Service.NotificationServices.NotificationService.SendNotificationAsync(String token, String title, String body, IDictionary`2 hiddenDataPayload) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\NotificationServices\NotificationService.cs:line 20
+2026-06-05 19:20:33.089 +03:00 [INF] HTTP POST /api/Ride/active/end responded 200 in 598.4994 ms
+2026-06-05 19:20:34.014 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 8.7143 ms
+2026-06-05 19:20:34.426 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.3415 ms
+2026-06-05 19:20:35.469 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 10.2573 ms
+2026-06-05 19:23:17.446 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 15.4257 ms
+2026-06-05 19:23:18.128 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 4.5126 ms
+2026-06-05 19:23:24.310 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 7.0598 ms
+2026-06-05 19:23:26.685 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 5.2559 ms
+2026-06-05 19:23:29.557 +03:00 [ERR] Firebase messaging error occurred while sending to fttj_mupQ6urvGyeMkNVGk:APA91bGJQ_AXSxj8KyqaCjLC4Mj-bqG4Fk4K-_ICu6Thpjrm23yQydisOSoiJ9xV0-Dn7UCXEeBvuBTkS9J3zNj5rzNQtivk-1iYJVkIrZffMcr5TetBTbw
+FirebaseAdmin.Messaging.FirebaseMessagingException: SenderId mismatch
+   at FirebaseAdmin.Util.ErrorHandlingHttpClient`1.SendAndReadAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at FirebaseAdmin.Util.ErrorHandlingHttpClient`1.SendAndDeserializeAsync[TResult](HttpRequestMessage request, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessagingClient.SendAsync(Message message, Boolean dryRun, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message, Boolean dryRun, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message, Boolean dryRun)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message)
+   at ScooterRental.Service.NotificationServices.NotificationService.SendNotificationAsync(String token, String title, String body, IDictionary`2 hiddenDataPayload) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\NotificationServices\NotificationService.cs:line 20
+2026-06-05 19:23:29.559 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-05 19:23:30.029 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-05 19:23:30.030 +03:00 [INF] HTTP POST /api/Ride/start responded 200 in 680.7818 ms
+2026-06-05 19:23:52.831 +03:00 [WRN] AppException thrown: You cannot park outside the operational area. Please return to a valid zone.
+2026-06-05 19:23:52.831 +03:00 [INF] HTTP POST /api/Ride/active/end responded 400 in 10.3611 ms
+2026-06-05 19:23:54.824 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-05 19:23:55.270 +03:00 [INF] Sent "StopScooter" command to scooter SCT-001
+2026-06-05 19:23:55.369 +03:00 [ERR] Firebase messaging error occurred while sending to fttj_mupQ6urvGyeMkNVGk:APA91bGJQ_AXSxj8KyqaCjLC4Mj-bqG4Fk4K-_ICu6Thpjrm23yQydisOSoiJ9xV0-Dn7UCXEeBvuBTkS9J3zNj5rzNQtivk-1iYJVkIrZffMcr5TetBTbw
+FirebaseAdmin.Messaging.FirebaseMessagingException: SenderId mismatch
+   at FirebaseAdmin.Util.ErrorHandlingHttpClient`1.SendAndReadAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at FirebaseAdmin.Util.ErrorHandlingHttpClient`1.SendAndDeserializeAsync[TResult](HttpRequestMessage request, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessagingClient.SendAsync(Message message, Boolean dryRun, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message, Boolean dryRun, CancellationToken cancellationToken)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message, Boolean dryRun)
+   at FirebaseAdmin.Messaging.FirebaseMessaging.SendAsync(Message message)
+   at ScooterRental.Service.NotificationServices.NotificationService.SendNotificationAsync(String token, String title, String body, IDictionary`2 hiddenDataPayload) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\NotificationServices\NotificationService.cs:line 20
+2026-06-05 19:23:55.371 +03:00 [INF] HTTP POST /api/Ride/active/end responded 200 in 568.5704 ms
+2026-06-05 19:23:56.253 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 3.9891 ms
+2026-06-05 19:23:56.784 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 1.7973 ms
+2026-06-05 19:23:58.761 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 7.1736 ms
+2026-06-05 21:48:21.550 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-05 21:48:21.588 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-05 21:48:21.655 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-05 21:48:21.656 +03:00 [INF] Hosting environment: Development
+2026-06-05 21:48:21.657 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-05 21:48:22.559 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 247.4530 ms
+2026-06-05 21:48:22.614 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 17.8894 ms
+2026-06-05 21:48:22.659 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 63.1585 ms
+2026-06-05 21:48:23.578 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 448.6666 ms

@@ -90,7 +90,7 @@
                         CreatedAt = DateTimeOffset.UtcNow,
                         IdFrontPhotoUrl = "https://dummyimage.com/600x400/000/fff&text=Fake+ID",
                         IdBackPhotoUrl = "https://dummyimage.com/600x400/000/fff&text=Fake+ID",
-                        IdVerificationStatus = IdVerificationStatus.Verified
+                        IdVerificationStatus = ReviewStatus.Approved
                     };
 
                     var result = await _userManager.CreateAsync(adminUser, "P@ssw0rd");

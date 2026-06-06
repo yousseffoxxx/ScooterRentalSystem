@@ -34,14 +34,14 @@
 
         [AllowAnonymous]
         [HttpPost("WebHook")]
-        public async Task<IActionResult> WebHook([FromQuery] string hmac, PaymobTransactionObjDto request)
+        public async Task<IActionResult> WebHook([FromQuery] string hmac, [FromBody] JsonElement payload)
         {
-            var json = await new StreamReader(HttpContext.Request.Body).ReadToEndAsync();
+            var rawJsonBody = payload.GetRawText();
 
-            var result = await _serviceManager.PaymobService.ProcessPaymobWebhook(hmac,json);
+            var result = await _serviceManager.PaymobService.ProcessPaymobWebhook(hmac, rawJsonBody);
 
             if (!result)
-                return Unauthorized();
+                return BadRequest("Webhook processing failed.");
 
             return Ok();
         }

@@ -13,8 +13,8 @@
 
             var mqttClientOptions = new MqttClientOptionsBuilder()
                 .WithTcpServer(_options.Value.BrokerAddress, _options.Value.Port)
-                .WithClientId(_options.Value.ClientId)
-                .WithCredentials(_options.Value.Username, _options.Value.Password) // <-- Added!
+                .WithClientId(_options.Value.ClientId + "_Publisher_" + Guid.NewGuid().ToString())
+                .WithCredentials(_options.Value.Username, _options.Value.Password)
                 .WithTlsOptions(o => o.UseTls())
                 .Build();
 

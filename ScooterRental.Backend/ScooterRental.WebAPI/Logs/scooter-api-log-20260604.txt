@@ -1,0 +1,313 @@
+2026-06-04 12:30:26.024 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-04 12:30:26.066 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-04 12:30:26.118 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-04 12:30:26.119 +03:00 [INF] Hosting environment: Development
+2026-06-04 12:30:26.120 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-04 12:30:28.103 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1228.8549 ms
+2026-06-04 12:30:28.150 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 12.0419 ms
+2026-06-04 12:30:28.173 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 35.1881 ms
+2026-06-04 12:30:28.642 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 183.4500 ms
+2026-06-04 12:35:11.494 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-04 12:35:11.527 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-04 12:35:11.583 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-04 12:35:11.584 +03:00 [INF] Hosting environment: Development
+2026-06-04 12:35:11.585 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-04 12:35:11.701 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 103.1753 ms
+2026-06-04 12:35:11.749 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 11.3202 ms
+2026-06-04 12:35:11.760 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 21.9447 ms
+2026-06-04 12:35:12.253 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 146.8771 ms
+2026-06-04 12:35:13.883 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 9.1690 ms
+2026-06-04 12:44:03.276 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 525.1580 ms
+2026-06-04 12:44:05.164 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 398.0121 ms
+2026-06-04 12:44:06.150 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 69.9214 ms
+2026-06-04 12:44:06.701 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 21.9491 ms
+2026-06-04 12:44:50.443 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 21.4371 ms
+2026-06-04 12:44:51.044 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 22.2968 ms
+2026-06-04 12:45:11.512 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 23.1657 ms
+2026-06-04 12:47:06.576 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 16.8699 ms
+2026-06-04 12:47:27.657 +03:00 [INF] HTTP PUT /api/Auth/profile responded 200 in 948.3786 ms
+2026-06-04 12:47:53.168 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.6576 ms
+2026-06-04 12:49:36.781 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 18.3442 ms
+2026-06-04 12:49:40.014 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 16.0951 ms
+2026-06-04 12:51:00.457 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 16.8681 ms
+2026-06-04 12:54:34.796 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 21.1220 ms
+2026-06-04 12:54:35.604 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 4.7506 ms
+2026-06-04 12:54:41.225 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 9.0108 ms
+2026-06-04 12:54:42.796 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.3522 ms
+2026-06-04 12:55:18.106 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 15.0735 ms
+2026-06-04 12:55:39.918 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.6784 ms
+2026-06-04 12:56:34.160 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 14.8713 ms
+2026-06-04 12:56:44.916 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.2424 ms
+2026-06-04 12:56:44.921 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.3035 ms
+2026-06-04 12:56:45.681 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 14.9658 ms
+2026-06-04 12:56:46.209 +03:00 [WRN] AppException thrown: Active Ride with identifier '8e8add6c-950c-4d72-fe5d-08dea91b5418' was not found.
+2026-06-04 12:56:46.212 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 25.8644 ms
+2026-06-04 12:56:46.556 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.9392 ms
+2026-06-04 12:57:16.810 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 74.1140 ms
+2026-06-04 12:57:18.502 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 46.2446 ms
+2026-06-04 12:57:19.543 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 13.4034 ms
+2026-06-04 12:57:19.875 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 15.5971 ms
+2026-06-04 12:58:04.321 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 6.5462 ms
+2026-06-04 13:01:58.382 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 18.0413 ms
+2026-06-04 13:01:58.545 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.0293 ms
+2026-06-04 13:01:59.078 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 18.5463 ms
+2026-06-04 13:01:59.404 +03:00 [WRN] AppException thrown: Active Ride with identifier '8e8add6c-950c-4d72-fe5d-08dea91b5418' was not found.
+2026-06-04 13:01:59.405 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 8.9960 ms
+2026-06-04 13:02:00.159 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 26.2644 ms
+2026-06-04 13:02:50.991 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 72.3883 ms
+2026-06-04 13:02:52.889 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 13.4601 ms
+2026-06-04 13:02:53.501 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 12.0194 ms
+2026-06-04 13:02:54.175 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.8028 ms
+2026-06-04 13:14:47.932 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 14.3790 ms
+2026-06-04 13:14:48.208 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 1.8991 ms
+2026-06-04 13:14:50.460 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 13.6607 ms
+2026-06-04 13:14:53.394 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.4391 ms
+2026-06-04 13:15:22.395 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 70.5051 ms
+2026-06-04 13:15:24.597 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 10.2751 ms
+2026-06-04 13:15:25.797 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 8.5490 ms
+2026-06-04 13:15:26.283 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 5.2906 ms
+2026-06-04 13:19:03.530 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 8.8919 ms
+2026-06-04 13:19:04.416 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 1.8057 ms
+2026-06-04 13:19:06.062 +03:00 [WRN] AppException thrown: Active Ride with identifier '8e8add6c-950c-4d72-fe5d-08dea91b5418' was not found.
+2026-06-04 13:19:06.062 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 11.7293 ms
+2026-06-04 13:19:06.063 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 11.1475 ms
+2026-06-04 13:19:07.694 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.3962 ms
+2026-06-04 13:20:18.256 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 68.6238 ms
+2026-06-04 13:20:20.132 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 24.8121 ms
+2026-06-04 13:20:20.814 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 8.7975 ms
+2026-06-04 13:20:22.247 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 344.9778 ms
+2026-06-04 13:21:14.171 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 401 in 2.2297 ms
+2026-06-04 13:21:34.598 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 76.8177 ms
+2026-06-04 13:21:51.530 +03:00 [INF] HTTP GET /uploads/avatars/92cad913-737e-4b6d-8f76-7236e591728c.jpg responded 200 in 16.7137 ms
+2026-06-04 13:21:51.899 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 1.5537 ms
+2026-06-04 13:22:35.594 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 15.1602 ms
+2026-06-04 13:56:55.206 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-04 13:56:55.231 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-04 13:56:55.278 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-04 13:56:55.279 +03:00 [INF] Hosting environment: Development
+2026-06-04 13:56:55.280 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-04 13:56:56.078 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 378.3500 ms
+2026-06-04 13:56:56.116 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 8.6041 ms
+2026-06-04 13:56:56.124 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 16.7951 ms
+2026-06-04 13:56:56.578 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 167.7711 ms
+2026-06-04 13:57:15.929 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 270.8462 ms
+2026-06-04 13:57:15.939 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 10.7651 ms
+2026-06-04 13:57:16.686 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 141.8738 ms
+2026-06-04 13:57:17.097 +03:00 [WRN] AppException thrown: Active Ride with identifier '8e8add6c-950c-4d72-fe5d-08dea91b5418' was not found.
+2026-06-04 13:57:17.100 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 30.3738 ms
+2026-06-04 13:57:17.426 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 8.1583 ms
+2026-06-04 13:57:34.799 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 97.7336 ms
+2026-06-04 13:57:36.227 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 8.3974 ms
+2026-06-04 13:57:37.117 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 43.2666 ms
+2026-06-04 13:57:37.569 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 19.4959 ms
+2026-06-04 14:15:03.304 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 45.0488 ms
+2026-06-04 14:15:03.867 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 7.2261 ms
+2026-06-04 14:15:03.872 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 12.9948 ms
+2026-06-04 14:15:05.042 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 74.0686 ms
+2026-06-04 14:15:05.853 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 7.2612 ms
+2026-06-04 14:15:11.918 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 16.2312 ms
+2026-06-04 14:15:31.826 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 14.3580 ms
+2026-06-04 14:15:31.996 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.6220 ms
+2026-06-04 14:15:32.657 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 11.8058 ms
+2026-06-04 14:15:32.808 +03:00 [WRN] AppException thrown: Active Ride with identifier '8e8add6c-950c-4d72-fe5d-08dea91b5418' was not found.
+2026-06-04 14:15:32.809 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 8.9027 ms
+2026-06-04 14:15:33.555 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.8052 ms
+2026-06-04 14:16:16.910 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 14.1578 ms
+2026-06-04 14:16:16.910 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.9561 ms
+2026-06-04 14:16:17.074 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 12.3261 ms
+2026-06-04 14:16:17.477 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 25.4162 ms
+2026-06-04 14:16:17.531 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 22.7265 ms
+2026-06-04 14:16:17.948 +03:00 [WRN] AppException thrown: Active Ride with identifier '8e8add6c-950c-4d72-fe5d-08dea91b5418' was not found.
+2026-06-04 14:16:17.949 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 8.8161 ms
+2026-06-04 14:16:18.214 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 20.3813 ms
+2026-06-04 14:16:18.288 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 10.6813 ms
+2026-06-04 14:16:19.908 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 10.8494 ms
+2026-06-04 14:16:25.456 +03:00 [INF] HTTP GET /uploads/avatars/92cad913-737e-4b6d-8f76-7236e591728c.jpg responded 200 in 11.6141 ms
+2026-06-04 14:16:26.932 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 8.0532 ms
+2026-06-04 14:17:06.151 +03:00 [INF] HTTP PUT /api/Auth/profile responded 200 in 221.9068 ms
+2026-06-04 14:17:07.646 +03:00 [INF] HTTP GET /uploads/avatars/1e53b525-5135-465b-9367-bb37c1a4aec1.jpg responded 200 in 3.5697 ms
+2026-06-04 14:22:16.459 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 15.1557 ms
+2026-06-04 14:22:16.870 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.7487 ms
+2026-06-04 14:22:16.874 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 5.7749 ms
+2026-06-04 14:22:17.247 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 13.5612 ms
+2026-06-04 14:22:17.467 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.8711 ms
+2026-06-04 14:22:17.842 +03:00 [WRN] AppException thrown: Active Ride with identifier '8e8add6c-950c-4d72-fe5d-08dea91b5418' was not found.
+2026-06-04 14:22:17.843 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 7.5111 ms
+2026-06-04 14:22:18.268 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.2220 ms
+2026-06-04 14:22:18.529 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.9134 ms
+2026-06-04 14:22:21.031 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 8.8879 ms
+2026-06-04 14:23:30.880 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 15.3371 ms
+2026-06-04 14:23:31.241 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 1.7940 ms
+2026-06-04 14:23:31.242 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.8044 ms
+2026-06-04 14:23:31.438 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 13.7631 ms
+2026-06-04 14:23:31.727 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 7.1056 ms
+2026-06-04 14:23:32.133 +03:00 [WRN] AppException thrown: Active Ride with identifier '8e8add6c-950c-4d72-fe5d-08dea91b5418' was not found.
+2026-06-04 14:23:32.134 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 7.7766 ms
+2026-06-04 14:23:32.311 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.1614 ms
+2026-06-04 14:23:32.677 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 5.3538 ms
+2026-06-04 14:23:34.944 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 10.7944 ms
+2026-06-04 14:24:58.416 +03:00 [INF] HTTP GET /uploads/avatars/1e53b525-5135-465b-9367-bb37c1a4aec1.jpg responded 200 in 1.1584 ms
+2026-06-04 14:25:04.036 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 11.5771 ms
+2026-06-04 14:31:00.903 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 14.7005 ms
+2026-06-04 14:31:01.056 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.0645 ms
+2026-06-04 14:31:01.060 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.4322 ms
+2026-06-04 14:31:03.335 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 497.5550 ms
+2026-06-04 14:31:03.488 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.1641 ms
+2026-06-04 14:31:03.966 +03:00 [WRN] AppException thrown: Active Ride with identifier '8e8add6c-950c-4d72-fe5d-08dea91b5418' was not found.
+2026-06-04 14:31:03.967 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 6.0009 ms
+2026-06-04 14:31:04.195 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.2232 ms
+2026-06-04 14:31:05.588 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.4363 ms
+2026-06-04 14:31:47.180 +03:00 [INF] HTTP GET /uploads/avatars/1e53b525-5135-465b-9367-bb37c1a4aec1.jpg responded 200 in 0.8716 ms
+2026-06-04 14:31:50.431 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 7.6928 ms
+2026-06-04 14:32:07.200 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.1537 ms
+2026-06-04 14:37:04.960 +03:00 [INF] HTTP GET /api/Auth/profile responded 401 in 2.4481 ms
+2026-06-04 14:37:24.446 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 76.4551 ms
+2026-06-04 14:37:26.130 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 14.0798 ms
+2026-06-04 14:37:26.687 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 11.1487 ms
+2026-06-04 14:37:27.863 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.3885 ms
+2026-06-04 14:39:36.809 +03:00 [INF] HTTP GET /uploads/avatars/1e53b525-5135-465b-9367-bb37c1a4aec1.jpg responded 200 in 1.1397 ms
+2026-06-04 14:40:00.663 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 8.1629 ms
+2026-06-04 14:40:00.663 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 8.2724 ms
+2026-06-04 14:40:00.665 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 10.3882 ms
+2026-06-04 14:40:01.529 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 24.4424 ms
+2026-06-04 14:40:01.685 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.0804 ms
+2026-06-04 14:40:01.975 +03:00 [WRN] AppException thrown: Active Ride with identifier '8e8add6c-950c-4d72-fe5d-08dea91b5418' was not found.
+2026-06-04 14:40:01.975 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 6.5198 ms
+2026-06-04 14:40:02.531 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.2966 ms
+2026-06-04 14:40:04.572 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 9.3971 ms
+2026-06-04 14:40:43.708 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 17.4260 ms
+2026-06-04 14:40:44.281 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 20.4624 ms
+2026-06-04 14:41:14.569 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 6.8347 ms
+2026-06-04 14:41:38.549 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 13.6491 ms
+2026-06-04 14:42:44.175 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 14.2790 ms
+2026-06-04 14:43:29.980 +03:00 [INF] HTTP GET /uploads/avatars/1e53b525-5135-465b-9367-bb37c1a4aec1.jpg responded 200 in 1.1708 ms
+2026-06-04 14:43:43.362 +03:00 [ERR] An unexpected server error occurred while accessing /api/Wallet/top-up
+System.Net.Http.HttpRequestException: Paymob Payment Key Generation (Step 3) Failed. Status: BadRequest. Details: {"billing_data":{"phone_number":["This field may not be null."]}}
+   at ScooterRental.Service.PaymentServices.PaymobService.EnsureSuccessOrThrowAsync(HttpResponseMessage response, String stepName) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\PaymentServices\PaymobService.cs:line 273
+   at ScooterRental.Service.PaymentServices.PaymobService.InitiateWalletPaymentAsync(Decimal amount, String phoneNumber, String userId) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\PaymentServices\PaymobService.cs:line 87
+   at ScooterRental.Presentation.Controllers.WalletController.TopUp(TopUpRequestDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\WalletController.cs:line 11
+   at lambda_method733(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-04 14:43:43.398 +03:00 [ERR] HTTP POST /api/Wallet/top-up responded 500 in 1455.1148 ms
+2026-06-04 14:43:57.282 +03:00 [ERR] An unexpected server error occurred while accessing /api/Wallet/top-up
+System.Net.Http.HttpRequestException: Paymob Order Registration (Step 2) Failed. Status: UnprocessableEntity. Details: {"message":"duplicate"}
+   at ScooterRental.Service.PaymentServices.PaymobService.EnsureSuccessOrThrowAsync(HttpResponseMessage response, String stepName) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\PaymentServices\PaymobService.cs:line 273
+   at ScooterRental.Service.PaymentServices.PaymobService.InitiateWalletPaymentAsync(Decimal amount, String phoneNumber, String userId) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\PaymentServices\PaymobService.cs:line 47
+   at ScooterRental.Presentation.Controllers.WalletController.TopUp(TopUpRequestDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\WalletController.cs:line 11
+   at lambda_method733(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-04 14:43:57.285 +03:00 [ERR] HTTP POST /api/Wallet/top-up responded 500 in 505.1367 ms
+2026-06-04 14:44:27.595 +03:00 [ERR] An unexpected server error occurred while accessing /api/Wallet/top-up
+System.Net.Http.HttpRequestException: Paymob Order Registration (Step 2) Failed. Status: UnprocessableEntity. Details: {"message":"duplicate"}
+   at ScooterRental.Service.PaymentServices.PaymobService.EnsureSuccessOrThrowAsync(HttpResponseMessage response, String stepName) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\PaymentServices\PaymobService.cs:line 273
+   at ScooterRental.Service.PaymentServices.PaymobService.InitiateWalletPaymentAsync(Decimal amount, String phoneNumber, String userId) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\PaymentServices\PaymobService.cs:line 47
+   at ScooterRental.Presentation.Controllers.WalletController.TopUp(TopUpRequestDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\WalletController.cs:line 11
+   at lambda_method733(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-04 14:44:27.599 +03:00 [ERR] HTTP POST /api/Wallet/top-up responded 500 in 1218.0533 ms
+2026-06-04 14:47:34.837 +03:00 [ERR] An unexpected server error occurred while accessing /api/Wallet/top-up
+System.Net.Http.HttpRequestException: Paymob Order Registration (Step 2) Failed. Status: UnprocessableEntity. Details: {"message":"duplicate"}
+   at ScooterRental.Service.PaymentServices.PaymobService.EnsureSuccessOrThrowAsync(HttpResponseMessage response, String stepName) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\PaymentServices\PaymobService.cs:line 273
+   at ScooterRental.Service.PaymentServices.PaymobService.InitiateWalletPaymentAsync(Decimal amount, String phoneNumber, String userId) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\PaymentServices\PaymobService.cs:line 47
+   at ScooterRental.Presentation.Controllers.WalletController.TopUp(TopUpRequestDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\WalletController.cs:line 11
+   at lambda_method733(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-04 14:47:34.841 +03:00 [ERR] HTTP POST /api/Wallet/top-up responded 500 in 1032.0018 ms
+2026-06-04 14:49:06.000 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 13.6138 ms
+2026-06-04 14:49:06.000 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 13.2002 ms
+2026-06-04 14:49:06.178 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 1.6822 ms
+2026-06-04 14:49:06.958 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 11.7384 ms
+2026-06-04 14:49:06.963 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 16.5996 ms
+2026-06-04 14:49:07.131 +03:00 [WRN] AppException thrown: Active Ride with identifier '8e8add6c-950c-4d72-fe5d-08dea91b5418' was not found.
+2026-06-04 14:49:07.131 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 5.3945 ms
+2026-06-04 14:49:09.696 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 8.1941 ms
+2026-06-04 14:49:23.753 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 10.3501 ms
+2026-06-04 14:49:24.328 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 3.8382 ms
+2026-06-04 14:49:32.342 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 6.2512 ms
+2026-06-04 14:49:33.203 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-06-04 14:49:33.204 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-06-04 14:49:33.232 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 40.2924 ms
+2026-06-04 14:49:34.188 +03:00 [WRN] AppException thrown: Scooter with identifier 'SCT-001' was not found.
+2026-06-04 14:49:34.188 +03:00 [INF] HTTP POST /api/Ride/start responded 404 in 15.6398 ms
+2026-06-04 14:49:51.187 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.1690 ms
+2026-06-04 14:49:52.143 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 3.0135 ms
+2026-06-04 14:49:53.027 +03:00 [WRN] AppException thrown: Scooter with identifier 'SCT-001' was not found.
+2026-06-04 14:49:53.028 +03:00 [INF] HTTP POST /api/Ride/start responded 404 in 3.1409 ms
+2026-06-04 14:49:57.013 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 1.5948 ms
+2026-06-04 14:49:57.996 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 2.4609 ms
+2026-06-04 14:49:58.864 +03:00 [WRN] AppException thrown: Scooter with identifier 'SCT-001' was not found.
+2026-06-04 14:49:58.865 +03:00 [INF] HTTP POST /api/Ride/start responded 404 in 3.0355 ms
+2026-06-04 14:50:26.070 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 13.0492 ms
+2026-06-04 14:50:26.986 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 8.6292 ms
+2026-06-04 14:50:27.930 +03:00 [WRN] AppException thrown: Scooter with identifier 'SCT-001' was not found.
+2026-06-04 14:50:27.931 +03:00 [INF] HTTP POST /api/Ride/start responded 404 in 9.0336 ms
+2026-06-04 14:54:17.291 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 401 in 2.1755 ms
+2026-06-04 14:54:39.402 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 72.1797 ms
+2026-06-04 14:55:36.507 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 10.1078 ms
+2026-06-04 14:57:10.230 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 13.4765 ms
+2026-06-04 14:57:10.230 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 14.1953 ms
+2026-06-04 14:57:10.230 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 13.7529 ms
+2026-06-04 14:57:11.003 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 10.2749 ms
+2026-06-04 14:57:11.004 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 11.8373 ms
+2026-06-04 14:57:12.020 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.2706 ms
+2026-06-04 14:57:12.024 +03:00 [WRN] AppException thrown: Active Ride with identifier '8e8add6c-950c-4d72-fe5d-08dea91b5418' was not found.
+2026-06-04 14:57:12.024 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 7.6070 ms
+2026-06-04 14:57:12.200 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.5505 ms
+2026-06-04 14:57:15.513 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 8.4637 ms
+2026-06-04 14:57:29.574 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 2.7373 ms
+2026-06-04 14:57:30.375 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 3.6020 ms
+2026-06-04 14:57:33.041 +03:00 [WRN] AppException thrown: Scooter with identifier 'SCT-001' was not found.
+2026-06-04 14:57:33.042 +03:00 [INF] HTTP POST /api/Ride/start responded 404 in 2.9766 ms
+2026-06-04 14:57:56.915 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 1.9959 ms
+2026-06-04 14:58:04.418 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 10.3772 ms
+2026-06-04 14:58:04.863 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 4.3684 ms
+2026-06-04 14:58:22.074 +03:00 [WRN] AppException thrown: Scooter with identifier 'SCT-001' was not found.
+2026-06-04 14:58:22.074 +03:00 [INF] HTTP POST /api/Ride/start responded 404 in 6.4059 ms
+2026-06-04 14:58:48.179 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 5.9850 ms
+2026-06-04 14:58:48.818 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 2.7991 ms
+2026-06-04 14:59:13.507 +03:00 [WRN] AppException thrown: Scooter with identifier 'SCT-001' was not found.
+2026-06-04 14:59:13.508 +03:00 [INF] HTTP POST /api/Ride/start responded 404 in 9.3305 ms

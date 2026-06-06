@@ -17,10 +17,18 @@
                 coordinates.Add(new Coordinate(firstPoint.X, firstPoint.Y));
             }
 
-            var shell = _geometryFactory.CreateLinearRing(coordinates.ToArray());
+            var coordinatesArray = coordinates.ToArray();
+
+            if (!Orientation.IsCCW(coordinatesArray))
+            {
+                Array.Reverse(coordinatesArray);
+            }
+
+            var shell = _geometryFactory.CreateLinearRing(coordinatesArray);
 
             return _geometryFactory.CreatePolygon(shell);
         }
+
         private static IEnumerable<CoordinateDto> ExtractCoordinates(Polygon polygon)
         {
             if (polygon == null || polygon.ExteriorRing == null)

@@ -169,5 +169,30 @@
 
             return true;
         }
+
+        public async Task<bool> ForceStartScooterAsync(Guid scooterId)
+        {
+            var scooter = await _unitOfWork.GetRepository<Scooter>().GetByIdAsync(scooterId);
+
+            if (scooter is null)
+                throw new NotFoundException("Scooter", scooterId);
+
+            await _mqttCommandService.SendCommandAsync(scooter.SerialNumber, ScooterCommandType.StartScooter);
+
+            return true;
+        }
+
+        public async Task<bool> ForceStopScooterAsync(Guid scooterId)
+        {
+            var scooter = await _unitOfWork.GetRepository<Scooter>().GetByIdAsync(scooterId);
+
+            if (scooter is null)
+                throw new NotFoundException("Scooter", scooterId);
+
+            await _mqttCommandService.SendCommandAsync(scooter.SerialNumber, ScooterCommandType.StopScooter, 0);
+
+            return true;
+        }
+
     }
 }

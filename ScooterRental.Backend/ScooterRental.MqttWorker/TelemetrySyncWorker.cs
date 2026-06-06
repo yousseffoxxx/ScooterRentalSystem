@@ -25,6 +25,10 @@
                             scooter.Location = new Point(telemetry.Longitude, telemetry.Latitude) { SRID = 4326 };
                             scooter.CurrentBatteryLevel = telemetry.BatteryLevel;
                             scooter.LastPingAt = telemetry.Timestamp;
+
+                            repo.GetRepository<Scooter>().Update(scooter);
+
+                            _logger.LogInformation("Sync: Successfully queued UPDATE for {Serial}", scooter.SerialNumber);
                         }
                     }
 
@@ -35,7 +39,7 @@
                     _logger.LogError(ex, "An error occurred while synchronizing scooter telemetry from Redis to SQL. Will retry in the next cycle.");
                 }
 
-                await Task.Delay(TimeSpan.FromMinutes(15), stoppingToken);
+                await Task.Delay(TimeSpan.FromMinutes(1), stoppingToken);
             }
         }
     }

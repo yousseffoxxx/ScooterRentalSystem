@@ -63,6 +63,8 @@ global using ScooterRental.Shared.DTOs.Tariff.Response;
 global using ScooterRental.Service.TariffServices;
 global using ScooterRental.Shared.DTOs.AdminManagement.Payment.Request;
 global using ScooterRental.Shared.DTOs.AdminManagement.Payment.Response;
+global using NetTopologySuite.Algorithm;
+
 
 
 
