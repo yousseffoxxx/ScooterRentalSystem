@@ -17,7 +17,6 @@ namespace ScooterRental.MqttWorker
                 .WithCleanSession()
                 .Build();
 
-
             _logger.LogInformation("Connecting to MQTT Broker...");
 
             mqttClient.ApplicationMessageReceivedAsync += HandleIncomingMessage;

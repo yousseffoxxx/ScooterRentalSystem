@@ -6,6 +6,8 @@ global using ScooterRental.Domain.Models.Auth;
 global using ScooterRental.Domain.Models.Scooters;
 global using ScooterRental.Domain.Models.Rides;
 global using ScooterRental.Domain.Models.Payment;
+global using System.Text.Json.Serialization;
+
 
 
 

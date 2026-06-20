@@ -11,10 +11,7 @@
 
             RuleFor(x => x.PhoneNumber)
                 .NotEmpty().WithMessage("Phone number is required")
-                .Matches(@"^01[0125][0-9]{8}$").WithMessage("Phone number must be a valid Egyptian mobile number (e.g., 01012345678).");
-
-            RuleFor(x => x.Email).EmailAddress()
-                .NotEmpty().WithMessage("A valid email address is required.");
+                .Matches(@"^(\+20)?01[0125][0-9]{8}$").WithMessage("Phone number must be valid (e.g., +201012345678 or 01012345678).");
 
             RuleFor(x => x.Password)
                 .NotEmpty()
@@ -31,6 +28,12 @@
                 .Must(BeAValidImage).WithMessage("Only JPG and PNG images are allowed.");
             
             RuleFor(x => x.IdBackPhoto)
+                .NotEmpty().WithMessage("ID Photo is required.")
+                .Must(file => file.Length > 0).WithMessage("The uploaded file is empty.")
+                .Must(file => file.Length <= 5 * 1024 * 1024).WithMessage("The file size must not exceed 5 MB.")
+                .Must(BeAValidImage).WithMessage("Only JPG and PNG images are allowed.");
+            
+            RuleFor(x => x.SelfiePhoto)
                 .NotEmpty().WithMessage("ID Photo is required.")
                 .Must(file => file.Length > 0).WithMessage("The uploaded file is empty.")
                 .Must(file => file.Length <= 5 * 1024 * 1024).WithMessage("The file size must not exceed 5 MB.")

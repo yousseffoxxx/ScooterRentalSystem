@@ -35,15 +35,24 @@
             return scooter.ToStatusDto();
         }
 
-        public async Task<ScooterDto> CreateScooterAsync(ScooterForCreationDto scooterDto)
+        public async Task<ScooterCreatedResultDto> CreateScooterAsync(ScooterForCreationDto scooterDto)
         {
-            var scooter = scooterDto.ToEntity();
+            var scooterInDb = await _unitOfWork.GetRepository<Scooter>().GetEntityWithSpecAsync(new ScooterBySerialNumberSpecification(scooterDto.SerialNumber));
+
+            if (scooterInDb is not null)
+                throw new BadRequestException($"Scooter with Serial number {scooterDto.SerialNumber} already exists in the DB");
+            
+            var deviceSecretKey = IotSecurityHelper.GenerateDeviceSecret();
+            
+            var scooter = scooterDto.ToEntity(deviceSecretKey);
 
             _unitOfWork.GetRepository<Scooter>().Add(scooter);
 
             await _unitOfWork.SaveChangesAsync();
 
-            return scooter.ToDto();
+            var standardDto = scooter.ToDto();
+
+            return new ScooterCreatedResultDto(standardDto, deviceSecretKey);
         }
 
         public async Task<ScooterDto> UpdateScooterAsync(Guid id, ScooterForUpdateDto scooterDto)
@@ -193,6 +202,5 @@
 
             return true;
         }
-
     }
 }

@@ -21,6 +21,8 @@ global using System.Reflection;
 global using System.Text.Json;
 global using System.Text.Json.Serialization;
 global using Microsoft.Extensions.Hosting;
+global using ScooterRental.Shared;
+
 
 
 

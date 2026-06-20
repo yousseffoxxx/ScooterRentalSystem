@@ -1,15 +1,32 @@
 ﻿namespace ScooterRental.Service.AuthServices
 {
     public class AuthService(UserManager<User> _userManager, ITokenService _tokenService,
-        IConfiguration _configuration, IOtpService _otpService, IEmailService _emailService, ILocalStorageService _localStorageService,
+        IConfiguration _configuration, ILocalStorageService _localStorageService,
         IUnitOfWork _unitOfWork) : IAuthService
     {
         private readonly string _baseUrl = _configuration.GetSection("Urls")["BaseUrl"] ?? string.Empty;
 
         public async Task<AuthResultDto> RegisterAsync(RegisterDto registerDto)
         {
+            FirebaseToken decodedToken;
+
+            try
+            {
+                decodedToken = await FirebaseAuth.DefaultInstance.VerifyIdTokenAsync(registerDto.FirebaseToken);
+            }
+            catch (Exception)
+            {
+                throw new UnAuthorizedException("Invalid or expired Firebase authentication token.");
+            }
+
+            if (!decodedToken.Claims.TryGetValue("phone_number", out var firebasePhoneObj) || firebasePhoneObj == null)
+                throw new BadRequestException("Firebase token does not contain a verified phone number.");
+
+            string verifiedPhoneNumber = firebasePhoneObj.ToString();
+
             var savedFrontPhotoUrl = await _localStorageService.SaveFileAsync(registerDto.IdFrontPhoto, "uploads/ids");
             var savedBackPhotoUrl = await _localStorageService.SaveFileAsync(registerDto.IdBackPhoto, "uploads/ids");
+            var savedSelfiePhotoUrl = await _localStorageService.SaveFileAsync(registerDto.SelfiePhoto, "uploads/selfies");
 
             var user = registerDto.ToEntity(savedFrontPhotoUrl, savedBackPhotoUrl);
 
@@ -22,14 +39,17 @@
                 UpdatedAt = DateTimeOffset.UtcNow
             };
 
+            user.PhoneNumber = verifiedPhoneNumber;
+            user.UserName = verifiedPhoneNumber;
+
+            // TODO: AI Service Injection.
+
             var result = await _userManager.CreateAsync(user, registerDto.Password);
 
             if (!result.Succeeded)
                 throw CreateValidationException(result);
 
             await _userManager.AddToRoleAsync(user, "Customer");
-
-            await _otpService.SendOtpAsync(user);
 
             var token = await _tokenService.CreateTokenAsync(user);
 
@@ -40,13 +60,10 @@
 
         public async Task<AuthResultDto> LoginAsync(LoginDto loginDto)
         {
-            var user = await _userManager.Users.Include(u => u.Wallet).FirstOrDefaultAsync(u => u.Email == loginDto.Email);
+            var user = await _userManager.Users.Include(u => u.Wallet).FirstOrDefaultAsync(u => u.PhoneNumber == loginDto.PhoneNumber);
 
             if (user is null)
-                throw new UnAuthorizedException("Invalid Email or Password");
-
-            if (!user.EmailConfirmed)
-                throw new UnAuthorizedException("Please verify your email address before logging in.");
+                throw new UnAuthorizedException("Invalid Phone Number or Password");
 
             if (await _userManager.IsLockedOutAsync(user))
                 throw new UnAuthorizedException("Your account is temporarily locked due to multiple failed login attempts. Please try again later.");
@@ -55,60 +72,21 @@
 
             if (!isPasswordValid)
             {
-                // 4. Record the failed attempt in the database
                 await _userManager.AccessFailedAsync(user);
 
-                // Optional UX: If that specific wrong guess just triggered the lockout, tell them immediately!
                 if (await _userManager.IsLockedOutAsync(user))
                     throw new UnAuthorizedException("Too many failed attempts. Your account is now locked.");
 
-                throw new UnAuthorizedException("Invalid Email or Password");
+                throw new UnAuthorizedException("Invalid Phone Number or Password");
             }
 
-            // 5. Success! Reset the failed attempt counter back to 0.
             await _userManager.ResetAccessFailedCountAsync(user);
 
             var token = await _tokenService.CreateTokenAsync(user);
+
             var userDto = user.ToDto(_baseUrl);
 
             return new AuthResultDto(userDto, token);
-        }
-
-        public async Task<bool> VerifyOtpAsync(VerifyOtpDto verifyOtpDto)
-        {
-            var user = await _userManager.FindByEmailAsync(verifyOtpDto.Email);
-
-            if (user is null)
-                throw new NotFoundException("User", verifyOtpDto.Email);
-
-            var isValid = await _otpService.VerifyOtpAsync(user, verifyOtpDto.Code);
-
-            if (!isValid)
-                throw new BadRequestException("Invalid or expired OTP code.");
-
-            user.EmailConfirmed = true;
-
-            var result = await _userManager.UpdateAsync(user);
-
-            if (!result.Succeeded)
-                throw CreateValidationException(result);
-
-            return true;
-        }
-
-        public async Task<bool> ResendOtpAsync(ResendOtpDto resendOtpDto)
-        {
-            var user = await _userManager.FindByEmailAsync(resendOtpDto.Email);
-
-            if (user is null)
-                throw new NotFoundException("User", resendOtpDto.Email);
-
-            if (user.EmailConfirmed)
-                throw new BadRequestException("This email is already verified. You can log in.");
-
-            await _otpService.SendOtpAsync(user);
-
-            return true;
         }
 
         public async Task<UserResponseDto> GetProfileAsync(string userId)
@@ -168,6 +146,44 @@
             return true;
         }
 
+        /*
+        public async Task<bool> VerifyOtpAsync(VerifyOtpDto verifyOtpDto)
+        {
+            var user = await _userManager.FindByEmailAsync(verifyOtpDto.Email);
+
+            if (user is null)
+                throw new NotFoundException("User", verifyOtpDto.Email);
+
+            var isValid = await _otpService.VerifyOtpAsync(user, verifyOtpDto.Code);
+
+            if (!isValid)
+                throw new BadRequestException("Invalid or expired OTP code.");
+
+            user.EmailConfirmed = true;
+
+            var result = await _userManager.UpdateAsync(user);
+
+            if (!result.Succeeded)
+                throw CreateValidationException(result);
+
+            return true;
+        }
+
+        public async Task<bool> ResendOtpAsync(ResendOtpDto resendOtpDto)
+        {
+            var user = await _userManager.FindByEmailAsync(resendOtpDto.Email);
+
+            if (user is null)
+                throw new NotFoundException("User", resendOtpDto.Email);
+
+            if (user.EmailConfirmed)
+                throw new BadRequestException("This email is already verified. You can log in.");
+
+            await _otpService.SendOtpAsync(user);
+
+            return true;
+        }
+
         public async Task<string> ForgotPasswordAsync(ForgotPasswordDto forgotPasswordDto)
         {
             var user = await _userManager.FindByEmailAsync(forgotPasswordDto.Email);
@@ -185,17 +201,35 @@
 
             return "Password reset email sent successfully.";
         }
+        */
 
         public async Task<bool> ResetPasswordAsync(ResetPasswordDto resetPasswordDto)
         {
-            var user = await _userManager.FindByEmailAsync(resetPasswordDto.Email);
+            FirebaseToken decodedToken;
+
+            try
+            {
+                decodedToken = await FirebaseAuth.DefaultInstance.VerifyIdTokenAsync(resetPasswordDto.FirebaseToken);
+            }
+            catch (Exception)
+            {
+                throw new UnAuthorizedException("Invalid or expired Firebase authentication token.");
+            }
+
+            if (!decodedToken.Claims.TryGetValue("phone_number", out var firebasePhoneObj) || firebasePhoneObj == null)
+                throw new BadRequestException("Firebase token does not contain a verified phone number.");
+
+            if ((string)firebasePhoneObj != resetPasswordDto.PhoneNumber)
+                throw new BadRequestException("Invalid Phone number");
+
+            var user = await _userManager.Users.FirstOrDefaultAsync(u => u.PhoneNumber == resetPasswordDto.PhoneNumber);
 
             if (user is null)
-                throw new NotFoundException("User", resetPasswordDto.Email);
+                throw new NotFoundException("User", resetPasswordDto.PhoneNumber);
 
-            var decodedToken = Uri.UnescapeDataString(resetPasswordDto.Token);
+            await _userManager.RemovePasswordAsync(user);
 
-            var result = await _userManager.ResetPasswordAsync(user, decodedToken, resetPasswordDto.NewPassword);
+            var result = await _userManager.AddPasswordAsync(user, resetPasswordDto.NewPassword);
 
             if (!result.Succeeded)
                 throw CreateValidationException(result);
@@ -320,6 +354,37 @@
                 );
 
             return new AppValidationException(errorDictionary);
+        }
+
+        public async Task<AdminResultDto> LoginAdminAsync(LoginAdminDto loginDto)
+        {
+            var user = await _userManager.Users.Include(u => u.Wallet).FirstOrDefaultAsync(u => u.Email == loginDto.Email);
+
+            if (user is null)
+                throw new UnAuthorizedException("Invalid Email or Password");
+
+            if (await _userManager.IsLockedOutAsync(user))
+                throw new UnAuthorizedException("Your account is temporarily locked due to multiple failed login attempts. Please try again later.");
+
+            var isPasswordValid = await _userManager.CheckPasswordAsync(user, loginDto.Password);
+
+            if (!isPasswordValid)
+            {
+                await _userManager.AccessFailedAsync(user);
+
+                if (await _userManager.IsLockedOutAsync(user))
+                    throw new UnAuthorizedException("Too many failed attempts. Your account is now locked.");
+
+                throw new UnAuthorizedException("Invalid Email or Password");
+            }
+
+            await _userManager.ResetAccessFailedCountAsync(user);
+
+            var token = await _tokenService.CreateTokenAsync(user);
+
+            var userDto = user.ToDto();
+
+            return new AdminResultDto(userDto, token);
         }
     }
 }

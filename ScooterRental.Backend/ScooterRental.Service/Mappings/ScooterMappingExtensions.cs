@@ -1,6 +1,4 @@
-﻿using ScooterRental.Domain.Models.Scooters;
-
-namespace ScooterRental.Service.Mappings
+﻿namespace ScooterRental.Service.Mappings
 {
     public static class ScooterMappingExtensions
     {
@@ -17,14 +15,15 @@ namespace ScooterRental.Service.Mappings
         }
 
         // 2. ScooterForCreationDto -> Scooter
-        public static Scooter ToEntity(this ScooterForCreationDto dto)
+        public static Scooter ToEntity(this ScooterForCreationDto dto, string deviceSecretKey)
         {
             return new Scooter
             {
                 SerialNumber = dto.SerialNumber,
                 CurrentBatteryLevel = 100,
                 Status = ScooterStatus.Offline,
-                ModelId = dto.ModelId
+                ModelId = dto.ModelId,
+                DeviceSecretKey = deviceSecretKey
             };
         }
 
@@ -62,6 +61,7 @@ namespace ScooterRental.Service.Mappings
         {
             return new ScooterStatusDto(
                     scooter.SerialNumber,
+                    scooter.Id,
                     scooter.CurrentBatteryLevel,
                     scooter.Status.ToString()
                 );

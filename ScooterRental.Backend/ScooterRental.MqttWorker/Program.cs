@@ -1,6 +1,3 @@
-using FirebaseAdmin;
-using Google.Apis.Auth.OAuth2;
-
 namespace ScooterRental.MqttWorker
 {
     public class Program
@@ -63,9 +60,7 @@ namespace ScooterRental.MqttWorker
             builder.Services.AddScoped<IRideService, RideService>();
             builder.Services.AddScoped<IServiceManager, ServiceManager>();
             builder.Services.AddScoped<ITokenService, TokenService>();
-            builder.Services.AddScoped<IEmailService, EmailService>();
             builder.Services.AddScoped<ILocalStorageService, LocalStorageService>();
-            builder.Services.AddScoped<IOtpService, OtpService>();
             builder.Services.AddScoped<IServiceManager, ServiceManager>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddScoped<IScooterTelemetryRepository, ScooterTelemetryRepository>();
@@ -75,6 +70,7 @@ namespace ScooterRental.MqttWorker
             builder.Services.AddScoped<IPaymobService, PaymobService>();
             builder.Services.AddScoped<INotificationService, NotificationService>();
             builder.Services.AddScoped<IScooterTelemetryService, ScooterTelemetryService>();
+            builder.Services.AddScoped<IScooterSecretCacheRepository, ScooterSecretCacheRepository>();
             builder.Services.AddSingleton<IZoneCacheService, ZoneCacheService>();
 
             var firebasePath = builder.Configuration.GetRequiredSection("Firebase")["CredentialPath"];

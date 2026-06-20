@@ -20,6 +20,7 @@
             return Ok(result);
         }
 
+        /*
         [HttpPost("verify-email")]
         public async Task<ActionResult<MessageResponseDto>> VerifyEmail([FromBody] VerifyOtpDto verifyOtpDto)
         {
@@ -43,7 +44,8 @@
 
             return Ok(new MessageResponseDto(result));
         }
-
+        */
+        
         [HttpPost("reset-password")]
         public async Task<ActionResult<MessageResponseDto>> ResetPassword([FromBody] ResetPasswordDto resetPasswordDto)
         {
@@ -100,6 +102,13 @@
         public async Task<ActionResult<AdminResultDto>> CreateAdmin([FromHeader(Name = "X-Admin-Secret")] string secretKey, [FromBody] CreateAdminDto createAdminDto)
         {
             var result = await _serviceManager.AuthService.CreateAdminAsync(createAdminDto, secretKey);
+
+            return Ok(result);
+        }
+        [HttpPost("Login-admin")]
+        public async Task<ActionResult<AdminResultDto>> LoginAdmin([FromBody] LoginAdminDto loginAdminDto)
+        {
+            var result = await _serviceManager.AuthService.LoginAdminAsync(loginAdminDto);
 
             return Ok(result);
         }

@@ -1,0 +1,72 @@
+2026-06-18 23:18:01.542 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-18 23:18:01.573 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-18 23:18:01.629 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-18 23:18:01.631 +03:00 [INF] Hosting environment: Development
+2026-06-18 23:18:01.632 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-18 23:18:03.954 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1443.3131 ms
+2026-06-18 23:18:03.996 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 12.6298 ms
+2026-06-18 23:18:04.019 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 35.5273 ms
+2026-06-18 23:18:04.524 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 193.0418 ms
+2026-06-18 23:39:07.070 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-18 23:39:07.093 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-18 23:39:07.143 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-18 23:39:07.145 +03:00 [INF] Hosting environment: Development
+2026-06-18 23:39:07.145 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-18 23:39:07.292 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 97.7569 ms
+2026-06-18 23:39:07.332 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 11.1744 ms
+2026-06-18 23:39:07.343 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 21.8706 ms
+2026-06-18 23:39:07.803 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 161.9010 ms
+2026-06-18 23:39:08.698 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 8.2855 ms
+2026-06-18 23:39:28.285 +03:00 [INF] HTTP POST /api/Auth/Login-admin responded 200 in 336.7066 ms
+2026-06-18 23:49:19.699 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-18 23:49:19.722 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-18 23:49:19.776 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-18 23:49:19.777 +03:00 [INF] Hosting environment: Development
+2026-06-18 23:49:19.778 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-18 23:49:19.919 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 97.8368 ms
+2026-06-18 23:49:19.959 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 10.0094 ms
+2026-06-18 23:49:19.968 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 19.0891 ms
+2026-06-18 23:49:20.454 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 169.6552 ms
+2026-06-18 23:49:21.365 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 10.2239 ms
+2026-06-18 23:51:04.154 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 1.0555 ms
+2026-06-18 23:51:04.553 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/pending responded 204 in 0.1172 ms
+2026-06-18 23:51:04.553 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.0736 ms
+2026-06-18 23:51:04.553 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0295 ms
+2026-06-18 23:51:04.553 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.1174 ms
+2026-06-18 23:51:11.018 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.1167 ms
+2026-06-18 23:51:11.165 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/pending responded 204 in 0.0867 ms
+2026-06-18 23:51:11.165 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.0554 ms
+2026-06-18 23:51:11.165 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.0361 ms
+2026-06-18 23:51:11.165 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.0347 ms
+2026-06-18 23:51:37.956 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/pending responded 204 in 0.4288 ms
+2026-06-18 23:51:37.956 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.0790 ms
+2026-06-18 23:51:37.957 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.0665 ms
+2026-06-18 23:51:38.117 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.1978 ms
+2026-06-18 23:51:38.117 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.2054 ms
+2026-06-18 23:51:43.436 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.1132 ms
+2026-06-18 23:51:58.809 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.5780 ms
+2026-06-18 23:51:58.809 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.5733 ms
+2026-06-18 23:52:04.137 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.1725 ms
+2026-06-18 23:52:04.277 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0889 ms
+2026-06-18 23:52:12.046 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.0884 ms
+2026-06-18 23:52:12.196 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0604 ms
+2026-06-18 23:52:12.196 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/pending responded 204 in 0.0787 ms
+2026-06-18 23:52:13.236 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/pending responded 204 in 0.0970 ms
+2026-06-18 23:52:13.472 +03:00 [INF] HTTP OPTIONS /api/Auth/profile responded 204 in 0.0642 ms
+2026-06-18 23:52:13.472 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.1930 ms
+2026-06-18 23:52:13.472 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.1928 ms
+2026-06-18 23:52:42.798 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.1098 ms
+2026-06-18 23:52:43.148 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/pending responded 204 in 0.0978 ms
+2026-06-18 23:52:43.148 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.0333 ms
+2026-06-18 23:52:53.809 +03:00 [INF] HTTP OPTIONS /api/api/User responded 204 in 0.0880 ms
+2026-06-18 23:52:54.010 +03:00 [INF] HTTP OPTIONS /api/api/Scooter responded 204 in 0.0978 ms
+2026-06-18 23:52:54.010 +03:00 [INF] HTTP OPTIONS /api/api/User responded 204 in 0.1054 ms
+2026-06-18 23:52:54.010 +03:00 [INF] HTTP OPTIONS /api/api/Scooter responded 204 in 0.0296 ms
+2026-06-18 23:52:54.010 +03:00 [INF] HTTP OPTIONS /api/api/Ride/parking-photos/pending responded 204 in 0.0422 ms
+2026-06-18 23:53:19.696 +03:00 [INF] HTTP OPTIONS /api/api/Auth/login responded 204 in 0.1407 ms
+2026-06-18 23:53:20.177 +03:00 [INF] HTTP POST /api/api/Auth/login responded 404 in 4.0103 ms
+2026-06-18 23:54:32.924 +03:00 [INF] HTTP OPTIONS /api/api/Auth/login responded 204 in 0.0545 ms
+2026-06-18 23:54:33.392 +03:00 [INF] HTTP POST /api/api/Auth/login responded 404 in 1.2347 ms
+2026-06-18 23:55:30.679 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.0692 ms
+2026-06-18 23:55:31.174 +03:00 [WRN] AppException thrown: Invalid Phone Number or Password
+2026-06-18 23:55:31.176 +03:00 [INF] HTTP POST /api/Auth/login responded 401 in 103.9232 ms

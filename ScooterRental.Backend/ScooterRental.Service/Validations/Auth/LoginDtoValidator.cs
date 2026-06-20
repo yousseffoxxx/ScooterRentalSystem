@@ -4,11 +4,12 @@
     {
         public LoginDtoValidator()
         {
-            RuleFor(x => x.Email).EmailAddress()
-                    .NotEmpty().WithMessage("A valid email address is required.");
+            RuleFor(x => x.PhoneNumber)
+                .NotEmpty().WithMessage("Phone number is required")
+                .Matches(@"^(\+20)?01[0125][0-9]{8}$").WithMessage("Phone number must be valid (e.g., +201012345678 or 01012345678).");
 
             RuleFor(x => x.Password)
-                    .NotEmpty().WithMessage("Password is required.");
+                .NotEmpty().WithMessage("Password is required.");
         }
     }
 }

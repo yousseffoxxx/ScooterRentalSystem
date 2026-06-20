@@ -13,6 +13,10 @@
                 .IsRequired()
                 .HasMaxLength(100);
 
+            builder.Property(s => s.DeviceSecretKey)
+                .IsRequired()
+                .HasMaxLength(500);
+
             builder.Property(s => s.CurrentBatteryLevel)
                 .IsRequired();
 

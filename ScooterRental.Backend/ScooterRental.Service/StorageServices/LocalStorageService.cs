@@ -7,7 +7,7 @@ namespace ScooterRental.Service.StorageServices
         public async Task<string> SaveFileAsync(IFormFile file, string folderName)
         {
             if (file is null || file.Length == 0)
-                throw new BadRequestException("Id Photo is Empty");
+                throw new BadRequestException("File is Empty");
 
             var fileName = $"{Guid.NewGuid()}{Path.GetExtension(file.FileName)}";
 

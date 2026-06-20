@@ -8,7 +8,7 @@
         public ScooterStatus Status { get; set; } = ScooterStatus.Available;
         public Point? Location { get; set; }
         public DateTimeOffset LastPingAt { get; set; } = DateTimeOffset.UtcNow;
-
+        public string DeviceSecretKey { get; set; } = string.Empty;
         public Guid ModelId { get; set; }
         public ScooterModel Model { get; set; } = null!;
         public ICollection<Ride> Rides { get; set; } = new List<Ride>();

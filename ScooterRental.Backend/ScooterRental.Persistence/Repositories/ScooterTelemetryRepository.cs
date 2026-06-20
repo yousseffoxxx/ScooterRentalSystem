@@ -10,7 +10,7 @@
 
             var value = JsonSerializer.Serialize(telemetry);
 
-            var result = await _database.StringSetAsync(key, value, timeToLive ?? TimeSpan.FromMinutes(15));
+            var result = await _database.StringSetAsync(key, value, timeToLive ?? TimeSpan.FromHours(24));
 
             if (!result)
                 return null;

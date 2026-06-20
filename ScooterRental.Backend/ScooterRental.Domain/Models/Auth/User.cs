@@ -6,6 +6,7 @@
         public string? NationalIdHash { get; set; }
         public string? IdFrontPhotoUrl { get; set; }
         public string? IdBackPhotoUrl { get; set; }
+        public string? SelfiePhotoUrl { get; set; }
         public string? AvatarUrl { get; set; }
         public string? FcmToken { get; set; }
         public ReviewStatus IdVerificationStatus { get; set; } = ReviewStatus.Pending;

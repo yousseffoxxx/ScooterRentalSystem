@@ -39,7 +39,7 @@
 
         [HttpPost]
         [Authorize(Roles = "Admin")]
-        public async Task<ActionResult<ScooterDto>> CreateScooter([FromBody] ScooterForCreationDto scooterDto)
+        public async Task<ActionResult<ScooterCreatedResultDto>> CreateScooter([FromBody] ScooterForCreationDto scooterDto)
         {
             var result = await _serviceManager.ScooterService.CreateScooterAsync(scooterDto);
 

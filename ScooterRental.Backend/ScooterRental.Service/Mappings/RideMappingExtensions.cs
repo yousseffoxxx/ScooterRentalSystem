@@ -18,13 +18,13 @@
                 );
         }
 
-        // 1. Ride -> RideDto
+        // 2. Ride -> RideDto
         public static RideDto ToDto(this Ride ride)
         {            
             return new RideDto(
                     ride.Id,
                     ride.Scooter.SerialNumber,
-                    ride.User.Email ?? "",
+                    ride.User.PhoneNumber ?? "",
                     ride.StartTime,
                     ride.EndTime,
                     ride.DurationMinutes,
@@ -33,7 +33,8 @@
                     ride.EndPhotoUrl
                 );
         }
-        // 4. List of Ride -> List of RideDto
+
+        // 3. List of Ride -> List of RideDto
         public static IReadOnlyList<RideDto> ToDtoList(this IReadOnlyList<Ride> rides)
         {
             if (rides == null || rides.Count == 0)
@@ -47,13 +48,35 @@
 
                     ride.Id,
                     ride.Scooter.SerialNumber,
-                    ride.User.Email ?? "",
+                    ride.User.PhoneNumber ?? "",
                     ride.StartTime,
                     ride.EndTime,
                     ride.DurationMinutes,
                     ride.TotalCost,
                     ride.Status.ToString(),
                     ride.EndPhotoUrl
+                ));
+            }
+            return rideDtos;
+        }
+
+        // 4. List of Ride -> List of PendingParkingPhotoDto
+        public static IReadOnlyList<PendingParkingPhotoDto> ToParkingPhotoDtoList(this IReadOnlyList<Ride> rides)
+        {
+            if (rides == null || rides.Count == 0)
+                return new List<PendingParkingPhotoDto>(0);
+
+            var rideDtos = new List<PendingParkingPhotoDto>(rides.Count);
+
+            foreach (var ride in rides)
+            {
+                rideDtos.Add(new PendingParkingPhotoDto(
+
+                    ride.Id,
+                    ride.EndPhotoUrl?? "",
+                    ride.Scooter.SerialNumber,
+                    ride.User.PhoneNumber?? "",
+                    ride.EndTime ?? DateTimeOffset.Now
                 ));
             }
             return rideDtos;

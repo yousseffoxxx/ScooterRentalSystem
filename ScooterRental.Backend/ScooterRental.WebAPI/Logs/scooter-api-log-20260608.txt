@@ -1,0 +1,73 @@
+2026-06-08 20:34:00.994 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-08 20:34:01.025 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-08 20:34:01.078 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-08 20:34:01.079 +03:00 [INF] Hosting environment: Development
+2026-06-08 20:34:01.080 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-08 20:34:02.653 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1210.8449 ms
+2026-06-08 20:34:02.689 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 11.4015 ms
+2026-06-08 20:34:02.712 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 34.6149 ms
+2026-06-08 20:34:03.170 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 168.7330 ms
+2026-06-08 20:40:42.941 +03:00 [ERR] Failed to send email to mohameedsaied47@gmail.com. SendGrid Status: "Unauthorized"
+2026-06-08 20:40:43.005 +03:00 [INF] HTTP POST /api/Auth/register responded 200 in 1401.5947 ms
+2026-06-08 20:41:49.371 +03:00 [INF] HTTP GET /api/Auth/profile responded 401 in 5.9945 ms
+2026-06-08 20:43:31.774 +03:00 [WRN] AppException thrown: One or more validation errors occurred.
+2026-06-08 20:43:31.779 +03:00 [INF] HTTP POST /api/Auth/register responded 400 in 351.7223 ms
+2026-06-08 20:45:31.699 +03:00 [ERR] Failed to send email to flighttest668@gmail.com. SendGrid Status: "Unauthorized"
+2026-06-08 20:45:31.704 +03:00 [INF] HTTP POST /api/Auth/register responded 200 in 776.9213 ms
+2026-06-08 20:47:15.459 +03:00 [ERR] Failed to send email to flighttest668@gmail.com. SendGrid Status: "Unauthorized"
+2026-06-08 20:47:15.461 +03:00 [INF] HTTP POST /api/Auth/resend-otp responded 200 in 516.9719 ms
+2026-06-08 20:50:14.476 +03:00 [INF] HTTP GET /api/Auth/profile responded 401 in 1.8202 ms
+2026-06-08 20:57:54.079 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 111.3367 ms
+2026-06-08 20:57:57.500 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 52.2163 ms
+2026-06-08 20:57:59.614 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 54.4334 ms
+2026-06-08 20:58:01.509 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 5.4581 ms
+2026-06-08 20:58:09.335 +03:00 [INF] HTTP GET /uploads/avatars/07a33eda-3b5d-46cc-b8f1-742840a5d264.png responded 200 in 1096.6264 ms
+2026-06-08 20:58:14.334 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 14.0905 ms
+2026-06-08 21:02:48.585 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 9.1138 ms
+2026-06-08 21:02:49.607 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 3.0200 ms
+2026-06-08 21:02:49.622 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 18.2595 ms
+2026-06-08 21:02:49.625 +03:00 [WRN] AppException thrown: Active Ride with identifier '8e8add6c-950c-4d72-fe5d-08dea91b5418' was not found.
+2026-06-08 21:02:49.626 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 20.2256 ms
+2026-06-08 21:02:51.148 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 131.5431 ms
+2026-06-08 21:02:52.269 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 5.8409 ms
+2026-06-08 21:02:53.396 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 10.2550 ms
+2026-06-08 21:02:57.424 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 5.6262 ms
+2026-06-08 21:02:58.603 +03:00 [INF] HTTP GET /uploads/avatars/07a33eda-3b5d-46cc-b8f1-742840a5d264.png responded 200 in 510.7312 ms
+2026-06-08 21:03:16.562 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 6.9792 ms
+2026-06-08 21:03:16.562 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 7.9100 ms
+2026-06-08 21:03:17.117 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 12.3685 ms
+2026-06-08 21:03:17.272 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 182.7645 ms
+2026-06-08 21:03:17.561 +03:00 [WRN] AppException thrown: Active Ride with identifier '8e8add6c-950c-4d72-fe5d-08dea91b5418' was not found.
+2026-06-08 21:03:17.562 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 5.6701 ms
+2026-06-08 21:03:17.894 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 5.1233 ms
+2026-06-08 21:03:18.055 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.7759 ms
+2026-06-08 21:03:20.843 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 9.2283 ms
+2026-06-08 21:09:10.959 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-08 21:09:10.987 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-08 21:09:11.075 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-08 21:09:11.076 +03:00 [INF] Hosting environment: Development
+2026-06-08 21:09:11.077 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-08 21:09:11.256 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 106.0101 ms
+2026-06-08 21:09:11.300 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 10.4552 ms
+2026-06-08 21:09:11.311 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 21.7417 ms
+2026-06-08 21:09:11.781 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 160.9768 ms
+2026-06-08 21:09:12.698 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 9.7437 ms
+2026-06-08 21:12:30.747 +03:00 [INF] HTTP OPTIONS /api/Auth/register responded 204 in 0.7925 ms
+2026-06-08 21:12:34.981 +03:00 [ERR] Failed to send email to hamosaeed120@gmail.com. SendGrid Status: "Unauthorized"
+2026-06-08 21:12:35.033 +03:00 [INF] HTTP POST /api/Auth/register responded 200 in 3897.1878 ms
+2026-06-08 21:16:23.990 +03:00 [ERR] Failed to send email to youssefahmed4657@gmail.com. SendGrid Status: "Unauthorized"
+2026-06-08 21:16:23.997 +03:00 [INF] HTTP POST /api/Auth/register responded 200 in 785.2141 ms
+2026-06-08 21:33:53.643 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-08 21:33:53.667 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-08 21:33:53.711 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-08 21:33:53.712 +03:00 [INF] Hosting environment: Development
+2026-06-08 21:33:53.712 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-08 21:33:53.907 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 99.9361 ms
+2026-06-08 21:33:53.950 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 9.6319 ms
+2026-06-08 21:33:53.959 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 18.4963 ms
+2026-06-08 21:33:54.431 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 165.3146 ms
+2026-06-08 21:33:55.299 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 10.1627 ms
+2026-06-08 21:34:13.527 +03:00 [ERR] Failed to send email to youssefahmed4657@gmail.com. SendGrid Status: "Unauthorized"
+2026-06-08 21:34:13.568 +03:00 [INF] HTTP POST /api/Auth/register responded 200 in 1593.5384 ms
+2026-06-08 22:50:37.945 +03:00 [INF] HTTP OPTIONS /api/Auth/firebase-sync responded 204 in 1.0581 ms
+2026-06-08 22:50:38.314 +03:00 [INF] HTTP POST /api/Auth/firebase-sync responded 404 in 6.1686 ms

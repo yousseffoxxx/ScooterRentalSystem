@@ -36,6 +36,13 @@
             builder.Property(r => r.EndPhotoUrl)
                 .HasMaxLength(500);
 
+            builder.Property(r => r.ParkingPhotoStatus)
+                .HasConversion<string>()
+                .HasMaxLength(50);
+
+            builder.Property(r => r.ParkingRejectionReason)
+                .HasMaxLength(500);
+
             builder.Property(r => r.DurationMinutes)
                 .HasColumnType("decimal(8,2)");
 

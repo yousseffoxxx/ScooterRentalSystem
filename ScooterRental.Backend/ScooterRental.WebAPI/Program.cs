@@ -70,7 +70,7 @@ namespace ScooterRental.WebAPI
                 options.Password.RequiredLength = 8;
                 options.Password.RequireNonAlphanumeric = false;
 
-                options.User.RequireUniqueEmail = true;
+                options.User.RequireUniqueEmail = false;
 
                 options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
                 options.Lockout.MaxFailedAccessAttempts = 5;
@@ -136,9 +136,7 @@ namespace ScooterRental.WebAPI
             builder.Services.AddHttpClient();
             builder.Services.AddScoped<IActiveRideCacheRepository, ActiveRideCacheRepository>();
             builder.Services.AddScoped<ITokenService, TokenService>();
-            builder.Services.AddScoped<IEmailService, EmailService>();
             builder.Services.AddScoped<ILocalStorageService, LocalStorageService>();
-            builder.Services.AddScoped<IOtpService, OtpService>();
             builder.Services.AddScoped<IServiceManager, ServiceManager>();
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddScoped<IScooterTelemetryRepository, ScooterTelemetryRepository>();
@@ -148,6 +146,7 @@ namespace ScooterRental.WebAPI
             builder.Services.AddScoped<IPaymobService, PaymobService>();
             builder.Services.AddScoped<INotificationService, NotificationService>();
             builder.Services.AddScoped<IAuthService, AuthService>();
+            builder.Services.AddScoped<IScooterSecretCacheRepository, ScooterSecretCacheRepository>();
             builder.Services.AddAuthorization();
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();

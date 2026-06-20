@@ -1,0 +1,253 @@
+2026-06-14 18:29:22.423 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-14 18:29:22.451 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-14 18:29:22.500 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-14 18:29:22.502 +03:00 [INF] Hosting environment: Development
+2026-06-14 18:29:22.503 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-14 18:29:23.968 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1086.0484 ms
+2026-06-14 18:29:24.011 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 12.5956 ms
+2026-06-14 18:29:24.029 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 31.4578 ms
+2026-06-14 18:29:24.460 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 170.9679 ms
+2026-06-14 18:39:06.210 +03:00 [WRN] AppException thrown: Invalid or expired Firebase authentication token.
+2026-06-14 18:39:06.216 +03:00 [INF] HTTP POST /api/Auth/register responded 401 in 280.6661 ms
+2026-06-14 20:25:57.050 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-14 20:25:57.077 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-14 20:25:57.127 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-14 20:25:57.128 +03:00 [INF] Hosting environment: Development
+2026-06-14 20:25:57.129 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-14 20:25:57.669 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 118.5127 ms
+2026-06-14 20:25:57.714 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 12.9205 ms
+2026-06-14 20:25:57.733 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 32.2822 ms
+2026-06-14 20:25:58.195 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 175.5803 ms
+2026-06-14 20:26:15.923 +03:00 [INF] HTTP POST /api/Auth/register responded 200 in 3802.8453 ms
+2026-06-14 20:26:17.632 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 138.2203 ms
+2026-06-14 20:26:17.906 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 16.1056 ms
+2026-06-14 20:26:18.060 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 27.0402 ms
+2026-06-14 20:26:18.060 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 74.7578 ms
+2026-06-14 20:26:18.644 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 7.6505 ms
+2026-06-14 20:26:18.669 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 5.8597 ms
+2026-06-14 20:26:55.683 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 22.6489 ms
+2026-06-14 20:26:56.034 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 10.8674 ms
+2026-06-14 20:26:56.709 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 5.1824 ms
+2026-06-14 20:27:13.232 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 5.2127 ms
+2026-06-14 20:27:13.879 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 5.0902 ms
+2026-06-14 20:27:19.219 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 5.8420 ms
+2026-06-14 20:27:19.981 +03:00 [INF] HTTP PUT /api/Auth/profile responded 200 in 11.7899 ms
+2026-06-14 20:27:20.076 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.8658 ms
+2026-06-14 20:27:20.576 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 5.0388 ms
+2026-06-14 20:27:20.982 +03:00 [INF] HTTP GET /uploads/avatars/edd67a85-b33f-49f9-b0a5-771e607a0d4b.jpg responded 200 in 13.1234 ms
+2026-06-14 20:27:21.071 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 102.2834 ms
+2026-06-14 20:27:22.893 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.4660 ms
+2026-06-14 20:27:23.272 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 102.2585 ms
+2026-06-14 20:27:23.370 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 98.8464 ms
+2026-06-14 20:27:23.925 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.4566 ms
+2026-06-14 20:27:24.075 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.6656 ms
+2026-06-14 20:27:24.081 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 11.4573 ms
+2026-06-14 20:27:24.575 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 5.3862 ms
+2026-06-14 20:27:24.774 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 199.4970 ms
+2026-06-14 20:27:24.969 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 184.9653 ms
+2026-06-14 20:27:25.170 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 104.2428 ms
+2026-06-14 20:27:25.289 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 15.8991 ms
+2026-06-14 20:27:25.376 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.2966 ms
+2026-06-14 20:27:25.585 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 16.4683 ms
+2026-06-14 20:27:25.668 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 74.5731 ms
+2026-06-14 20:27:26.174 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 8.0514 ms
+2026-06-14 20:27:26.174 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 9.4979 ms
+2026-06-14 20:27:26.186 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.5908 ms
+2026-06-14 20:27:26.206 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.7249 ms
+2026-06-14 20:27:26.602 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 11.9347 ms
+2026-06-14 20:27:26.608 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.6143 ms
+2026-06-14 20:27:27.424 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 8.6201 ms
+2026-06-14 20:27:27.424 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.2636 ms
+2026-06-14 20:27:27.684 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.2404 ms
+2026-06-14 20:27:27.875 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.8386 ms
+2026-06-14 20:27:27.875 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.2624 ms
+2026-06-14 20:27:28.071 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.6328 ms
+2026-06-14 20:27:28.278 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 108.3068 ms
+2026-06-14 20:27:28.296 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 14.9261 ms
+2026-06-14 20:27:28.679 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 10.2489 ms
+2026-06-14 20:27:28.684 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.8553 ms
+2026-06-14 20:27:29.817 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 12.1291 ms
+2026-06-14 20:27:29.842 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 10.7018 ms
+2026-06-14 20:27:30.174 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 12.4239 ms
+2026-06-14 20:27:30.209 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 11.5690 ms
+2026-06-14 20:27:30.596 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 10.0605 ms
+2026-06-14 20:27:30.955 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 11.8791 ms
+2026-06-14 20:27:31.233 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 10.7127 ms
+2026-06-14 20:27:31.318 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 10.9777 ms
+2026-06-14 20:27:31.581 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 10.4187 ms
+2026-06-14 20:27:31.680 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 9.1060 ms
+2026-06-14 20:27:32.505 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 8.2226 ms
+2026-06-14 20:27:32.510 +03:00 [WRN] AppException thrown: One or more validation errors occurred.
+2026-06-14 20:27:32.514 +03:00 [INF] HTTP PUT /api/Auth/profile responded 400 in 19.6527 ms
+2026-06-14 20:27:32.908 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 16.4313 ms
+2026-06-14 20:27:32.909 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 17.9274 ms
+2026-06-14 20:27:33.276 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 10.8093 ms
+2026-06-14 20:28:55.241 +03:00 [INF] HTTP POST /api/Wallet/top-up responded 200 in 1962.5935 ms
+2026-06-14 20:29:09.612 +03:00 [INF] HTTP POST /api/Wallet/WebHook responded 200 in 689.9052 ms
+2026-06-14 20:29:10.791 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 4.3100 ms
+2026-06-14 20:29:11.280 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 10.1237 ms
+2026-06-14 20:29:11.987 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.7686 ms
+2026-06-14 20:31:41.875 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 19.3908 ms
+2026-06-14 20:31:42.419 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 23.7781 ms
+2026-06-14 20:31:53.276 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 6.8648 ms
+2026-06-14 20:31:53.956 +03:00 [INF] HTTP GET /api/Scooter responded 403 in 2.3823 ms
+2026-06-14 20:32:13.367 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 5.1138 ms
+2026-06-14 20:32:14.052 +03:00 [INF] HTTP GET /api/Scooter responded 403 in 0.6279 ms
+2026-06-14 20:36:13.879 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 14.9762 ms
+2026-06-14 20:36:14.275 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 11.3467 ms
+2026-06-14 20:36:15.146 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.8843 ms
+2026-06-14 20:37:02.591 +03:00 [INF] HTTP POST /api/Wallet/top-up responded 200 in 1553.9523 ms
+2026-06-14 20:37:12.568 +03:00 [INF] HTTP POST /api/Wallet/WebHook responded 200 in 284.2769 ms
+2026-06-14 20:37:13.690 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 3.7050 ms
+2026-06-14 20:37:14.179 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 84.7879 ms
+2026-06-14 20:37:14.899 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.8470 ms
+2026-06-14 20:37:26.237 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 12.2164 ms
+2026-06-14 20:37:26.611 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 4.7169 ms
+2026-06-14 20:37:38.244 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 4.6746 ms
+2026-06-14 20:37:38.915 +03:00 [INF] HTTP GET /api/Scooter responded 403 in 0.2834 ms
+2026-06-14 20:37:49.476 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.0087 ms
+2026-06-14 20:37:50.175 +03:00 [INF] HTTP GET /api/Scooter responded 403 in 0.2850 ms
+2026-06-14 20:38:16.933 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.4900 ms
+2026-06-14 20:38:17.802 +03:00 [INF] HTTP GET /api/Scooter responded 403 in 0.2373 ms
+2026-06-14 20:40:06.951 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 7.2074 ms
+2026-06-14 20:40:06.951 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 5.8127 ms
+2026-06-14 20:40:07.505 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 9.3891 ms
+2026-06-14 20:40:07.637 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.2821 ms
+2026-06-14 20:40:07.833 +03:00 [WRN] AppException thrown: Active Ride with identifier '58bd5417-91c1-483c-bc0d-08deca3a09dd' was not found.
+2026-06-14 20:40:07.834 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 21.5932 ms
+2026-06-14 20:40:08.247 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.2654 ms
+2026-06-14 20:40:08.370 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.3142 ms
+2026-06-14 20:40:10.482 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 8.7807 ms
+2026-06-14 20:40:32.312 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 3.6318 ms
+2026-06-14 20:40:32.818 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 4.0787 ms
+2026-06-14 20:40:44.337 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 4.6478 ms
+2026-06-14 20:40:45.220 +03:00 [INF] HTTP GET /api/Scooter responded 403 in 0.3748 ms
+2026-06-14 20:41:48.600 +03:00 [INF] HTTP GET /api/Scooter/3fa85f64-5717-4562-b3fc-2c963f66afa6 responded 401 in 2.1455 ms
+2026-06-14 20:42:37.991 +03:00 [WRN] AppException thrown: Invalid Phone Number or Password
+2026-06-14 20:42:37.993 +03:00 [INF] HTTP POST /api/Auth/login responded 401 in 21.9959 ms
+2026-06-14 20:42:55.763 +03:00 [WRN] AppException thrown: Invalid Phone Number or Password
+2026-06-14 20:42:55.764 +03:00 [INF] HTTP POST /api/Auth/login responded 401 in 6.2547 ms
+2026-06-14 20:43:23.436 +03:00 [WRN] AppException thrown: Invalid Phone Number or Password
+2026-06-14 20:43:23.437 +03:00 [INF] HTTP POST /api/Auth/login responded 401 in 3.0965 ms
+2026-06-14 20:43:38.860 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 68.8964 ms
+2026-06-14 20:44:07.128 +03:00 [WRN] AppException thrown: Scooter with identifier '3fa85f64-5717-4562-b3fc-2c963f66afa6' was not found.
+2026-06-14 20:44:07.129 +03:00 [INF] HTTP GET /api/Scooter/3fa85f64-5717-4562-b3fc-2c963f66afa6 responded 404 in 24.5025 ms
+2026-06-14 20:44:22.617 +03:00 [INF] HTTP GET /api/Scooter/SCT-001 responded 404 in 0.3996 ms
+2026-06-14 20:44:40.080 +03:00 [WRN] AppException thrown: Scooter with identifier '3fa85f64-5717-4562-b3fc-2c963f66afa6' was not found.
+2026-06-14 20:44:40.081 +03:00 [INF] HTTP GET /api/Scooter/3fa85f64-5717-4562-b3fc-2c963f66afa6 responded 404 in 3.2202 ms
+2026-06-14 20:45:10.758 +03:00 [INF] HTTP GET /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb responded 200 in 22.2255 ms
+2026-06-14 20:49:32.596 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 9.2130 ms
+2026-06-14 20:49:32.740 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 1.7088 ms
+2026-06-14 20:49:33.132 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 10.9533 ms
+2026-06-14 20:49:33.135 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 10.0587 ms
+2026-06-14 20:49:33.363 +03:00 [WRN] AppException thrown: Active Ride with identifier '58bd5417-91c1-483c-bc0d-08deca3a09dd' was not found.
+2026-06-14 20:49:33.364 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 6.6784 ms
+2026-06-14 20:49:33.832 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 3.8963 ms
+2026-06-14 20:49:33.964 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 38.1272 ms
+2026-06-14 20:49:35.856 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 9.7960 ms
+2026-06-14 20:49:44.703 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 2.6918 ms
+2026-06-14 20:49:45.244 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 3.5330 ms
+2026-06-14 20:49:51.126 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 1.9166 ms
+2026-06-14 20:49:51.784 +03:00 [INF] HTTP GET /api/Scooter responded 403 in 0.2033 ms
+2026-06-14 20:50:45.631 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 5.1689 ms
+2026-06-14 20:50:46.397 +03:00 [INF] HTTP GET /api/Scooter responded 403 in 0.2984 ms
+2026-06-14 20:52:28.081 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 5.5222 ms
+2026-06-14 20:55:33.960 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 9.4553 ms
+2026-06-14 20:55:35.156 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 9.7291 ms
+2026-06-14 20:55:35.173 +03:00 [WRN] AppException thrown: Active Ride with identifier '58bd5417-91c1-483c-bc0d-08deca3a09dd' was not found.
+2026-06-14 20:55:35.174 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 5.3625 ms
+2026-06-14 20:55:37.576 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 10.7089 ms
+2026-06-14 20:55:53.584 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 2.5759 ms
+2026-06-14 20:55:54.051 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 3.2483 ms
+2026-06-14 20:56:07.089 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 12.5987 ms
+2026-06-14 20:56:07.937 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 15.2280 ms
+2026-06-14 20:56:09.106 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-14 20:56:09.886 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-14 20:56:09.892 +03:00 [INF] HTTP POST /api/Ride/start responded 200 in 1286.2311 ms
+2026-06-14 20:56:11.325 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 12.6717 ms
+2026-06-14 20:56:11.454 +03:00 [INF] HTTP GET /ws/ride/6c4d9d7b-37c7-4d10-a3aa-08deca3e36aa responded 404 in 0.2076 ms
+2026-06-14 20:56:30.947 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-14 20:56:31.309 +03:00 [INF] Sent "StopScooter" command to scooter SCT-001
+2026-06-14 20:56:31.425 +03:00 [INF] HTTP POST /api/Ride/active/end responded 200 in 526.1791 ms
+2026-06-14 20:56:32.064 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 3.3538 ms
+2026-06-14 20:56:32.440 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 1.8222 ms
+2026-06-14 20:56:33.153 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 2.8523 ms
+2026-06-14 20:56:45.116 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-14 20:56:45.141 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-14 20:56:45.187 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-14 20:56:45.188 +03:00 [INF] Hosting environment: Development
+2026-06-14 20:56:45.188 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-14 20:56:45.698 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 108.8000 ms
+2026-06-14 20:56:45.746 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 9.9442 ms
+2026-06-14 20:56:45.757 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 21.6757 ms
+2026-06-14 20:56:46.260 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 189.0718 ms
+2026-06-14 20:56:48.119 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 8.3439 ms
+2026-06-14 20:58:51.818 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 196.2561 ms
+2026-06-14 20:58:52.708 +03:00 [WRN] AppException thrown: Active Ride with identifier '58bd5417-91c1-483c-bc0d-08deca3a09dd' was not found.
+2026-06-14 20:58:52.712 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 37.4642 ms
+2026-06-14 20:58:55.434 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 53.4403 ms
+2026-06-14 20:59:32.892 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 12.1480 ms
+2026-06-14 20:59:33.329 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 29.4879 ms
+2026-06-14 20:59:43.668 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 8.9202 ms
+2026-06-14 20:59:44.687 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 4.1044 ms
+2026-06-14 20:59:46.651 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-14 20:59:47.200 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-14 20:59:47.207 +03:00 [INF] HTTP POST /api/Ride/start responded 200 in 1610.3848 ms
+2026-06-14 20:59:49.301 +03:00 [INF] HTTP GET /ws/ride/e3e4b320-d764-4ba6-e97e-08deca3eb7f7 responded 404 in 0.6569 ms
+2026-06-14 20:59:49.787 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 4.3432 ms
+2026-06-14 21:00:08.505 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-14 21:00:08.919 +03:00 [INF] Sent "StopScooter" command to scooter SCT-001
+2026-06-14 21:00:09.060 +03:00 [INF] HTTP POST /api/Ride/active/end responded 200 in 613.9440 ms
+2026-06-14 21:00:09.866 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 3.6260 ms
+2026-06-14 21:00:10.338 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.9502 ms
+2026-06-14 21:00:11.239 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 3.5828 ms
+2026-06-14 21:02:32.671 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 8.5490 ms
+2026-06-14 21:02:33.768 +03:00 [WRN] AppException thrown: Active Ride with identifier '58bd5417-91c1-483c-bc0d-08deca3a09dd' was not found.
+2026-06-14 21:02:33.769 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 6.9403 ms
+2026-06-14 21:02:37.260 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 10.2249 ms
+2026-06-14 21:02:52.173 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 22.0846 ms
+2026-06-14 21:02:53.008 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 5.7122 ms
+2026-06-14 21:03:07.449 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 7.6409 ms
+2026-06-14 21:03:08.275 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 3.1193 ms
+2026-06-14 21:03:08.283 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 11.2181 ms
+2026-06-14 21:03:08.949 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.6533 ms
+2026-06-14 21:03:08.949 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.7390 ms
+2026-06-14 21:03:09.622 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 3.0713 ms
+2026-06-14 21:03:19.381 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 3.7570 ms
+2026-06-14 21:03:19.791 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 2.6042 ms
+2026-06-14 21:03:22.451 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.2227 ms
+2026-06-14 21:03:22.451 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.4502 ms
+2026-06-14 21:03:22.465 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.5407 ms
+2026-06-14 21:06:26.423 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 19.5090 ms
+2026-06-14 21:06:27.712 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 5.7239 ms
+2026-06-14 21:06:30.421 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 7.9111 ms
+2026-06-14 21:06:31.148 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 3.4796 ms
+2026-06-14 21:06:36.847 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-14 21:06:40.128 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-14 21:06:40.130 +03:00 [INF] HTTP POST /api/Ride/start responded 200 in 7158.9692 ms
+2026-06-14 21:06:42.151 +03:00 [INF] HTTP GET /ws/ride/41a8b8a5-d8e9-4889-e97f-08deca3eb7f7 responded 404 in 0.5674 ms
+2026-06-14 21:06:42.156 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 3.2090 ms
+2026-06-14 21:07:01.150 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-14 21:07:01.939 +03:00 [INF] Sent "StopScooter" command to scooter SCT-001
+2026-06-14 21:07:02.070 +03:00 [INF] HTTP POST /api/Ride/active/end responded 200 in 936.4786 ms
+2026-06-14 21:07:03.004 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.3191 ms
+2026-06-14 21:07:05.684 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.5148 ms
+2026-06-14 21:07:07.038 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 3.3418 ms
+2026-06-14 21:09:07.179 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 7.4745 ms
+2026-06-14 21:09:07.329 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.0171 ms
+2026-06-14 21:09:07.817 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 47.0062 ms
+2026-06-14 21:09:07.819 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 51.0727 ms
+2026-06-14 21:09:08.055 +03:00 [WRN] AppException thrown: Active Ride with identifier '58bd5417-91c1-483c-bc0d-08deca3a09dd' was not found.
+2026-06-14 21:09:08.055 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 5.5890 ms
+2026-06-14 21:09:08.501 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 5.3574 ms
+2026-06-14 21:09:08.598 +03:00 [INF] HTTP PUT /api/Auth/fcm-token responded 200 in 4.2903 ms
+2026-06-14 21:09:10.557 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 9.1984 ms
+2026-06-14 23:50:29.104 +03:00 [INF] HTTP POST /api/Ride/start responded 401 in 2.3083 ms
+2026-06-14 23:50:36.337 +03:00 [INF] HTTP POST /api/Ride/start responded 401 in 2.9110 ms
+2026-06-14 23:51:13.920 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 107.7619 ms
+2026-06-14 23:51:34.761 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-14 23:51:35.146 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-14 23:51:35.148 +03:00 [INF] HTTP POST /api/Ride/start responded 200 in 889.4920 ms
+2026-06-14 23:52:32.021 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-14 23:52:32.421 +03:00 [INF] Sent "StopScooter" command to scooter SCT-001
+2026-06-14 23:52:32.547 +03:00 [INF] HTTP POST /api/Ride/active/end responded 200 in 548.4970 ms

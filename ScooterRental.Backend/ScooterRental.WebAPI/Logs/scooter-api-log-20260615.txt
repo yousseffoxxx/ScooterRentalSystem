@@ -1,0 +1,94 @@
+2026-06-15 14:09:11.979 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-15 14:09:12.010 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-15 14:09:12.063 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-15 14:09:12.064 +03:00 [INF] Hosting environment: Development
+2026-06-15 14:09:12.065 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-15 14:09:12.994 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 134.0082 ms
+2026-06-15 14:09:13.034 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 13.2251 ms
+2026-06-15 14:09:13.056 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 35.0089 ms
+2026-06-15 14:09:13.610 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 253.0030 ms
+2026-06-15 14:10:07.898 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 326.1146 ms
+2026-06-15 14:10:44.037 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.CreateZoneAsync(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 57
+   at ScooterRental.Presentation.Controllers.ZoneController.CreateZone(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 9
+   at lambda_method325(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-15 14:10:44.068 +03:00 [ERR] HTTP POST /api/Zone responded 500 in 89.9737 ms
+2026-06-15 14:11:49.602 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 81.4064 ms
+2026-06-15 14:11:52.265 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 66.7706 ms
+2026-06-15 14:12:15.130 +03:00 [INF] Zone update received via Redis.Reloading map cache
+2026-06-15 14:12:15.131 +03:00 [INF] HTTP POST /api/Zone responded 200 in 128.6840 ms
+2026-06-15 14:24:42.996 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 35.5495 ms
+2026-06-15 14:24:43.937 +03:00 [WRN] AppException thrown: Active Ride with identifier '58bd5417-91c1-483c-bc0d-08deca3a09dd' was not found.
+2026-06-15 14:24:43.938 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 28.1468 ms
+2026-06-15 14:24:47.335 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 11.2696 ms
+2026-06-15 14:25:37.874 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 23.4066 ms
+2026-06-15 14:25:39.809 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 21.5609 ms
+2026-06-15 14:26:02.185 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 8.0613 ms
+2026-06-15 14:26:03.156 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.7285 ms
+2026-06-15 14:26:23.925 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.3511 ms
+2026-06-15 14:26:25.458 +03:00 [WRN] AppException thrown: Active Ride with identifier '58bd5417-91c1-483c-bc0d-08deca3a09dd' was not found.
+2026-06-15 14:26:25.459 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 5.2117 ms
+2026-06-15 14:26:28.562 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 3.9320 ms
+2026-06-15 14:26:58.188 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 21.4614 ms
+2026-06-15 14:26:58.707 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 5.6694 ms
+2026-06-15 14:27:29.404 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 7.1332 ms
+2026-06-15 14:29:17.141 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 7.9021 ms
+2026-06-15 14:32:37.700 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 16.6533 ms
+2026-06-15 14:33:13.532 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 12.8452 ms
+2026-06-15 14:33:26.101 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 15.1738 ms
+2026-06-15 14:33:26.271 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 3.9768 ms
+2026-06-15 14:33:26.276 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 8.6466 ms
+2026-06-15 14:34:26.892 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 9.4981 ms
+2026-06-15 14:40:02.710 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 15.5869 ms
+2026-06-15 14:40:04.470 +03:00 [WRN] AppException thrown: Active Ride with identifier '58bd5417-91c1-483c-bc0d-08deca3a09dd' was not found.
+2026-06-15 14:40:04.470 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 4.1506 ms
+2026-06-15 14:40:08.225 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 10.6269 ms
+2026-06-15 14:40:15.903 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 3.7170 ms
+2026-06-15 14:41:13.401 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 10.1353 ms
+2026-06-15 14:41:14.718 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 5.1051 ms
+2026-06-15 14:41:32.636 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 7.5335 ms
+2026-06-15 14:45:13.237 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 8.7861 ms
+2026-06-15 14:45:14.269 +03:00 [WRN] AppException thrown: Active Ride with identifier '58bd5417-91c1-483c-bc0d-08deca3a09dd' was not found.
+2026-06-15 14:45:14.270 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 4.8027 ms
+2026-06-15 14:45:17.215 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 10.7436 ms
+2026-06-15 14:46:15.053 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 7.8705 ms
+2026-06-15 14:46:15.701 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 4.2132 ms
+2026-06-15 14:46:53.966 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 8.1112 ms
+2026-06-15 14:46:54.937 +03:00 [WRN] AppException thrown: Active Ride with identifier '58bd5417-91c1-483c-bc0d-08deca3a09dd' was not found.
+2026-06-15 14:46:54.937 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 4.7953 ms
+2026-06-15 14:46:58.057 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 8.3097 ms
+2026-06-15 14:47:05.663 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 2.8965 ms
+2026-06-15 14:47:06.245 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 4.3050 ms
+2026-06-15 14:47:21.578 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 1.9776 ms
+2026-06-15 14:47:22.761 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 2.8953 ms
+2026-06-15 14:47:25.345 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-15 14:47:26.052 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-15 14:47:26.059 +03:00 [INF] HTTP POST /api/Ride/start responded 200 in 2092.7915 ms
+2026-06-15 14:47:28.616 +03:00 [INF] HTTP GET /ws/ride/7474aeac-fc9e-4c04-ab11-08decad3ddd3 responded 404 in 0.7810 ms
+2026-06-15 14:47:29.617 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 10.2255 ms
+2026-06-15 14:49:34.556 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 10.9860 ms
+2026-06-15 14:49:35.445 +03:00 [INF] HTTP GET /api/Ride/active responded 200 in 6.1923 ms
+2026-06-15 14:49:36.246 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 9.6935 ms
+2026-06-15 14:49:40.031 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 16.5565 ms
+2026-06-15 14:49:40.253 +03:00 [INF] HTTP GET /ws/ride/7474aeac-fc9e-4c04-ab11-08decad3ddd3 responded 404 in 0.2652 ms
+2026-06-15 14:50:31.687 +03:00 [INF] HTTP POST /api/Ride/active/end responded 415 in 4769.9002 ms
+2026-06-15 14:55:38.681 +03:00 [INF] HTTP POST /api/Ride/active/end responded 415 in 13827.6821 ms
+2026-06-15 14:55:46.866 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 19.3814 ms
+2026-06-15 14:55:47.854 +03:00 [INF] HTTP GET /api/Ride/active responded 200 in 3.5137 ms
+2026-06-15 14:55:48.881 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 11.3941 ms
+2026-06-15 14:55:51.351 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 2.6061 ms
+2026-06-15 14:55:51.405 +03:00 [INF] HTTP GET /ws/ride/7474aeac-fc9e-4c04-ab11-08decad3ddd3 responded 404 in 0.2434 ms

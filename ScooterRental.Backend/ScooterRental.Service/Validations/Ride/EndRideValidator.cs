@@ -12,10 +12,19 @@
                 .InclusiveBetween(-90, 90)
                 .WithMessage("Latitude must be between -90 and 90 degrees.");
 
-            RuleFor(x => x.EndPhotoUrl)
-                .NotEmpty().WithMessage("End Photo URL is required")
-                .Must(uri => Uri.TryCreate(uri, UriKind.Absolute, out _))
-                .WithMessage("End Photo must be a valid URL.");
+            RuleFor(x => x.EndPhoto)
+                .NotEmpty().WithMessage("EndPhoto is required.")
+                .Must(file => file.Length > 0).WithMessage("The uploaded file is empty.")
+                .Must(file => file.Length <= 5 * 1024 * 1024).WithMessage("The file size must not exceed 5 MB.")
+                .Must(BeAValidImage).WithMessage("Only JPG and PNG images are allowed.");
+
+        }
+
+        private bool BeAValidImage(IFormFile file)
+        {
+            var allowedContentTypes = new[] { "image/jpeg", "image/jpg", "image/png" };
+
+            return allowedContentTypes.Contains(file.ContentType.ToLower());
         }
     }
 }

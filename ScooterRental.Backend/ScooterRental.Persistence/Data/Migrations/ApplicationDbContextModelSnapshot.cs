@@ -241,6 +241,10 @@ namespace ScooterRental.Persistence.Data.Migrations
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("SelfiePhotoUrl")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
 
@@ -366,11 +370,14 @@ namespace ScooterRental.Persistence.Data.Migrations
                     b.Property<DateTimeOffset?>("EndTime")
                         .HasColumnType("datetimeoffset");
 
-                    b.Property<int>("ParkingPhotoStatus")
-                        .HasColumnType("int");
+                    b.Property<string>("ParkingPhotoStatus")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("ParkingRejectionReason")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<Guid>("ScooterId")
                         .HasColumnType("uniqueidentifier");
@@ -438,6 +445,11 @@ namespace ScooterRental.Persistence.Data.Migrations
 
                     b.Property<int>("CurrentBatteryLevel")
                         .HasColumnType("int");
+
+                    b.Property<string>("DeviceSecretKey")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<DateTimeOffset>("LastPingAt")
                         .HasColumnType("datetimeoffset");

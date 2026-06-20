@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace ScooterRental.Domain.Models.Scooters
+﻿namespace ScooterRental.Shared
 {
     public class ScooterTelemetry
     {

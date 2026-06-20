@@ -1,0 +1,18 @@
+2026-06-17 21:06:17.869 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-17 21:06:17.912 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-17 21:06:17.989 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-17 21:06:17.991 +03:00 [INF] Hosting environment: Development
+2026-06-17 21:06:17.992 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-17 21:06:20.145 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1764.7429 ms
+2026-06-17 21:06:20.199 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 17.9245 ms
+2026-06-17 21:06:20.230 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 48.8255 ms
+2026-06-17 21:06:20.917 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 239.9110 ms
+2026-06-17 21:19:08.417 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 1.2220 ms
+2026-06-17 21:19:08.948 +03:00 [WRN] AppException thrown: Invalid Phone Number or Password
+2026-06-17 21:19:08.954 +03:00 [INF] HTTP POST /api/Auth/login responded 401 in 206.7239 ms
+2026-06-17 21:23:40.476 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.5241 ms
+2026-06-17 21:23:41.001 +03:00 [WRN] AppException thrown: Invalid Phone Number or Password
+2026-06-17 21:23:41.004 +03:00 [INF] HTTP POST /api/Auth/login responded 401 in 167.9060 ms
+2026-06-17 21:23:57.762 +03:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.1427 ms
+2026-06-17 21:23:58.102 +03:00 [WRN] AppException thrown: Invalid Phone Number or Password
+2026-06-17 21:23:58.103 +03:00 [INF] HTTP POST /api/Auth/login responded 401 in 17.6917 ms

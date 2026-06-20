@@ -19,6 +19,9 @@
             builder.Property(u => u.IdBackPhotoUrl)
                 .HasMaxLength(500);
 
+            builder.Property(u => u.SelfiePhotoUrl)
+                .HasMaxLength(500);
+
             builder.Property(u => u.AvatarUrl)
                 .HasMaxLength(500);
 

@@ -64,6 +64,12 @@ global using ScooterRental.Service.TariffServices;
 global using ScooterRental.Shared.DTOs.AdminManagement.Payment.Request;
 global using ScooterRental.Shared.DTOs.AdminManagement.Payment.Response;
 global using NetTopologySuite.Algorithm;
+global using FirebaseAdmin.Auth;
+global using MQTTnet.Protocol;
+global using ScooterRental.Service.MqttServices;
+
+
+
 
 
 
