@@ -2,7 +2,8 @@
 {
     public class ScooterTelemetryService(IScooterTelemetryRepository _repository, IZoneCacheService _zoneCacheService,
         IMqttCommandService _mqttCommandService, ILogger<ScooterTelemetryService> _logger, INotificationService _notificationService,
-        IUnitOfWork _unitOfWork, IActiveRideCacheRepository _activeRideCacheRepository, IScooterSecretCacheRepository _scooterSecretCacheRepository)
+        IUnitOfWork _unitOfWork, IActiveRideCacheRepository _activeRideCacheRepository, IScooterSecretCacheRepository _scooterSecretCacheRepository,
+        IRealTimeBroadcastService _broadcastService)
         : IScooterTelemetryService
     {
         public async Task ProcessIncomingTelemetryAsync(string jsonPayload)
@@ -28,6 +29,8 @@
 
             var deviceSecretKey = await _scooterSecretCacheRepository.GetSecretAsync(telemetry.SerialNumber);
 
+            Guid scooterId = Guid.Empty;
+
             if (deviceSecretKey is null)
             {
                 var scooterFromDb = await _unitOfWork.GetRepository<Scooter>().GetEntityWithSpecAsync(new ScooterBySerialNumberSpecification(telemetry.SerialNumber));
@@ -39,6 +42,7 @@
                 }
 
                 deviceSecretKey = scooterFromDb.DeviceSecretKey;
+                scooterId = scooterFromDb.Id;
 
                 await _scooterSecretCacheRepository.SetSecretAsync(scooterFromDb.SerialNumber, scooterFromDb.DeviceSecretKey);
             }
@@ -76,15 +80,19 @@
 
                 await _unitOfWork.SaveChangesAsync();
 
-                // TODO Future enhancement: Send a WebSocket push directly to the Admin Dashboard!
+                await _broadcastService.BroadcastSecurityAlertToAdminsAsync(telemetry.SerialNumber, "Theft Alarm Triggered!");
             }
 
-            await HandleGeofencing(telemetry.Data, deviceSecretKey);
+            var mapDto = new MapScooterDto(scooterId, telemetry.SerialNumber, telemetry.Data.BatteryLevel, telemetry.Data.Latitude, telemetry.Data.Longitude, 0, 0);
+
+            await HandleGeofencing(telemetry.Data, mapDto);
 
             await _repository.SaveOrUpdateTelemetryAsync(telemetry.Data);
+
+            await _broadcastService.BroadcastLiveTelemetryToAdminsAsync(mapDto);
         }
 
-        private async Task HandleGeofencing(ScooterTelemetry telemetry, string DeviceSecretKey)
+        private async Task HandleGeofencing(ScooterTelemetry telemetry, MapScooterDto mapDto)
         {
             var zones = _zoneCacheService.GetZonesForPoint(telemetry.Longitude, telemetry.Latitude);
 
@@ -94,6 +102,8 @@
 
             if (activeRide is null)
                 return;
+
+            await _broadcastService.BroadcastRideTelemetryToRiderAsync(activeRide.RideId.ToString(), mapDto);
 
             // scooter have left the operational zone
             if (!zones.Any())

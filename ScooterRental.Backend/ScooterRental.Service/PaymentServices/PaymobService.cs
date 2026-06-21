@@ -1,7 +1,7 @@
 ﻿namespace ScooterRental.Service.PaymentServices
 {
     public class PaymobService(IHttpClientFactory _httpClientFactory, IOptions<PaymobOptions> _options, UserManager<User> _userManager,
-        INotificationService _notificationService,IUnitOfWork _unitOfWork) : IPaymobService
+        INotificationService _notificationService,IUnitOfWork _unitOfWork, IRealTimeBroadcastService _broadcastService) : IPaymobService
     {
         public async Task<TopUpResponseDto> InitiateWalletPaymentAsync(decimal amount, string phoneNumber, string userId)
         {
@@ -193,6 +193,8 @@
             _unitOfWork.GetRepository<WalletTransaction>().Add(walletTransaction);
 
             await _unitOfWork.SaveChangesAsync();
+
+            await _broadcastService.BroadcastWalletTopUpToRiderAsync(user.Id.ToString(), user.Wallet.Balance);
 
             if (!string.IsNullOrEmpty(user.FcmToken))
                 await _notificationService.SendNotificationAsync(user.FcmToken,

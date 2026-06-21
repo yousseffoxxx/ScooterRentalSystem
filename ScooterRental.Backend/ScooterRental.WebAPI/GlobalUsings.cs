@@ -34,6 +34,10 @@ global using FirebaseAdmin;
 global using Google.Apis.Auth.OAuth2;
 global using ScooterRental.Service.Abstractions.NotificationServices;
 global using ScooterRental.Service.NotificationServices;
+global using ScooterRental.Presentation.Hubs;
+global using ScooterRental.Service.Abstractions.RealTimeServices;
+
+
 
 
 

@@ -88,26 +88,42 @@ namespace ScooterRental.WebAPI
             builder.Services.Configure<MqttOptions>(builder.Configuration.GetSection("MqttSettings"));
 
             var jwtOptions = builder.Configuration.GetSection("Jwt").Get<JwtSettings>();         
+            
             builder.Services.AddAuthentication(options => 
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             })
-                .AddJwtBearer(options => {
-                options.TokenValidationParameters = new TokenValidationParameters
+                .AddJwtBearer(options => 
                 {
-                    ValidateAudience = true,
-                    ValidateIssuer = true,
-                    ValidateLifetime = true,
-                    ValidateIssuerSigningKey = true,
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateAudience = true,
+                        ValidateIssuer = true,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
 
-                    ValidAudience = jwtOptions.Audience,
-                    ValidIssuer = jwtOptions.Issuer,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtOptions.Key)),
+                        ValidAudience = jwtOptions.Audience,
+                        ValidIssuer = jwtOptions.Issuer,
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtOptions.Key)),
 
-                    ClockSkew = TimeSpan.Zero
-                };
-            });
+                        ClockSkew = TimeSpan.Zero
+                    };
+                    options.Events = new JwtBearerEvents
+                    {
+                        OnMessageReceived = context =>
+                        {
+                            var accessToken = context.Request.Query["access_token"];
+                            var path = context.HttpContext.Request.Path;
+
+                            if (!string.IsNullOrEmpty(accessToken) && path.StartsWithSegments("/hubs"))
+                            {
+                                context.Token = accessToken;
+                            }
+                            return Task.CompletedTask;
+                        }
+                    };
+                });
 
             builder.Services.Configure<ApiBehaviorOptions>(options =>
             {
@@ -139,6 +155,8 @@ namespace ScooterRental.WebAPI
                 client.BaseAddress = new Uri(aiUrl);
             });
 
+            builder.Services.AddSignalR().AddStackExchangeRedis(builder.Configuration.GetConnectionString("RedisConnectionString"));
+            
             builder.Services.AddScoped<IActiveRideCacheRepository, ActiveRideCacheRepository>();
             builder.Services.AddScoped<ITokenService, TokenService>();
             builder.Services.AddScoped<ILocalStorageService, LocalStorageService>();
@@ -152,7 +170,8 @@ namespace ScooterRental.WebAPI
             builder.Services.AddScoped<INotificationService, NotificationService>();
             builder.Services.AddScoped<IAuthService, AuthService>();
             builder.Services.AddScoped<IScooterSecretCacheRepository, ScooterSecretCacheRepository>();
-            
+            builder.Services.AddScoped<IRealTimeBroadcastService, SignalRBroadcastService>();
+
             builder.Services.AddAuthorization();
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
@@ -202,6 +221,8 @@ namespace ScooterRental.WebAPI
             app.UseAuthentication();
             app.UseAuthorization();
             app.MapControllers();
+            app.MapHub<AdminHub>("/hubs/admin");
+            app.MapHub<RiderHub>("/hubs/rider");
 
             #endregion
 

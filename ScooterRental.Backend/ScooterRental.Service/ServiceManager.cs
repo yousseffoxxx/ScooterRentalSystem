@@ -4,10 +4,11 @@
         ILocalStorageService _localStorageService,IUnitOfWork _unitOfWork,IValidator<ZoneForCreationDto> _createValidator,
         IValidator<ZoneForUpdateDto> _updateValidator,IRedisZoneEventPublisher _redisZoneEventPublisher,IMqttCommandService _mqttCommandService,
         IScooterTelemetryRepository _scooterTelemetryRepository,IZoneCacheService _zoneCacheService, IHttpClientFactory _httpClientFactory, 
-        IOptions<PaymobOptions> _options, INotificationService _notificationService, IActiveRideCacheRepository _activeRideCacheRepository) 
+        IOptions<PaymobOptions> _options, INotificationService _notificationService, IActiveRideCacheRepository _activeRideCacheRepository,
+        IAiVerificationService _aiVerificationService) 
         : IServiceManager
     {
-        private readonly Lazy<IAuthService> _lazyAuthService = new Lazy<IAuthService>(() => new AuthService(_userManager, _tokenService, _configuration, _localStorageService, _unitOfWork));
+        private readonly Lazy<IAuthService> _lazyAuthService = new Lazy<IAuthService>(() => new AuthService(_userManager, _tokenService, _configuration, _localStorageService, _unitOfWork, _aiVerificationService));
         public IAuthService AuthService => _lazyAuthService.Value;
 
         private readonly Lazy<IScooterService> _lazyScooterService = new Lazy<IScooterService>(() => new ScooterService(_unitOfWork,_mqttCommandService));
