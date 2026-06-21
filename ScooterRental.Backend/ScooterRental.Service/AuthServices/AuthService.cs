@@ -2,7 +2,7 @@
 {
     public class AuthService(UserManager<User> _userManager, ITokenService _tokenService,
         IConfiguration _configuration, ILocalStorageService _localStorageService,
-        IUnitOfWork _unitOfWork) : IAuthService
+        IUnitOfWork _unitOfWork, IAiVerificationService _aiVerificationService) : IAuthService
     {
         private readonly string _baseUrl = _configuration.GetSection("Urls")["BaseUrl"] ?? string.Empty;
 
@@ -24,6 +24,11 @@
 
             string verifiedPhoneNumber = firebasePhoneObj.ToString();
 
+            var aiCheckResult = await _aiVerificationService.VerifyIdentityAsync(registerDto.IdFrontPhoto, registerDto.IdBackPhoto, registerDto.SelfiePhoto);
+            
+            if(aiCheckResult.Valid == false)
+                throw new BadRequestException($"{aiCheckResult.Error}");
+
             var savedFrontPhotoUrl = await _localStorageService.SaveFileAsync(registerDto.IdFrontPhoto, "uploads/ids");
             var savedBackPhotoUrl = await _localStorageService.SaveFileAsync(registerDto.IdBackPhoto, "uploads/ids");
             var savedSelfiePhotoUrl = await _localStorageService.SaveFileAsync(registerDto.SelfiePhoto, "uploads/selfies");
@@ -41,8 +46,16 @@
 
             user.PhoneNumber = verifiedPhoneNumber;
             user.UserName = verifiedPhoneNumber;
+            user.IdVerificationStatus = ReviewStatus.Approved;
+            user.FullName = aiCheckResult.Name;
 
-            // TODO: AI Service Injection.
+            // Hash the plain-text National ID
+            using var sha256 = SHA256.Create();
+            var idBytes = Encoding.UTF8.GetBytes(aiCheckResult.NationalId);
+            var hashBytes = sha256.ComputeHash(idBytes);
+            var hashedNationalId = Convert.ToBase64String(hashBytes);
+
+            user.NationalIdHash = hashedNationalId;
 
             var result = await _userManager.CreateAsync(user, registerDto.Password);
 

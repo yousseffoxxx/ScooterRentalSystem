@@ -133,7 +133,12 @@ namespace ScooterRental.WebAPI
 
             builder.Services.AddSingleton<IZoneCacheService, ZoneCacheService>();
 
-            builder.Services.AddHttpClient();
+            builder.Services.AddHttpClient<IAiVerificationService, AiVerificationService>(client =>
+            {
+                var aiUrl = builder.Configuration.GetSection("Urls")["AiService"];
+                client.BaseAddress = new Uri(aiUrl);
+            });
+
             builder.Services.AddScoped<IActiveRideCacheRepository, ActiveRideCacheRepository>();
             builder.Services.AddScoped<ITokenService, TokenService>();
             builder.Services.AddScoped<ILocalStorageService, LocalStorageService>();
@@ -147,6 +152,7 @@ namespace ScooterRental.WebAPI
             builder.Services.AddScoped<INotificationService, NotificationService>();
             builder.Services.AddScoped<IAuthService, AuthService>();
             builder.Services.AddScoped<IScooterSecretCacheRepository, ScooterSecretCacheRepository>();
+            
             builder.Services.AddAuthorization();
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
