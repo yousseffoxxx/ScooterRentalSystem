@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ScooterRental.Persistence\ScooterRental.Persistence.csproj" />
+    <ProjectReference Include="..\ScooterRental.Presentation\ScooterRental.Presentation.csproj" />
     <ProjectReference Include="..\ScooterRental.Service.Abstractions\ScooterRental.Service.Abstractions.csproj" />
     <ProjectReference Include="..\ScooterRental.Service\ScooterRental.Service.csproj" />
   </ItemGroup>

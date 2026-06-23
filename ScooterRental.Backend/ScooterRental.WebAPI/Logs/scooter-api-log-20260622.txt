@@ -1,0 +1,924 @@
+2026-06-22 12:50:59.120 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-22 12:50:59.148 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-22 12:50:59.206 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-22 12:50:59.208 +03:00 [INF] Hosting environment: Development
+2026-06-22 12:50:59.209 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-22 12:51:00.766 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1149.2693 ms
+2026-06-22 12:51:00.804 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 12.4364 ms
+2026-06-22 12:51:00.829 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 37.2966 ms
+2026-06-22 12:51:01.299 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 201.9268 ms
+2026-06-22 13:05:31.240 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-22 13:05:31.261 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-22 13:05:31.305 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-22 13:05:31.306 +03:00 [INF] Hosting environment: Development
+2026-06-22 13:05:31.307 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-22 13:05:31.786 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 106.7282 ms
+2026-06-22 13:05:31.829 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 9.6526 ms
+2026-06-22 13:05:31.840 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 21.4140 ms
+2026-06-22 13:05:32.299 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 160.0597 ms
+2026-06-22 13:05:33.253 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 9.4470 ms
+2026-06-22 13:17:41.159 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-22 13:17:41.180 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-22 13:17:41.229 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-22 13:17:41.230 +03:00 [INF] Hosting environment: Development
+2026-06-22 13:17:41.231 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-22 13:17:41.707 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 113.3106 ms
+2026-06-22 13:17:41.744 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 9.5293 ms
+2026-06-22 13:17:41.753 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 18.5666 ms
+2026-06-22 13:17:42.224 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 178.3260 ms
+2026-06-22 13:18:02.049 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 382.8389 ms
+2026-06-22 13:19:12.217 +03:00 [INF] HTTP POST /api/Scooter responded 401 in 8.5618 ms
+2026-06-22 13:19:17.467 +03:00 [INF] HTTP POST /api/Scooter responded 200 in 144.3352 ms
+2026-06-22 13:22:29.486 +03:00 [INF] HTTP OPTIONS /hubs/admin/negotiate responded 204 in 0.8440 ms
+2026-06-22 13:22:42.473 +03:00 [INF] HTTP OPTIONS /hubs/admin/negotiate responded 204 in 0.1222 ms
+2026-06-22 13:26:57.545 +03:00 [INF] HTTP GET /api/test/generate-payload responded 200 in 11.2434 ms
+2026-06-22 13:36:28.560 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-22 13:36:28.584 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-22 13:36:28.632 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-22 13:36:28.633 +03:00 [INF] Hosting environment: Development
+2026-06-22 13:36:28.634 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-22 13:36:29.092 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 87.3733 ms
+2026-06-22 13:36:29.137 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 12.6451 ms
+2026-06-22 13:36:29.149 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 25.1810 ms
+2026-06-22 13:36:29.661 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 184.5520 ms
+2026-06-22 13:36:30.514 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 0.8318 ms
+2026-06-22 13:37:38.614 +03:00 [INF] HTTP GET /api/test/generate-payload responded 200 in 21.5607 ms
+2026-06-22 15:15:33.607 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-22 15:15:33.630 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-22 15:15:33.678 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-22 15:15:33.679 +03:00 [INF] Hosting environment: Development
+2026-06-22 15:15:33.680 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-22 15:15:33.912 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 109.9407 ms
+2026-06-22 15:15:33.953 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 9.2935 ms
+2026-06-22 15:15:33.962 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 18.6982 ms
+2026-06-22 15:15:34.383 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 158.4537 ms
+2026-06-22 15:16:06.083 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 297.0130 ms
+2026-06-22 15:17:43.765 +03:00 [INF] HTTP GET /api/test/generate-payload responded 200 in 33.2779 ms
+2026-06-22 17:31:49.060 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-22 17:31:49.091 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-22 17:31:49.148 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-22 17:31:49.149 +03:00 [INF] Hosting environment: Development
+2026-06-22 17:31:49.150 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-22 17:31:50.517 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1051.4269 ms
+2026-06-22 17:31:50.550 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 13.6069 ms
+2026-06-22 17:31:50.571 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 34.5406 ms
+2026-06-22 17:31:51.098 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 203.7202 ms
+2026-06-22 17:32:56.984 +03:00 [INF] HTTP GET /api/test/generate-payload responded 200 in 24.0632 ms
+2026-06-22 17:34:35.177 +03:00 [INF] HTTP GET /api/test/generate-payload responded 200 in 2.3605 ms
+2026-06-22 17:36:39.601 +03:00 [INF] HTTP GET /api/test/generate-payload responded 200 in 1.3038 ms
+2026-06-22 17:40:30.661 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-22 17:40:30.684 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-22 17:40:30.730 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-22 17:40:30.731 +03:00 [INF] Hosting environment: Development
+2026-06-22 17:40:30.732 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-22 17:40:31.173 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 91.5434 ms
+2026-06-22 17:40:31.208 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 8.9845 ms
+2026-06-22 17:40:31.216 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 17.5742 ms
+2026-06-22 17:40:31.638 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 152.6393 ms
+2026-06-22 17:40:32.395 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 9.8096 ms
+2026-06-22 17:41:15.224 +03:00 [INF] HTTP POST /api/test/generate-payload responded 200 in 28.6844 ms
+2026-06-22 18:57:55.291 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 1.4415 ms
+2026-06-22 18:57:55.321 +03:00 [INF] HTTP GET /scalar/scalar.js responded 304 in 0.7803 ms
+2026-06-22 18:57:55.323 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 304 in 0.6691 ms
+2026-06-22 18:57:55.764 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 39.7788 ms
+2026-06-22 19:19:16.442 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-22 19:19:16.468 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-22 19:19:16.513 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-22 19:19:16.514 +03:00 [INF] Hosting environment: Development
+2026-06-22 19:19:16.515 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-22 19:19:17.061 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 93.3148 ms
+2026-06-22 19:19:17.103 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 8.8966 ms
+2026-06-22 19:19:17.112 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 18.4127 ms
+2026-06-22 19:19:17.578 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 163.3999 ms
+2026-06-22 19:19:18.476 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 9.9450 ms
+2026-06-22 19:26:32.496 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-22 19:26:32.519 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-22 19:26:32.567 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-22 19:26:32.569 +03:00 [INF] Hosting environment: Development
+2026-06-22 19:26:32.569 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-22 19:26:33.054 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 96.8616 ms
+2026-06-22 19:26:33.091 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 10.4747 ms
+2026-06-22 19:26:33.100 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 19.5130 ms
+2026-06-22 19:26:33.505 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 145.3890 ms
+2026-06-22 19:26:34.237 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 8.5022 ms
+2026-06-22 19:26:42.531 +03:00 [INF] HTTP POST /api/test/generate-payload responded 200 in 26.3308 ms
+2026-06-22 19:29:38.033 +03:00 [INF] HTTP POST /api/test/generate-payload responded 200 in 2.0381 ms
+2026-06-22 19:29:45.264 +03:00 [INF] HTTP POST /api/test/generate-payload responded 200 in 0.9270 ms
+2026-06-22 19:33:26.590 +03:00 [WRN] AppException thrown: Invalid Phone Number or Password
+2026-06-22 19:33:26.596 +03:00 [INF] HTTP POST /api/Auth/login responded 401 in 366.2822 ms
+2026-06-22 19:33:49.725 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 127.0774 ms
+2026-06-22 19:33:52.768 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 77.0661 ms
+2026-06-22 19:34:01.673 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 9.4480 ms
+2026-06-22 19:34:02.118 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 25.4435 ms
+2026-06-22 19:34:06.735 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 16.1661 ms
+2026-06-22 19:34:07.657 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 5.9861 ms
+2026-06-22 19:34:09.226 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-22 19:34:10.177 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-22 19:34:10.183 +03:00 [INF] HTTP POST /api/Ride/start responded 200 in 1791.3307 ms
+2026-06-22 19:34:11.701 +03:00 [INF] HTTP POST /api/hubs/rider/negotiate responded 404 in 2.4525 ms
+2026-06-22 19:34:13.922 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 3.7521 ms
+2026-06-22 19:34:44.411 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-22 19:34:44.813 +03:00 [INF] Sent "StopScooter" command to scooter SCT-001
+2026-06-22 19:34:44.915 +03:00 [INF] HTTP POST /api/Ride/active/end responded 200 in 9107.5680 ms
+2026-06-22 19:34:45.988 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 3.0200 ms
+2026-06-22 19:34:46.507 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.5368 ms
+2026-06-22 19:34:47.140 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 3.2773 ms
+2026-06-22 19:34:47.721 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.3995 ms
+2026-06-22 19:34:55.945 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 3.6394 ms
+2026-06-22 19:35:21.533 +03:00 [INF] HTTP GET /uploads/avatars/edd67a85-b33f-49f9-b0a5-771e607a0d4b.jpg responded 200 in 13.1055 ms
+2026-06-22 19:48:53.711 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 24.8966 ms
+2026-06-22 19:48:54.159 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 5.6617 ms
+2026-06-22 19:49:00.741 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 9.3088 ms
+2026-06-22 19:49:01.615 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 4.5984 ms
+2026-06-22 19:49:02.937 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-22 19:49:03.675 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-22 19:49:03.679 +03:00 [INF] HTTP POST /api/Ride/start responded 200 in 1090.0441 ms
+2026-06-22 19:49:04.726 +03:00 [INF] HTTP POST /api/hubs/rider/negotiate responded 404 in 0.8812 ms
+2026-06-22 19:49:05.846 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 4.0176 ms
+2026-06-22 19:49:28.963 +03:00 [INF] HTTP GET /Auth/profile responded 404 in 0.5068 ms
+2026-06-22 19:50:01.597 +03:00 [INF] HTTP POST /Auth/login responded 404 in 0.2854 ms
+2026-06-22 19:50:09.683 +03:00 [INF] HTTP POST /Auth/login responded 404 in 0.4255 ms
+2026-06-22 19:50:44.809 +03:00 [INF] HTTP POST /Auth/login responded 404 in 0.2390 ms
+2026-06-22 19:51:42.877 +03:00 [INF] Now listening on: https://localhost:5001
+2026-06-22 19:51:42.899 +03:00 [INF] Now listening on: http://localhost:5000
+2026-06-22 19:51:42.943 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-22 19:51:42.944 +03:00 [INF] Hosting environment: Development
+2026-06-22 19:51:42.945 +03:00 [INF] Content root path: D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI
+2026-06-22 19:51:43.500 +03:00 [INF] HTTP GET /scalar/v1 responded 200 in 102.2498 ms
+2026-06-22 19:51:43.542 +03:00 [INF] HTTP GET /scalar/scalar.aspnetcore.js responded 200 in 12.2174 ms
+2026-06-22 19:51:43.574 +03:00 [INF] HTTP GET /scalar/scalar.js responded 200 in 44.5674 ms
+2026-06-22 19:51:44.043 +03:00 [INF] HTTP GET /openapi/v1.json responded 200 in 160.3250 ms
+2026-06-22 19:51:44.791 +03:00 [INF] HTTP GET /scalar/favicon.svg responded 200 in 9.7745 ms
+2026-06-22 19:57:49.182 +03:00 [INF] HTTP POST /api/Auth/login responded 200 in 413.8933 ms
+2026-06-22 19:57:51.969 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 86.3678 ms
+2026-06-22 19:58:01.798 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 16.4671 ms
+2026-06-22 19:58:04.527 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 5.1795 ms
+2026-06-22 19:58:12.132 +03:00 [INF] HTTP GET /uploads/avatars/edd67a85-b33f-49f9-b0a5-771e607a0d4b.jpg responded 200 in 10.1014 ms
+2026-06-22 19:58:36.530 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 14.6318 ms
+2026-06-22 19:59:07.633 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 4.8352 ms
+2026-06-22 19:59:29.475 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 28.0791 ms
+2026-06-22 19:59:30.621 +03:00 [INF] HTTP GET /api/Ride/active responded 200 in 54.0760 ms
+2026-06-22 19:59:31.500 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 6.7811 ms
+2026-06-22 19:59:32.296 +03:00 [INF] HTTP POST /hubs/rider/negotiate responded 404 in 4.6779 ms
+2026-06-22 19:59:34.575 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 4.3922 ms
+2026-06-22 20:00:12.813 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-22 20:00:13.706 +03:00 [INF] Sent "StopScooter" command to scooter SCT-001
+2026-06-22 20:00:14.257 +03:00 [INF] HTTP POST /api/Ride/active/end responded 200 in 11815.7449 ms
+2026-06-22 20:00:16.466 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.8235 ms
+2026-06-22 20:00:17.024 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.4588 ms
+2026-06-22 20:00:17.661 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 5.3285 ms
+2026-06-22 20:00:18.407 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.5770 ms
+2026-06-22 20:00:25.033 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 3.6918 ms
+2026-06-22 20:02:46.803 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 12.0110 ms
+2026-06-22 20:02:47.697 +03:00 [WRN] AppException thrown: Active Ride with identifier '58bd5417-91c1-483c-bc0d-08deca3a09dd' was not found.
+2026-06-22 20:02:47.698 +03:00 [INF] HTTP GET /api/Ride/active responded 404 in 10.4654 ms
+2026-06-22 20:02:50.549 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 7.7499 ms
+2026-06-22 20:03:08.977 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 3.3432 ms
+2026-06-22 20:03:09.533 +03:00 [INF] HTTP GET /api/Scooter/SCT-001/status responded 200 in 12.6260 ms
+2026-06-22 20:03:13.287 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.7907 ms
+2026-06-22 20:03:14.920 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 3.8596 ms
+2026-06-22 20:03:16.448 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-22 20:03:17.338 +03:00 [INF] Sent "StartScooter" command to scooter SCT-001
+2026-06-22 20:03:17.341 +03:00 [INF] HTTP POST /api/Ride/start responded 200 in 1190.5653 ms
+2026-06-22 20:03:18.821 +03:00 [INF] HTTP POST /api/hubs/rider/negotiate responded 200 in 5.1542 ms
+2026-06-22 20:03:22.439 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 3.7466 ms
+2026-06-22 20:03:29.917 +03:00 [INF] HTTP GET /api/hubs/rider responded 101 in 10283.0906 ms
+2026-06-22 20:03:34.860 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-22 20:03:35.398 +03:00 [INF] Sent "StopScooter" command to scooter SCT-001
+2026-06-22 20:03:35.493 +03:00 [INF] HTTP POST /api/Ride/active/end responded 200 in 4514.6405 ms
+2026-06-22 20:03:36.312 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.6405 ms
+2026-06-22 20:03:36.842 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.2975 ms
+2026-06-22 20:03:37.476 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 3.7022 ms
+2026-06-22 20:03:38.258 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 2.5122 ms
+2026-06-22 20:03:42.371 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 3.5145 ms
+2026-06-22 20:03:52.827 +03:00 [INF] HTTP GET /uploads/avatars/edd67a85-b33f-49f9-b0a5-771e607a0d4b.jpg responded 200 in 1.1365 ms
+2026-06-22 20:06:49.212 +03:00 [INF] HTTP POST /api/Wallet/top-up responded 200 in 3271.6636 ms
+2026-06-22 20:07:03.367 +03:00 [INF] HTTP POST /api/Wallet/WebHook responded 200 in 14.0424 ms
+2026-06-22 20:07:04.664 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 13.9083 ms
+2026-06-22 20:07:30.732 +03:00 [INF] HTTP POST /api/Wallet/top-up responded 200 in 1317.8907 ms
+2026-06-22 20:07:42.295 +03:00 [INF] HTTP POST /api/Wallet/WebHook responded 200 in 260.2517 ms
+2026-06-22 20:07:43.528 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 3.9859 ms
+2026-06-22 21:40:49.082 +03:00 [INF] HTTP OPTIONS /api/Auth/Login-admin responded 204 in 1.0653 ms
+2026-06-22 21:40:49.482 +03:00 [INF] HTTP POST /api/Auth/Login-admin responded 200 in 84.4376 ms
+2026-06-22 21:40:49.901 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.1480 ms
+2026-06-22 21:40:50.045 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.1002 ms
+2026-06-22 21:40:50.223 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-06-22 21:40:50.224 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-06-22 21:40:50.256 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 43.0895 ms
+2026-06-22 21:40:50.361 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-06-22 21:40:50.362 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-06-22 21:40:50.396 +03:00 [INF] HTTP GET /api/User responded 200 in 41.5963 ms
+2026-06-22 21:40:56.700 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0788 ms
+2026-06-22 21:40:56.700 +03:00 [INF] HTTP OPTIONS /api/Scooter/live-map responded 204 in 0.0496 ms
+2026-06-22 21:40:56.843 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0934 ms
+2026-06-22 21:40:57.160 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 6.8500 ms
+2026-06-22 21:40:57.161 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 7.5752 ms
+2026-06-22 21:40:57.161 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-06-22 21:40:57.164 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-06-22 21:40:57.175 +03:00 [INF] HTTP GET /api/Zone responded 200 in 21.4564 ms
+2026-06-22 21:41:08.381 +03:00 [INF] HTTP OPTIONS /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb responded 204 in 0.2899 ms
+2026-06-22 21:41:08.711 +03:00 [INF] HTTP GET /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb responded 200 in 17.8639 ms
+2026-06-22 21:41:11.863 +03:00 [INF] HTTP OPTIONS /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 204 in 0.0721 ms
+2026-06-22 21:41:12.196 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-22 21:41:12.870 +03:00 [INF] Sent "UnlockScooter" command to scooter SCT-003
+2026-06-22 21:41:12.872 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 693.6933 ms
+2026-06-22 21:41:15.004 +03:00 [INF] HTTP OPTIONS /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/lock responded 204 in 0.1432 ms
+2026-06-22 21:41:15.322 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-22 21:41:15.757 +03:00 [INF] Sent "LockScooter" command to scooter SCT-003
+2026-06-22 21:41:15.759 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/lock responded 200 in 441.5722 ms
+2026-06-22 21:41:21.155 +03:00 [INF] HTTP OPTIONS /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 204 in 0.0793 ms
+2026-06-22 21:41:21.470 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-22 21:41:21.850 +03:00 [INF] Sent "UnlockScooter" command to scooter SCT-003
+2026-06-22 21:41:21.851 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 383.3983 ms
+2026-06-22 21:41:24.016 +03:00 [INF] HTTP OPTIONS /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/maintenance responded 204 in 0.0745 ms
+2026-06-22 21:41:24.340 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/maintenance responded 200 in 10.5001 ms
+2026-06-22 21:41:26.067 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/maintenance responded 200 in 3.9488 ms
+2026-06-22 21:41:28.751 +03:00 [INF] HTTP OPTIONS /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/ping responded 204 in 0.0905 ms
+2026-06-22 21:41:29.066 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-22 21:41:29.458 +03:00 [INF] Sent "PlayAlarm" command to scooter SCT-003
+2026-06-22 21:41:29.459 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/ping responded 200 in 398.1794 ms
+2026-06-22 21:41:32.844 +03:00 [INF] HTTP OPTIONS /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 204 in 0.1761 ms
+2026-06-22 21:41:33.162 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-22 21:41:33.686 +03:00 [INF] Sent "UnlockScooter" command to scooter SCT-003
+2026-06-22 21:41:33.688 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/unlock responded 200 in 527.7826 ms
+2026-06-22 21:41:35.230 +03:00 [INF] HTTP OPTIONS /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/ping responded 204 in 0.0701 ms
+2026-06-22 21:41:35.546 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-22 21:41:35.921 +03:00 [INF] Sent "PlayAlarm" command to scooter SCT-003
+2026-06-22 21:41:35.923 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/ping responded 200 in 378.9249 ms
+2026-06-22 21:41:49.759 +03:00 [INF] HTTP OPTIONS /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/ping responded 204 in 0.1740 ms
+2026-06-22 21:41:50.089 +03:00 [INF] Connecting to MQTT Broker...
+2026-06-22 21:41:50.460 +03:00 [INF] Sent "PlayAlarm" command to scooter SCT-003
+2026-06-22 21:41:50.461 +03:00 [INF] HTTP POST /api/Scooter/3de87e86-4cd3-410d-95cd-8d1a7cac8ebb/ping responded 200 in 384.1129 ms
+2026-06-22 21:41:57.787 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.2076 ms
+2026-06-22 21:41:58.120 +03:00 [INF] HTTP GET /api/User responded 200 in 9.7619 ms
+2026-06-22 21:42:01.849 +03:00 [INF] HTTP OPTIONS /api/User/8e8add6c-950c-4d72-fe5d-08dea91b5418/suspend responded 204 in 0.0573 ms
+2026-06-22 21:42:02.195 +03:00 [INF] HTTP POST /api/User/8e8add6c-950c-4d72-fe5d-08dea91b5418/suspend responded 200 in 36.2105 ms
+2026-06-22 21:42:05.687 +03:00 [INF] HTTP OPTIONS /api/User/8e8add6c-950c-4d72-fe5d-08dea91b5418/activate responded 204 in 0.0644 ms
+2026-06-22 21:42:06.005 +03:00 [INF] HTTP POST /api/User/8e8add6c-950c-4d72-fe5d-08dea91b5418/activate responded 200 in 7.4873 ms
+2026-06-22 21:42:12.702 +03:00 [INF] HTTP OPTIONS /api/Wallet/transactions responded 204 in 0.0795 ms
+2026-06-22 21:42:13.041 +03:00 [INF] HTTP GET /api/Wallet/transactions responded 200 in 23.6317 ms
+2026-06-22 21:42:23.840 +03:00 [INF] HTTP OPTIONS /api/Wallet/adjust responded 204 in 0.0532 ms
+2026-06-22 21:42:24.629 +03:00 [INF] HTTP POST /api/Wallet/adjust responded 200 in 475.9191 ms
+2026-06-22 21:42:31.009 +03:00 [INF] HTTP OPTIONS /api/Ride responded 204 in 0.0467 ms
+2026-06-22 21:42:31.346 +03:00 [INF] HTTP GET /api/Ride responded 200 in 24.4588 ms
+2026-06-22 21:42:36.070 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/pending responded 204 in 0.0453 ms
+2026-06-22 21:42:36.404 +03:00 [INF] HTTP GET /api/Ride/parking-photos/pending responded 200 in 23.7418 ms
+2026-06-22 21:42:38.147 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/c8421654-b748-426e-e883-08ded08026fc/review responded 204 in 0.0461 ms
+2026-06-22 21:42:38.481 +03:00 [WRN] AppException thrown: Ride with identifier '00000000-0000-0000-0000-000000000000' was not found.
+2026-06-22 21:42:38.481 +03:00 [INF] HTTP POST /api/Ride/parking-photos/c8421654-b748-426e-e883-08ded08026fc/review responded 404 in 22.8712 ms
+2026-06-22 21:42:41.244 +03:00 [WRN] AppException thrown: Ride with identifier '00000000-0000-0000-0000-000000000000' was not found.
+2026-06-22 21:42:41.245 +03:00 [INF] HTTP POST /api/Ride/parking-photos/c8421654-b748-426e-e883-08ded08026fc/review responded 404 in 3.2314 ms
+2026-06-22 21:46:10.279 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/pending responded 204 in 0.0653 ms
+2026-06-22 21:46:10.603 +03:00 [INF] HTTP GET /api/Ride/parking-photos/pending responded 200 in 11.4046 ms
+2026-06-22 21:49:18.005 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/pending responded 204 in 0.0443 ms
+2026-06-22 21:49:18.334 +03:00 [INF] HTTP GET /api/Ride/parking-photos/pending responded 200 in 10.9269 ms
+2026-06-22 21:49:19.646 +03:00 [INF] HTTP GET /uploads/parkingPhotos/4d2bdf46-063a-4933-bd49-665e91e12a3f.jpg responded 200 in 148.4485 ms
+2026-06-22 21:49:19.664 +03:00 [INF] HTTP GET /uploads/parkingPhotos/2fb0a65f-9307-477d-8f75-1b1a952b6508.jpg responded 200 in 19.4272 ms
+2026-06-22 21:49:19.664 +03:00 [INF] HTTP GET /uploads/parkingPhotos/0e2dbd90-5c07-4f77-b367-c0999a7562d8.jpg responded 200 in 18.2651 ms
+2026-06-22 21:49:19.664 +03:00 [INF] HTTP GET /uploads/parkingPhotos/5122fd95-6074-478b-871d-b115f160552a.jpg responded 200 in 17.8121 ms
+2026-06-22 21:49:19.785 +03:00 [INF] HTTP GET /uploads/parkingPhotos/20c0e2c6-69d9-4db0-977e-bf337a353ee7.jpg responded 200 in 138.5518 ms
+2026-06-22 21:49:21.330 +03:00 [INF] HTTP GET /uploads/parkingPhotos/0e2dbd90-5c07-4f77-b367-c0999a7562d8.jpg responded 206 in 1.8269 ms
+2026-06-22 21:49:21.330 +03:00 [INF] HTTP GET /uploads/parkingPhotos/4d2bdf46-063a-4933-bd49-665e91e12a3f.jpg responded 206 in 3.5398 ms
+2026-06-22 21:49:21.330 +03:00 [INF] HTTP GET /uploads/parkingPhotos/5122fd95-6074-478b-871d-b115f160552a.jpg responded 206 in 3.6822 ms
+2026-06-22 21:49:21.333 +03:00 [INF] HTTP GET /uploads/parkingPhotos/2fb0a65f-9307-477d-8f75-1b1a952b6508.jpg responded 206 in 0.4250 ms
+2026-06-22 21:49:21.341 +03:00 [INF] HTTP GET /uploads/parkingPhotos/20c0e2c6-69d9-4db0-977e-bf337a353ee7.jpg responded 206 in 0.4368 ms
+2026-06-22 21:49:21.674 +03:00 [INF] HTTP GET /uploads/parkingPhotos/5122fd95-6074-478b-871d-b115f160552a.jpg responded 206 in 1.7673 ms
+2026-06-22 21:49:21.678 +03:00 [INF] HTTP GET /uploads/parkingPhotos/2fb0a65f-9307-477d-8f75-1b1a952b6508.jpg responded 206 in 1.0945 ms
+2026-06-22 21:49:21.785 +03:00 [INF] HTTP GET /uploads/parkingPhotos/0e2dbd90-5c07-4f77-b367-c0999a7562d8.jpg responded 206 in 1.0017 ms
+2026-06-22 21:49:21.797 +03:00 [INF] HTTP GET /uploads/parkingPhotos/4d2bdf46-063a-4933-bd49-665e91e12a3f.jpg responded 206 in 0.5827 ms
+2026-06-22 21:49:21.844 +03:00 [INF] HTTP GET /uploads/parkingPhotos/20c0e2c6-69d9-4db0-977e-bf337a353ee7.jpg responded 206 in 54.2300 ms
+2026-06-22 21:49:24.062 +03:00 [INF] HTTP GET /uploads/parkingPhotos/53d9985a-e12d-4925-99ef-fb4202dcecf3.jpg responded 200 in 9.6960 ms
+2026-06-22 21:49:25.405 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/c8421654-b748-426e-e883-08ded08026fc/review responded 204 in 0.0438 ms
+2026-06-22 21:49:25.724 +03:00 [WRN] AppException thrown: Ride with identifier '00000000-0000-0000-0000-000000000000' was not found.
+2026-06-22 21:49:25.725 +03:00 [INF] HTTP POST /api/Ride/parking-photos/c8421654-b748-426e-e883-08ded08026fc/review responded 404 in 7.6271 ms
+2026-06-22 21:49:26.083 +03:00 [INF] HTTP GET /uploads/parkingPhotos/b6b465e4-bb42-4e82-8fab-678f98f296c8.jpg responded 200 in 7.9299 ms
+2026-06-22 21:49:26.086 +03:00 [INF] HTTP GET /uploads/parkingPhotos/c93a9c02-a385-478f-a49e-852fc7727cf5.jpg responded 200 in 7.3293 ms
+2026-06-22 21:49:26.197 +03:00 [INF] HTTP GET /uploads/parkingPhotos/ebf4b509-7137-4b32-8039-f3f6c8a1971f.jpg responded 200 in 8.4579 ms
+2026-06-22 21:49:29.350 +03:00 [INF] HTTP GET /uploads/parkingPhotos/dbe5c90b-92ac-4211-a51f-23d5d91ea082.jpg responded 200 in 3132.7798 ms
+2026-06-22 21:49:37.430 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/25f2412a-89b1-4a99-df86-08ded07c1542/review responded 204 in 0.1621 ms
+2026-06-22 21:49:37.747 +03:00 [WRN] AppException thrown: Ride with identifier '00000000-0000-0000-0000-000000000000' was not found.
+2026-06-22 21:49:37.748 +03:00 [INF] HTTP POST /api/Ride/parking-photos/25f2412a-89b1-4a99-df86-08ded07c1542/review responded 404 in 7.3890 ms
+2026-06-22 21:51:17.888 +03:00 [INF] HTTP GET /swagger responded 404 in 0.4202 ms
+2026-06-22 21:51:18.857 +03:00 [INF] HTTP GET /favicon.ico responded 404 in 0.2980 ms
+2026-06-22 21:52:34.913 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/pending responded 204 in 0.0425 ms
+2026-06-22 21:52:35.238 +03:00 [INF] HTTP GET /api/Ride/parking-photos/pending responded 200 in 8.1538 ms
+2026-06-22 21:55:43.613 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/pending responded 204 in 0.0638 ms
+2026-06-22 21:55:43.939 +03:00 [INF] HTTP GET /api/Ride/parking-photos/pending responded 200 in 8.6068 ms
+2026-06-22 21:55:53.243 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/c8421654-b748-426e-e883-08ded08026fc/review responded 204 in 0.2039 ms
+2026-06-22 21:55:53.787 +03:00 [INF] HTTP POST /api/Ride/parking-photos/c8421654-b748-426e-e883-08ded08026fc/review responded 200 in 225.6693 ms
+2026-06-22 21:56:05.246 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/f165595e-6a49-49e1-d5e4-08deceb14c42/review responded 204 in 0.1626 ms
+2026-06-22 21:56:05.693 +03:00 [INF] HTTP POST /api/Ride/parking-photos/f165595e-6a49-49e1-d5e4-08deceb14c42/review responded 200 in 133.7142 ms
+2026-06-22 21:56:15.040 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/b2ba1a6b-02dd-40cd-c889-08deceb3683c/review responded 204 in 0.0434 ms
+2026-06-22 21:56:15.470 +03:00 [INF] HTTP POST /api/Ride/parking-photos/b2ba1a6b-02dd-40cd-c889-08deceb3683c/review responded 200 in 116.6585 ms
+2026-06-22 21:56:21.594 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0471 ms
+2026-06-22 21:56:21.910 +03:00 [INF] HTTP GET /api/Zone responded 200 in 5.3272 ms
+2026-06-22 21:56:22.220 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0435 ms
+2026-06-22 21:56:22.532 +03:00 [INF] HTTP GET /api/Zone responded 200 in 2.1855 ms
+2026-06-22 21:56:41.605 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0683 ms
+2026-06-22 21:56:41.951 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.CreateZoneAsync(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 57
+   at ScooterRental.Presentation.Controllers.ZoneController.CreateZone(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 9
+   at lambda_method1603(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-22 21:56:41.978 +03:00 [ERR] HTTP POST /api/Zone responded 500 in 57.3845 ms
+2026-06-22 22:00:49.738 +03:00 [INF] HTTP GET /swagger responded 404 in 0.2136 ms
+2026-06-22 22:00:53.144 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0569 ms
+2026-06-22 22:00:53.470 +03:00 [INF] HTTP GET /api/Zone responded 200 in 15.5162 ms
+2026-06-22 22:00:53.779 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0437 ms
+2026-06-22 22:00:54.091 +03:00 [INF] HTTP GET /api/Zone responded 200 in 2.5829 ms
+2026-06-22 22:01:04.196 +03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 404 in 0.2534 ms
+2026-06-22 22:01:37.830 +03:00 [INF] HTTP GET /swagger/v1/swagger.json responded 404 in 0.2311 ms
+2026-06-22 22:01:47.685 +03:00 [INF] HTTP GET /swagger/index.html responded 404 in 0.2236 ms
+2026-06-22 22:02:41.698 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0648 ms
+2026-06-22 22:02:42.157 +03:00 [INF] HTTP GET /api/Zone responded 200 in 15.8742 ms
+2026-06-22 22:02:43.627 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0700 ms
+2026-06-22 22:03:20.068 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0490 ms
+2026-06-22 22:03:20.379 +03:00 [INF] HTTP GET /api/Zone responded 200 in 1.9974 ms
+2026-06-22 22:03:20.689 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0371 ms
+2026-06-22 22:03:21.001 +03:00 [INF] HTTP GET /api/Zone responded 200 in 2.0048 ms
+2026-06-22 22:04:12.752 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0453 ms
+2026-06-22 22:04:13.434 +03:00 [INF] HTTP GET /api/Zone responded 200 in 4.9733 ms
+2026-06-22 22:04:18.324 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0417 ms
+2026-06-22 22:22:34.353 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0350 ms
+2026-06-22 22:22:52.029 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0376 ms
+2026-06-22 22:22:52.347 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.CreateZoneAsync(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 57
+   at ScooterRental.Presentation.Controllers.ZoneController.CreateZone(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 9
+   at lambda_method1603(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-22 22:22:52.350 +03:00 [ERR] HTTP POST /api/Zone responded 500 in 7.9859 ms
+2026-06-22 22:23:00.384 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.0378 ms
+2026-06-22 22:23:00.791 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0369 ms
+2026-06-22 22:23:00.803 +03:00 [INF] HTTP GET /api/User responded 200 in 15.8746 ms
+2026-06-22 22:23:01.108 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 7.0799 ms
+2026-06-22 22:23:10.844 +03:00 [INF] HTTP OPTIONS /api/Scooter/live-map responded 204 in 0.0546 ms
+2026-06-22 22:23:10.851 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0339 ms
+2026-06-22 22:23:10.988 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0534 ms
+2026-06-22 22:23:11.216 +03:00 [INF] HTTP GET /api/Zone responded 200 in 6.5230 ms
+2026-06-22 22:23:11.216 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 6.6960 ms
+2026-06-22 22:23:11.312 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 2.1273 ms
+2026-06-22 22:23:17.621 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0394 ms
+2026-06-22 22:23:17.930 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 2.2462 ms
+2026-06-22 22:23:37.837 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.0368 ms
+2026-06-22 22:23:38.148 +03:00 [INF] HTTP GET /api/User responded 200 in 5.2622 ms
+2026-06-22 22:23:45.184 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/pending responded 204 in 0.0389 ms
+2026-06-22 22:23:45.502 +03:00 [INF] HTTP GET /api/Ride/parking-photos/pending responded 200 in 7.7071 ms
+2026-06-22 22:23:46.090 +03:00 [INF] HTTP GET /uploads/parkingPhotos/4d2bdf46-063a-4933-bd49-665e91e12a3f.jpg responded 304 in 0.5594 ms
+2026-06-22 22:23:46.227 +03:00 [INF] HTTP GET /uploads/parkingPhotos/20c0e2c6-69d9-4db0-977e-bf337a353ee7.jpg responded 304 in 0.2357 ms
+2026-06-22 22:23:46.227 +03:00 [INF] HTTP GET /uploads/parkingPhotos/0e2dbd90-5c07-4f77-b367-c0999a7562d8.jpg responded 304 in 0.2356 ms
+2026-06-22 22:24:01.009 +03:00 [INF] HTTP OPTIONS /api/Tariff responded 204 in 0.0389 ms
+2026-06-22 22:24:01.325 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-06-22 22:24:01.325 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-06-22 22:24:01.335 +03:00 [INF] HTTP GET /api/Tariff responded 200 in 15.2945 ms
+2026-06-22 22:24:03.990 +03:00 [INF] HTTP OPTIONS /api/Tariff/42365938-788a-4382-3f11-08decd86e227/activate responded 204 in 0.0366 ms
+2026-06-22 22:24:04.316 +03:00 [INF] HTTP POST /api/Tariff/42365938-788a-4382-3f11-08decd86e227/activate responded 200 in 16.0414 ms
+2026-06-22 22:24:05.480 +03:00 [INF] HTTP OPTIONS /api/Tariff/06af96fb-2cb3-40d1-afb2-08dea91b53ce/activate responded 204 in 0.0362 ms
+2026-06-22 22:24:05.793 +03:00 [INF] HTTP POST /api/Tariff/06af96fb-2cb3-40d1-afb2-08dea91b53ce/activate responded 200 in 3.9880 ms
+2026-06-22 22:24:14.639 +03:00 [INF] HTTP OPTIONS /api/Auth/create-admin responded 204 in 0.0374 ms
+2026-06-22 22:24:15.522 +03:00 [WRN] AppException thrown: One or more validation errors occurred.
+2026-06-22 22:24:15.524 +03:00 [INF] HTTP POST /api/Auth/create-admin responded 400 in 10.6871 ms
+2026-06-22 22:24:30.024 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0359 ms
+2026-06-22 22:24:30.169 +03:00 [INF] HTTP OPTIONS /api/Ride responded 204 in 0.0466 ms
+2026-06-22 22:24:30.169 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.0136 ms
+2026-06-22 22:24:30.170 +03:00 [INF] HTTP OPTIONS /api/Wallet/transactions responded 204 in 0.0154 ms
+2026-06-22 22:24:30.336 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 4.6435 ms
+2026-06-22 22:24:30.487 +03:00 [INF] HTTP GET /api/Wallet/transactions responded 200 in 7.8541 ms
+2026-06-22 22:24:30.492 +03:00 [INF] HTTP GET /api/Ride responded 200 in 6.6011 ms
+2026-06-22 22:24:30.619 +03:00 [INF] HTTP GET /api/User responded 200 in 3.3722 ms
+2026-06-22 22:24:47.467 +03:00 [INF] HTTP OPTIONS /api/Auth/profile responded 204 in 0.0359 ms
+2026-06-22 22:24:47.469 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0235 ms
+2026-06-22 22:24:47.612 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.0476 ms
+2026-06-22 22:24:47.613 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/pending responded 204 in 0.0334 ms
+2026-06-22 22:24:47.934 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 5.2961 ms
+2026-06-22 22:24:47.934 +03:00 [INF] HTTP GET /api/Auth/profile responded 200 in 5.4908 ms
+2026-06-22 22:24:47.984 +03:00 [INF] HTTP GET /api/User responded 200 in 3.9559 ms
+2026-06-22 22:24:47.987 +03:00 [INF] HTTP GET /api/Ride/parking-photos/pending responded 200 in 7.1741 ms
+2026-06-22 22:25:09.280 +03:00 [INF] HTTP OPTIONS /api/Auth/Login-admin responded 204 in 0.0671 ms
+2026-06-22 22:25:09.695 +03:00 [INF] HTTP POST /api/Auth/Login-admin responded 200 in 59.9684 ms
+2026-06-22 22:26:31.493 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0378 ms
+2026-06-22 22:26:31.938 +03:00 [INF] HTTP GET /api/Zone responded 200 in 4.5930 ms
+2026-06-22 22:28:56.763 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0318 ms
+2026-06-22 22:28:57.080 +03:00 [INF] HTTP GET /api/Zone responded 200 in 4.8558 ms
+2026-06-22 22:29:55.839 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0629 ms
+2026-06-22 22:29:56.217 +03:00 [INF] HTTP POST /api/Zone responded 200 in 67.2868 ms
+2026-06-22 22:29:56.219 +03:00 [INF] Zone update received via Redis.Reloading map cache
+2026-06-22 22:30:02.783 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0509 ms
+2026-06-22 22:30:03.095 +03:00 [INF] HTTP GET /api/Zone responded 200 in 3.8678 ms
+2026-06-22 22:30:45.134 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0395 ms
+2026-06-22 22:30:46.050 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.CreateZoneAsync(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 57
+   at ScooterRental.Presentation.Controllers.ZoneController.CreateZone(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 9
+   at lambda_method1603(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-22 22:30:46.053 +03:00 [ERR] HTTP POST /api/Zone responded 500 in 3.6515 ms
+2026-06-22 22:30:52.945 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0371 ms
+2026-06-22 22:30:54.469 +03:00 [INF] Zone update received via Redis.Reloading map cache
+2026-06-22 22:30:54.469 +03:00 [INF] HTTP POST /api/Zone responded 200 in 6.5012 ms
+2026-06-22 22:31:19.108 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0496 ms
+2026-06-22 22:31:19.475 +03:00 [INF] HTTP GET /api/Zone responded 200 in 3.9188 ms
+2026-06-22 22:33:11.992 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0527 ms
+2026-06-22 22:33:12.310 +03:00 [INF] HTTP GET /api/Zone responded 200 in 3.4880 ms
+2026-06-22 22:34:50.032 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0350 ms
+2026-06-22 22:34:50.349 +03:00 [INF] HTTP GET /api/Zone responded 200 in 3.9809 ms
+2026-06-22 22:40:49.890 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0636 ms
+2026-06-22 22:40:51.641 +03:00 [INF] HTTP GET /api/Zone responded 200 in 7.2468 ms
+2026-06-22 22:43:44.418 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0617 ms
+2026-06-22 22:43:57.335 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0426 ms
+2026-06-22 22:43:58.958 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.CreateZoneAsync(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 57
+   at ScooterRental.Presentation.Controllers.ZoneController.CreateZone(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 9
+   at lambda_method1603(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-22 22:43:58.960 +03:00 [ERR] HTTP POST /api/Zone responded 500 in 1064.0465 ms
+2026-06-22 22:44:18.887 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0503 ms
+2026-06-22 22:44:21.197 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.CreateZoneAsync(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 57
+   at ScooterRental.Presentation.Controllers.ZoneController.CreateZone(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 9
+   at lambda_method1603(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-22 22:44:21.200 +03:00 [ERR] HTTP POST /api/Zone responded 500 in 4.2853 ms
+2026-06-22 22:47:05.064 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0339 ms
+2026-06-22 22:47:09.347 +03:00 [INF] HTTP GET /api/Zone responded 200 in 7.7345 ms
+2026-06-22 22:47:11.416 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0657 ms
+2026-06-22 22:47:13.519 +03:00 [INF] Zone update received via Redis.Reloading map cache
+2026-06-22 22:47:13.519 +03:00 [INF] HTTP POST /api/Zone responded 200 in 5.7101 ms
+2026-06-22 22:47:22.763 +03:00 [INF] HTTP OPTIONS /api/Tariff responded 204 in 0.0411 ms
+2026-06-22 22:47:24.426 +03:00 [INF] HTTP GET /api/Tariff responded 200 in 6.1967 ms
+2026-06-22 22:49:17.326 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0334 ms
+2026-06-22 22:49:17.673 +03:00 [INF] HTTP GET /api/Zone responded 200 in 3.5405 ms
+2026-06-22 22:50:53.257 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0318 ms
+2026-06-22 22:50:53.768 +03:00 [INF] HTTP GET /api/Zone responded 200 in 3.4517 ms
+2026-06-22 22:51:17.015 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0442 ms
+2026-06-22 22:51:17.567 +03:00 [INF] HTTP GET /api/Zone responded 200 in 3.6299 ms
+2026-06-22 22:56:11.844 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0363 ms
+2026-06-22 22:56:12.184 +03:00 [INF] HTTP GET /api/Zone responded 200 in 6.9197 ms
+2026-06-22 22:56:45.945 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0515 ms
+2026-06-22 22:56:46.697 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.CreateZoneAsync(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 57
+   at ScooterRental.Presentation.Controllers.ZoneController.CreateZone(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 9
+   at lambda_method1603(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-22 22:56:46.700 +03:00 [ERR] HTTP POST /api/Zone responded 500 in 3.7487 ms
+2026-06-22 22:56:54.383 +03:00 [INF] HTTP OPTIONS /api/Scooter/live-map responded 204 in 0.0368 ms
+2026-06-22 22:56:55.460 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0597 ms
+2026-06-22 22:56:55.460 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0126 ms
+2026-06-22 22:56:55.460 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0306 ms
+2026-06-22 22:56:55.460 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.0104 ms
+2026-06-22 22:56:55.465 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 8.5179 ms
+2026-06-22 22:56:56.006 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 6.1908 ms
+2026-06-22 22:56:56.006 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 6.2684 ms
+2026-06-22 22:56:56.010 +03:00 [INF] HTTP GET /api/Zone responded 200 in 4.3425 ms
+2026-06-22 22:56:56.013 +03:00 [INF] HTTP GET /api/User responded 200 in 7.9294 ms
+2026-06-22 22:57:27.607 +03:00 [INF] HTTP OPTIONS /api/Auth/Login-admin responded 204 in 0.0355 ms
+2026-06-22 22:57:31.058 +03:00 [INF] HTTP POST /api/Auth/Login-admin responded 200 in 60.7857 ms
+2026-06-22 22:57:31.877 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0390 ms
+2026-06-22 22:57:31.877 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.0368 ms
+2026-06-22 22:57:36.381 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 5.6222 ms
+2026-06-22 22:57:36.387 +03:00 [INF] HTTP GET /api/User responded 200 in 11.5887 ms
+2026-06-22 22:58:17.892 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0400 ms
+2026-06-22 22:58:18.427 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.CreateZoneAsync(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 57
+   at ScooterRental.Presentation.Controllers.ZoneController.CreateZone(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 9
+   at lambda_method1603(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-22 22:58:18.429 +03:00 [ERR] HTTP POST /api/Zone responded 500 in 140.0502 ms
+2026-06-22 22:58:24.603 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0424 ms
+2026-06-22 22:58:29.382 +03:00 [INF] Zone update received via Redis.Reloading map cache
+2026-06-22 22:58:29.382 +03:00 [INF] HTTP POST /api/Zone responded 200 in 5.6084 ms
+2026-06-22 22:58:30.229 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0383 ms
+2026-06-22 22:58:31.055 +03:00 [INF] HTTP GET /api/Zone responded 200 in 3.3473 ms
+2026-06-22 22:59:25.321 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0608 ms
+2026-06-22 22:59:28.653 +03:00 [INF] HTTP GET /api/Zone responded 200 in 4.6190 ms
+2026-06-22 23:01:42.380 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0530 ms
+2026-06-22 23:01:56.704 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0362 ms
+2026-06-22 23:01:57.032 +03:00 [INF] Zone update received via Redis.Reloading map cache
+2026-06-22 23:01:57.033 +03:00 [INF] HTTP POST /api/Zone responded 200 in 13.8446 ms
+2026-06-22 23:02:17.417 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0542 ms
+2026-06-22 23:02:20.840 +03:00 [INF] Zone update received via Redis.Reloading map cache
+2026-06-22 23:02:20.841 +03:00 [INF] HTTP POST /api/Zone responded 200 in 8.1118 ms
+2026-06-22 23:03:09.909 +03:00 [INF] HTTP OPTIONS /api/Wallet/transactions responded 204 in 0.0395 ms
+2026-06-22 23:03:09.909 +03:00 [INF] HTTP OPTIONS /api/Ride responded 204 in 0.0176 ms
+2026-06-22 23:03:10.424 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.0331 ms
+2026-06-22 23:03:14.273 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0273 ms
+2026-06-22 23:03:14.289 +03:00 [INF] HTTP GET /api/Wallet/transactions responded 200 in 17.4668 ms
+2026-06-22 23:03:14.290 +03:00 [INF] HTTP GET /api/Ride responded 200 in 18.9820 ms
+2026-06-22 23:03:14.781 +03:00 [INF] HTTP GET /api/User responded 200 in 4.6721 ms
+2026-06-22 23:03:14.783 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 6.7459 ms
+2026-06-22 23:06:25.770 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0334 ms
+2026-06-22 23:06:25.906 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.0361 ms
+2026-06-22 23:06:26.105 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 23.4785 ms
+2026-06-22 23:06:26.224 +03:00 [INF] HTTP GET /api/User responded 200 in 6.7910 ms
+2026-06-22 23:09:37.480 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0421 ms
+2026-06-22 23:09:37.480 +03:00 [INF] HTTP OPTIONS /api/Wallet/transactions responded 204 in 0.0212 ms
+2026-06-22 23:09:37.481 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.0089 ms
+2026-06-22 23:09:37.481 +03:00 [INF] HTTP OPTIONS /api/Ride responded 204 in 0.0097 ms
+2026-06-22 23:09:37.803 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 10.0337 ms
+2026-06-22 23:09:37.906 +03:00 [INF] HTTP GET /api/Wallet/transactions responded 200 in 10.3839 ms
+2026-06-22 23:09:57.726 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/pending responded 204 in 0.0326 ms
+2026-06-22 23:09:58.051 +03:00 [INF] HTTP GET /api/Ride/parking-photos/pending responded 200 in 11.8760 ms
+2026-06-22 23:09:58.810 +03:00 [INF] HTTP GET /uploads/parkingPhotos/0e2dbd90-5c07-4f77-b367-c0999a7562d8.jpg responded 304 in 0.3090 ms
+2026-06-22 23:09:58.810 +03:00 [INF] HTTP GET /uploads/parkingPhotos/4d2bdf46-063a-4933-bd49-665e91e12a3f.jpg responded 304 in 0.3092 ms
+2026-06-22 23:09:58.810 +03:00 [INF] HTTP GET /uploads/parkingPhotos/20c0e2c6-69d9-4db0-977e-bf337a353ee7.jpg responded 304 in 0.0805 ms
+2026-06-22 23:09:59.563 +03:00 [INF] HTTP OPTIONS /api/Ride responded 204 in 0.0356 ms
+2026-06-22 23:09:59.881 +03:00 [INF] HTTP GET /api/Ride responded 200 in 7.1333 ms
+2026-06-22 23:10:04.353 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.0506 ms
+2026-06-22 23:10:04.754 +03:00 [INF] HTTP GET /api/User responded 200 in 5.0902 ms
+2026-06-22 23:10:05.954 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0367 ms
+2026-06-22 23:10:06.266 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 4.2771 ms
+2026-06-22 23:10:07.225 +03:00 [INF] HTTP OPTIONS /api/Scooter/live-map responded 204 in 0.0353 ms
+2026-06-22 23:10:07.463 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0475 ms
+2026-06-22 23:10:07.464 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0244 ms
+2026-06-22 23:10:07.539 +03:00 [INF] HTTP GET /api/Scooter/live-map responded 200 in 5.4954 ms
+2026-06-22 23:10:07.776 +03:00 [INF] HTTP GET /api/Zone responded 200 in 3.6989 ms
+2026-06-22 23:10:07.779 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 2.0742 ms
+2026-06-22 23:10:34.250 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0387 ms
+2026-06-22 23:10:34.250 +03:00 [INF] HTTP OPTIONS /api/Ride responded 204 in 0.0118 ms
+2026-06-22 23:10:34.392 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.0493 ms
+2026-06-22 23:10:34.393 +03:00 [INF] HTTP OPTIONS /api/Wallet/transactions responded 204 in 0.0341 ms
+2026-06-22 23:10:34.674 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 2.2082 ms
+2026-06-22 23:10:34.727 +03:00 [INF] HTTP GET /api/Ride responded 200 in 2.3677 ms
+2026-06-22 23:10:34.954 +03:00 [INF] HTTP GET /api/User responded 200 in 2.7810 ms
+2026-06-22 23:10:35.012 +03:00 [INF] HTTP GET /api/Wallet/transactions responded 200 in 5.5490 ms
+2026-06-22 23:15:08.299 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0330 ms
+2026-06-22 23:15:09.000 +03:00 [INF] HTTP GET /api/Zone responded 200 in 3.8240 ms
+2026-06-22 23:15:22.414 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0382 ms
+2026-06-22 23:15:22.725 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.CreateZoneAsync(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 57
+   at ScooterRental.Presentation.Controllers.ZoneController.CreateZone(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 9
+   at lambda_method1603(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-22 23:15:22.728 +03:00 [ERR] HTTP POST /api/Zone responded 500 in 3.4492 ms
+2026-06-22 23:15:28.205 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0384 ms
+2026-06-22 23:15:28.563 +03:00 [INF] Zone update received via Redis.Reloading map cache
+2026-06-22 23:15:28.563 +03:00 [INF] HTTP POST /api/Zone responded 200 in 6.3584 ms
+2026-06-22 23:15:39.616 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/pending responded 204 in 0.0475 ms
+2026-06-22 23:15:40.042 +03:00 [INF] HTTP GET /api/Ride/parking-photos/pending responded 200 in 10.5256 ms
+2026-06-22 23:15:48.804 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0371 ms
+2026-06-22 23:15:49.149 +03:00 [INF] HTTP GET /api/Zone responded 200 in 2.7326 ms
+2026-06-22 23:15:51.954 +03:00 [INF] HTTP OPTIONS /api/Zone/1d540c3c-d249-497e-b0d6-bf1ca56f7832 responded 204 in 0.0429 ms
+2026-06-22 23:15:52.354 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone/1d540c3c-d249-497e-b0d6-bf1ca56f7832
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.UpdateZoneAsync(ZoneForUpdateDto dto, Guid id) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 79
+   at ScooterRental.Presentation.Controllers.ZoneController.UpdateZone(Guid id, ZoneForUpdateDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 33
+   at lambda_method1746(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-22 23:15:52.358 +03:00 [ERR] HTTP PUT /api/Zone/1d540c3c-d249-497e-b0d6-bf1ca56f7832 responded 500 in 10.6634 ms
+2026-06-22 23:16:26.757 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0522 ms
+2026-06-22 23:16:27.133 +03:00 [INF] HTTP GET /api/Zone responded 200 in 3.7365 ms
+2026-06-22 23:22:22.382 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0325 ms
+2026-06-22 23:22:34.048 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0508 ms
+2026-06-22 23:22:35.987 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.CreateZoneAsync(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 57
+   at ScooterRental.Presentation.Controllers.ZoneController.CreateZone(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 9
+   at lambda_method1603(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-22 23:22:35.989 +03:00 [ERR] HTTP POST /api/Zone responded 500 in 3.7438 ms
+2026-06-22 23:22:55.220 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0472 ms
+2026-06-22 23:22:58.110 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.CreateZoneAsync(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 57
+   at ScooterRental.Presentation.Controllers.ZoneController.CreateZone(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 9
+   at lambda_method1603(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-22 23:22:58.112 +03:00 [ERR] HTTP POST /api/Zone responded 500 in 3.3613 ms
+2026-06-22 23:23:11.711 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0382 ms
+2026-06-22 23:23:12.029 +03:00 [INF] HTTP GET /api/Zone responded 200 in 7.1808 ms
+2026-06-22 23:24:29.120 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0348 ms
+2026-06-22 23:24:29.554 +03:00 [INF] HTTP GET /api/Zone responded 200 in 3.4218 ms
+2026-06-22 23:25:05.577 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0385 ms
+2026-06-22 23:25:09.826 +03:00 [INF] HTTP GET /api/Zone responded 200 in 4.2964 ms
+2026-06-22 23:25:41.946 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0356 ms
+2026-06-22 23:25:42.261 +03:00 [INF] HTTP GET /api/Zone responded 200 in 1.8924 ms
+2026-06-22 23:26:16.415 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0542 ms
+2026-06-22 23:26:16.741 +03:00 [INF] HTTP GET /api/Zone responded 200 in 5.5320 ms
+2026-06-22 23:26:26.648 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0359 ms
+2026-06-22 23:26:27.161 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.CreateZoneAsync(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 57
+   at ScooterRental.Presentation.Controllers.ZoneController.CreateZone(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 9
+   at lambda_method1603(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-22 23:26:27.163 +03:00 [ERR] HTTP POST /api/Zone responded 500 in 3.3798 ms
+2026-06-22 23:26:52.236 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0370 ms
+2026-06-22 23:26:52.647 +03:00 [INF] HTTP GET /api/Zone responded 200 in 1.9352 ms
+2026-06-22 23:27:18.234 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0370 ms
+2026-06-22 23:27:18.713 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.CreateZoneAsync(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 57
+   at ScooterRental.Presentation.Controllers.ZoneController.CreateZone(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 9
+   at lambda_method1603(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-22 23:27:18.716 +03:00 [ERR] HTTP POST /api/Zone responded 500 in 3.5800 ms
+2026-06-22 23:27:21.217 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.CreateZoneAsync(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 57
+   at ScooterRental.Presentation.Controllers.ZoneController.CreateZone(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 9
+   at lambda_method1603(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-22 23:27:21.220 +03:00 [ERR] HTTP POST /api/Zone responded 500 in 3.3020 ms
+2026-06-22 23:27:36.645 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0389 ms
+2026-06-22 23:27:36.968 +03:00 [INF] HTTP GET /api/Zone responded 200 in 3.4796 ms
+2026-06-22 23:27:51.624 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0552 ms
+2026-06-22 23:27:52.039 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.CreateZoneAsync(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 57
+   at ScooterRental.Presentation.Controllers.ZoneController.CreateZone(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 9
+   at lambda_method1603(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-22 23:27:52.042 +03:00 [ERR] HTTP POST /api/Zone responded 500 in 3.6324 ms
+2026-06-22 23:27:58.205 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0503 ms
+2026-06-22 23:27:58.548 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.CreateZoneAsync(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 57
+   at ScooterRental.Presentation.Controllers.ZoneController.CreateZone(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 9
+   at lambda_method1603(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-22 23:27:58.550 +03:00 [ERR] HTTP POST /api/Zone responded 500 in 3.3016 ms
+2026-06-22 23:28:13.856 +03:00 [INF] HTTP OPTIONS /api/Auth/Login-admin responded 204 in 0.0398 ms
+2026-06-22 23:28:15.814 +03:00 [INF] HTTP POST /api/Auth/Login-admin responded 200 in 62.6355 ms
+2026-06-22 23:28:16.427 +03:00 [INF] HTTP OPTIONS /api/Scooter responded 204 in 0.0365 ms
+2026-06-22 23:28:16.511 +03:00 [INF] HTTP OPTIONS /api/User responded 204 in 0.0375 ms
+2026-06-22 23:28:16.752 +03:00 [INF] HTTP GET /api/Scooter responded 200 in 5.9200 ms
+2026-06-22 23:28:16.886 +03:00 [INF] HTTP GET /api/User responded 200 in 4.4739 ms
+2026-06-22 23:28:30.112 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0368 ms
+2026-06-22 23:28:30.528 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.CreateZoneAsync(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 57
+   at ScooterRental.Presentation.Controllers.ZoneController.CreateZone(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 9
+   at lambda_method1603(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-22 23:28:30.531 +03:00 [ERR] HTTP POST /api/Zone responded 500 in 4.0170 ms
+2026-06-22 23:28:36.747 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0364 ms
+2026-06-22 23:28:37.063 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.CreateZoneAsync(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 57
+   at ScooterRental.Presentation.Controllers.ZoneController.CreateZone(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 9
+   at lambda_method1603(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-22 23:28:37.065 +03:00 [ERR] HTTP POST /api/Zone responded 500 in 3.3293 ms
+2026-06-22 23:28:38.702 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.CreateZoneAsync(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 57
+   at ScooterRental.Presentation.Controllers.ZoneController.CreateZone(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 9
+   at lambda_method1603(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-22 23:28:38.704 +03:00 [ERR] HTTP POST /api/Zone responded 500 in 3.3648 ms
+2026-06-22 23:28:39.839 +03:00 [ERR] An unexpected server error occurred while accessing /api/Zone
+FluentValidation.ValidationException
+   at ScooterRental.Service.ZoneServices.ZoneService.CreateZoneAsync(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Service\ZoneServices\ZoneService.cs:line 57
+   at ScooterRental.Presentation.Controllers.ZoneController.CreateZone(ZoneForCreationDto dto) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.Presentation\Controllers\ZoneController.cs:line 9
+   at lambda_method1603(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ScooterRental.WebAPI.CustomMiddleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext httpContext) in D:\SRMS\ScooterRentalSystem\ScooterRental.Backend\ScooterRental.WebAPI\CustomMiddleware\ExceptionHandlingMiddleware.cs:line 9
+2026-06-22 23:28:39.842 +03:00 [ERR] HTTP POST /api/Zone responded 500 in 3.6153 ms
+2026-06-22 23:28:50.063 +03:00 [INF] HTTP OPTIONS /api/Ride/parking-photos/pending responded 204 in 0.0370 ms
+2026-06-22 23:28:50.486 +03:00 [INF] HTTP GET /api/Ride/parking-photos/pending responded 200 in 19.2125 ms
+2026-06-22 23:28:51.524 +03:00 [INF] HTTP GET /uploads/parkingPhotos/4d2bdf46-063a-4933-bd49-665e91e12a3f.jpg responded 304 in 0.3575 ms
+2026-06-22 23:34:05.336 +03:00 [INF] HTTP OPTIONS /api/Zone responded 204 in 0.0591 ms
+2026-06-22 23:34:05.791 +03:00 [INF] HTTP GET /api/Zone responded 200 in 10.7594 ms

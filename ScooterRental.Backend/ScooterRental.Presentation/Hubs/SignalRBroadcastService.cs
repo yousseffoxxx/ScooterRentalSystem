@@ -9,10 +9,13 @@
             => await _riderHub.Clients.Group($"Ride_{rideId}").SendAsync("ReceiveRideTelemetry", scooter);
 
         public async Task BroadcastSecurityAlertToAdminsAsync(string serialNumber, string alertMessage)
-        
-           => await _adminHub.Clients.Group("Admins").SendAsync("ReceiveSecurityAlert", new{SerialNumber = serialNumber, Message = alertMessage, Timestamp = DateTimeOffset.UtcNow });
-        
+
+           => await _adminHub.Clients.Group("Admins").SendAsync("ReceiveSecurityAlert", new { SerialNumber = serialNumber, Message = alertMessage, Timestamp = DateTimeOffset.UtcNow });
+
         public async Task BroadcastWalletTopUpToRiderAsync(string userId, decimal newBalance)
             => await _riderHub.Clients.Group($"User_{userId}").SendAsync("WalletBalanceUpdated", newBalance);
+
+        public async Task BroadcastNewParkingPhotoToAdminsAsync(Guid rideId, string serialNumber, string photoUrl)
+            => await _adminHub.Clients.Group("Admins").SendAsync("ReceiveNewParkingPhoto", new { RideId = rideId, SerialNumber = serialNumber, PhotoUrl = photoUrl, SubmittedAt = DateTimeOffset.UtcNow });
     }
 }

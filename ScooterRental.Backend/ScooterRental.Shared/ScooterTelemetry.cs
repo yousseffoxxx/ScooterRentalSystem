@@ -2,9 +2,11 @@
 {
     public class ScooterTelemetry
     {
-        public Guid Id { get; set; }
         [JsonPropertyName("serialNumber")]
         public string SerialNumber { get; set; } = string.Empty;
+        [JsonPropertyName("timestamp")]
+        public long Timestamp { get; set; }
+
 
         [JsonPropertyName("latitude")]
         public double Latitude { get; set; }
@@ -14,11 +16,9 @@
 
         [JsonPropertyName("batteryLevel")]
         public int BatteryLevel { get; set; }
+        public bool Alarm { get; set; }
 
-        [JsonPropertyName("timestamp")]
-        public DateTimeOffset Timestamp { get; set; }
         public bool IsOutOfBounds { get; set; }
         public bool IsInNoParkingZone { get; set; }
-        public bool Alarm { get; set; }
     }
 }

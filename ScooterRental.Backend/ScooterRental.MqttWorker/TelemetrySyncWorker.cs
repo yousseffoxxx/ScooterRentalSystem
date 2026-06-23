@@ -20,18 +20,22 @@
                     {
                         var telemetry = await telemetryRedisRepo.GetLatestTelemetryAsync(scooter.SerialNumber);
 
-                        if (telemetry is not null && scooter.LastPingAt < telemetry.Timestamp)
+                        if (telemetry is not null )
                         {
-                            scooter.Location = new Point(telemetry.Longitude, telemetry.Latitude) { SRID = 4326 };
-                            scooter.CurrentBatteryLevel = telemetry.BatteryLevel;
-                            scooter.LastPingAt = telemetry.Timestamp;
+                            var telemetryDateTime = DateTimeOffset.FromUnixTimeSeconds(telemetry.Timestamp);
 
-                            repo.GetRepository<Scooter>().Update(scooter);
+                            if (scooter.LastPingAt < telemetryDateTime)
+                            {
+                                scooter.Location = new Point(telemetry.Longitude, telemetry.Latitude) { SRID = 4326 };
+                                scooter.CurrentBatteryLevel = telemetry.BatteryLevel;
+                                scooter.LastPingAt = telemetryDateTime;
 
-                            _logger.LogInformation("Sync: Successfully queued UPDATE for {Serial}", scooter.SerialNumber);
+                                repo.GetRepository<Scooter>().Update(scooter);
+
+                                _logger.LogInformation("Sync: Successfully queued UPDATE for {Serial}", scooter.SerialNumber);
+                            }
                         }
                     }
-
                     await repo.SaveChangesAsync();
                 }
                 catch (Exception ex)

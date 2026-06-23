@@ -6,5 +6,6 @@
         Task BroadcastRideTelemetryToRiderAsync(string rideId, MapScooterDto scooter);
         Task BroadcastSecurityAlertToAdminsAsync(string serialNumber, string alertMessage);
         Task BroadcastWalletTopUpToRiderAsync(string userId, decimal newBalance);
+        Task BroadcastNewParkingPhotoToAdminsAsync(Guid rideId, string serialNumber, string photoUrl);
     }
 }

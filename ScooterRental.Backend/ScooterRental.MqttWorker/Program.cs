@@ -49,6 +49,8 @@ namespace ScooterRental.MqttWorker
 
             builder.Services.AddValidatorsFromAssembly(typeof(ZoneForCreationDtoValidator).Assembly);
 
+            builder.Services.AddSignalR();
+
             // 1. The service that was explicitly crashing the app:
             builder.Services.AddScoped<IAuthService, AuthService>();
 
@@ -71,6 +73,9 @@ namespace ScooterRental.MqttWorker
             builder.Services.AddScoped<INotificationService, NotificationService>();
             builder.Services.AddScoped<IScooterTelemetryService, ScooterTelemetryService>();
             builder.Services.AddScoped<IScooterSecretCacheRepository, ScooterSecretCacheRepository>();
+            builder.Services.AddScoped<IAiVerificationService, AiVerificationService>();
+            builder.Services.AddScoped<IRealTimeBroadcastService, SignalRBroadcastService>();
+
             builder.Services.AddSingleton<IZoneCacheService, ZoneCacheService>();
 
             var firebasePath = builder.Configuration.GetRequiredSection("Firebase")["CredentialPath"];

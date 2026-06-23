@@ -1,4 +1,6 @@
-﻿namespace ScooterRental.Presentation.Controllers
+﻿using System.Text;
+
+namespace ScooterRental.Presentation.Controllers
 {
     [Authorize (Roles = "Admin")]
     public class UserController(IServiceManager _serviceManager) : ApiController

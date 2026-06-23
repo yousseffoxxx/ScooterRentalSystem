@@ -22,6 +22,10 @@ global using ScooterRental.Shared.DTOs.AdminManagement.Payment.Response;
 global using System.Text.Json;
 global using Microsoft.AspNetCore.SignalR;
 global using ScooterRental.Service.Abstractions.RealTimeServices;
+global using System.Security.Cryptography;
+global using System.Text;
+
+
 
 
 

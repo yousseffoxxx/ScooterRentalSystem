@@ -155,7 +155,7 @@ namespace ScooterRental.WebAPI
                 client.BaseAddress = new Uri(aiUrl);
             });
 
-            builder.Services.AddSignalR().AddStackExchangeRedis(builder.Configuration.GetConnectionString("RedisConnectionString"));
+            builder.Services.AddSignalR();
             
             builder.Services.AddScoped<IActiveRideCacheRepository, ActiveRideCacheRepository>();
             builder.Services.AddScoped<ITokenService, TokenService>();
@@ -221,8 +221,8 @@ namespace ScooterRental.WebAPI
             app.UseAuthentication();
             app.UseAuthorization();
             app.MapControllers();
-            app.MapHub<AdminHub>("/hubs/admin");
-            app.MapHub<RiderHub>("/hubs/rider");
+            app.MapHub<AdminHub>("/api/hubs/admin");
+            app.MapHub<RiderHub>("/api/hubs/rider");
 
             #endregion
 

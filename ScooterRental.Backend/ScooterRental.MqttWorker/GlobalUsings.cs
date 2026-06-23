@@ -35,6 +35,8 @@ global using ScooterRental.Service.ZoneServices;
 global using ScooterRental.Shared;
 global using Serilog;
 global using StackExchange.Redis;
+global using ScooterRental.Presentation.Hubs;
+global using ScooterRental.Service.Abstractions.RealTimeServices;
 
 
 

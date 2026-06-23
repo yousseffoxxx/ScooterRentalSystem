@@ -13,7 +13,7 @@
                 PropertyNameCaseInsensitive = true
             };
 
-            var telemetry = JsonSerializer.Deserialize<SecureIotPayload<ScooterTelemetry>>(jsonPayload, options);
+            var telemetry = JsonSerializer.Deserialize<SecureIotPayload<HardwareTelemetryData>>(jsonPayload, options);
 
             if (telemetry == null)
             {
@@ -67,7 +67,19 @@
                 return;
             }
 
-            if (telemetry.Data.Alarm)
+            var cacheModel = new ScooterTelemetry
+            {
+                SerialNumber = telemetry.SerialNumber,
+                Timestamp = telemetry.Timestamp,
+                BatteryLevel = telemetry.Data.BatteryLevel,
+                Latitude = telemetry.Data.Latitude,
+                Longitude = telemetry.Data.Longitude,
+                Alarm = telemetry.Data.Alarm,
+                IsOutOfBounds = false,
+                IsInNoParkingZone = false
+            };
+
+            if (cacheModel.Alarm)
             {
                 _logger.LogWarning("ALARM TRIGGERED for Scooter {Serial}", telemetry.SerialNumber);
 
@@ -83,11 +95,11 @@
                 await _broadcastService.BroadcastSecurityAlertToAdminsAsync(telemetry.SerialNumber, "Theft Alarm Triggered!");
             }
 
-            var mapDto = new MapScooterDto(scooterId, telemetry.SerialNumber, telemetry.Data.BatteryLevel, telemetry.Data.Latitude, telemetry.Data.Longitude, 0, 0);
+            var mapDto = new MapScooterDto(scooterId, telemetry.SerialNumber, cacheModel.BatteryLevel, cacheModel.Latitude, cacheModel.Longitude, 0, 0);
 
-            await HandleGeofencing(telemetry.Data, mapDto);
+            await HandleGeofencing(cacheModel, mapDto);
 
-            await _repository.SaveOrUpdateTelemetryAsync(telemetry.Data);
+            await _repository.SaveOrUpdateTelemetryAsync(cacheModel);
 
             await _broadcastService.BroadcastLiveTelemetryToAdminsAsync(mapDto);
         }
@@ -118,6 +130,8 @@
                     await _mqttCommandService.SendCommandAsync(telemetry.SerialNumber, ScooterCommandType.StopScooter, 0);
 
                 telemetry.IsOutOfBounds = true;
+
+                await _broadcastService.BroadcastSecurityAlertToAdminsAsync(telemetry.SerialNumber, "Rider drove OUT OF BOUNDS. Scooter safely disabled.");
             }
             else
             {

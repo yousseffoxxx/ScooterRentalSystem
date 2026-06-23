@@ -3,7 +3,7 @@
     public class RideService(IUnitOfWork _unitOfWork, IMqttCommandService _mqttCommandService,
         IScooterTelemetryRepository _scooterTelemetryRepository, IZoneCacheService _zoneCacheService, UserManager<User> _userManager,
         INotificationService _notificationService, IActiveRideCacheRepository _activeRideCacheRepository,
-        ILocalStorageService _localStorageService, IConfiguration _configuration) : IRideService
+        ILocalStorageService _localStorageService, IConfiguration _configuration, IRealTimeBroadcastService _broadcastService) : IRideService
     {
         private readonly string _baseUrl = _configuration.GetSection("Urls")["BaseUrl"] ?? string.Empty;
         
@@ -175,6 +175,10 @@
 
             await _unitOfWork.SaveChangesAsync();
 
+            await _broadcastService.BroadcastWalletTopUpToRiderAsync(userId.ToString(), user.Wallet.Balance);
+
+            await _broadcastService.BroadcastNewParkingPhotoToAdminsAsync(activeRide.Id, activeRide.Scooter.SerialNumber, savedParkingPhotoUrl);
+
             await _activeRideCacheRepository.RemoveActiveRideAsync(activeRide.Scooter.SerialNumber);
 
             await _mqttCommandService.SendCommandAsync(activeRide.Scooter.SerialNumber, ScooterCommandType.StopScooter);
@@ -232,6 +236,8 @@
                     $"Your Penalty cost {dto.PenaltyAmount} EGP. Remaining balance: {ride.User.Wallet.Balance} EGP.");
 
                 await _unitOfWork.SaveChangesAsync();
+
+                await _broadcastService.BroadcastWalletTopUpToRiderAsync(ride.UserId.ToString(), ride.User.Wallet.Balance);
 
                 return;
             }
