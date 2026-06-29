@@ -1,0 +1,22 @@
+# STAGE 1: Runtime Base
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
+WORKDIR /app
+
+# STAGE 2: Build
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+WORKDIR /src
+COPY . .
+# Replace "ScooterRental.MqttWorker" with your actual worker folder name if different
+RUN dotnet restore "ScooterRental.MqttWorker/ScooterRental.MqttWorker.csproj"
+RUN dotnet build "ScooterRental.MqttWorker/ScooterRental.MqttWorker.csproj" -c Release -o /app/build
+
+# STAGE 3: Publish
+FROM build AS publish
+RUN dotnet publish "ScooterRental.MqttWorker/ScooterRental.MqttWorker.csproj" -c Release -o /app/publish /p:UseAppHost=false
+
+# STAGE 4: Final
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+# Ensure Firebase SDK JSON is copied into the container!
+ENTRYPOINT ["dotnet", "ScooterRental.MqttWorker.dll"]

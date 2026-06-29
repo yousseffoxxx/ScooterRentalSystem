@@ -24,6 +24,9 @@ global using Microsoft.AspNetCore.SignalR;
 global using ScooterRental.Service.Abstractions.RealTimeServices;
 global using System.Security.Cryptography;
 global using System.Text;
+global using Microsoft.Extensions.DependencyInjection;
+global using ScooterRental.Presentation.Hubs;
+
 
 
 

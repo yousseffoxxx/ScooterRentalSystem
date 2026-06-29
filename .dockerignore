@@ -13,3 +13,8 @@
 *.suo
 *.log
 appsettings.Development.json
+
+# Python ignores
+__pycache__/
+venv/
+.env

@@ -1,0 +1,69 @@
+version: '3.8'
+
+services:
+  # 1. The Database Container
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: scooter-sql
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=SuperSecretPass123! # Must be strong!
+    ports:
+      - "1433:1433"
+    volumes:
+      - sql-data:/var/opt/mssql
+
+  # 2. The Redis Cache Container
+  redis:
+    image: redis:latest
+    container_name: scooter-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+
+  # 3. Your .NET Web API
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: scooter-api
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      # Overriding infrastructure settings to point to our containers
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=ScooterRentalDb;User Id=sa;Password=SuperSecretPass123!;TrustServerCertificate=True;
+      - ConnectionStrings__RedisConnectionString=redis:6379
+      - Urls__AiService=http://ai-service:5002
+    depends_on:
+      - sqlserver
+      - redis
+
+  # 4. Your .NET MQTT Background Worker
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.Worker
+    container_name: scooter-worker
+    environment:
+      - DOTNET_ENVIRONMENT=Development
+      # Overriding infrastructure settings to point to our containers
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=ScooterRentalDb;User Id=sa;Password=SuperSecretPass123!;TrustServerCertificate=True;
+      - ConnectionStrings__RedisConnectionString=redis:6379
+    depends_on:
+      - sqlserver
+      - redis
+
+  # 5. The Python AI Microservice
+  ai-service:
+    build:
+      context: ./ScooterRental.AI
+      dockerfile: Dockerfile
+    container_name: scooter-ai
+    ports:
+      - "5002:5002"
+
+volumes:
+  sql-data:
+  redis-data:

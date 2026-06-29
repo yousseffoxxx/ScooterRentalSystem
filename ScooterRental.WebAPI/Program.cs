@@ -6,7 +6,9 @@ namespace ScooterRental.WebAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            #region Add services to the container
+            var sharedConfigPath = Path.Combine(Directory.GetCurrentDirectory(), "..", "appsettings.Shared.json");
+
+            builder.Configuration.AddJsonFile(sharedConfigPath, optional: true, reloadOnChange: true);
 
             builder.Host.UseSerilog((context, loggerConfiguration) =>
             {
@@ -15,7 +17,7 @@ namespace ScooterRental.WebAPI
                     .Enrich.FromLogContext() // Adds extra details to every log
                     .WriteTo.Console() // Prints to the Visual Studio terminal
                     .WriteTo.File("Logs/scooter-api-log-.txt", rollingInterval: RollingInterval.Day) // Creates a new text file every day!
-                    .WriteTo.Seq("http://localhost:5341");
+                    .WriteTo.Seq("http://host.docker.internal:5341");
             });
 
             builder.Services.AddOpenApi(options =>
@@ -56,36 +58,7 @@ namespace ScooterRental.WebAPI
                 });
             });
 
-            builder.Services.AddDbContext<ApplicationDbContext>(options =>
-            {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
-                    options => options.UseNetTopologySuite());
-            });
-
-            builder.Services.AddIdentity<User, IdentityRole<Guid>>(options =>
-            {
-                options.Password.RequireDigit = true;
-                options.Password.RequireLowercase = true;
-                options.Password.RequireUppercase = true;
-                options.Password.RequiredLength = 8;
-                options.Password.RequireNonAlphanumeric = false;
-
-                options.User.RequireUniqueEmail = false;
-
-                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
-                options.Lockout.MaxFailedAccessAttempts = 5;
-                options.Lockout.AllowedForNewUsers = true;
-            })
-            .AddEntityFrameworkStores<ApplicationDbContext>()
-            .AddDefaultTokenProviders();
-
-            builder.Services.AddValidatorsFromAssemblyContaining<RegisterDtoValidator>();
-
-            builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
-
-            builder.Services.Configure<PaymobOptions>(builder.Configuration.GetSection("PaymobSettings"));
-
-            builder.Services.Configure<MqttOptions>(builder.Configuration.GetSection("MqttSettings"));
+            #region Add services to the container
 
             var jwtOptions = builder.Configuration.GetSection("Jwt").Get<JwtSettings>();         
             
@@ -125,6 +98,12 @@ namespace ScooterRental.WebAPI
                     };
                 });
 
+            builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
+
+            builder.Services.Configure<PaymobOptions>(builder.Configuration.GetSection("PaymobSettings"));
+
+            builder.Services.Configure<MqttOptions>(builder.Configuration.GetSection("MqttSettings"));
+
             builder.Services.Configure<ApiBehaviorOptions>(options =>
             {
                 options.SuppressModelStateInvalidFilter = true;
@@ -140,14 +119,9 @@ namespace ScooterRental.WebAPI
                 });
             });
 
-            builder.Services.AddSingleton<IConnectionMultiplexer>((_) =>
-            {
-                return ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("RedisConnectionString"));
-            });
+            builder.Services.AddValidatorsFromAssemblyContaining<RegisterDtoValidator>();
 
             builder.Services.AddHostedService<RedisZoneSubscriberWorker>();
-
-            builder.Services.AddSingleton<IZoneCacheService, ZoneCacheService>();
 
             builder.Services.AddHttpClient<IAiVerificationService, AiVerificationService>(client =>
             {
@@ -156,21 +130,15 @@ namespace ScooterRental.WebAPI
             });
 
             builder.Services.AddSignalR();
-            
-            builder.Services.AddScoped<IActiveRideCacheRepository, ActiveRideCacheRepository>();
-            builder.Services.AddScoped<ITokenService, TokenService>();
-            builder.Services.AddScoped<ILocalStorageService, LocalStorageService>();
-            builder.Services.AddScoped<IServiceManager, ServiceManager>();
-            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-            builder.Services.AddScoped<IScooterTelemetryRepository, ScooterTelemetryRepository>();
-            builder.Services.AddScoped<IRedisZoneEventPublisher, RedisZoneEventPublisher>();
-            builder.Services.AddScoped<IMqttCommandService, MqttCommandService>();
-            builder.Services.AddScoped<IDataSeeder, DataSeeder>();
-            builder.Services.AddScoped<IPaymobService, PaymobService>();
-            builder.Services.AddScoped<INotificationService, NotificationService>();
-            builder.Services.AddScoped<IAuthService, AuthService>();
-            builder.Services.AddScoped<IScooterSecretCacheRepository, ScooterSecretCacheRepository>();
-            builder.Services.AddScoped<IRealTimeBroadcastService, SignalRBroadcastService>();
+
+            // 1. Register Data Access (Database, Redis, Repositories)
+            builder.Services.AddPersistenceInfrastructure(builder.Configuration);
+
+            // 2. Register Business Logic (Services, Firebase, AI)
+            builder.Services.AddApplicationServices(builder.Configuration);
+
+            // 3. Register Presentation (SignalR Implementations, Controllers, etc.)
+            builder.Services.AddPresentation();
 
             builder.Services.AddAuthorization();
             builder.Services.AddControllers();
@@ -200,19 +168,6 @@ namespace ScooterRental.WebAPI
                 app.MapScalarApiReference();
             }
 
-            var firebasePath = app.Configuration.GetRequiredSection("Firebase")["CredentialPath"];
-
-            if (FirebaseApp.DefaultInstance == null)
-            {
-                var credential = CredentialFactory.FromFile<ServiceAccountCredential>(firebasePath).ToGoogleCredential();
-
-                FirebaseApp.Create(new AppOptions
-                {
-                    Credential = credential
-                });
-            }
-
-            //app.UseHttpsRedirection();
             app.UseSerilogRequestLogging();
             app.UseMiddleware<ExceptionHandlingMiddleware>();
             app.UseCors("CORSPolicy");
@@ -221,8 +176,8 @@ namespace ScooterRental.WebAPI
             app.UseAuthentication();
             app.UseAuthorization();
             app.MapControllers();
-            app.MapHub<AdminHub>("/api/hubs/admin");
-            app.MapHub<RiderHub>("/api/hubs/rider");
+            app.MapHub<AdminHub>("/hubs/admin");
+            app.MapHub<RiderHub>("/hubs/rider");
 
             #endregion
 

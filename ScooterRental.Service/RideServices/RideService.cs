@@ -145,7 +145,7 @@
             if (durationMinutes < 1)
                 durationMinutes = 1;
 
-            decimal totalCost = Math.Round(activeRide.AppliedUnlockFee + (durationMinutes * activeRide.AppliedPerMinuteRate), 2);
+            decimal totalCost = Math.Round(activeRide.AppliedUnlockFee + durationMinutes * activeRide.AppliedPerMinuteRate, 2);
 
             var user = await _userManager.Users.Include(u => u.Wallet).FirstOrDefaultAsync(u => u.Id == userId);
 

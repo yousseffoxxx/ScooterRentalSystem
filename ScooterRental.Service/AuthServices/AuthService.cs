@@ -2,7 +2,8 @@
 {
     public class AuthService(UserManager<User> _userManager, ITokenService _tokenService,
         IConfiguration _configuration, ILocalStorageService _localStorageService,
-        IUnitOfWork _unitOfWork, IAiVerificationService _aiVerificationService) : IAuthService
+        IUnitOfWork _unitOfWork, IAiVerificationService _aiVerificationService,
+        IEncryptionService _encryptionService) : IAuthService
     {
         private readonly string _baseUrl = _configuration.GetSection("Urls")["BaseUrl"] ?? string.Empty;
 
@@ -24,10 +25,28 @@
 
             string verifiedPhoneNumber = firebasePhoneObj.ToString();
 
+            // 1. Call the Python AI Microservice
             var aiCheckResult = await _aiVerificationService.VerifyIdentityAsync(registerDto.IdFrontPhoto, registerDto.IdBackPhoto, registerDto.SelfiePhoto);
-            
-            if(aiCheckResult.Valid == false)
+
+            // 2. Check for hard AI failures
+            if (aiCheckResult.Valid == false && aiCheckResult.NeedsManualId == false)
                 throw new BadRequestException($"{aiCheckResult.Error}");
+
+            string finalNationalId = aiCheckResult.Data?.NationalId;
+
+            if (aiCheckResult.NeedsManualId)
+            {
+                // Did the mobile app provide it manually?
+                if (string.IsNullOrWhiteSpace(registerDto.ManualNationalId))
+                    throw new BadRequestException("REQUIRES_MANUAL_ID: The ID number on the card is faded. Please type your 14-digit National ID manually.");
+                else
+                {
+                    if (!System.Text.RegularExpressions.Regex.IsMatch(registerDto.ManualNationalId, @"^[23]\d{13}$"))
+                        throw new BadRequestException("The National ID you entered is invalid. It must be exactly 14 digits.");
+
+                    finalNationalId = registerDto.ManualNationalId;
+                }
+            }
 
             var savedFrontPhotoUrl = await _localStorageService.SaveFileAsync(registerDto.IdFrontPhoto, "uploads/ids");
             var savedBackPhotoUrl = await _localStorageService.SaveFileAsync(registerDto.IdBackPhoto, "uploads/ids");
@@ -47,15 +66,9 @@
             user.PhoneNumber = verifiedPhoneNumber;
             user.UserName = verifiedPhoneNumber;
             user.IdVerificationStatus = ReviewStatus.Approved;
-            user.FullName = aiCheckResult.Name;
+            user.FullName = aiCheckResult.Data?.Name ?? registerDto.FullName;
 
-            // Hash the plain-text National ID
-            using var sha256 = SHA256.Create();
-            var idBytes = Encoding.UTF8.GetBytes(aiCheckResult.NationalId);
-            var hashBytes = sha256.ComputeHash(idBytes);
-            var hashedNationalId = Convert.ToBase64String(hashBytes);
-
-            user.NationalIdHash = hashedNationalId;
+            user.NationalIdHash = _encryptionService.Encrypt(finalNationalId);
 
             var result = await _userManager.CreateAsync(user, registerDto.Password);
 
@@ -159,63 +172,6 @@
             return true;
         }
 
-        /*
-        public async Task<bool> VerifyOtpAsync(VerifyOtpDto verifyOtpDto)
-        {
-            var user = await _userManager.FindByEmailAsync(verifyOtpDto.Email);
-
-            if (user is null)
-                throw new NotFoundException("User", verifyOtpDto.Email);
-
-            var isValid = await _otpService.VerifyOtpAsync(user, verifyOtpDto.Code);
-
-            if (!isValid)
-                throw new BadRequestException("Invalid or expired OTP code.");
-
-            user.EmailConfirmed = true;
-
-            var result = await _userManager.UpdateAsync(user);
-
-            if (!result.Succeeded)
-                throw CreateValidationException(result);
-
-            return true;
-        }
-
-        public async Task<bool> ResendOtpAsync(ResendOtpDto resendOtpDto)
-        {
-            var user = await _userManager.FindByEmailAsync(resendOtpDto.Email);
-
-            if (user is null)
-                throw new NotFoundException("User", resendOtpDto.Email);
-
-            if (user.EmailConfirmed)
-                throw new BadRequestException("This email is already verified. You can log in.");
-
-            await _otpService.SendOtpAsync(user);
-
-            return true;
-        }
-
-        public async Task<string> ForgotPasswordAsync(ForgotPasswordDto forgotPasswordDto)
-        {
-            var user = await _userManager.FindByEmailAsync(forgotPasswordDto.Email);
-
-            if (user is null)
-                throw new NotFoundException("User", forgotPasswordDto.Email);
-
-            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
-
-            var encodedToken = Uri.EscapeDataString(token);
-
-            var resetLink = $"{_baseUrl}/reset-password?email={user.Email}&token={encodedToken}";
-
-            await _emailService.SendPasswordResetEmailAsync(user.Email, resetLink);
-
-            return "Password reset email sent successfully.";
-        }
-        */
-
         public async Task<bool> ResetPasswordAsync(ResetPasswordDto resetPasswordDto)
         {
             FirebaseToken decodedToken;
@@ -316,7 +272,7 @@
 
             return new PaginatedResult<UserResponseDto>(queryParams.PageIndex, users.Count, usersTotalCount, userDtos);
         }
-
+        
         public async Task<UserResponseDto> GetUserByIdAsync(Guid id)
         {
             var user = await _unitOfWork.GetRepository<User>().GetEntityWithSpecAsync(new UserByIdSpecification(id));
@@ -399,5 +355,63 @@
 
             return new AdminResultDto(userDto, token);
         }
+
+        /*
+        public async Task<bool> VerifyOtpAsync(VerifyOtpDto verifyOtpDto)
+        {
+            var user = await _userManager.FindByEmailAsync(verifyOtpDto.Email);
+
+            if (user is null)
+                throw new NotFoundException("User", verifyOtpDto.Email);
+
+            var isValid = await _otpService.VerifyOtpAsync(user, verifyOtpDto.Code);
+
+            if (!isValid)
+                throw new BadRequestException("Invalid or expired OTP code.");
+
+            user.EmailConfirmed = true;
+
+            var result = await _userManager.UpdateAsync(user);
+
+            if (!result.Succeeded)
+                throw CreateValidationException(result);
+
+            return true;
+        }
+
+        public async Task<bool> ResendOtpAsync(ResendOtpDto resendOtpDto)
+        {
+            var user = await _userManager.FindByEmailAsync(resendOtpDto.Email);
+
+            if (user is null)
+                throw new NotFoundException("User", resendOtpDto.Email);
+
+            if (user.EmailConfirmed)
+                throw new BadRequestException("This email is already verified. You can log in.");
+
+            await _otpService.SendOtpAsync(user);
+
+            return true;
+        }
+
+        public async Task<string> ForgotPasswordAsync(ForgotPasswordDto forgotPasswordDto)
+        {
+            var user = await _userManager.FindByEmailAsync(forgotPasswordDto.Email);
+
+            if (user is null)
+                throw new NotFoundException("User", forgotPasswordDto.Email);
+
+            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+
+            var encodedToken = Uri.EscapeDataString(token);
+
+            var resetLink = $"{_baseUrl}/reset-password?email={user.Email}&token={encodedToken}";
+
+            await _emailService.SendPasswordResetEmailAsync(user.Email, resetLink);
+
+            return "Password reset email sent successfully.";
+        }
+        */
+
     }
 }
